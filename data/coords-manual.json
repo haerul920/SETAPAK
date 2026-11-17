@@ -1,0 +1,21 @@
+{
+  "_catatan": "Keputusan koordinat manual setelah meninjau hasil scripts/match-coords.ts (docs/COORDS_CHECK.md). Diterapkan oleh data/index.ts di atas data/coords-override.json. Tiap entri wajib punya sumber dan alasan.",
+  "jam-gadang": {
+    "lat": -0.3052,
+    "lng": 100.3696,
+    "source": "https://www.wikidata.org/wiki/Q146009",
+    "reason": "Lintang data kurasi bertanda positif (0,305). Wikidata (P625) dan Wikipedia menempatkan Jam Gadang di Bukittinggi pada lintang -0,3052, selatan khatulistiwa, jadi tanda lintang pada data kurasi salah."
+  },
+  "lubang-jeriji-saleh": {
+    "lat": 1.24147,
+    "lng": 117.32911,
+    "source": "https://www.wikidata.org/wiki/Q58441632",
+    "reason": "Koordinat kurasi hanya perkiraan area karst (selisih 69 km). Wikidata dan halaman Wikipedia Lubang Jeriji Saléh memberi koordinat yang sama untuk gua ini; entitasnya memang gua (limestone cave in East Kalimantan), bukan tempat lain bernama sama."
+  },
+  "pagaruyung": {
+    "lat": -0.43944,
+    "lng": 100.66917,
+    "source": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+    "reason": "Koordinat halaman Wikipedia Pagaruyung Palace (sumber yang dikutip situs ini), selisih sekitar 6 km dari perkiraan kurasi. Entitas Wikidata Prasasti Pagaruyung VIII ditolak karena bertanda lintang salah (+0,4597)."
+  }
+}

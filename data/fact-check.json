@@ -1,0 +1,4573 @@
+{
+ "generated": "2026-11-17",
+ "findings": [
+  {
+   "id": "ev-sangiran-pucangan",
+   "dateLabel": "± 1,65 juta tahun lalu",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-hominid",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4690/3459/13337",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4690/3459/13337",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1.65",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4690/3459/13337"
+  },
+  {
+   "id": "ev-trinil-cangkang",
+   "dateLabel": "± 540.000 - 430.000 tahun lalu",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-trinil",
+     "url": "https://en.wikipedia.org/wiki/Trinil",
+     "finalUrl": "https://en.wikipedia.org/wiki/Trinil",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-en-pseudodon-shell-dub1006-fl",
+     "url": "https://en.wikipedia.org/wiki/Pseudodon_shell_DUB1006-fL",
+     "finalUrl": "https://en.wikipedia.org/wiki/Pseudodon_shell_DUB1006-fL",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "540000",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Pseudodon_shell_DUB1006-fL"
+  },
+  {
+   "id": "ev-ngandong-hidup",
+   "dateLabel": "117.000 - 108.000 tahun lalu",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-solo-man",
+     "url": "https://en.wikipedia.org/wiki/Solo_Man",
+     "finalUrl": "https://en.wikipedia.org/wiki/Solo_Man",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "117000",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Solo_Man"
+  },
+  {
+   "id": "ev-liangbua-hidup",
+   "dateLabel": "± 100.000 - 60.000 tahun lalu",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-homo-floresiensis",
+     "url": "https://en.wikipedia.org/wiki/Homo_floresiensis",
+     "finalUrl": "https://en.wikipedia.org/wiki/Homo_floresiensis",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "100000",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-en-liang-bua",
+     "url": "https://en.wikipedia.org/wiki/Liang_Bua",
+     "finalUrl": "https://en.wikipedia.org/wiki/Liang_Bua",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Homo_floresiensis"
+  },
+  {
+   "id": "ev-karampuang-51200",
+   "dateLabel": "≥ 51.200 tahun lalu",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "51200",
+     "quote": ""
+    },
+    {
+     "sourceId": "detik-brin-karampuang",
+     "url": "https://www.detik.com/edu/edutainment/d-7422463/peneliti-brin-temukan-lukisan-cadas-tertua-di-dunia-berusia-51-200-tahun",
+     "finalUrl": "https://www.detik.com/edu/edutainment/d-7422463/peneliti-brin-temukan-lukisan-cadas-tertua-di-dunia-berusia-51-200-tahun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "51200",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-tedongnge-45500",
+   "dateLabel": "≥ 45.500 tahun lalu",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "45500",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-bulusipong-43900",
+   "dateLabel": "≥ 43.900 tahun lalu",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "43900",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-jeriji-lukis",
+   "dateLabel": "≥ 40.000 tahun lalu",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-lubang-jeriji-sal-h",
+     "url": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Saléh",
+     "finalUrl": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Sal%C3%A9h",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "40000",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Sal%C3%A9h"
+  },
+  {
+   "id": "ev-pettae-holosen",
+   "dateLabel": "8.000 - 10.000 tahun lalu",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gac-pettae",
+     "url": "https://artsandculture.google.com/story/kwXBxOcPU_Mudw",
+     "finalUrl": "https://artsandculture.google.com/story/kwXBxOcPU_Mudw",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "8000",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://artsandculture.google.com/story/kwXBxOcPU_Mudw"
+  },
+  {
+   "id": "ev-liyangan-awal",
+   "dateLabel": "Abad ke-2",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "core-liangan",
+     "url": "https://core.ac.uk/download/227157498.pdf",
+     "finalUrl": "https://core.ac.uk/download/227157498.pdf",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://core.ac.uk/download/227157498.pdf"
+  },
+  {
+   "id": "ev-yupa-mulawarman",
+   "dateLabel": "± abad ke-4 - 5",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-kutai",
+     "url": "https://en.wikipedia.org/wiki/Kutai",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kutai",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "4th",
+     "quote": "... The Kutai Martapura Kingdom (399–1635; locally known as Kerajaan Kutai Martapura ) is a 4th-century Hindu kingdom located in the Kutai area, East Kalimantan ."
+    }
+   ],
+   "quote": "... The Kutai Martapura Kingdom (399–1635; locally known as Kerajaan Kutai Martapura ) is a 4th-century Hindu kingdom located in the Kutai area, East Kalimantan .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kutai"
+  },
+  {
+   "id": "ev-ciaruteun-purnawarman",
+   "dateLabel": "Abad ke-5",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-ciaruteun-inscription",
+     "url": "https://en.wikipedia.org/wiki/Ciaruteun_inscription",
+     "finalUrl": "https://en.wikipedia.org/wiki/Ciaruteun_inscription",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "5th",
+     "quote": "!DOCTYPE html> 5th-century stone inscription in West Java."
+    }
+   ],
+   "quote": "!DOCTYPE html> 5th-century stone inscription in West Java.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Ciaruteun_inscription"
+  },
+  {
+   "id": "ev-batujaya-bata",
+   "dateLabel": "± abad ke-5 - 10",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-batujaya",
+     "url": "https://en.wikipedia.org/wiki/Batujaya",
+     "finalUrl": "https://en.wikipedia.org/wiki/Batujaya",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "979",
+     "quote": "ISBN 979-8041-35-6 ."
+    }
+   ],
+   "quote": "ISBN 979-8041-35-6 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Batujaya"
+  },
+  {
+   "id": "ev-kedukan-682",
+   "dateLabel": "16 Juni 682",
+   "status": "diperdebatkan",
+   "verdict": "tahun-tidak-ditemukan",
+   "sources": [
+    {
+     "sourceId": "wp-en-kedukan-bukit-inscription",
+     "url": "https://en.wikipedia.org/wiki/Kedukan_Bukit_inscription",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kedukan_Bukit_inscription",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "682",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kedukan_Bukit_inscription"
+  },
+  {
+   "id": "ev-talangtuo-684",
+   "dateLabel": "23 Maret 684",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-talang-tuwo-inscription",
+     "url": "https://en.wikipedia.org/wiki/Talang_Tuwo_inscription",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Talang_Tuo_inscription/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "684",
+     "quote": "Created 606 Saka (corresponds to 23 March 684) ."
+    }
+   ],
+   "quote": "Created 606 Saka (corresponds to 23 March 684) .",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Talang_Tuo_inscription/html?redirect=no"
+  },
+  {
+   "id": "ev-kotakapur-686",
+   "dateLabel": "686",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-kota-kapur-inscription",
+     "url": "https://en.wikipedia.org/wiki/Kota_Kapur_inscription",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kota_Kapur_inscription",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "686",
+     "quote": "Created 28 February 686 CE ."
+    }
+   ],
+   "quote": "Created 28 February 686 CE .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kota_Kapur_inscription"
+  },
+  {
+   "id": "ev-dieng-arjuna",
+   "dateLabel": "± abad ke-7 - 8",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-dieng-temples",
+     "url": "https://en.wikipedia.org/wiki/Dieng_temples",
+     "finalUrl": "https://en.wikipedia.org/wiki/Dieng_temples",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "7th",
+     "quote": "... ( Indonesian : Candi Dieng ) are a group of 7th and/or eighth-century Hindu candi or temple compounds located in Dieng Plateau , near Banjarnegara ..."
+    }
+   ],
+   "quote": "... ( Indonesian : Candi Dieng ) are a group of 7th and/or eighth-century Hindu candi or temple compounds located in Dieng Plateau , near Banjarnegara ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Dieng_temples"
+  },
+  {
+   "id": "ev-cangkuang-bangun",
+   "dateLabel": "± abad ke-8",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-cangkuang",
+     "url": "https://en.wikipedia.org/wiki/Cangkuang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Cangkuang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "8th",
+     "quote": "... temple ( Indonesian : Candi Cangkuang ) is a small 8th-century Shivaist candi ( Hindu temple) located in Kampung Pulo village, Cangkuang, Kecamatan Leles, Garut ..."
+    }
+   ],
+   "quote": "... temple ( Indonesian : Candi Cangkuang ) is a small 8th-century Shivaist candi ( Hindu temple) located in Kampung Pulo village, Cangkuang, Kecamatan Leles, Garut ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Cangkuang"
+  },
+  {
+   "id": "ev-kalasan-778",
+   "dateLabel": "778",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-kalasan",
+     "url": "https://en.wikipedia.org/wiki/Kalasan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kalasan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "778",
+     "quote": "According to the Kalasan inscription dated 778 AD, written in Sanskrit using Pranagari script , the temple was erected by the will of Guru Sang ..."
+    }
+   ],
+   "quote": "According to the Kalasan inscription dated 778 AD, written in Sanskrit using Pranagari script , the temple was erected by the will of Guru Sang ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kalasan"
+  },
+  {
+   "id": "ev-sewu-792",
+   "dateLabel": "792",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sewu",
+     "url": "https://en.wikipedia.org/wiki/Sewu",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sewu",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "792",
+     "quote": "Manjusrigrha inscription (792 CE), discovered in 1960 at the outer west perwara temple no."
+    }
+   ],
+   "quote": "Manjusrigrha inscription (792 CE), discovered in 1960 at the outer west perwara temple no.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sewu"
+  },
+  {
+   "id": "ev-ratuboko-792",
+   "dateLabel": "792",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-ratu-boko",
+     "url": "https://en.wikipedia.org/wiki/Ratu_Boko",
+     "finalUrl": "https://en.wikipedia.org/wiki/Ratu_Boko",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "792",
+     "quote": "The 792 Abhayagiri Vihāra inscription is one of the few written evidences discovered in Ratu Boko site."
+    }
+   ],
+   "quote": "The 792 Abhayagiri Vihāra inscription is one of the few written evidences discovered in Ratu Boko site.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Ratu_Boko"
+  },
+  {
+   "id": "ev-borobudur-mulai",
+   "dateLabel": "± 800 M",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-borobudur-824",
+     "url": "https://www.goodnewsfromindonesia.id/2020/05/26/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "800",
+     "quote": ""
+    },
+    {
+     "sourceId": "wiki-borobudur",
+     "url": "https://en.wikipedia.org/wiki/Borobudur",
+     "finalUrl": "https://en.wikipedia.org/wiki/Borobudur",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "800",
+     "quote": "... 1905, the proposal was approved, and the total cost was estimated at that time around 48,800 Dutch guilders (equivalent to ƒ 1,723,019 in 2022 )."
+    }
+   ],
+   "quote": "... 1905, the proposal was approved, and the total cost was estimated at that time around 48,800 Dutch guilders (equivalent to ƒ 1,723,019 in 2022 ).",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Borobudur"
+  },
+  {
+   "id": "ev-borobudur-824",
+   "dateLabel": "26 Mei 824",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-borobudur-824",
+     "url": "https://www.goodnewsfromindonesia.id/2020/05/26/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "824",
+     "quote": "Sejarah Hari Ini (26 Mei 824) - Candi Borobudur Selesai Dibangun."
+    }
+   ],
+   "quote": "Sejarah Hari Ini (26 Mei 824) - Candi Borobudur Selesai Dibangun.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun"
+  },
+  {
+   "id": "ev-mendut-bangun",
+   "dateLabel": "Abad ke-9",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-mendut",
+     "url": "https://en.wikipedia.org/wiki/Mendut",
+     "finalUrl": "https://en.wikipedia.org/wiki/Mendut",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": "!DOCTYPE html> 9th-century Buddhist site in Indonesia."
+    }
+   ],
+   "quote": "!DOCTYPE html> 9th-century Buddhist site in Indonesia.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Mendut"
+  },
+  {
+   "id": "ev-liyangan-mataram",
+   "dateLabel": "Abad ke-8 - 10",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-liyangan",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4231/3060/12547",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4231/3060/12547",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "8th",
+     "quote": "... archaeological site in the village of Purbasari, Residency Temanggung, Central Java, is an Old Mataram settlement predictably existed from around 8th to 10th century CE."
+    },
+    {
+     "sourceId": "core-liangan",
+     "url": "https://core.ac.uk/download/227157498.pdf",
+     "finalUrl": "https://core.ac.uk/download/227157498.pdf",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "... archaeological site in the village of Purbasari, Residency Temanggung, Central Java, is an Old Mataram settlement predictably existed from around 8th to 10th century CE.",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4231/3060/12547"
+  },
+  {
+   "id": "ev-sambisari-bangun",
+   "dateLabel": "Abad ke-9",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-sambisari",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361"
+  },
+  {
+   "id": "ev-plaosan-bangun",
+   "dateLabel": "Abad ke-9",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-plaosan",
+     "url": "https://en.wikipedia.org/wiki/Plaosan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Plaosan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": "!DOCTYPE html> 9th-century Buddhist site in Indonesia."
+    }
+   ],
+   "quote": "!DOCTYPE html> 9th-century Buddhist site in Indonesia.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Plaosan"
+  },
+  {
+   "id": "ev-prambanan-850",
+   "dateLabel": "± 850 M",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-prambanan",
+     "url": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/sejarah-candi-prambanan",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/sejarah-candi-prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "850",
+     "quote": "Proses pembangunan Candi Prambanan mulai dari tahun 850 M yang kemudian diteruskan oleh Raja Lokapala dan Raja Sri Maharaja Dyah Balitung Maha Sambu.."
+    }
+   ],
+   "quote": "Proses pembangunan Candi Prambanan mulai dari tahun 850 M yang kemudian diteruskan oleh Raja Lokapala dan Raja Sri Maharaja Dyah Balitung Maha Sambu..",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/sejarah-candi-prambanan"
+  },
+  {
+   "id": "ev-prambanan-856",
+   "dateLabel": "12 November 856",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-prambanan",
+     "url": "https://en.wikipedia.org/wiki/Prambanan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "856",
+     "quote": "The temple complex is linked to the Shivagrha inscription of 856 CE, issued by King Lokapala, which described a Shiva temple compound resembling Prambanan."
+    },
+    {
+     "sourceId": "tirto-prambanan",
+     "url": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "finalUrl": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "The temple complex is linked to the Shivagrha inscription of 856 CE, issued by King Lokapala, which described a Shiva temple compound resembling Prambanan.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Prambanan"
+  },
+  {
+   "id": "ev-kimpulan-bangun",
+   "dateLabel": "Abad ke-9 - 10",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "atrium-kimpulan",
+     "url": "https://doi.org/10.21460/atrium.v9i2.199",
+     "finalUrl": "https://atrium.ukdw.ac.id/index.php/jurnalarsitektur/article/view/199",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "antara-kimpulan",
+     "url": "https://m.antaranews.com/amp/berita/168348/candi-di-kampus-uii-jadi-bagian-perpustakaan",
+     "finalUrl": "https://m.antaranews.com/amp/berita/168348/candi-di-kampus-uii-jadi-bagian-perpustakaan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "quote": ""
+    },
+    {
+     "sourceId": "mojok-kimpulan",
+     "url": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/",
+     "finalUrl": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/"
+  },
+  {
+   "id": "ev-subak-abad9",
+   "dateLabel": "± abad ke-9",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "unesco-1194",
+     "url": "https://whc.unesco.org/en/list/1194",
+     "finalUrl": "https://whc.unesco.org/en/list/1194",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-en-subak-irrigation-",
+     "url": "https://en.wikipedia.org/wiki/Subak_(irrigation)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Subak_(irrigation)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": "It was developed in the 9th century ."
+    }
+   ],
+   "quote": "It was developed in the 9th century .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Subak_(irrigation)"
+  },
+  {
+   "id": "ev-blanjong-914",
+   "dateLabel": "914",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-belanjong-pillar",
+     "url": "https://en.wikipedia.org/wiki/Belanjong_pillar",
+     "finalUrl": "https://en.wikipedia.org/wiki/Belanjong_pillar",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "914",
+     "quote": "The Belanjong pillar in Sanur dates to 914 CE, testifies to the contacts between Bali, Java and the Indian subcontinent.."
+    }
+   ],
+   "quote": "The Belanjong pillar in Sanur dates to 914 CE, testifies to the contacts between Bali, Java and the Indian subcontinent..",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Belanjong_pillar"
+  },
+  {
+   "id": "ev-muarajambi-kedaton",
+   "dateLabel": "Abad ke-9 - 10",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-muarajambi",
+     "url": "https://www.goodnewsfromindonesia.id/2022/05/31/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "9th",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia"
+  },
+  {
+   "id": "ev-merapi-timbun",
+   "dateLabel": "Abad ke-10 - 11",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-sambisari",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "908",
+     "quote": "https://doi.org/10.30883/jba.v25i1.908 Berkala Arkeologi https://berkalaarkeologi.kemdikbud.go.id/ Volume 25 No."
+    },
+    {
+     "sourceId": "gnfi-sambisari",
+     "url": "https://www.goodnewsfromindonesia.id/2024/07/20/candi-sambisari-permata-tersembunyi-di-purwomartani",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sosial-budaya/candi-sambisari-permata-tersembunyi-di-purwomartani",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "11th",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sosial-budaya/candi-sambisari-permata-tersembunyi-di-purwomartani"
+  },
+  {
+   "id": "ev-liyangan-sindoro",
+   "dateLabel": "Abad ke-11",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-liyangan",
+     "url": "https://www.goodnewsfromindonesia.id/2022/03/18/situs-liyangan-dan-kearifan-yang-selamatkan-warga-dari-letusan-sindoro",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/situs-liyangan-dan-kearifan-yang-selamatkan-warga-dari-letusan-sindoro",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "11th",
+     "quote": ""
+    },
+    {
+     "sourceId": "brin-liyangan",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4231/3060/12547",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4231/3060/12547",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "1087",
+     "quote": "Batur 2d 311.8913 138,1087 41.8913 Catatan: * Penghitungan menggunakan sistem sudut kutub (polar angle system), ** Hasil konversi ke sistem arah azimuth utara (north azimuth ..."
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/situs-liyangan-dan-kearifan-yang-selamatkan-warga-dari-letusan-sindoro"
+  },
+  {
+   "id": "ev-goagajah-bangun",
+   "dateLabel": "± abad ke-11",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-goa-gajah",
+     "url": "https://en.wikipedia.org/wiki/Goa_Gajah",
+     "finalUrl": "https://en.wikipedia.org/wiki/Goa_Gajah",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "11th",
+     "quote": "However, examining its style, the sanctuary was probably dated from the 11th century Bali Kingdom ."
+    }
+   ],
+   "quote": "However, examining its style, the sanctuary was probably dated from the 11th century Bali Kingdom .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Goa_Gajah"
+  },
+  {
+   "id": "ev-muaratakus-bangun",
+   "dateLabel": "Diperdebatkan",
+   "status": "diperdebatkan",
+   "verdict": "label-tanpa-angka",
+   "sources": [
+    {
+     "sourceId": "wp-en-muara-takus",
+     "url": "https://en.wikipedia.org/wiki/Muara_Takus",
+     "finalUrl": "https://en.wikipedia.org/wiki/Muara_Takus",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "label-tanpa-angka",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Muara_Takus"
+  },
+  {
+   "id": "ev-gunungkawi-bangun",
+   "dateLabel": "Abad ke-11",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gunung-kawi",
+     "url": "https://en.wikipedia.org/wiki/Gunung_Kawi",
+     "finalUrl": "https://en.wikipedia.org/wiki/Gunung_Kawi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "11th",
+     "quote": "... as The Valley of The Balinese Kings , is an 11th-century temple and funerary complex in Tampaksiring , : 180 northeast of Ubud in Bali ..."
+    }
+   ],
+   "quote": "... as The Valley of The Balinese Kings , is an 11th-century temple and funerary complex in Tampaksiring , : 180 northeast of Ubud in Bali ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Gunung_Kawi"
+  },
+  {
+   "id": "ev-leran-1082",
+   "dateLabel": "1082 (475 H)",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-fatimah-binti-maimun",
+     "url": "https://id.wikipedia.org/wiki/Fatimah_binti_Maimun",
+     "finalUrl": "https://id.wikipedia.org/wiki/Fatimah_binti_Maimun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1082",
+     "quote": "Fatimah binti Maimun bin Hibatullah adalah seorang perempuan beragama Islam yang wafat pada hari Jumat, 7 Rajab 475 Hijriyah ( 2 Desember 1082 M )."
+    }
+   ],
+   "quote": "Fatimah binti Maimun bin Hibatullah adalah seorang perempuan beragama Islam yang wafat pada hari Jumat, 7 Rajab 475 Hijriyah ( 2 Desember 1082 M ).",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Fatimah_binti_Maimun"
+  },
+  {
+   "id": "ev-penataran-1197",
+   "dateLabel": "1197",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-penataran",
+     "url": "https://en.wikipedia.org/wiki/Penataran",
+     "finalUrl": "https://en.wikipedia.org/wiki/Penataran",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1197",
+     "quote": "The construction of the Penataran temple complex started in 1197, in the Kediri era."
+    }
+   ],
+   "quote": "The construction of the Penataran temple complex started in 1197, in the Kediri era.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Penataran"
+  },
+  {
+   "id": "ev-bahal-bangun",
+   "dateLabel": "± abad ke-11 - 14",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-bahal-temple",
+     "url": "https://en.wikipedia.org/wiki/Bahal_temple",
+     "finalUrl": "https://en.wikipedia.org/wiki/Bahal_temple",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "11th",
+     "quote": "Periods Hindu-Buddhist (11th to 13th century) ."
+    }
+   ],
+   "quote": "Periods Hindu-Buddhist (11th to 13th century) .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Bahal_temple"
+  },
+  {
+   "id": "ev-pasai-1297",
+   "dateLabel": "1297",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-malik-ul-salih",
+     "url": "https://en.wikipedia.org/wiki/Malik_ul_Salih",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Malikussaleh/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1297",
+     "quote": "... Guangzhou ) or Southeast Asian Trade.\" However, Malik's tomb is the oldest evidence known of the establishment in Southeast Asia, indicating his death in 1297."
+    }
+   ],
+   "quote": "... Guangzhou ) or Southeast Asian Trade.\" However, Malik's tomb is the oldest evidence known of the establishment in Southeast Asia, indicating his death in 1297.",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Malikussaleh/html?redirect=no"
+  },
+  {
+   "id": "ev-singosari-bangun",
+   "dateLabel": "± awal abad ke-14",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-singhasari-temple",
+     "url": "https://en.wikipedia.org/wiki/Singhasari_temple",
+     "finalUrl": "https://en.wikipedia.org/wiki/Singhasari_temple",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "1351",
+     "quote": "... was mentioned in the Javanese poem Nagarakretagama canto 37:7 and 38:3 and also in Gajah Mada inscription dated 1351 and discovered in the temple's yard."
+    }
+   ],
+   "quote": "... was mentioned in the Javanese poem Nagarakretagama canto 37:7 and 38:3 and also in Gajah Mada inscription dated 1351 and discovered in the temple's yard.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Singhasari_temple"
+  },
+  {
+   "id": "ev-trowulan-kota",
+   "dateLabel": "Abad ke-13 - 14",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-trowulan",
+     "url": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "finalUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "quote": ""
+    },
+    {
+     "sourceId": "brin-trowulan",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "14th",
+     "quote": "1960-i 963 - Java In the 14th Century."
+    }
+   ],
+   "quote": "1960-i 963 - Java In the 14th Century.",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511"
+  },
+  {
+   "id": "ev-borobudur-ditinggal",
+   "dateLabel": "Abad ke-14",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-borobudur-824",
+     "url": "https://www.goodnewsfromindonesia.id/2020/05/26/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "14th",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-26-mei-824-borobudur-selesai-dibangun"
+  },
+  {
+   "id": "ev-wapauwe-1414",
+   "dateLabel": "1414 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-masjid-wapauwe",
+     "url": "https://id.wikipedia.org/wiki/Masjid_Wapauwe",
+     "finalUrl": "https://id.wikipedia.org/w/rest.php/v1/page/Masjid_Tua_Wapauwe/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1414",
+     "quote": "Rampung 1414 ."
+    }
+   ],
+   "quote": "Rampung 1414 .",
+   "quoteUrl": "https://id.wikipedia.org/w/rest.php/v1/page/Masjid_Tua_Wapauwe/html?redirect=no"
+  },
+  {
+   "id": "ev-sukuh-1437",
+   "dateLabel": "1437",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sukuh",
+     "url": "https://en.wikipedia.org/wiki/Sukuh",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sukuh",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1437",
+     "quote": "The monument was built around 1437, as written as a chronogram date on the western gate, meaning that the area was under the rule of ..."
+    }
+   ],
+   "quote": "The monument was built around 1437, as written as a chronogram date on the western gate, meaning that the area was under the rule of ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sukuh"
+  },
+  {
+   "id": "ev-cetho-bangun",
+   "dateLabel": "Abad ke-15",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-cetho",
+     "url": "https://en.wikipedia.org/wiki/Cetho",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Ceto_Temple/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "1495",
+     "quote": "1495 m above sea level) on the border between Central and East Java provinces.."
+    }
+   ],
+   "quote": "1495 m above sea level) on the border between Central and East Java provinces..",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Ceto_Temple/html?redirect=no"
+  },
+  {
+   "id": "ev-demak-1479",
+   "dateLabel": "1479",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-great-mosque-of-demak",
+     "url": "https://en.wikipedia.org/wiki/Great_Mosque_of_Demak",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Demak_Great_Mosque/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1479",
+     "quote": "Completed 1479(?) ."
+    }
+   ],
+   "quote": "Completed 1479(?) .",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Demak_Great_Mosque/html?redirect=no"
+  },
+  {
+   "id": "ev-prambanan-terbengkalai",
+   "dateLabel": "Hingga abad ke-16",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "worldhistory-prambanan",
+     "url": "https://www.worldhistory.org/trans/id/1-17393/candi-prambanan/",
+     "finalUrl": "https://www.worldhistory.org/trans/id/1-17393/candi-prambanan/",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "tirto-prambanan",
+     "url": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "finalUrl": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://www.worldhistory.org/trans/id/1-17393/candi-prambanan/"
+  },
+  {
+   "id": "ev-sombaopu-1525",
+   "dateLabel": "1525",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jalurrempah-sombaopu",
+     "url": "https://jalurrempah.kemdikbud.go.id/en/article/the-history-of-port-makassar-an-entrepot-in-eastern-nusantara-4361",
+     "finalUrl": "https://jalurrempah.kemdikbud.go.id/en/article/the-history-of-port-makassar-an-entrepot-in-eastern-nusantara-4361",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "gnfi-sombaopu",
+     "url": "https://www.goodnewsfromindonesia.id/2026/06/04/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1525",
+     "quote": "Namanya Benteng Somba Opu, peninggalan Kesultanan Gowa yang pertama kali dibangun pada 1525 oleh Raja Gowa ke-9, Daeng Matanre Karaeng Tumapa'risi Kallonna."
+    }
+   ],
+   "quote": "Namanya Benteng Somba Opu, peninggalan Kesultanan Gowa yang pertama kali dibangun pada 1525 oleh Raja Gowa ke-9, Daeng Matanre Karaeng Tumapa'risi Kallonna.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara"
+  },
+  {
+   "id": "ev-kasepuhan-1529",
+   "dateLabel": "1529",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-kraton-kasepuhan",
+     "url": "https://en.wikipedia.org/wiki/Kraton_Kasepuhan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kraton_Kasepuhan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1529",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-id-keraton-kasepuhan",
+     "url": "https://id.wikipedia.org/wiki/Keraton_Kasepuhan",
+     "finalUrl": "https://id.wikipedia.org/wiki/Keraton_Kasepuhan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1529",
+     "quote": "Diresmikan 1430–1529 M ."
+    }
+   ],
+   "quote": "Diresmikan 1430–1529 M .",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Keraton_Kasepuhan"
+  },
+  {
+   "id": "ev-ujungpandang-1545",
+   "dateLabel": "1545 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "tahun-tidak-ditemukan",
+   "sources": [
+    {
+     "sourceId": "wiki-rotterdam",
+     "url": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1545",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Rotterdam"
+  },
+  {
+   "id": "ev-kudus-1549",
+   "dateLabel": "1549",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-menara-kudus-mosque",
+     "url": "https://en.wikipedia.org/wiki/Menara_Kudus_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Menara_Kudus_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1549",
+     "quote": "Established 1549 ."
+    }
+   ],
+   "quote": "Established 1549 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Menara_Kudus_Mosque"
+  },
+  {
+   "id": "ev-banten-masjid",
+   "dateLabel": "Abad ke-16",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-great-mosque-of-banten",
+     "url": "https://en.wikipedia.org/wiki/Great_Mosque_of_Banten",
+     "finalUrl": "https://en.wikipedia.org/wiki/Great_Mosque_of_Banten",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "16th",
+     "quote": "The 16th-century mosque was one of the few surviving remnants of what used to be the port city of Banten , the most prosperous trading ..."
+    }
+   ],
+   "quote": "The 16th-century mosque was one of the few surviving remnants of what used to be the port city of Banten , the most prosperous trading ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Great_Mosque_of_Banten"
+  },
+  {
+   "id": "ev-victoria-1575",
+   "dateLabel": "1575",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-victoria-ambon-",
+     "url": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1575",
+     "quote": "Built 1575 ."
+    }
+   ],
+   "quote": "Built 1575 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)"
+  },
+  {
+   "id": "ev-kotagede-mataram",
+   "dateLabel": "Akhir abad ke-16",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-kotagede",
+     "url": "https://en.wikipedia.org/wiki/Kotagede",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kotagede",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "16th",
+     "quote": "Kotagede contains the remains of the first capital of Mataram Sultanate , established in the 16th century."
+    }
+   ],
+   "quote": "Kotagede contains the remains of the first capital of Mataram Sultanate , established in the 16th century.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kotagede"
+  },
+  {
+   "id": "ev-katangka-1603",
+   "dateLabel": "1603 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-katangka-mosque",
+     "url": "https://en.wikipedia.org/wiki/Katangka_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Katangka_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1603",
+     "quote": "Groundbreaking 1603 ."
+    }
+   ],
+   "quote": "Groundbreaking 1603 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Katangka_Mosque"
+  },
+  {
+   "id": "ev-victoria-1605",
+   "dateLabel": "1605",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-victoria-ambon-",
+     "url": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1605",
+     "quote": "... by a Portuguese governor Gaspar de Mello, the fort was captured by the Dutch in 1605 and later renamed it as Victoria, which means victory."
+    }
+   ],
+   "quote": "... by a Portuguese governor Gaspar de Mello, the fort was captured by the Dutch in 1605 and later renamed it as Victoria, which means victory.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Victoria_(Ambon)"
+  },
+  {
+   "id": "ev-gowa-islam-1605",
+   "dateLabel": "1605",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sultanate-of-gowa",
+     "url": "https://en.wikipedia.org/wiki/Sultanate_of_Gowa",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sultanate_of_Gowa",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1605",
+     "quote": "Kutai Kingdom 350 – 1605 ."
+    }
+   ],
+   "quote": "Kutai Kingdom 350 – 1605 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sultanate_of_Gowa"
+  },
+  {
+   "id": "ev-oranje-1607",
+   "dateLabel": "1607",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-oranje-ternate-",
+     "url": "https://en.wikipedia.org/wiki/Fort_Oranje_(Ternate)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Oranje_(Ternate)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1607",
+     "quote": "[ citation needed ] In 1607, the VOC admiral Cornelis Matelief de Jonge helped the Sultan of Ternate to expel the Spanish from Ternate, so ..."
+    }
+   ],
+   "quote": "[ citation needed ] In 1607, the VOC admiral Cornelis Matelief de Jonge helped the Sultan of Ternate to expel the Spanish from Ternate, so ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Oranje_(Ternate)"
+  },
+  {
+   "id": "ev-belgica-1611",
+   "dateLabel": "1611",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-belgica",
+     "url": "https://en.wikipedia.org/wiki/Fort_Belgica",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Belgica",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1611",
+     "quote": "1611 ."
+    }
+   ],
+   "quote": "1611 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Belgica"
+  },
+  {
+   "id": "ev-baiturrahman-1612",
+   "dateLabel": "1612 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-baiturrahman-grand-mosque",
+     "url": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1612",
+     "quote": "The original Masjid Raya (\"Grand Mosque\") was built in 1612 during the reign of Sultan Iskandar Muda ."
+    }
+   ],
+   "quote": "The original Masjid Raya (\"Grand Mosque\") was built in 1612 during the reign of Sultan Iskandar Muda .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque"
+  },
+  {
+   "id": "ev-batavia-1619",
+   "dateLabel": "30 Mei 1619",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-batavia-dutch-east-indies",
+     "url": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies",
+     "finalUrl": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1619",
+     "quote": "Former capital city (1619–1949)."
+    }
+   ],
+   "quote": "Former capital city (1619–1949).",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Batavia,_Dutch_East_Indies"
+  },
+  {
+   "id": "ev-banda-1621",
+   "dateLabel": "1621",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-banda-neira",
+     "url": "https://en.wikipedia.org/wiki/Banda_Neira",
+     "finalUrl": "https://en.wikipedia.org/wiki/Banda_Neira",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1621",
+     "quote": "... of the Banda Islands cumulated with the Banda Massacre of 1621, in which Jan Pieterszoon Coen , invaded the islands and subsequently began a campaign ..."
+    }
+   ],
+   "quote": "... of the Banda Islands cumulated with the Banda Massacre of 1621, in which Jan Pieterszoon Coen , invaded the islands and subsequently began a campaign ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Banda_Neira"
+  },
+  {
+   "id": "ev-buton-1634",
+   "dateLabel": "Selesai 1634 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "tahun-tidak-ditemukan",
+   "sources": [
+    {
+     "sourceId": "wp-id-benteng-keraton-buton",
+     "url": "https://id.wikipedia.org/wiki/Benteng_Keraton_Buton",
+     "finalUrl": "https://id.wikipedia.org/wiki/Benteng_Keraton_Buton",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1634",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Benteng_Keraton_Buton"
+  },
+  {
+   "id": "ev-perang-makassar",
+   "dateLabel": "1666 - 1669",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-makassar-war",
+     "url": "https://en.wikipedia.org/wiki/Makassar_War",
+     "finalUrl": "https://en.wikipedia.org/wiki/Makassar_War",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1666",
+     "quote": "Date 24 November 1666 – 24 June 1669."
+    }
+   ],
+   "quote": "Date 24 November 1666 – 24 June 1669.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Makassar_War"
+  },
+  {
+   "id": "ev-bungaya-1667",
+   "dateLabel": "18 November 1667",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-bungaya",
+     "url": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-november-1667-perjanjian-bungaya",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-november-1667-perjanjian-bungaya",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1667",
+     "quote": "Sejarah Hari Ini (18 November 1667) - Perjanjian Bungaya."
+    },
+    {
+     "sourceId": "wiki-rotterdam",
+     "url": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1667",
+     "quote": "In 1667 Fort Ujung Pandang was ceded to the Dutch as part of the Treaty of Bongaya , after the defeat of the Sultanate of ..."
+    }
+   ],
+   "quote": "Sejarah Hari Ini (18 November 1667) - Perjanjian Bungaya.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-november-1667-perjanjian-bungaya"
+  },
+  {
+   "id": "ev-sombaopu-ledakan",
+   "dateLabel": "14 Juni 1669",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-sombaopu",
+     "url": "https://en.wikipedia.org/wiki/Fort_Somba_Opu",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Somba_Opu",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1669",
+     "quote": "The fort was the center of the Gowa Sultanate in the 16th-century until its destruction by the Dutch East India Company in 1669."
+    }
+   ],
+   "quote": "The fort was the center of the Gowa Sultanate in the 16th-century until its destruction by the Dutch East India Company in 1669.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Somba_Opu"
+  },
+  {
+   "id": "ev-sombaopu-jatuh",
+   "dateLabel": "24 Juni 1669",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-sombaopu",
+     "url": "https://www.goodnewsfromindonesia.id/2026/06/04/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1669",
+     "quote": "Pada 24 Juni 1669, setelah mengalahkan pasukan Sultan Hasanuddin, VOC menguasai dan menghancurkan benteng ini hingga terendam ombak pasang.."
+    },
+    {
+     "sourceId": "wiki-makassar-war",
+     "url": "https://en.wikipedia.org/wiki/Makassar_War",
+     "finalUrl": "https://en.wikipedia.org/wiki/Makassar_War",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1669",
+     "quote": "Date 24 November 1666 – 24 June 1669."
+    }
+   ],
+   "quote": "Pada 24 Juni 1669, setelah mengalahkan pasukan Sultan Hasanuddin, VOC menguasai dan menghancurkan benteng ini hingga terendam ombak pasang..",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara"
+  },
+  {
+   "id": "ev-rotterdam-bangunulang",
+   "dateLabel": "1673 - 1679",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-rotterdam",
+     "url": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Rotterdam",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1673",
+     "quote": "1673 ."
+    },
+    {
+     "sourceId": "disbudpar-rotterdam",
+     "url": "https://disbudpar.sulselprov.go.id/page/wisata/4/fort-rotterdam-makassar",
+     "finalUrl": "https://disbudpar.sulselprov.go.id/page/wisata/4/fort-rotterdam-makassar",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1673",
+     "quote": ""
+    }
+   ],
+   "quote": "1673 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Rotterdam"
+  },
+  {
+   "id": "ev-duurstede-1676",
+   "dateLabel": "1676",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-duurstede",
+     "url": "https://en.wikipedia.org/wiki/Fort_Duurstede",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Duurstede",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1676",
+     "quote": "... cannon at Duurstede Fort Duurstede Fort was first established in 1676, though its more permanent structure was built and fortified by the Governor of Ambon, ..."
+    }
+   ],
+   "quote": "... cannon at Duurstede Fort Duurstede Fort was first established in 1676, though its more permanent structure was built and fortified by the Governor of Ambon, ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Duurstede"
+  },
+  {
+   "id": "ev-stadhuis-1707",
+   "dateLabel": "1707 - 1710",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-jakarta-history-museum",
+     "url": "https://en.wikipedia.org/wiki/Jakarta_History_Museum",
+     "finalUrl": "https://en.wikipedia.org/wiki/Jakarta_History_Museum",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1707",
+     "quote": "Established 1707 ."
+    }
+   ],
+   "quote": "Established 1707 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Jakarta_History_Museum"
+  },
+  {
+   "id": "ev-marlborough-1714",
+   "dateLabel": "1714 - 1719",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-marlborough",
+     "url": "https://en.wikipedia.org/wiki/Fort_Marlborough",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Marlborough",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1714",
+     "quote": "In 1714, Governor Collett obtained permission to build a new fort in Bencoolen."
+    }
+   ],
+   "quote": "In 1714, Governor Collett obtained permission to build a new fort in Bencoolen.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Marlborough"
+  },
+  {
+   "id": "ev-prambanan-lons",
+   "dateLabel": "1733",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "tirto-prambanan",
+     "url": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "finalUrl": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://tirto.id/sejarah-candi-prambanan-peninggalan-mataram-kuno-warisan-dunia-f7MZ"
+  },
+  {
+   "id": "ev-surakarta-1745",
+   "dateLabel": "17 Februari 1745",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-keraton-surakarta-hadiningrat",
+     "url": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat",
+     "finalUrl": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1745",
+     "quote": "Diresmikan 20 Februari 1745 ."
+    }
+   ],
+   "quote": "Diresmikan 20 Februari 1745 .",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat"
+  },
+  {
+   "id": "ev-buitenzorg-1745",
+   "dateLabel": "1745",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-bogor-palace",
+     "url": "https://en.wikipedia.org/wiki/Bogor_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Bogor_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1745",
+     "quote": "... meaning \"without a care\" in French), which dated back to 1745 as a country retreat for the Dutch governors to escape the heat and diseases ..."
+    }
+   ],
+   "quote": "... meaning \"without a care\" in French), which dated back to 1745 as a country retreat for the Dutch governors to escape the heat and diseases ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Bogor_Palace"
+  },
+  {
+   "id": "ev-prambanan-batas",
+   "dateLabel": "1755",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-prambanan",
+     "url": "https://en.wikipedia.org/wiki/Prambanan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1755",
+     "quote": "After the division of Mataram Sultanate in 1755, the temple ruins and the Opak River were used to demarcate the boundary between Yogyakarta and Surakarta ..."
+    }
+   ],
+   "quote": "After the division of Mataram Sultanate in 1755, the temple ruins and the Opak River were used to demarcate the boundary between Yogyakarta and Surakarta ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Prambanan"
+  },
+  {
+   "id": "ev-giyanti-1755",
+   "dateLabel": "13 Februari 1755",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-treaty-of-giyanti",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Giyanti",
+     "finalUrl": "https://en.wikipedia.org/wiki/Treaty_of_Giyanti",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1755",
+     "quote": "!DOCTYPE html> 1755 agreement to divide the Javanese sultanate of Mataram."
+    }
+   ],
+   "quote": "!DOCTYPE html> 1755 agreement to divide the Javanese sultanate of Mataram.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Treaty_of_Giyanti"
+  },
+  {
+   "id": "ev-kraton-yk-1755",
+   "dateLabel": "9 Oktober 1755",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-kraton-ngayogyakarta-hadiningrat",
+     "url": "https://en.wikipedia.org/wiki/Kraton_Ngayogyakarta_Hadiningrat",
+     "finalUrl": "https://en.wikipedia.org/wiki/Kraton_Ngayogyakarta_Hadiningrat",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1755",
+     "quote": "1755 ."
+    }
+   ],
+   "quote": "1755 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Kraton_Ngayogyakarta_Hadiningrat"
+  },
+  {
+   "id": "ev-tamansari-1758",
+   "dateLabel": "1758 - 1765",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-taman-sari-yogyakarta-",
+     "url": "https://en.wikipedia.org/wiki/Taman_Sari_(Yogyakarta)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Taman_Sari_(Yogyakarta)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1758",
+     "quote": "1758 ."
+    }
+   ],
+   "quote": "1758 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Taman_Sari_(Yogyakarta)"
+  },
+  {
+   "id": "ev-kadriah-1771",
+   "dateLabel": "23 Oktober 1771",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-keraton-kadriah",
+     "url": "https://id.wikipedia.org/wiki/Keraton_Kadriah",
+     "finalUrl": "https://id.wikipedia.org/wiki/Keraton_Kadriah",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1771",
+     "quote": "Istana Kadriah atau Keraton Kadriah adalah istana Kesultanan Pontianak yang dibangun pada dari tahun 1771 sampai 1778 masehi."
+    }
+   ],
+   "quote": "Istana Kadriah atau Keraton Kadriah adalah istana Kesultanan Pontianak yang dibangun pada dari tahun 1771 sampai 1778 masehi.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Keraton_Kadriah"
+  },
+  {
+   "id": "ev-singosari-1803",
+   "dateLabel": "Awal abad ke-19",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-singhasari-temple",
+     "url": "https://en.wikipedia.org/wiki/Singhasari_temple",
+     "finalUrl": "https://en.wikipedia.org/wiki/Singhasari_temple",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "1806",
+     "quote": "French and British era (1806–1816)."
+    }
+   ],
+   "quote": "French and British era (1806–1816).",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Singhasari_temple"
+  },
+  {
+   "id": "ev-pagaruyung-1804",
+   "dateLabel": "Awal abad ke-19 (diperdebatkan)",
+   "status": "diperdebatkan",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-pagaruyung-palace",
+     "url": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-abad",
+     "token": "1804",
+     "quote": "The palace has been destroyed by fire several times, in 1804, 1966, and 2007."
+    }
+   ],
+   "quote": "The palace has been destroyed by fire several times, in 1804, 1966, and 2007.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace"
+  },
+  {
+   "id": "ev-surosowan-1808",
+   "dateLabel": "1808",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-surosowan",
+     "url": "https://id.wikipedia.org/wiki/Surosowan",
+     "finalUrl": "https://id.wikipedia.org/w/rest.php/v1/page/Keraton_Surosowan/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1808",
+     "quote": "Peghancuran berikutnya pun terjadi pada tahun 1808 karena pertikaian antara sultan Banten dengan pemerintah kolonial Belanda, dan kerusakan keraton tersebut terus berlangsung hngga tahun 1832."
+    }
+   ],
+   "quote": "Peghancuran berikutnya pun terjadi pada tahun 1808 karena pertikaian antara sultan Banten dengan pemerintah kolonial Belanda, dan kerusakan keraton tersebut terus berlangsung hngga tahun 1832.",
+   "quoteUrl": "https://id.wikipedia.org/w/rest.php/v1/page/Keraton_Surosowan/html?redirect=no"
+  },
+  {
+   "id": "ev-prambanan-1811",
+   "dateLabel": "1811",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-prambanan",
+     "url": "https://en.wikipedia.org/wiki/Prambanan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1811",
+     "quote": "In 1811, during the short-lived British occupation of the Dutch East Indies , Colin Mackenzie , a surveyor in the service of Thomas Stamford Raffles ..."
+    }
+   ],
+   "quote": "In 1811, during the short-lived British occupation of the Dutch East Indies , Colin Mackenzie , a surveyor in the service of Thomas Stamford Raffles ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Prambanan"
+  },
+  {
+   "id": "ev-borobudur-1814",
+   "dateLabel": "1814",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "penang-borobudur",
+     "url": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm",
+     "finalUrl": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1814",
+     "quote": "The year was 1814."
+    },
+    {
+     "sourceId": "wiki-borobudur",
+     "url": "https://en.wikipedia.org/wiki/Borobudur",
+     "finalUrl": "https://en.wikipedia.org/wiki/Borobudur",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1814",
+     "quote": "Worldwide knowledge of its existence was sparked in 1814 by Thomas Stamford Raffles , then the British administrator of Java , who was advised of ..."
+    }
+   ],
+   "quote": "The year was 1814.",
+   "quoteUrl": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm"
+  },
+  {
+   "id": "ev-dieng-1814",
+   "dateLabel": "1814",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-dieng-temples",
+     "url": "https://en.wikipedia.org/wiki/Dieng_temples",
+     "finalUrl": "https://en.wikipedia.org/wiki/Dieng_temples",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1814",
+     "quote": "The Dieng temples were rediscovered in 1814 by a visiting British soldier who spotted temple ruins lying in the middle of a lake."
+    }
+   ],
+   "quote": "The Dieng temples were rediscovered in 1814 by a visiting British soldier who spotted temple ruins lying in the middle of a lake.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Dieng_temples"
+  },
+  {
+   "id": "ev-trowulan-1815",
+   "dateLabel": "1815",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-trowulan",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1815",
+     "quote": "Pada tahun 1815 ia memperoleh togas dari Raffles untuk mengadakan pengamatan atas peninggalan arkeologi di daerah."
+    }
+   ],
+   "quote": "Pada tahun 1815 ia memperoleh togas dari Raffles untuk mengadakan pengamatan atas peninggalan arkeologi di daerah.",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/5466/4019/15511"
+  },
+  {
+   "id": "ev-sukuh-1815",
+   "dateLabel": "1815",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sukuh",
+     "url": "https://en.wikipedia.org/wiki/Sukuh",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sukuh",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1815",
+     "quote": "In 1815, Sir Thomas Raffles , the ruler of Java from 1811 – 1816, visited the temple and found it in bad condition."
+    }
+   ],
+   "quote": "In 1815, Sir Thomas Raffles , the ruler of Java from 1811 – 1816, visited the temple and found it in bad condition.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sukuh"
+  },
+  {
+   "id": "ev-duurstede-1817",
+   "dateLabel": "16 Mei 1817",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-fort-duurstede",
+     "url": "https://en.wikipedia.org/wiki/Fort_Duurstede",
+     "finalUrl": "https://en.wikipedia.org/wiki/Fort_Duurstede",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1817",
+     "quote": "On May 15, 1817, the people of Saparua, led by Kapitan Pattimura, launched a fierce assault on the fort."
+    },
+    {
+     "sourceId": "wp-en-pattimura",
+     "url": "https://en.wikipedia.org/wiki/Pattimura",
+     "finalUrl": "https://en.wikipedia.org/wiki/Pattimura",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1817",
+     "quote": "Died 16 December 1817 (1817-12-16) (aged 34)."
+    }
+   ],
+   "quote": "On May 15, 1817, the people of Saparua, led by Kapitan Pattimura, launched a fierce assault on the fort.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Fort_Duurstede"
+  },
+  {
+   "id": "ev-kebunraya-1817",
+   "dateLabel": "18 Mei 1817",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-bogor-botanical-gardens",
+     "url": "https://en.wikipedia.org/wiki/Bogor_Botanical_Gardens",
+     "finalUrl": "https://en.wikipedia.org/wiki/Bogor_Botanical_Gardens",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1817",
+     "quote": "Created May 18, 1817 ( 1817-05-18 ) ."
+    }
+   ],
+   "quote": "Created May 18, 1817 ( 1817-05-18 ) .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Bogor_Botanical_Gardens"
+  },
+  {
+   "id": "ev-muarajambi-crooke",
+   "dateLabel": "1820",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-muarajambi",
+     "url": "https://www.goodnewsfromindonesia.id/2022/05/31/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1820",
+     "quote": "... situs Muaro Jambi diketahui pertama kali dari laporan seorang perwira Inggris bernama S.C Crooke yang pada tahun 1820 ditugaskan mengunjungi daerah-daerah pedalaman sepanjang sungai Batanghari.."
+    },
+    {
+     "sourceId": "medcom-muarajambi",
+     "url": "https://www.medcom.id/gaya/wisata/ob3ZQrJN-tegak-tiang-tuo-langkah-penting-perlindungan-warisan-budaya-indonesia",
+     "finalUrl": "https://www.medcom.id/gaya/wisata/ob3ZQrJN-tegak-tiang-tuo-langkah-penting-perlindungan-warisan-budaya-indonesia",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1820",
+     "quote": ""
+    }
+   ],
+   "quote": "... situs Muaro Jambi diketahui pertama kali dari laporan seorang perwira Inggris bernama S.C Crooke yang pada tahun 1820 ditugaskan mengunjungi daerah-daerah pedalaman sepanjang sungai Batanghari..",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/jelajah-candi-muaro-jambi-jejak-universitas-tertua-di-indonesia"
+  },
+  {
+   "id": "ev-traktat-1824",
+   "dateLabel": "17 Maret 1824",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-anglo-dutch-treaty-of-1824",
+     "url": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1824",
+     "finalUrl": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1824",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1824",
+     "quote": "Anglo-Dutch Treaty of 1824 Type Bilateral treaty ."
+    }
+   ],
+   "quote": "Anglo-Dutch Treaty of 1824 Type Bilateral treaty .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Anglo-Dutch_Treaty_of_1824"
+  },
+  {
+   "id": "ev-penyengat-1832",
+   "dateLabel": "1832",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-masjid-raya-sultan-riau",
+     "url": "https://id.wikipedia.org/wiki/Masjid_Raya_Sultan_Riau",
+     "finalUrl": "https://id.wikipedia.org/wiki/Masjid_Raya_Sultan_Riau",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1832",
+     "quote": "Sejak dibangun tahun 1832 dengan bangunan beton seperti yang kita lihat sekarang ini, Masjid Sultan Riau Pulau Penyengat tidak pernah di renovasi atau di ubah ..."
+    }
+   ],
+   "quote": "Sejak dibangun tahun 1832 dengan bangunan beton seperti yang kita lihat sekarang ini, Masjid Sultan Riau Pulau Penyengat tidak pernah di renovasi atau di ubah ...",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Masjid_Raya_Sultan_Riau"
+  },
+  {
+   "id": "ev-bogor-1834",
+   "dateLabel": "10 Oktober 1834",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-bogor-palace",
+     "url": "https://en.wikipedia.org/wiki/Bogor_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Bogor_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1834",
+     "quote": "However, in 1834, an earthquake triggered by the volcanic eruption of Mount Salak , heavily damaged the old palace of Buitenzorg."
+    }
+   ],
+   "quote": "However, in 1834, an earthquake triggered by the volcanic eruption of Mount Salak , heavily damaged the old palace of Buitenzorg.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Bogor_Palace"
+  },
+  {
+   "id": "ev-sangiran-1864",
+   "dateLabel": "1864",
+   "status": "diperdebatkan",
+   "verdict": "tahun-tidak-ditemukan",
+   "sources": [
+    {
+     "sourceId": "wiki-sangiran",
+     "url": "https://en.wikipedia.org/wiki/Sangiran",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sangiran",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1864",
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sangiran"
+  },
+  {
+   "id": "ev-tugu-1867",
+   "dateLabel": "10 Juni 1867",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-tugu-yogyakarta",
+     "url": "https://en.wikipedia.org/wiki/Tugu_Yogyakarta",
+     "finalUrl": "https://en.wikipedia.org/wiki/Tugu_Yogyakarta",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1867",
+     "quote": "The monument collapsed during a major earthquake on June 10, 1867."
+    },
+    {
+     "sourceId": "wp-en-taman-sari-yogyakarta-",
+     "url": "https://en.wikipedia.org/wiki/Taman_Sari_(Yogyakarta)",
+     "finalUrl": "https://en.wikipedia.org/wiki/Taman_Sari_(Yogyakarta)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1867",
+     "quote": "A 19th century pictures showing the Kenongo building before and after the 1867 earthquake."
+    }
+   ],
+   "quote": "The monument collapsed during a major earthquake on June 10, 1867.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Tugu_Yogyakarta"
+  },
+  {
+   "id": "ev-ombilin-1868",
+   "dateLabel": "1868",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-ombilin-coal-mine",
+     "url": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine",
+     "finalUrl": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1868",
+     "quote": "Coal was discovered there by Dutch engineer Willem Hendrik de Greve in 1868."
+    }
+   ],
+   "quote": "Coal was discovered there by Dutch engineer Willem Hendrik de Greve in 1868.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine"
+  },
+  {
+   "id": "ev-baiturrahman-1873",
+   "dateLabel": "April 1873",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-baiturrahman-grand-mosque",
+     "url": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1873",
+     "quote": "... Dutch East Indies attacked the Kraton during the First Aceh Expedition on 10 April 1873, the Acehnese attacked the KNIL from the Baiturrahman Grand Mosque."
+    }
+   ],
+   "quote": "... Dutch East Indies attacked the Kraton during the First Aceh Expedition on 10 April 1873, the Acehnese attacked the KNIL from the Baiturrahman Grand Mosque.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque"
+  },
+  {
+   "id": "ev-baiturrahman-1879",
+   "dateLabel": "1879 - 1881",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-baiturrahman-grand-mosque",
+     "url": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1879",
+     "quote": "Groundbreaking 1879 ."
+    }
+   ],
+   "quote": "Groundbreaking 1879 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque"
+  },
+  {
+   "id": "ev-maimun-1888",
+   "dateLabel": "26 Agustus 1888",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "itb-maimun",
+     "url": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "finalUrl": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "gnfi-maimun",
+     "url": "https://www.goodnewsfromindonesia.id/2020/05/18/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1888",
+     "quote": "Istana Maimun yang memiliki luas 2.772 m2 itu mulai dibangun pada 26 Agustus 1888.."
+    }
+   ],
+   "quote": "Istana Maimun yang memiliki luas 2.772 m2 itu mulai dibangun pada 26 Agustus 1888..",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung"
+  },
+  {
+   "id": "ev-siak-1889",
+   "dateLabel": "1889",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-siak-sri-indrapura-palace",
+     "url": "https://en.wikipedia.org/wiki/Siak_Sri_Indrapura_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Siak_Sri_Indrapura_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1889",
+     "quote": "1889 ."
+    }
+   ],
+   "quote": "1889 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Siak_Sri_Indrapura_Palace"
+  },
+  {
+   "id": "ev-trinil-1891",
+   "dateLabel": "1891 - 1892",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-trinil",
+     "url": "https://en.wikipedia.org/wiki/Trinil",
+     "finalUrl": "https://en.wikipedia.org/wiki/Trinil",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1892",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-en-java-man",
+     "url": "https://en.wikipedia.org/wiki/Java_Man",
+     "finalUrl": "https://en.wikipedia.org/wiki/Java_Man",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1891",
+     "quote": "!DOCTYPE html> Subspecies of Homo erectus (fossil) discovered on the island of Java in 1891."
+    }
+   ],
+   "quote": "!DOCTYPE html> Subspecies of Homo erectus (fossil) discovered on the island of Java in 1891.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Java_Man"
+  },
+  {
+   "id": "ev-maimun-1891",
+   "dateLabel": "18 Mei 1891",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "itb-maimun",
+     "url": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "finalUrl": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "gnfi-maimun",
+     "url": "https://www.goodnewsfromindonesia.id/2020/05/18/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1891",
+     "quote": "Sejarah Hari Ini (18 Mei 1891) - Proyek Istana Maimun Kesultanan Deli Rampung."
+    }
+   ],
+   "quote": "Sejarah Hari Ini (18 Mei 1891) - Proyek Istana Maimun Kesultanan Deli Rampung.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-18-mei-1891-proyek-istana-maimun-kesultanan-deli-rampung"
+  },
+  {
+   "id": "ev-ombilin-1892",
+   "dateLabel": "1892",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-ombilin-coal-mine",
+     "url": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine",
+     "finalUrl": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1892",
+     "quote": "Mining started at the open-pit mine in 1892 after the construction of a railway."
+    }
+   ],
+   "quote": "Mining started at the open-pit mine in 1892 after the construction of a railway.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Ombilin_Coal_Mine"
+  },
+  {
+   "id": "ev-concordia-1895",
+   "dateLabel": "1895",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gedung-merdeka",
+     "url": "https://en.wikipedia.org/wiki/Gedung_Merdeka",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1895",
+     "quote": "1895 ."
+    }
+   ],
+   "quote": "1895 .",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no"
+  },
+  {
+   "id": "ev-borobudur-komite",
+   "dateLabel": "1900",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "penang-borobudur",
+     "url": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm",
+     "finalUrl": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1900",
+     "quote": "A committee was formed back in 1900 to consider measures for preserving it."
+    }
+   ],
+   "quote": "A committee was formed back in 1900 to consider measures for preserving it.",
+   "quoteUrl": "https://www.penang-traveltips.com/indonesia/yogyakarta/candi-borobudur.htm"
+  },
+  {
+   "id": "ev-lawangsewu-1904",
+   "dateLabel": "1904 - 1907",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-lawang-sewu",
+     "url": "https://en.wikipedia.org/wiki/Lawang_Sewu",
+     "finalUrl": "https://en.wikipedia.org/wiki/Lawang_Sewu",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1904",
+     "quote": "Groundbreaking 1904 ."
+    }
+   ],
+   "quote": "Groundbreaking 1904 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Lawang_Sewu"
+  },
+  {
+   "id": "ev-maimun-1903",
+   "dateLabel": "1906 - 1909",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-masjid-medan",
+     "url": "https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1906",
+     "quote": "Groundbreaking 1906 ."
+    }
+   ],
+   "quote": "Groundbreaking 1906 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan"
+  },
+  {
+   "id": "ev-borobudur-vanerp",
+   "dateLabel": "1907 - 1911",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-borobudur",
+     "url": "https://en.wikipedia.org/wiki/Borobudur",
+     "finalUrl": "https://en.wikipedia.org/wiki/Borobudur",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1907",
+     "quote": "The restoration began in 1907, led by Theodoor van Erp [ nl ] , a Dutch army engineer."
+    },
+    {
+     "sourceId": "kniu-borobudur",
+     "url": "https://kniu.kemdikbud.go.id/penghargaan/world-heritage/borobudur-temple-compounds",
+     "finalUrl": "https://kniu.kemdikbud.go.id/penghargaan/world-heritage/borobudur-temple-compounds",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "The restoration began in 1907, led by Theodoor van Erp [ nl ] , a Dutch army engineer.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Borobudur"
+  },
+  {
+   "id": "ev-majapahit-1910",
+   "dateLabel": "1910",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-hotel-majapahit",
+     "url": "https://en.wikipedia.org/wiki/Hotel_Majapahit",
+     "finalUrl": "https://en.wikipedia.org/wiki/Hotel_Majapahit",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1910",
+     "quote": "The hotel was founded in 1910 as the Hotel Oranje by Lucas Martin Sarkies , the son of Martin Sarkies of the Sarkies brothers , ..."
+    }
+   ],
+   "quote": "The hotel was founded in 1910 as the Hotel Oranje by Lucas Martin Sarkies , the son of Martin Sarkies of the Sarkies brothers , ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Hotel_Majapahit"
+  },
+  {
+   "id": "ev-gunungpadang-1914",
+   "dateLabel": "1914",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gunung-padang",
+     "url": "https://en.wikipedia.org/wiki/Gunung_Padang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Gunung_Padang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1914",
+     "quote": "... are similar to those made by Dutch archaeologist Nicolaas Johannes Krom in the 1914 \"Rapporten van de Oudheidkundige Dienst\" (\"Report of the Department of Antiquities\")."
+    }
+   ],
+   "quote": "... are similar to those made by Dutch archaeologist Nicolaas Johannes Krom in the 1914 \"Rapporten van de Oudheidkundige Dienst\" (\"Report of the Department of Antiquities\").",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Gunung_Padang"
+  },
+  {
+   "id": "ev-prambanan-1918",
+   "dateLabel": "1918",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "metro-prambanan",
+     "url": "https://www.metrotvnews.com/read/bJEC4mV5-dari-legenda-cerita-rakyat-hingga-warisan-dunia-perjalanan-panjang-candi-prambanan",
+     "finalUrl": "https://www.metrotvnews.com/read/bJEC4mV5-dari-legenda-cerita-rakyat-hingga-warisan-dunia-perjalanan-panjang-candi-prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1918",
+     "quote": "Upaya pemugaran resmi dimulai tahun 1918 di bawah Pemerintahan Hindia Belanda."
+    }
+   ],
+   "quote": "Upaya pemugaran resmi dimulai tahun 1918 di bawah Pemerintahan Hindia Belanda.",
+   "quoteUrl": "https://www.metrotvnews.com/read/bJEC4mV5-dari-legenda-cerita-rakyat-hingga-warisan-dunia-perjalanan-panjang-candi-prambanan"
+  },
+  {
+   "id": "ev-gedungsate-1920",
+   "dateLabel": "27 Juli 1920",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gedung-sate",
+     "url": "https://en.wikipedia.org/wiki/Gedung_Sate",
+     "finalUrl": "https://en.wikipedia.org/wiki/Gedung_Sate",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1920",
+     "quote": "27 July 1920 ."
+    }
+   ],
+   "quote": "27 July 1920 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Gedung_Sate"
+  },
+  {
+   "id": "ev-goagajah-1923",
+   "dateLabel": "1923",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-goa-gajah",
+     "url": "https://en.wikipedia.org/wiki/Goa_Gajah",
+     "finalUrl": "https://en.wikipedia.org/wiki/Goa_Gajah",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1923",
+     "quote": "The cave was rediscovered by Dutch archaeologists in 1923, but the fountains and bathing pool were not discovered until 1954."
+    }
+   ],
+   "quote": "The cave was rediscovered by Dutch archaeologists in 1923, but the fountains and bathing pool were not discovered until 1954.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Goa_Gajah"
+  },
+  {
+   "id": "ev-trowulan-ovm",
+   "dateLabel": "15 April 1924",
+   "status": "terverifikasi",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "tirto-trowulan",
+     "url": "https://tirto.id/sejarah-lokasi-pusat-kerajaan-majapahit-benarkah-di-trowulan-gyPN",
+     "finalUrl": "https://tirto.id/sejarah-lokasi-pusat-kerajaan-majapahit-benarkah-di-trowulan-gyPN",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "jp-trowulan",
+     "url": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "finalUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1924",
+     "quote": "... shown great interest in this historic site, mapped out (in 1924) the original locations of temples, palaces, barracks, meeting halls, water reservoirs and canals, all ..."
+    }
+   ],
+   "quote": "... shown great interest in this historic site, mapped out (in 1924) the original locations of temples, palaces, barracks, meeting halls, water reservoirs and canals, all ...",
+   "quoteUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients"
+  },
+  {
+   "id": "ev-trowulan-segaran",
+   "dateLabel": "1926",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-trowulan",
+     "url": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "finalUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1926",
+     "quote": "It was discovered and restored in 1926 by Ir Henri Maclaine Pont."
+    }
+   ],
+   "quote": "It was discovered and restored in 1926 by Ir Henri Maclaine Pont.",
+   "quoteUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients"
+  },
+  {
+   "id": "ev-jamgadang-1926",
+   "dateLabel": "1926",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-jam-gadang",
+     "url": "https://en.wikipedia.org/wiki/Jam_Gadang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Jam_Gadang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1926",
+     "quote": "Beginning date 1926 ."
+    }
+   ],
+   "quote": "Beginning date 1926 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Jam_Gadang"
+  },
+  {
+   "id": "ev-concordia-1926",
+   "dateLabel": "1926",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gedung-merdeka",
+     "url": "https://en.wikipedia.org/wiki/Gedung_Merdeka",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1926",
+     "quote": "The present building was designed in 1926 in Art Deco style by Van Galen and C.P."
+    }
+   ],
+   "quote": "The present building was designed in 1926 in Art Deco style by Van Galen and C.P.",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no"
+  },
+  {
+   "id": "ev-maeda-bangun",
+   "dateLabel": "1920-an",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "detik-maeda",
+     "url": "https://www.detik.com/properti/berita/d-8064804/di-balik-pintu-rumah-maeda-tempat-sejarah-kemerdekaan-ri-dirajut",
+     "finalUrl": "https://www.detik.com/properti/berita/d-8064804/di-balik-pintu-rumah-maeda-tempat-sejarah-kemerdekaan-ri-dirajut",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1927",
+     "quote": "... Naskah Proklamasi Paskasius Fajar mengungkapkan pada awalnya rumah tersebut dibangun oleh Nederlands Levenzekerring Maatschappij atau PT Asuransi Jiwasraya sekitar tahun 1927 dan selesai pada 1931."
+    },
+    {
+     "sourceId": "gnfi-munasprok",
+     "url": "https://www.goodnewsfromindonesia.id/2020/11/24/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1920",
+     "quote": "Di bangunan yang dirancang arsitek Belanda, Johan Frederik Lodewijk Blankenberg, sekitar 1920-30-an ini, disusunlah naskah proklamasi kemerdekaan pada 1945.."
+    },
+    {
+     "sourceId": "metro-maeda",
+     "url": "https://www.metrotvnews.com/read/bzGCREAQ-sejarah-rumah-laksamana-maeda-saksi-bisu-perumusan-naskah-proklamasi",
+     "finalUrl": "https://www.metrotvnews.com/read/bzGCREAQ-sejarah-rumah-laksamana-maeda-saksi-bisu-perumusan-naskah-proklamasi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1920",
+     "quote": "Dibangun pada 1920 oleh arsitek Belanda J.F.L."
+    }
+   ],
+   "quote": "... Naskah Proklamasi Paskasius Fajar mengungkapkan pada awalnya rumah tersebut dibangun oleh Nederlands Levenzekerring Maatschappij atau PT Asuransi Jiwasraya sekitar tahun 1927 dan selesai pada 1931.",
+   "quoteUrl": "https://www.detik.com/properti/berita/d-8064804/di-balik-pintu-rumah-maeda-tempat-sejarah-kemerdekaan-ri-dirajut"
+  },
+  {
+   "id": "ev-sumpah-1928",
+   "dateLabel": "28 Oktober 1928",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-youth-pledge",
+     "url": "https://en.wikipedia.org/wiki/Youth_Pledge",
+     "finalUrl": "https://en.wikipedia.org/wiki/Youth_Pledge",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1928",
+     "quote": "!DOCTYPE html> 1928 declaration by Indonesian nationalists."
+    }
+   ],
+   "quote": "!DOCTYPE html> 1928 declaration by Indonesian nationalists.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Youth_Pledge"
+  },
+  {
+   "id": "ev-ngandong-1931",
+   "dateLabel": "1931 - 1933",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-solo-man",
+     "url": "https://en.wikipedia.org/wiki/Solo_Man",
+     "finalUrl": "https://en.wikipedia.org/wiki/Solo_Man",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1931",
+     "quote": "The Ngandong site was first excavated from 1931 to 1933 under the direction of Willem Frederik Florus Oppenoorth, Carel ter Haar, and Gustav Heinrich Ralph ..."
+    }
+   ],
+   "quote": "The Ngandong site was first excavated from 1931 to 1933 under the direction of Willem Frederik Florus Oppenoorth, Carel ter Haar, and Gustav Heinrich Ralph ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Solo_Man"
+  },
+  {
+   "id": "ev-sangiran-1934",
+   "dateLabel": "1934",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "kemdikbud-sangiran",
+     "url": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=12720",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=12720",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "kemdikbud-sangiran-museum",
+     "url": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=11518",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=11518",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "brin-sangiran",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1934",
+     "quote": "... sejak ditemukan alat-alat batu berupa serpih bilah di Desa Ngebung oleh von Koenigswald pada tahun 1934 dan fosil hominid pada tahun 1936 (Harry Widianto, 1994)."
+    }
+   ],
+   "quote": "... sejak ditemukan alat-alat batu berupa serpih bilah di Desa Ngebung oleh von Koenigswald pada tahun 1934 dan fosil hominid pada tahun 1936 (Harry Widianto, 1994).",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396"
+  },
+  {
+   "id": "ev-ende-1934",
+   "dateLabel": "1934 - 1938",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-rumah-pengasingan-bung-karno",
+     "url": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno",
+     "finalUrl": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1934",
+     "quote": "Soekarno diasingkan ke Ende , Flores pada 14 Januari 1934."
+    }
+   ],
+   "quote": "Soekarno diasingkan ke Ende , Flores pada 14 Januari 1934.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno"
+  },
+  {
+   "id": "ev-sangiran-1936",
+   "dateLabel": "1936",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "brin-sangiran",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1936",
+     "quote": "... sejak ditemukan alat-alat batu berupa serpih bilah di Desa Ngebung oleh von Koenigswald pada tahun 1934 dan fosil hominid pada tahun 1936 (Harry Widianto, 1994)."
+    }
+   ],
+   "quote": "... sejak ditemukan alat-alat batu berupa serpih bilah di Desa Ngebung oleh von Koenigswald pada tahun 1934 dan fosil hominid pada tahun 1936 (Harry Widianto, 1994).",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4747/3510/13396"
+  },
+  {
+   "id": "ev-banda-1936",
+   "dateLabel": "1936 - 1942",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-banda-neira",
+     "url": "https://en.wikipedia.org/wiki/Banda_Neira",
+     "finalUrl": "https://en.wikipedia.org/wiki/Banda_Neira",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1936",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-en-mohammad-hatta",
+     "url": "https://en.wikipedia.org/wiki/Mohammad_Hatta",
+     "finalUrl": "https://en.wikipedia.org/wiki/Mohammad_Hatta",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1936",
+     "quote": "In January 1936, Hatta and Syahrir were transferred to Bandaneira in Maluku ."
+    }
+   ],
+   "quote": "In January 1936, Hatta and Syahrir were transferred to Bandaneira in Maluku .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Mohammad_Hatta"
+  },
+  {
+   "id": "ev-bengkulu-1938",
+   "dateLabel": "1938 - 1942",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-rumah-pengasingan-bung-karno",
+     "url": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno",
+     "finalUrl": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1938",
+     "quote": "Ia diasingkan di sana selama empat tahun (1934-1938)."
+    }
+   ],
+   "quote": "Ia diasingkan di sana selama empat tahun (1934-1938).",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Rumah_Pengasingan_Bung_Karno"
+  },
+  {
+   "id": "ev-proklamasi-1945",
+   "dateLabel": "16 - 17 Agustus 1945",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jawapos-maeda",
+     "url": "https://www.jawapos.com/travelling/2508170293/mengunjungi-4-lokasi-bersejarah-di-jakarta-kenangan-kemerdekaan-yang-tak-terlupakan",
+     "finalUrl": "https://www.jawapos.com/travelling/2508170293/mengunjungi-4-lokasi-bersejarah-di-jakarta-kenangan-kemerdekaan-yang-tak-terlupakan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "Pagi itu, 17 Agustus 1945, Jakarta masih mencekam."
+    },
+    {
+     "sourceId": "gnfi-munasprok",
+     "url": "https://www.goodnewsfromindonesia.id/2020/11/24/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "Di bangunan yang dirancang arsitek Belanda, Johan Frederik Lodewijk Blankenberg, sekitar 1920-30-an ini, disusunlah naskah proklamasi kemerdekaan pada 1945.."
+    },
+    {
+     "sourceId": "gnfi-maeda",
+     "url": "https://www.goodnewsfromindonesia.id/2021/02/10/menggali-sejarah-perumusan-naskah-proklamasi-di-rumah-laksamana-maeda",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/sejarah/menggali-sejarah-perumusan-naskah-proklamasi-di-rumah-laksamana-maeda",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "Proklamasi Kemerdekaan Indonesia yang terjadi pada 17 Agustus 1945 tentu telah melalui proses yang begitu sulit."
+    }
+   ],
+   "quote": "Pagi itu, 17 Agustus 1945, Jakarta masih mencekam.",
+   "quoteUrl": "https://www.jawapos.com/travelling/2508170293/mengunjungi-4-lokasi-bersejarah-di-jakarta-kenangan-kemerdekaan-yang-tak-terlupakan"
+  },
+  {
+   "id": "ev-prok-pegangsaan",
+   "dateLabel": "17 Agustus 1945, pukul 10.00",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-proclamation-of-indonesian-independence",
+     "url": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence",
+     "finalUrl": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "!DOCTYPE html> 1945 Indonesian independence document."
+    }
+   ],
+   "quote": "!DOCTYPE html> 1945 Indonesian independence document.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
+  },
+  {
+   "id": "ev-yamato-1945",
+   "dateLabel": "19 September 1945",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-hotel-majapahit",
+     "url": "https://en.wikipedia.org/wiki/Hotel_Majapahit",
+     "finalUrl": "https://en.wikipedia.org/wiki/Hotel_Majapahit",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "November 1945 : young Indonesian revolutionaries tear off the blue part of the Dutch flag During the WWII Japanese occupation of the Dutch East Indies ..."
+    }
+   ],
+   "quote": "November 1945 : young Indonesian revolutionaries tear off the blue part of the Dutch flag During the WWII Japanese occupation of the Dutch East Indies ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Hotel_Majapahit"
+  },
+  {
+   "id": "ev-semarang-1945",
+   "dateLabel": "14 - 19 Oktober 1945",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-battle-of-semarang",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Semarang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Battle_of_Semarang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "!DOCTYPE html> Battle in Semarang which lasted for 5 days in October 1945."
+    }
+   ],
+   "quote": "!DOCTYPE html> Battle in Semarang which lasted for 5 days in October 1945.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Battle_of_Semarang"
+  },
+  {
+   "id": "ev-surabaya-1945",
+   "dateLabel": "10 November 1945",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-battle-of-surabaya",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Surabaya",
+     "finalUrl": "https://en.wikipedia.org/wiki/Battle_of_Surabaya",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "This article is about the 1945 battle."
+    }
+   ],
+   "quote": "This article is about the 1945 battle.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Battle_of_Surabaya"
+  },
+  {
+   "id": "ev-siak-1945",
+   "dateLabel": "1945",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sultan-syarif-kasim-ii",
+     "url": "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Syarif_Kasim_II/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1945",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-id-syarif-kasim-ii-dari-siak",
+     "url": "https://id.wikipedia.org/wiki/Syarif_Kasim_II_dari_Siak",
+     "finalUrl": "https://id.wikipedia.org/wiki/Syarif_Kasim_II_dari_Siak",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "Sultan Syarif Kasim II sempat berfirasat di subuh 17 Agustus 1945 bahwa Indonesia sudah merdeka."
+    }
+   ],
+   "quote": "Sultan Syarif Kasim II sempat berfirasat di subuh 17 Agustus 1945 bahwa Indonesia sudah merdeka.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Syarif_Kasim_II_dari_Siak"
+  },
+  {
+   "id": "ev-gedungsate-1945",
+   "dateLabel": "3 Desember 1945",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gedung-sate",
+     "url": "https://en.wikipedia.org/wiki/Gedung_Sate",
+     "finalUrl": "https://en.wikipedia.org/wiki/Gedung_Sate",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1945",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-id-gedung-sate",
+     "url": "https://id.wikipedia.org/wiki/Gedung_Sate",
+     "finalUrl": "https://id.wikipedia.org/wiki/Gedung_Sate",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1945",
+     "quote": "Tanggal 3 Desember 1945 terjadi peristiwa yang memakan korban tujuh orang pemuda yang mempertahankan Gedung Sate dari serangan pasukan Gurkha ."
+    }
+   ],
+   "quote": "Tanggal 3 Desember 1945 terjadi peristiwa yang memakan korban tujuh orang pemuda yang mempertahankan Gedung Sate dari serangan pasukan Gurkha .",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Gedung_Sate"
+  },
+  {
+   "id": "ev-pettae-1950",
+   "dateLabel": "26 Februari 1950",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "lombok-heeren-palm",
+     "url": "https://lombokdiaries.substack.com/p/sulawesis-extraordinary-karst-galleries",
+     "finalUrl": "https://lombokdiaries.substack.com/p/sulawesis-extraordinary-karst-galleries",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1950",
+     "quote": "Given how common they are, it’s perhaps surprising that the art on the cave walls wasn’t discovered until 1950."
+    },
+    {
+     "sourceId": "kompas-pettae",
+     "url": "https://www.kompas.id/baca/english/2018/05/13/traces-of-sulawesis-early-humans-part-1",
+     "finalUrl": "https://www.kompas.id/artikel/traces-of-sulawesis-early-humans-part-1",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1950",
+     "quote": "... archeologists to have prehistoric paintings, when CHM Heeren Palm held research here in 1950,” said Budianto Hakim, 53, an archeologist from the Makassar Archeology Center.."
+    }
+   ],
+   "quote": "Given how common they are, it’s perhaps surprising that the art on the cave walls wasn’t discovered until 1950.",
+   "quoteUrl": "https://lombokdiaries.substack.com/p/sulawesis-extraordinary-karst-galleries"
+  },
+  {
+   "id": "ev-tugupahlawan-1951",
+   "dateLabel": "1951 - 1952",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-tugu-pahlawan",
+     "url": "https://en.wikipedia.org/wiki/Tugu_Pahlawan",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Heroes_Monument/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1951",
+     "quote": "The groundbreaking was led by Sukarno , the first Indonesian President, accompanied by Surabaya Mayor, Doel Arnowo on 10 November 1951."
+    }
+   ],
+   "quote": "The groundbreaking was led by Sukarno , the first Indonesian President, accompanied by Surabaya Mayor, Doel Arnowo on 10 November 1951.",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Heroes_Monument/html?redirect=no"
+  },
+  {
+   "id": "ev-prambanan-1953",
+   "dateLabel": "1953",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "metro-prambanan",
+     "url": "https://www.metrotvnews.com/read/bJEC4mV5-dari-legenda-cerita-rakyat-hingga-warisan-dunia-perjalanan-panjang-candi-prambanan",
+     "finalUrl": "https://www.metrotvnews.com/read/bJEC4mV5-dari-legenda-cerita-rakyat-hingga-warisan-dunia-perjalanan-panjang-candi-prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1953",
+     "quote": ""
+    },
+    {
+     "sourceId": "wiki-prambanan",
+     "url": "https://en.wikipedia.org/wiki/Prambanan",
+     "finalUrl": "https://en.wikipedia.org/wiki/Prambanan",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1953",
+     "quote": "The reconstruction of the main Shiva temple was completed in 1953 and inaugurated by Indonesia's first president Sukarno ."
+    }
+   ],
+   "quote": "The reconstruction of the main Shiva temple was completed in 1953 and inaugurated by Indonesia's first president Sukarno .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Prambanan"
+  },
+  {
+   "id": "ev-kaa-1955",
+   "dateLabel": "18 - 24 April 1955",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-asian-african-conference",
+     "url": "https://en.wikipedia.org/wiki/Asian–African_Conference",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Bandung_Conference/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1955",
+     "quote": "!DOCTYPE html> 1955 meeting of Asian and African states."
+    }
+   ],
+   "quote": "!DOCTYPE html> 1955 meeting of Asian and African states.",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Bandung_Conference/html?redirect=no"
+  },
+  {
+   "id": "ev-pegangsaan-1960",
+   "dateLabel": "1960",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-tugu-proklamasi",
+     "url": "https://id.wikipedia.org/wiki/Tugu_Proklamasi",
+     "finalUrl": "https://id.wikipedia.org/wiki/Tugu_Proklamasi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1960",
+     "quote": "Rumah yang menjadi lokasi pembacaan proklamasi kemerdekaan kini sudah dihancurkan sejak 1960-an."
+    }
+   ],
+   "quote": "Rumah yang menjadi lokasi pembacaan proklamasi kemerdekaan kini sudah dihancurkan sejak 1960-an.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Tugu_Proklamasi"
+  },
+  {
+   "id": "ev-monas-1961",
+   "dateLabel": "17 Agustus 1961",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-national-monument-indonesia-",
+     "url": "https://en.wikipedia.org/wiki/National_Monument_(Indonesia)",
+     "finalUrl": "https://en.wikipedia.org/wiki/National_Monument_(Indonesia)",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1961",
+     "quote": "Beginning date 17 August 1961 ."
+    }
+   ],
+   "quote": "Beginning date 17 August 1961 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/National_Monument_(Indonesia)"
+  },
+  {
+   "id": "ev-cangkuang-1966",
+   "dateLabel": "1966",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-cangkuang",
+     "url": "https://en.wikipedia.org/wiki/Cangkuang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Cangkuang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1966",
+     "quote": "Guided Democracy era (1959–1966)."
+    }
+   ],
+   "quote": "Guided Democracy era (1959–1966).",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Cangkuang"
+  },
+  {
+   "id": "ev-sambisari-1966",
+   "dateLabel": "Juli 1966",
+   "status": "terverifikasi",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "brin-sambisari",
+     "url": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "finalUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1966",
+     "quote": "Daerah ini baru dikenal sebagai situs pada tahun 1966, yaitu ketika seorang petani sedang meneangkul dan seeara kebetulan membentur batu eandi yang sebelurnnya tak terduga ..."
+    },
+    {
+     "sourceId": "spafa-sambisari",
+     "url": "https://spafajournal.org/index.php/spafadigest/article/view/527/522",
+     "finalUrl": "https://spafajournal.org/index.php/spafadigest/article/download/527/522",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1966",
+     "quote": "Thereafter, a trial excavation, held in 1966 revealed the temple site."
+    }
+   ],
+   "quote": "Daerah ini baru dikenal sebagai situs pada tahun 1966, yaitu ketika seorang petani sedang meneangkul dan seeara kebetulan membentur batu eandi yang sebelurnnya tak terduga ...",
+   "quoteUrl": "https://ejournal.brin.go.id/berkalaarkeologi/article/download/4711/3476/13361"
+  },
+  {
+   "id": "ev-borobudur-badan",
+   "dateLabel": "1971",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unesco-mow-borobudur",
+     "url": "https://media.unesco.org/sites/default/files/webform/mow001/indonesia_borobudur_eng.pdf",
+     "finalUrl": "https://media.unesco.org/sites/default/files/webform/mow001/indonesia_borobudur_eng.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://media.unesco.org/sites/default/files/webform/mow001/indonesia_borobudur_eng.pdf"
+  },
+  {
+   "id": "ev-borobudur-1973",
+   "dateLabel": "1973 - 1983",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "kemdikbud-borobudur-2020",
+     "url": "https://kebudayaan.kemdikbud.go.id/bkborobudur/wp-content/uploads/sites/12/2020/04/RILIS-PERS-PERINGATAN-HARI-WARISAN-DUNIA-2020.pdf",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bkborobudur/wp-content/uploads/sites/12/2020/04/RILIS-PERS-PERINGATAN-HARI-WARISAN-DUNIA-2020.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "unesco-mow-borobudur",
+     "url": "https://media.unesco.org/sites/default/files/webform/mow001/indonesia_borobudur_eng.pdf",
+     "finalUrl": "https://media.unesco.org/sites/default/files/webform/mow001/indonesia_borobudur_eng.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "unnes-borobudur",
+     "url": "https://journal.unnes.ac.id/journals/jih/article/download/12084/2739/56195",
+     "finalUrl": "https://journal.unnes.ac.id/journals/jih/article/download/12084/2739/56195",
+     "state": "unreachable",
+     "httpStatus": 523,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://kebudayaan.kemdikbud.go.id/bkborobudur/wp-content/uploads/sites/12/2020/04/RILIS-PERS-PERINGATAN-HARI-WARISAN-DUNIA-2020.pdf"
+  },
+  {
+   "id": "ev-sumpah-museum-1973",
+   "dateLabel": "20 Mei 1973",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-museum-sumpah-pemuda",
+     "url": "https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda",
+     "finalUrl": "https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1973",
+     "quote": "... Kramat 106 sempat dipugar Pemda DKI Jakarta 3 April-20 Mei 1973 dan diresmikan Gubernur DKI Jakarta, Ali Sadikin , pada 20 Mei 1973 sebagai Gedung ..."
+    }
+   ],
+   "quote": "... Kramat 106 sempat dipugar Pemda DKI Jakarta 3 April-20 Mei 1973 dan diresmikan Gubernur DKI Jakarta, Ali Sadikin , pada 20 Mei 1973 sebagai Gedung ...",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda"
+  },
+  {
+   "id": "ev-sangiran-1974",
+   "dateLabel": "1974",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-sangiran",
+     "url": "https://www.goodnewsfromindonesia.id/2025/01/15/kubah-situs-dan-museum-purba-sangiran",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/ragam/serba-serbi/kubah-situs-dan-museum-purba-sangiran",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1974",
+     "quote": "Pada tahun 1974, berdirilah Museum Pleistosen di Sragen sebagai awal mula Museum Sangiran."
+    }
+   ],
+   "quote": "Pada tahun 1974, berdirilah Museum Pleistosen di Sragen sebagai awal mula Museum Sangiran.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/ragam/serba-serbi/kubah-situs-dan-museum-purba-sangiran"
+  },
+  {
+   "id": "ev-fatahillah-1974",
+   "dateLabel": "30 Maret 1974",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-jakarta-history-museum",
+     "url": "https://en.wikipedia.org/wiki/Jakarta_History_Museum",
+     "finalUrl": "https://en.wikipedia.org/wiki/Jakarta_History_Museum",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1974",
+     "quote": "Jakarta History Museum opened in 1974 and displays objects from the prehistory period of the city region, the founding of Jayakarta in 1527, and the ..."
+    }
+   ],
+   "quote": "Jakarta History Museum opened in 1974 and displays objects from the prehistory period of the city region, the founding of Jayakarta in 1527, and the ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Jakarta_History_Museum"
+  },
+  {
+   "id": "ev-trowulan-segaran-74",
+   "dateLabel": "1974 - 1984",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-trowulan",
+     "url": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "finalUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1974",
+     "quote": "More in-depth restorations were carried out from 1974 through 1984."
+    }
+   ],
+   "quote": "More in-depth restorations were carried out from 1974 through 1984.",
+   "quoteUrl": "https://www.thejakartapost.com/news/2009/02/20/the-peaceful-pools-ancients"
+  },
+  {
+   "id": "ev-cangkuang-1974",
+   "dateLabel": "1974 - 1976",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-cangkuang",
+     "url": "https://en.wikipedia.org/wiki/Cangkuang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Cangkuang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1974",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-id-candi-cangkuang",
+     "url": "https://id.wikipedia.org/wiki/Candi_Cangkuang",
+     "finalUrl": "https://id.wikipedia.org/wiki/Candi_Cangkuang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1974",
+     "quote": "Proses pemugaran Candi dimulai pada tahun 1974-1975 dan pelaksanaan rekonstruksi dilaksanakan pada tahun 1976 yang meliputi kerangka badan, atap dan patung Siwa serta dilengkapi dengan ..."
+    }
+   ],
+   "quote": "Proses pemugaran Candi dimulai pada tahun 1974-1975 dan pelaksanaan rekonstruksi dilaksanakan pada tahun 1976 yang meliputi kerangka badan, atap dan patung Siwa serta dilengkapi dengan ...",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Candi_Cangkuang"
+  },
+  {
+   "id": "ev-muarajambi-1975",
+   "dateLabel": "1975",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-muarajambi",
+     "url": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery.html",
+     "finalUrl": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1975",
+     "quote": "Excavation started under the Directorate of History and Archeology in 1975 and the site was proposed for recognition by UNESCO in 2009.."
+    }
+   ],
+   "quote": "Excavation started under the Directorate of History and Archeology in 1975 and the site was proposed for recognition by UNESCO in 2009..",
+   "quoteUrl": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery"
+  },
+  {
+   "id": "ev-cetho-1975",
+   "dateLabel": "1970-an",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-cetho",
+     "url": "https://en.wikipedia.org/wiki/Cetho",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Ceto_Temple/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "1970-an",
+     "quote": ""
+    },
+    {
+     "sourceId": "wp-id-candi-ceto",
+     "url": "https://id.wikipedia.org/wiki/Candi_Ceto",
+     "finalUrl": "https://id.wikipedia.org/wiki/Candi_Ceto",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1970",
+     "quote": "Bentuk bangunan dibuat seperti Situs Candi Sukuh dan ini merupakan hasil pemugaran pada akhir tahun 1970-an bersama-sama dengan bangunan-bangunan pendopo dari kayu.."
+    }
+   ],
+   "quote": "Bentuk bangunan dibuat seperti Situs Candi Sukuh dan ini merupakan hasil pemugaran pada akhir tahun 1970-an bersama-sama dengan bangunan-bangunan pendopo dari kayu..",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Candi_Ceto"
+  },
+  {
+   "id": "ev-sambisari-rekon",
+   "dateLabel": "1976 - 1986",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "spafa-sambisari",
+     "url": "https://spafajournal.org/index.php/spafadigest/article/view/527/522",
+     "finalUrl": "https://spafajournal.org/index.php/spafadigest/article/download/527/522",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1976",
+     "quote": "Thus, the Sambisari Temple Recon- struction Project was conducted from 1976 until 1986."
+    }
+   ],
+   "quote": "Thus, the Sambisari Temple Recon- struction Project was conducted from 1976 until 1986.",
+   "quoteUrl": "https://spafajournal.org/index.php/spafadigest/article/download/527/522"
+  },
+  {
+   "id": "ev-pagaruyung-1976",
+   "dateLabel": "1976",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-pagaruyung-palace",
+     "url": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1976",
+     "quote": "The building was then rebuilt again in 1976 as a replica of the original Pagaruyung Palace."
+    }
+   ],
+   "quote": "The building was then rebuilt again in 1976 as a replica of the original Pagaruyung Palace.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace"
+  },
+  {
+   "id": "ev-sombaopu-ekskavasi",
+   "dateLabel": "1977 - awal 1980-an",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-sombaopu",
+     "url": "https://www.goodnewsfromindonesia.id/2026/06/04/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1977",
+     "quote": "Pada 1977 hingga awal 1980-an, sejumlah ilmuwan melakukan ekskavasi dan menemukan kembali sisa-sisa struktur bangunannya."
+    }
+   ],
+   "quote": "Pada 1977 hingga awal 1980-an, sejumlah ilmuwan melakukan ekskavasi dan menemukan kembali sisa-sisa struktur bangunannya.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara"
+  },
+  {
+   "id": "ev-prajna-1978",
+   "dateLabel": "1978",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-prajnaparamita-of-java",
+     "url": "https://en.wikipedia.org/wiki/Prajnaparamita_of_Java",
+     "finalUrl": "https://en.wikipedia.org/wiki/Prajnaparamita_of_Java",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1978",
+     "quote": "In January 1978, the Government of the Netherlands returned the statue to the Republic of Indonesia, when Queen Juliana of the Netherlands visited the former ..."
+    }
+   ],
+   "quote": "In January 1978, the Government of the Netherlands returned the statue to the Republic of Indonesia, when Queen Juliana of the Netherlands visited the former ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Prajnaparamita_of_Java"
+  },
+  {
+   "id": "ev-kaa-museum-1980",
+   "dateLabel": "24 April 1980",
+   "status": "perlu-cek",
+   "verdict": "cocok-sebagian",
+   "sources": [
+    {
+     "sourceId": "wp-en-gedung-merdeka",
+     "url": "https://en.wikipedia.org/wiki/Gedung_Merdeka",
+     "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "1980",
+     "quote": "In March 1980 the building hosted the 25th anniversary of the Asian-African Conference, and the Asian-African Conference Museum was inaugurated by president Soeharto .."
+    }
+   ],
+   "quote": "In March 1980 the building hosted the 25th anniversary of the Asian-African Conference, and the Asian-African Conference Museum was inaugurated by president Soeharto ..",
+   "quoteUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Merdeka_Building/html?redirect=no"
+  },
+  {
+   "id": "ev-sewu-1993",
+   "dateLabel": "1981 - 1993",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sewu",
+     "url": "https://en.wikipedia.org/wiki/Sewu",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sewu",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1981",
+     "quote": "Later in 1981, Jacques Dumarçay conducted a thorough research of the temple."
+    }
+   ],
+   "quote": "Later in 1981, Jacques Dumarçay conducted a thorough research of the temple.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sewu"
+  },
+  {
+   "id": "ev-batujaya-1984",
+   "dateLabel": "1984",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-batujaya",
+     "url": "https://en.wikipedia.org/wiki/Batujaya",
+     "finalUrl": "https://en.wikipedia.org/wiki/Batujaya",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1984",
+     "quote": "Excavation dates 1984 ."
+    }
+   ],
+   "quote": "Excavation dates 1984 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Batujaya"
+  },
+  {
+   "id": "ev-borobudur-bom",
+   "dateLabel": "21 Januari 1985",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unnes-bom-1985",
+     "url": "https://journal.unnes.ac.id/sju/jih/article/view/37051/15245",
+     "finalUrl": "https://journal.unnes.ac.id/sju/jih/article/view/37051/15245",
+     "state": "unreachable",
+     "httpStatus": 523,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://journal.unnes.ac.id/sju/jih/article/view/37051/15245"
+  },
+  {
+   "id": "ev-surakarta-1985",
+   "dateLabel": "31 Januari 1985",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-keraton-surakarta-hadiningrat",
+     "url": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat",
+     "finalUrl": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1985",
+     "quote": "Pada masa Sri Susuhunan Pakubuwana XII tepatnya pada tahun 1985 tempat ini mengalami musibah kebakaran."
+    }
+   ],
+   "quote": "Pada masa Sri Susuhunan Pakubuwana XII tepatnya pada tahun 1985 tempat ini mengalami musibah kebakaran.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/Keraton_Surakarta_Hadiningrat"
+  },
+  {
+   "id": "ev-trowulan-museum",
+   "dateLabel": "1987",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-trowulan-museum",
+     "url": "https://en.wikipedia.org/wiki/Trowulan_Museum",
+     "finalUrl": "https://en.wikipedia.org/wiki/Trowulan_Museum",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1987",
+     "quote": "Established 1987 ."
+    }
+   ],
+   "quote": "Established 1987 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Trowulan_Museum"
+  },
+  {
+   "id": "ev-muarajambi-1988",
+   "dateLabel": "1988",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "bpcb-jambi",
+     "url": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2"
+  },
+  {
+   "id": "ev-sombaopu-1990",
+   "dateLabel": "1990",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-sombaopu",
+     "url": "https://www.goodnewsfromindonesia.id/2026/06/04/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1990",
+     "quote": "Rekonstruksi dilakukan pada 1990 dan kawasan ini kemudian berkembang menjadi situs wisata budaya yang kini juga berfungsi sebagai miniatur budaya Sulawesi Selatan.."
+    }
+   ],
+   "quote": "Rekonstruksi dilakukan pada 1990 dan kawasan ini kemudian berkembang menjadi situs wisata budaya yang kini juga berfungsi sebagai miniatur budaya Sulawesi Selatan..",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/wisata/benteng-somba-opu-gowa-menyimpan-kisah-kejayaan-pusat-rempah-di-timur-nusantara"
+  },
+  {
+   "id": "ev-unesco-1991",
+   "dateLabel": "1991",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "nwe-borobudur",
+     "url": "https://www.newworldencyclopedia.org/entry/Borobudur",
+     "finalUrl": "https://www.newworldencyclopedia.org/entry/Borobudur",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1991",
+     "quote": "UNESCO designated Borobudur a World Heritage site in 1991 as \"Borobudur Temple Compounds\" in recognition of its unique and magnificent craftsmanship."
+    },
+    {
+     "sourceId": "unesco-prambanan-2006",
+     "url": "https://whc.unesco.org/en/soc/1228",
+     "finalUrl": "https://whc.unesco.org/en/soc/1228",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "UNESCO designated Borobudur a World Heritage site in 1991 as \"Borobudur Temple Compounds\" in recognition of its unique and magnificent craftsmanship.",
+   "quoteUrl": "https://www.newworldencyclopedia.org/entry/Borobudur"
+  },
+  {
+   "id": "ev-munasprok-1992",
+   "dateLabel": "24 November 1992",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "gnfi-munasprok",
+     "url": "https://www.goodnewsfromindonesia.id/2020/11/24/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "finalUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "1992",
+     "quote": "Sejarah Hari Ini (24 November 1992) - Museum Perumusan Naskah Proklamasi."
+    }
+   ],
+   "quote": "Sejarah Hari Ini (24 November 1992) - Museum Perumusan Naskah Proklamasi.",
+   "quoteUrl": "https://www.goodnewsfromindonesia.id/indonesiana/humaniora/sejarah-hari-ini-24-november-1992-museum-perumusan-naskah-proklamasi"
+  },
+  {
+   "id": "ev-sangiran-1996",
+   "dateLabel": "5 Desember 1996",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "kemdikbud-sangiran",
+     "url": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=12720",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=12720",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://kebudayaan.kemdikbud.go.id/bpsmpsangiran/?p=12720"
+  },
+  {
+   "id": "ev-muarajambi-1998",
+   "dateLabel": "1998",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "bpcb-jambi",
+     "url": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2",
+     "finalUrl": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://kebudayaan.kemdikbud.go.id/bpcbjambi/category/cagar-budaya/kawasan-cagar-budaya-muarajambi/page/2"
+  },
+  {
+   "id": "ev-maimun-2003",
+   "dateLabel": "2003 - 2005",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "itb-maimun",
+     "url": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "finalUrl": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://ar.itb.ac.id/wp-content/uploads/sites/162/2016/08/AR4213_Kuliah-Tamu-200407_Maimun.pdf"
+  },
+  {
+   "id": "ev-liangbua-2003",
+   "dateLabel": "2003",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-liang-bua",
+     "url": "https://en.wikipedia.org/wiki/Liang_Bua",
+     "finalUrl": "https://en.wikipedia.org/wiki/Liang_Bua",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2003",
+     "quote": "... at the Natural History Museum in London, England In September 2003, an Indonesian field team and its coordinator of the excavation team, Thomas Sutikna , ..."
+    }
+   ],
+   "quote": "... at the Natural History Museum in London, England In September 2003, an Indonesian field team and its coordinator of the excavation team, Thomas Sutikna , ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Liang_Bua"
+  },
+  {
+   "id": "ev-liangbua-2004",
+   "dateLabel": "Oktober 2004",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-homo-floresiensis",
+     "url": "https://en.wikipedia.org/wiki/Homo_floresiensis",
+     "finalUrl": "https://en.wikipedia.org/wiki/Homo_floresiensis",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2004",
+     "quote": "Brown et al., 2004."
+    }
+   ],
+   "quote": "Brown et al., 2004.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Homo_floresiensis"
+  },
+  {
+   "id": "ev-tsunami-baiturrahman",
+   "dateLabel": "26 Desember 2004",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-baiturrahman-grand-mosque",
+     "url": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "finalUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2004",
+     "quote": "The mosque is a landmark in Banda Aceh and has survived the 2004 Indian Ocean earthquake and tsunami .."
+    }
+   ],
+   "quote": "The mosque is a landmark in Banda Aceh and has survived the 2004 Indian Ocean earthquake and tsunami ..",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Baiturrahman_Grand_Mosque"
+  },
+  {
+   "id": "ev-tsunami-pltd",
+   "dateLabel": "26 Desember 2004",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-id-pltd-apung",
+     "url": "https://id.wikipedia.org/wiki/PLTD_Apung",
+     "finalUrl": "https://id.wikipedia.org/wiki/PLTD_Apung",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2004",
+     "quote": "Pada Minggu 26 Desember 2004 sekitar pukul 8:45 WIB kapal ini terseret 2,4 km ke daratan akibat gempa bumi dan gelombang tsunami setinggi 9 meter."
+    }
+   ],
+   "quote": "Pada Minggu 26 Desember 2004 sekitar pukul 8:45 WIB kapal ini terseret 2,4 km ke daratan akibat gempa bumi dan gelombang tsunami setinggi 9 meter.",
+   "quoteUrl": "https://id.wikipedia.org/wiki/PLTD_Apung"
+  },
+  {
+   "id": "ev-prambanan-2006",
+   "dateLabel": "27 Mei 2006",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unesco-prambanan-2006",
+     "url": "https://whc.unesco.org/en/soc/1228",
+     "finalUrl": "https://whc.unesco.org/en/soc/1228",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://whc.unesco.org/en/soc/1228"
+  },
+  {
+   "id": "ev-sewu-2006",
+   "dateLabel": "27 Mei 2006",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-sewu",
+     "url": "https://en.wikipedia.org/wiki/Sewu",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sewu",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2006",
+     "quote": "The temple was severely damaged during the 2006 Yogyakarta earthquake ."
+    }
+   ],
+   "quote": "The temple was severely damaged during the 2006 Yogyakarta earthquake .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sewu"
+  },
+  {
+   "id": "ev-pagaruyung-2007",
+   "dateLabel": "27 Februari 2007",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-pagaruyung-palace",
+     "url": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "finalUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2007",
+     "quote": "The new palace, built after the 2007 fire."
+    }
+   ],
+   "quote": "The new palace, built after the 2007 fire.",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Pagaruyung_Palace"
+  },
+  {
+   "id": "ev-liyangan-2008",
+   "dateLabel": "Akhir 2008",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "tirto-liyangan",
+     "url": "https://tirto.id/kisah-beras-kuno-berusia-1000-tahun-di-situs-liyangan-hvim",
+     "finalUrl": "https://tirto.id/kisah-beras-kuno-berusia-1000-tahun-di-situs-liyangan-hvim",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "core-liangan",
+     "url": "https://core.ac.uk/download/227157498.pdf",
+     "finalUrl": "https://core.ac.uk/download/227157498.pdf",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://tirto.id/kisah-beras-kuno-berusia-1000-tahun-di-situs-liyangan-hvim"
+  },
+  {
+   "id": "ev-liyangan-2009",
+   "dateLabel": "2009",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "core-liangan",
+     "url": "https://core.ac.uk/download/227157498.pdf",
+     "finalUrl": "https://core.ac.uk/download/227157498.pdf",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://core.ac.uk/download/227157498.pdf"
+  },
+  {
+   "id": "ev-muarajambi-2009",
+   "dateLabel": "2009",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-muarajambi",
+     "url": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery.html",
+     "finalUrl": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2009",
+     "quote": "Excavation started under the Directorate of History and Archeology in 1975 and the site was proposed for recognition by UNESCO in 2009.."
+    }
+   ],
+   "quote": "Excavation started under the Directorate of History and Archeology in 1975 and the site was proposed for recognition by UNESCO in 2009..",
+   "quoteUrl": "https://www.thejakartapost.com/news/2014/11/25/muarajambi-temple-jambi-s-monumental-mystery"
+  },
+  {
+   "id": "ev-kimpulan-2009",
+   "dateLabel": "11 Desember 2009",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "atrium-kimpulan",
+     "url": "https://doi.org/10.21460/atrium.v9i2.199",
+     "finalUrl": "https://atrium.ukdw.ac.id/index.php/jurnalarsitektur/article/view/199",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "mojok-kimpulan",
+     "url": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/",
+     "finalUrl": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2009",
+     "quote": "Pada 11 Desember 2009 pagi hari, para pekerja konstruksi tengah menggali, mengaduk, dan mengeruk di salah satu titik di kompleks UII Yogyakarta."
+    }
+   ],
+   "quote": "Pada 11 Desember 2009 pagi hari, para pekerja konstruksi tengah menggali, mengaduk, dan mengeruk di salah satu titik di kompleks UII Yogyakarta.",
+   "quoteUrl": "https://mojok.co/kilas/candi-kimpulan-peninggalan-hindu-di-kampus-islam-jogja/"
+  },
+  {
+   "id": "ev-borobudur-2010",
+   "dateLabel": "Oktober - November 2010",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "heidelberg-borobudur",
+     "url": "https://journals.ub.uni-heidelberg.de/index.php/heritage/article/view/20031/13824",
+     "finalUrl": "https://ahnp.ub.uni-heidelberg.de/journals/heritage/article/view/20031/13824",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "tidak-ditemukan",
+     "token": "2010",
+     "quote": ""
+    },
+    {
+     "sourceId": "kniu-borobudur",
+     "url": "https://kniu.kemdikbud.go.id/penghargaan/world-heritage/borobudur-temple-compounds",
+     "finalUrl": "https://kniu.kemdikbud.go.id/penghargaan/world-heritage/borobudur-temple-compounds",
+     "state": "unreachable",
+     "httpStatus": 0,
+     "match": null,
+     "quote": ""
+    },
+    {
+     "sourceId": "wiki-borobudur",
+     "url": "https://en.wikipedia.org/wiki/Borobudur",
+     "finalUrl": "https://en.wikipedia.org/wiki/Borobudur",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2010",
+     "quote": "Location of Borobudur relative to Mount Merapi and Yogyakarta Borobudur was heavily affected by the eruption of Mount Merapi in October and November 2010 ."
+    }
+   ],
+   "quote": "Location of Borobudur relative to Mount Merapi and Yogyakarta Borobudur was heavily affected by the eruption of Mount Merapi in October and November 2010 .",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Borobudur"
+  },
+  {
+   "id": "ev-sangiran-2011",
+   "dateLabel": "15 Desember 2011",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wiki-sangiran",
+     "url": "https://en.wikipedia.org/wiki/Sangiran",
+     "finalUrl": "https://en.wikipedia.org/wiki/Sangiran",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2011",
+     "quote": "2011: The current museum and visitors' centre was opened by the Minister for Education and Culture on 15 December.."
+    }
+   ],
+   "quote": "2011: The current museum and visitors' centre was opened by the Minister for Education and Culture on 15 December..",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Sangiran"
+  },
+  {
+   "id": "ev-subak-2012",
+   "dateLabel": "2012",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unesco-1194",
+     "url": "https://whc.unesco.org/en/list/1194",
+     "finalUrl": "https://whc.unesco.org/en/list/1194",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://whc.unesco.org/en/list/1194"
+  },
+  {
+   "id": "ev-liyangan-2015",
+   "dateLabel": "2015",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "jp-liyangan",
+     "url": "https://www.thejakartapost.com/news/2015/06/18/ancient-liyangan-volcano-site-see-more-activity.html",
+     "finalUrl": "https://www.thejakartapost.com/news/2015/06/18/ancient-liyangan-volcano-site-see-more-activity",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2015",
+     "quote": "Thu, June 18, 2015 Published on Jun."
+    }
+   ],
+   "quote": "Thu, June 18, 2015 Published on Jun.",
+   "quoteUrl": "https://www.thejakartapost.com/news/2015/06/18/ancient-liyangan-volcano-site-see-more-activity"
+  },
+  {
+   "id": "ev-karampuang-2017",
+   "dateLabel": "2017",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2017",
+     "quote": "... a paper published in Nature described a ceiling panel found in the Leang Karampuang limestone cave in the Maros-Pangkep region of Sulawesi, Indonesia, in 2017."
+    }
+   ],
+   "quote": "... a paper published in Nature described a ceiling panel found in the Leang Karampuang limestone cave in the Maros-Pangkep region of Sulawesi, Indonesia, in 2017.",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-jeriji-2018",
+   "dateLabel": "November 2018",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-lubang-jeriji-sal-h",
+     "url": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Saléh",
+     "finalUrl": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Sal%C3%A9h",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2018",
+     "quote": "In 2018, a team of researchers announced the discovery of what was then believed to be the oldest known work of figurative art in the ..."
+    }
+   ],
+   "quote": "In 2018, a team of researchers announced the discovery of what was then believed to be the oldest known work of figurative art in the ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Lubang_Jeriji_Sal%C3%A9h"
+  },
+  {
+   "id": "ev-ombilin-2019",
+   "dateLabel": "6 Juli 2019",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unesco-1610",
+     "url": "https://whc.unesco.org/en/list/1610",
+     "finalUrl": "https://whc.unesco.org/en/list/1610",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://whc.unesco.org/en/list/1610"
+  },
+  {
+   "id": "ev-bulusipong-2019",
+   "dateLabel": "11 Desember 2019",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2019",
+     "quote": "... previously deemed the oldest representational art, with a uranium-series dated age of at least 43,900 years old, as reported in Nature on 11 December 2019."
+    }
+   ],
+   "quote": "... previously deemed the oldest representational art, with a uranium-series dated age of at least 43,900 years old, as reported in Nature on 11 December 2019.",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-ngandong-2019",
+   "dateLabel": "2020",
+   "status": "perlu-cek",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-solo-man",
+     "url": "https://en.wikipedia.org/wiki/Solo_Man",
+     "finalUrl": "https://en.wikipedia.org/wiki/Solo_Man",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2020",
+     "quote": "In 2020, the first comprehensive chronology of the Ngandong site was published which found the Solo River was diverted through the site 500,000 years ago; ..."
+    }
+   ],
+   "quote": "In 2020, the first comprehensive chronology of the Ngandong site was published which found the Solo River was diverted through the site 500,000 years ago; ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Solo_Man"
+  },
+  {
+   "id": "ev-kimpulan-2022",
+   "dateLabel": "5 November 2022",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "nu-kimpulan",
+     "url": "https://nu.or.id/nasional/melihat-candi-di-pusat-keilmuan-islam-4bhd1",
+     "finalUrl": "https://nu.or.id/nasional/melihat-candi-di-pusat-keilmuan-islam-4bhd1",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2022",
+     "quote": "NU Online · Ahad, 6 November 2022 | 08:30 WIB."
+    }
+   ],
+   "quote": "NU Online · Ahad, 6 November 2022 | 08:30 WIB.",
+   "quoteUrl": "https://nu.or.id/nasional/melihat-candi-di-pusat-keilmuan-islam-4bhd1"
+  },
+  {
+   "id": "ev-sumbu-2023",
+   "dateLabel": "18 September 2023",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [
+    {
+     "sourceId": "unesco-1671",
+     "url": "https://whc.unesco.org/en/list/1671",
+     "finalUrl": "https://whc.unesco.org/en/list/1671",
+     "state": "blocked",
+     "httpStatus": 403,
+     "match": null,
+     "quote": ""
+    }
+   ],
+   "quote": "",
+   "quoteUrl": "https://whc.unesco.org/en/list/1671"
+  },
+  {
+   "id": "ev-gunungpadang-2023",
+   "dateLabel": "2023 - 2024",
+   "status": "diperdebatkan",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "wp-en-gunung-padang",
+     "url": "https://en.wikipedia.org/wiki/Gunung_Padang",
+     "finalUrl": "https://en.wikipedia.org/wiki/Gunung_Padang",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2023",
+     "quote": "In October 2023, an article by Natawidjaja et al., published in Archaeological Prospection , claimed that Gunung Padang is the oldest pyramid in the world, ..."
+    }
+   ],
+   "quote": "In October 2023, an article by Natawidjaja et al., published in Archaeological Prospection , claimed that Gunung Padang is the oldest pyramid in the world, ...",
+   "quoteUrl": "https://en.wikipedia.org/wiki/Gunung_Padang"
+  },
+  {
+   "id": "ev-muarajambi-2024",
+   "dateLabel": "5 Juni 2024",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "medcom-muarajambi",
+     "url": "https://www.medcom.id/gaya/wisata/ob3ZQrJN-tegak-tiang-tuo-langkah-penting-perlindungan-warisan-budaya-indonesia",
+     "finalUrl": "https://www.medcom.id/gaya/wisata/ob3ZQrJN-tegak-tiang-tuo-langkah-penting-perlindungan-warisan-budaya-indonesia",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2024",
+     "quote": "Selasa 11 Juni 2024 / 21:51."
+    }
+   ],
+   "quote": "Selasa 11 Juni 2024 / 21:51.",
+   "quoteUrl": "https://www.medcom.id/gaya/wisata/ob3ZQrJN-tegak-tiang-tuo-langkah-penting-perlindungan-warisan-budaya-indonesia"
+  },
+  {
+   "id": "ev-karampuang-2024",
+   "dateLabel": "3 Juli 2024",
+   "status": "terverifikasi",
+   "verdict": "cocok",
+   "sources": [
+    {
+     "sourceId": "guinness-karampuang",
+     "url": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "finalUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2024",
+     "quote": "When 03 July 2024 ."
+    },
+    {
+     "sourceId": "detik-brin-karampuang",
+     "url": "https://www.detik.com/edu/edutainment/d-7422463/peneliti-brin-temukan-lukisan-cadas-tertua-di-dunia-berusia-51-200-tahun",
+     "finalUrl": "https://www.detik.com/edu/edutainment/d-7422463/peneliti-brin-temukan-lukisan-cadas-tertua-di-dunia-berusia-51-200-tahun",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok-tahun-saja",
+     "token": "2024",
+     "quote": "Kamis, 04 Jul 2024 13:30 WIB."
+    },
+    {
+     "sourceId": "merahputih-karampuang",
+     "url": "https://www.merahputih.com/post/amp/lukisan-gua-tertua-indonesia-ditemukan-di-maros-gambar-anoa-dan-babi",
+     "finalUrl": "https://www.merahputih.com/post/amp/lukisan-gua-tertua-indonesia-ditemukan-di-maros-gambar-anoa-dan-babi",
+     "state": "ok",
+     "httpStatus": 200,
+     "match": "cocok",
+     "token": "2024",
+     "quote": "Wisnu Cipto - Kamis, 04 Juli 2024 ."
+    }
+   ],
+   "quote": "When 03 July 2024 .",
+   "quoteUrl": "https://www.guinnessworldrecords.com/world-records/467702-oldest-painting-%E2%80%93-figurative-art"
+  },
+  {
+   "id": "ev-penutup-2026",
+   "dateLabel": "2026",
+   "status": "terverifikasi",
+   "verdict": "tidak-dapat-diperiksa",
+   "sources": [],
+   "quote": "",
+   "quoteUrl": ""
+  }
+ ],
+ "kingdoms": [
+  {
+   "id": "kutai",
+   "name": "Kutai Martadipura",
+   "start": 350,
+   "end": 1635,
+   "url": "https://en.wikipedia.org/wiki/Kutai",
+   "finalUrl": "https://en.wikipedia.org/wiki/Kutai",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "tarumanagara",
+   "name": "Tarumanagara",
+   "start": 358,
+   "end": 669,
+   "url": "https://en.wikipedia.org/wiki/Tarumanagara",
+   "finalUrl": "https://en.wikipedia.org/wiki/Tarumanagara",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "sriwijaya",
+   "name": "Sriwijaya",
+   "start": 671,
+   "end": 1377,
+   "url": "https://en.wikipedia.org/wiki/Srivijaya",
+   "finalUrl": "https://en.wikipedia.org/wiki/Srivijaya",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": false
+  },
+  {
+   "id": "mataram-kuno",
+   "name": "Mataram Kuno",
+   "start": 716,
+   "end": 1016,
+   "url": "https://en.wikipedia.org/wiki/Mataram_Kingdom",
+   "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Mataram_kingdom/html?redirect=no",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "kediri",
+   "name": "Kediri",
+   "start": 1042,
+   "end": 1222,
+   "url": "https://en.wikipedia.org/wiki/Kediri_Kingdom",
+   "finalUrl": "https://en.wikipedia.org/w/rest.php/v1/page/Kediri_kingdom/html?redirect=no",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "singhasari",
+   "name": "Singhasari",
+   "start": 1222,
+   "end": 1292,
+   "url": "https://en.wikipedia.org/wiki/Singhasari",
+   "finalUrl": "https://en.wikipedia.org/wiki/Singhasari",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "majapahit",
+   "name": "Majapahit",
+   "start": 1293,
+   "end": 1527,
+   "url": "https://en.wikipedia.org/wiki/Majapahit",
+   "finalUrl": "https://en.wikipedia.org/wiki/Majapahit",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "samudera-pasai",
+   "name": "Samudera Pasai",
+   "start": 1267,
+   "end": 1521,
+   "url": "https://en.wikipedia.org/wiki/Samudera_Pasai_Sultanate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Samudera_Pasai_Sultanate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "demak",
+   "name": "Kesultanan Demak",
+   "start": 1475,
+   "end": 1554,
+   "url": "https://en.wikipedia.org/wiki/Demak_Sultanate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Demak_Sultanate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "aceh",
+   "name": "Kesultanan Aceh",
+   "start": 1496,
+   "end": 1903,
+   "url": "https://en.wikipedia.org/wiki/Aceh_Sultanate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Aceh_Sultanate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "banten",
+   "name": "Kesultanan Banten",
+   "start": 1527,
+   "end": 1813,
+   "url": "https://en.wikipedia.org/wiki/Banten_Sultanate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Banten_Sultanate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "gowa",
+   "name": "Kesultanan Gowa-Tallo",
+   "start": 1300,
+   "end": 1669,
+   "url": "https://en.wikipedia.org/wiki/Sultanate_of_Gowa",
+   "finalUrl": "https://en.wikipedia.org/wiki/Sultanate_of_Gowa",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "ternate",
+   "name": "Kesultanan Ternate",
+   "start": 1257,
+   "end": 1914,
+   "url": "https://en.wikipedia.org/wiki/Sultanate_of_Ternate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Sultanate_of_Ternate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "mataram-islam",
+   "name": "Kesultanan Mataram",
+   "start": 1587,
+   "end": 1755,
+   "url": "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+   "finalUrl": "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "voc",
+   "name": "VOC",
+   "start": 1602,
+   "end": 1799,
+   "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+   "finalUrl": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "hindia-belanda",
+   "name": "Hindia Belanda",
+   "start": 1800,
+   "end": 1942,
+   "url": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+   "finalUrl": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "jepang",
+   "name": "Pendudukan Jepang",
+   "start": 1942,
+   "end": 1945,
+   "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies",
+   "finalUrl": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  },
+  {
+   "id": "ri",
+   "name": "Republik Indonesia",
+   "start": 1945,
+   "end": 2026,
+   "url": "https://en.wikipedia.org/wiki/Indonesia",
+   "finalUrl": "https://en.wikipedia.org/wiki/Indonesia",
+   "state": "ok",
+   "httpStatus": 200,
+   "startFound": true,
+   "endFound": true
+  }
+ ]
+}

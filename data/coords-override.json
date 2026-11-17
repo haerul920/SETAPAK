@@ -1,0 +1,38 @@
+{
+ "sriwijaya-palembang": {
+  "lat": -2.98333,
+  "lng": 104.76444,
+  "wikidata": "Q8131",
+  "label": "Palembang",
+  "distanceKm": 3.9,
+  "original": {
+   "lat": -2.99,
+   "lng": 104.73
+  },
+  "via": "wikidata"
+ },
+ "kota-kapur": {
+  "lat": -2.24329,
+  "lng": 105.86426,
+  "wikidata": "Q7366388",
+  "label": "Kota Kapur",
+  "distanceKm": 10.5,
+  "original": {
+   "lat": -2.15,
+   "lng": 105.85
+  },
+  "via": "wikidata"
+ },
+ "padang-lawas": {
+  "lat": 1.41667,
+  "lng": 99.7167,
+  "wikidata": "Q4842303",
+  "label": "Bahal",
+  "distanceKm": 3,
+  "original": {
+   "lat": 1.42,
+   "lng": 99.69
+  },
+  "via": "wikidata"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "_catatan": "Foto jejak yang ditolak setelah pemeriksaan visual lembar kontak (scripts/pack-sheets.ts). Kunci = cid kandidat. Dipakai scripts/fetch-trace-images.ts build.",
+ "rejected": {
+  "wd-Q108940790-trace-1amcss": "orang dalam foto pameran jadi subjek utama",
+  "wd-Q109405160-trace-uj5gu5": "entitas keliru: foto museum di Louisiana, AS",
+  "wd-Q11025-trace-10wi80": "kota Semarang (bukan situs) dengan pengemudi becak di latar depan",
+  "wd-Q128034832-trace-qe9q65": "orang (pejabat) jadi subjek utama",
+  "wd-Q134726418-trace-1norky": "orang jadi subjek utama (acara peresmian)",
+  "wd-Q16766372-trace-d3wzkp": "pengunjung galeri jadi subjek utama",
+  "wd-Q16965955-trace-hwgeik": "pekerja tambang jadi subjek utama",
+  "wd-Q19729523-trace-goc64i": "dua orang duduk di depan prasasti jadi subjek utama",
+  "wd-Q2376621-trace-1iy336": "kerumunan orang di dalam stasiun jadi subjek utama",
+  "wd-Q25460071-trace-1esmvq": "orang membersihkan lantai di tengah foto",
+  "wd-Q95376573-trace-17zbf8": "pengunjung berjalan jadi subjek utama",
+  "wd-Q97195716-trace-13z520": "tiga orang jadi subjek utama",
+  "wd-Q97241097-trace-n4iuue": "perempuan jadi subjek utama di depan vitrin",
+  "wd-Q97374869-trace-dc9yh4": "foto bersama (orang) jadi subjek utama",
+  "wd-Q99439928-trace-1t25m9": "kerumunan siswa di depan bangunan jadi subjek utama"
+ }
+}

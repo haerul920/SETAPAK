@@ -1,0 +1,1954 @@
+{
+ "_note": "Kebutuhan aset per situs/peristiwa. Dibaca scripts/fetch-assets.ts. role: hero | gallery | then | now | hotspot-base | texture | audio. v4: entri situs baru dibuat otomatis dari nama situs; agen boleh menambah kata kunci yang lebih spesifik.",
+ "items": [
+  {
+   "key": "hero",
+   "target": "sangiran",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Sangiran Early Man Site",
+    "Sangiran museum",
+    "Sangiran dome landscape"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "sangiran",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Sangiran fossil",
+    "Sangiran Museum Krikilan",
+    "Homo erectus Sangiran replica skull"
+   ]
+  },
+  {
+   "key": "strata",
+   "target": "sangiran",
+   "role": "hotspot-base",
+   "min": 1,
+   "queries": [
+    "Sangiran stratigraphy",
+    "Sangiran soil layers"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "karst-maros-pangkep",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Maros karst",
+    "Rammang-Rammang karst",
+    "Bantimurung-Bulusaraung karst"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "karst-maros-pangkep",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Leang-Leang Prehistoric Park",
+    "Leang Pettae",
+    "Leang Pettakere",
+    "Maros hand stencil cave"
+   ]
+  },
+  {
+   "key": "cave",
+   "target": "karst-maros-pangkep",
+   "role": "texture",
+   "min": 2,
+   "queries": [
+    "Leang Pettakere hand stencil",
+    "Maros cave painting babirusa",
+    "limestone cave wall Sulawesi"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "liyangan",
+   "role": "hero",
+   "min": 1,
+   "queries": [
+    "Situs Liyangan",
+    "Liyangan Temanggung",
+    "Situs Liangan"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "liyangan",
+   "role": "gallery",
+   "min": 3,
+   "queries": [
+    "Candi Liyangan",
+    "Liyangan site excavation",
+    "Gunung Sindoro Temanggung"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "muarajambi",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Muaro Jambi Temple",
+    "Candi Gumpung",
+    "Candi Tinggi Muaro Jambi"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "muarajambi",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Candi Kedaton Muaro Jambi",
+    "Candi Gedong Muaro Jambi",
+    "Candi Kembar Batu Muaro Jambi",
+    "Batanghari river Jambi"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "borobudur",
+   "role": "hero",
+   "min": 3,
+   "queries": [
+    "Borobudur aerial",
+    "Borobudur sunrise",
+    "Borobudur Temple Compounds"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "borobudur",
+   "role": "gallery",
+   "min": 6,
+   "queries": [
+    "Borobudur relief",
+    "Borobudur stupa",
+    "Borobudur Karmawibhangga hidden foot",
+    "Borobudur gallery corridor"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "borobudur",
+   "role": "then",
+   "min": 2,
+   "queries": [
+    "Borobudur Kassian Cephas",
+    "Borobudur before restoration Tropenmuseum",
+    "Borobudur van Erp restoration 1911",
+    "Borobudur KITLV 1873"
+   ]
+  },
+  {
+   "key": "now",
+   "target": "borobudur",
+   "role": "now",
+   "min": 2,
+   "queries": [
+    "Borobudur northwest view",
+    "Borobudur temple full view"
+   ]
+  },
+  {
+   "key": "restore",
+   "target": "ev-borobudur-1973",
+   "role": "gallery",
+   "min": 1,
+   "queries": [
+    "Borobudur restoration 1973",
+    "Borobudur restoration UNESCO 1970s"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "prambanan",
+   "role": "hero",
+   "min": 3,
+   "queries": [
+    "Prambanan temple",
+    "Prambanan sunset",
+    "Candi Siwa Prambanan"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "prambanan",
+   "role": "gallery",
+   "min": 5,
+   "queries": [
+    "Prambanan relief Ramayana",
+    "Prambanan perwara ruins",
+    "Prambanan complex aerial"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "prambanan",
+   "role": "then",
+   "min": 2,
+   "queries": [
+    "Prambanan ruins Tropenmuseum",
+    "Loro Jonggrang Kassian Cephas",
+    "Prambanan before reconstruction"
+   ]
+  },
+  {
+   "key": "now",
+   "target": "prambanan",
+   "role": "now",
+   "min": 1,
+   "queries": [
+    "Prambanan main temple view"
+   ]
+  },
+  {
+   "key": "quake",
+   "target": "ev-prambanan-2006",
+   "role": "gallery",
+   "min": 1,
+   "queries": [
+    "Prambanan earthquake 2006 damage"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "sambisari",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Sambisari",
+    "Sambisari temple"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "sambisari",
+   "role": "gallery",
+   "min": 3,
+   "queries": [
+    "Sambisari lingga yoni",
+    "Sambisari perwara",
+    "Sambisari below ground level"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kimpulan",
+   "role": "hero",
+   "min": 1,
+   "queries": [
+    "Candi Kimpulan",
+    "Kimpulan temple UII"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "kimpulan",
+   "role": "gallery",
+   "min": 2,
+   "queries": [
+    "Kimpulan Ganesha",
+    "Candi Kimpulan excavation"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "trowulan",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Trowulan Majapahit",
+    "Candi Bajang Ratu",
+    "Candi Wringin Lawang"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "trowulan",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Kolam Segaran Trowulan",
+    "Candi Tikus Trowulan",
+    "Majapahit terracotta Trowulan Museum",
+    "Candi Brahu"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "trowulan",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Wringin Lawang Tropenmuseum",
+    "Bajang Ratu KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "somba-opu",
+   "role": "hero",
+   "min": 1,
+   "queries": [
+    "Benteng Somba Opu",
+    "Somba Opu fort"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "somba-opu",
+   "role": "gallery",
+   "min": 3,
+   "queries": [
+    "Somba Opu brick wall",
+    "Somba Opu traditional houses",
+    "Makassar 17th century map Somba Opu"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "fort-rotterdam",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Fort Rotterdam Makassar",
+    "Benteng Ujung Pandang"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "fort-rotterdam",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Fort Rotterdam bastion",
+    "Fort Rotterdam aerial",
+    "Fort Rotterdam Makassar building"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "fort-rotterdam",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Fort Rotterdam Tropenmuseum",
+    "Fort Rotterdam Makassar 1900",
+    "Makassar fort KITLV"
+   ]
+  },
+  {
+   "key": "map",
+   "target": "ev-bungaya-1667",
+   "role": "gallery",
+   "min": 1,
+   "queries": [
+    "Makassar 1660s map",
+    "siege of Makassar engraving",
+    "Kaart Makassar VOC"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "istana-maimun",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Istana Maimun",
+    "Maimun Palace Medan"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "istana-maimun",
+   "role": "gallery",
+   "min": 4,
+   "queries": [
+    "Maimun Palace interior",
+    "Masjid Raya Al Mashun",
+    "Istana Maimun facade"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "istana-maimun",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Istana Maimun Tropenmuseum",
+    "Paleis Sultan Deli Medan",
+    "Maimun palace KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "rumah-maeda",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Museum Perumusan Naskah Proklamasi",
+    "Formulation of Proclamation Text Museum"
+   ]
+  },
+  {
+   "key": "gallery",
+   "target": "rumah-maeda",
+   "role": "gallery",
+   "min": 3,
+   "queries": [
+    "Museum Perumusan Naskah Proklamasi interior",
+    "Munasprok dining room",
+    "Jalan Imam Bonjol Menteng building"
+   ]
+  },
+  {
+   "key": "map-nusantara",
+   "target": "global",
+   "role": "gallery",
+   "min": 1,
+   "queries": [
+    "Raffles History of Java map",
+    "map of Java 1817"
+   ]
+  },
+  {
+   "key": "audio-gamelan",
+   "target": "global",
+   "role": "audio",
+   "min": 2,
+   "queries": [
+    "gamelan",
+    "Javanese gamelan recording"
+   ]
+  },
+  {
+   "key": "audio-kecapi",
+   "target": "global",
+   "role": "audio",
+   "min": 1,
+   "queries": [
+    "kacapi",
+    "kecapi Bugis Makassar"
+   ]
+  },
+  {
+   "key": "audio-nature",
+   "target": "global",
+   "role": "audio",
+   "min": 2,
+   "queries": [
+    "cave dripping water",
+    "ocean waves",
+    "tropical forest ambience"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "trinil",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "File:Museum trinil.jpg",
+    "File:Patung Gajah di Museum Trinil, Ngawi.jpg",
+    "File:Schedelkapje van Dubois.jpg",
+    "Schedelkapje van Dubois",
+    "Skull cap of Java Man",
+    "Museum trinil",
+    "incategory:\"Java Man\"",
+    "incategory:\"Skull of Java Man, Dubois\"",
+    "Situs Trinil",
+    "Situs Trinil Indonesia",
+    "Museum Trinil Ngawi",
+    "Situs Trinil Ngawi",
+    "Pithecanthropus erectus Trinil",
+    "Trinil Java Man monument Dubois"
+   ],
+   "minWidth": 600
+  },
+  {
+   "key": "then",
+   "target": "trinil",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Situs Trinil Tropenmuseum",
+    "Situs Trinil KITLV",
+    "Trinil Pithecanthropus KITLV",
+    "Dubois Trinil Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "ngandong",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Situs Ngandong",
+    "Situs Ngandong Indonesia",
+    "Ngandong Blora",
+    "Ngandong Homo soloensis",
+    "Solo Man Homo erectus soloensis"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "ngandong",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Situs Ngandong Tropenmuseum",
+    "Situs Ngandong KITLV",
+    "Ngandong Solo Man KITLV",
+    "Solo rivier Ngandong Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "liang-bua",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Liang Bua",
+    "Liang Bua Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "liang-bua",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Liang Bua Tropenmuseum",
+    "Liang Bua KITLV",
+    "Liang Bua Flores Tropenmuseum",
+    "Manggarai Flores grot Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "lubang-jeriji-saleh",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Lubang Jeriji Saléh",
+    "Lubang Jeriji Saléh Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "lubang-jeriji-saleh",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Lubang Jeriji Saléh Tropenmuseum",
+    "Lubang Jeriji Saléh KITLV",
+    "Sangkulirang Kutai Timur gua KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "gunung-padang",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Situs Gunung Padang",
+    "Situs Gunung Padang Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "gunung-padang",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Situs Gunung Padang Tropenmuseum",
+    "Situs Gunung Padang KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "yupa-kutai",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Prasasti Yupa Kutai",
+    "Prasasti Yupa Kutai Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "yupa-kutai",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Prasasti Yupa Kutai Tropenmuseum",
+    "Prasasti Yupa Kutai KITLV",
+    "Yupa Kutai Tropenmuseum",
+    "Koetei Yoepa KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "ciaruteun",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Prasasti Ciaruteun",
+    "Prasasti Ciaruteun Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "ciaruteun",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Prasasti Ciaruteun Tropenmuseum",
+    "Prasasti Ciaruteun KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "batujaya",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kompleks Percandian Batujaya",
+    "Kompleks Percandian Batujaya Indonesia",
+    "Candi Jiwa Batujaya",
+    "Candi Blandongan",
+    "Batujaya Karawang temple"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "batujaya",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kompleks Percandian Batujaya Tropenmuseum",
+    "Kompleks Percandian Batujaya KITLV",
+    "Batujaya Karawang KITLV",
+    "Karawang Tropenmuseum candi"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "dieng",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kompleks Candi Dieng",
+    "Kompleks Candi Dieng Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "dieng",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kompleks Candi Dieng Tropenmuseum",
+    "Kompleks Candi Dieng KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "sriwijaya-palembang",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Situs Sriwijaya di Palembang",
+    "Situs Sriwijaya di Palembang Indonesia",
+    "Bukit Siguntang Palembang",
+    "Museum Sriwijaya Palembang",
+    "Candi Angsoka Palembang",
+    "Situs Karanganyar Palembang",
+    "Prasasti Kedukan Bukit"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "sriwijaya-palembang",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Situs Sriwijaya di Palembang Tropenmuseum",
+    "Situs Sriwijaya di Palembang KITLV",
+    "Palembang Musi Tropenmuseum",
+    "Palembang KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kota-kapur",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Prasasti Kota Kapur",
+    "Prasasti Kota Kapur Indonesia",
+    "Kota Kapur inscription",
+    "Kota Kapur Bangka",
+    "Prasasti Kota Kapur Bangka"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "kota-kapur",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Prasasti Kota Kapur Tropenmuseum",
+    "Prasasti Kota Kapur KITLV",
+    "Kota Kapur prasasti Tropenmuseum",
+    "Bangka Tropenmuseum prasasti"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kalasan",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Kalasan",
+    "Candi Kalasan Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "kalasan",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Kalasan Tropenmuseum",
+    "Candi Kalasan KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "sewu",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Sewu",
+    "Candi Sewu Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "sewu",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Sewu Tropenmuseum",
+    "Candi Sewu KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "ratu-boko",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Situs Ratu Boko",
+    "Situs Ratu Boko Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "ratu-boko",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Situs Ratu Boko Tropenmuseum",
+    "Situs Ratu Boko KITLV",
+    "Ratoe Boko KITLV",
+    "Ratu Boko Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "mendut",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Mendut",
+    "Candi Mendut Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "mendut",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Mendut Tropenmuseum",
+    "Candi Mendut KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "plaosan",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Plaosan",
+    "Candi Plaosan Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "plaosan",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Plaosan Tropenmuseum",
+    "Candi Plaosan KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "cangkuang",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "File:Cangkuang 3.jpg",
+    "File:Cangkuang 1.jpg",
+    "File:Cangkuang 2.jpg",
+    "File:Cangkuang Lake Java82.jpg",
+    "File:Cangkuang 4.jpg",
+    "incategory:\"Candi Cangkuang\"",
+    "Candi Cangkuang",
+    "Candi Cangkuang Indonesia",
+    "Candi Cangkuang Leles",
+    "Situ Cangkuang Garut",
+    "Kampung Pulo Cangkuang"
+   ],
+   "minWidth": 1000,
+   "allowPortrait": true
+  },
+  {
+   "key": "then",
+   "target": "cangkuang",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Cangkuang Tropenmuseum",
+    "Candi Cangkuang KITLV",
+    "Tjangkoeang Garoet KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "blanjong",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Prasasti Blanjong",
+    "Prasasti Blanjong Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "blanjong",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Prasasti Blanjong Tropenmuseum",
+    "Prasasti Blanjong KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "goa-gajah",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Goa Gajah",
+    "Goa Gajah Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "goa-gajah",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Goa Gajah Tropenmuseum",
+    "Goa Gajah KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "gunung-kawi",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Gunung Kawi",
+    "Candi Gunung Kawi Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "gunung-kawi",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Gunung Kawi Tropenmuseum",
+    "Candi Gunung Kawi KITLV",
+    "Goenoeng Kawi Tampaksiring KITLV",
+    "Gunung Kawi Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "subak",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Lanskap Budaya Subak Bali",
+    "Lanskap Budaya Subak Bali Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "subak",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Lanskap Budaya Subak Bali Tropenmuseum",
+    "Lanskap Budaya Subak Bali KITLV",
+    "Sawah Bali Tropenmuseum irigasi",
+    "Subak Bali KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "leran",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "File:Situs Makam Leran (1).jpg",
+    "File:Situs Makam Leran (2).jpg",
+    "File:Situs Makam Leran (3).png",
+    "Makam Fatimah binti Maimun",
+    "Makam Fatimah binti Maimun Indonesia",
+    "Leran Gresik tomb",
+    "Fatimah binti Maimun",
+    "Makam Leran Gresik"
+   ],
+   "minWidth": 600
+  },
+  {
+   "key": "then",
+   "target": "leran",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Makam Fatimah binti Maimun Tropenmuseum",
+    "Makam Fatimah binti Maimun KITLV",
+    "Leran Gresik KITLV",
+    "Gresik Tropenmuseum makam"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "samudera-pasai",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Makam Sultan Malik as-Saleh",
+    "Makam Sultan Malik as-Saleh Indonesia",
+    "Makam Malikussaleh",
+    "Samudera Pasai",
+    "Malikussaleh"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "samudera-pasai",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Makam Sultan Malik as-Saleh Tropenmuseum",
+    "Makam Sultan Malik as-Saleh KITLV",
+    "Pasai Atjeh KITLV makam",
+    "Lhokseumawe Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "singosari",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Singosari",
+    "Candi Singosari Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "singosari",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Singosari Tropenmuseum",
+    "Candi Singosari KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "penataran",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Penataran",
+    "Candi Penataran Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "penataran",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Penataran Tropenmuseum",
+    "Candi Penataran KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "sukuh",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Sukuh",
+    "Candi Sukuh Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "sukuh",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Sukuh Tropenmuseum",
+    "Candi Sukuh KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "cetho",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Cetho",
+    "Candi Cetho Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "cetho",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Cetho Tropenmuseum",
+    "Candi Cetho KITLV",
+    "Tjeto Lawoe KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "muara-takus",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Muara Takus",
+    "Candi Muara Takus Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "muara-takus",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Muara Takus Tropenmuseum",
+    "Candi Muara Takus KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "padang-lawas",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Candi Bahal",
+    "Candi Bahal Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "padang-lawas",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Candi Bahal Tropenmuseum",
+    "Candi Bahal KITLV",
+    "Padang Lawas Bahal KITLV",
+    "Biaro Bahal Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "wapauwe",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Wapauwe",
+    "Masjid Wapauwe Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "wapauwe",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Wapauwe Tropenmuseum",
+    "Masjid Wapauwe KITLV",
+    "Wapauwe Kaitetu Ambon KITLV",
+    "Ambon moskee KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "demak",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Agung Demak",
+    "Masjid Agung Demak Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "demak",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Agung Demak Tropenmuseum",
+    "Masjid Agung Demak KITLV",
+    "Demak moskee KITLV",
+    "Grote Moskee Demak Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "menara-kudus",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Menara Kudus",
+    "Masjid Menara Kudus Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "menara-kudus",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Menara Kudus Tropenmuseum",
+    "Masjid Menara Kudus KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "banten-lama",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kawasan Banten Lama",
+    "Kawasan Banten Lama Indonesia",
+    "Masjid Agung Banten",
+    "Keraton Surosowan",
+    "Benteng Speelwijk",
+    "Menara Masjid Agung Banten"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "banten-lama",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kawasan Banten Lama Tropenmuseum",
+    "Kawasan Banten Lama KITLV",
+    "Banten moskee KITLV",
+    "Bantam Tropenmuseum Speelwijk"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "baiturrahman",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Raya Baiturrahman",
+    "Masjid Raya Baiturrahman Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "baiturrahman",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Raya Baiturrahman Tropenmuseum",
+    "Masjid Raya Baiturrahman KITLV",
+    "Kota Radja Grote moskee KITLV",
+    "Baiturrahman 1880 Atjeh"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "pltd-apung",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kapal PLTD Apung",
+    "Kapal PLTD Apung Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "pltd-apung",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kapal PLTD Apung Tropenmuseum",
+    "Kapal PLTD Apung KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kasepuhan",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Keraton Kasepuhan",
+    "Keraton Kasepuhan Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "kasepuhan",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Keraton Kasepuhan Tropenmuseum",
+    "Keraton Kasepuhan KITLV",
+    "Cheribon kraton KITLV",
+    "Kasepuhan Cirebon Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kota-tua-jakarta",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kota Tua Jakarta",
+    "Kota Tua Jakarta Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "kota-tua-jakarta",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kota Tua Jakarta Tropenmuseum",
+    "Kota Tua Jakarta KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "benteng-victoria",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Benteng Victoria",
+    "Benteng Victoria Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "benteng-victoria",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Benteng Victoria Tropenmuseum",
+    "Benteng Victoria KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "benteng-oranje",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Benteng Oranje",
+    "Benteng Oranje Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "benteng-oranje",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Benteng Oranje Tropenmuseum",
+    "Benteng Oranje KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "banda-neira",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Banda Neira dan Benteng Belgica",
+    "Banda Neira dan Benteng Belgica Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "banda-neira",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Banda Neira dan Benteng Belgica Tropenmuseum",
+    "Banda Neira dan Benteng Belgica KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "benteng-buton",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Benteng Keraton Buton",
+    "Benteng Keraton Buton Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "benteng-buton",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Benteng Keraton Buton Tropenmuseum",
+    "Benteng Keraton Buton KITLV",
+    "Boeton Baoebau fort KITLV",
+    "Buton benteng Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "katangka",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Tua Katangka",
+    "Masjid Tua Katangka Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "katangka",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Tua Katangka Tropenmuseum",
+    "Masjid Tua Katangka KITLV",
+    "Fort Gowa Makassar KITLV",
+    "Katangka Goa Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "keraton-surakarta",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Keraton Surakarta Hadiningrat",
+    "Keraton Surakarta Hadiningrat Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "keraton-surakarta",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Keraton Surakarta Hadiningrat Tropenmuseum",
+    "Keraton Surakarta Hadiningrat KITLV",
+    "Soerakarta kraton KITLV",
+    "Susuhunan Soerakarta kraton Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "keraton-yogyakarta",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Keraton Yogyakarta dan Sumbu Filosofi",
+    "Keraton Yogyakarta dan Sumbu Filosofi Indonesia",
+    "Keraton Yogyakarta",
+    "Kraton Yogyakarta",
+    "Sitihinggil Keraton Yogyakarta"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "keraton-yogyakarta",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Keraton Yogyakarta dan Sumbu Filosofi Tropenmuseum",
+    "Keraton Yogyakarta dan Sumbu Filosofi KITLV",
+    "Kraton Djokjakarta KITLV",
+    "Sultanspaleis Djokjakarta Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "taman-sari",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Taman Sari Yogyakarta",
+    "Taman Sari Yogyakarta Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "taman-sari",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Taman Sari Yogyakarta Tropenmuseum",
+    "Taman Sari Yogyakarta KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "kotagede",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Kotagede",
+    "Kotagede Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "kotagede",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Kotagede Tropenmuseum",
+    "Kotagede KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "pagaruyung",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Istano Basa Pagaruyung",
+    "Istano Basa Pagaruyung Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "pagaruyung",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Istano Basa Pagaruyung Tropenmuseum",
+    "Istano Basa Pagaruyung KITLV",
+    "Pagaruyung KITLV",
+    "Pagarroejoeng Tropenmuseum istana"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "istana-bogor",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Istana dan Kebun Raya Bogor",
+    "Istana dan Kebun Raya Bogor Indonesia",
+    "Istana Bogor",
+    "Kebun Raya Bogor",
+    "Bogor Palace",
+    "Istana Kepresidenan Bogor",
+    "Bogor Presidential Palace",
+    "Istana Bogor halaman rusa"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "istana-bogor",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Istana dan Kebun Raya Bogor Tropenmuseum",
+    "Istana dan Kebun Raya Bogor KITLV",
+    "Buitenzorg paleis KITLV",
+    "Gouverneur-Generaal paleis Buitenzorg Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "benteng-marlborough",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Benteng Marlborough",
+    "Benteng Marlborough Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "benteng-marlborough",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Benteng Marlborough Tropenmuseum",
+    "Benteng Marlborough KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "istana-kadriah",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Istana Kadriah",
+    "Istana Kadriah Indonesia",
+    "Keraton Kadriah Pontianak",
+    "Istana Kadriyah Pontianak",
+    "Keraton Kadriyah",
+    "Kesultanan Pontianak istana"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "istana-kadriah",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Istana Kadriah Tropenmuseum",
+    "Istana Kadriah KITLV",
+    "Pontianak sultanspaleis KITLV",
+    "Kraton Pontianak Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "benteng-duurstede",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Benteng Duurstede",
+    "Benteng Duurstede Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "benteng-duurstede",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Benteng Duurstede Tropenmuseum",
+    "Benteng Duurstede KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "istana-siak",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Istana Siak Sri Indrapura",
+    "Istana Siak Sri Indrapura Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "istana-siak",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Istana Siak Sri Indrapura Tropenmuseum",
+    "Istana Siak Sri Indrapura KITLV",
+    "Siak Sri Indrapoera paleis KITLV",
+    "Siak paleis Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "penyengat",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Masjid Raya Sultan Riau, Pulau Penyengat",
+    "Masjid Raya Sultan Riau, Pulau Penyengat Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "penyengat",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Masjid Raya Sultan Riau, Pulau Penyengat Tropenmuseum",
+    "Masjid Raya Sultan Riau, Pulau Penyengat KITLV",
+    "Pulau Penyengat Riouw KITLV",
+    "Riouw Tropenmuseum Penjengat"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "ombilin",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Warisan Tambang Batubara Ombilin",
+    "Warisan Tambang Batubara Ombilin Indonesia",
+    "Sawahlunto",
+    "Ombilin Sawahlunto",
+    "Lubang Mbah Soero"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "ombilin",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Warisan Tambang Batubara Ombilin Tropenmuseum",
+    "Warisan Tambang Batubara Ombilin KITLV",
+    "Ombilin kolenmijn Sawahloento",
+    "Sawahlunto Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "lawang-sewu",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Lawang Sewu",
+    "Lawang Sewu Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "lawang-sewu",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Lawang Sewu Tropenmuseum",
+    "Lawang Sewu KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "gedung-sate",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Gedung Sate",
+    "Gedung Sate Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "gedung-sate",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Gedung Sate Tropenmuseum",
+    "Gedung Sate KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "gedung-merdeka",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Gedung Merdeka",
+    "Gedung Merdeka Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "gedung-merdeka",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Gedung Merdeka Tropenmuseum",
+    "Gedung Merdeka KITLV",
+    "Societeit Concordia Bandoeng KITLV",
+    "Concordia Bandung Tropenmuseum"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "jam-gadang",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Jam Gadang",
+    "Jam Gadang Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "jam-gadang",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Jam Gadang Tropenmuseum",
+    "Jam Gadang KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "gedung-sumpah-pemuda",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Gedung Sumpah Pemuda",
+    "Gedung Sumpah Pemuda Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "gedung-sumpah-pemuda",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Gedung Sumpah Pemuda Tropenmuseum",
+    "Gedung Sumpah Pemuda KITLV",
+    "Kramat 106 Batavia KITLV",
+    "Indonesisch Clubgebouw Batavia"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "pengasingan-bung-karno",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Rumah Pengasingan Bung Karno",
+    "Rumah Pengasingan Bung Karno Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "pengasingan-bung-karno",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Rumah Pengasingan Bung Karno Tropenmuseum",
+    "Rumah Pengasingan Bung Karno KITLV",
+    "Soekarno Bengkulu 1940 rumah",
+    "Bengkulu Tropenmuseum rumah pengasingan"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "hotel-majapahit",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Hotel Majapahit",
+    "Hotel Majapahit Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "hotel-majapahit",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Hotel Majapahit Tropenmuseum",
+    "Hotel Majapahit KITLV"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "tugu-pahlawan",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Tugu Pahlawan",
+    "Tugu Pahlawan Indonesia"
+   ]
+  },
+  {
+   "key": "then",
+   "target": "tugu-pahlawan",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Tugu Pahlawan Tropenmuseum",
+    "Tugu Pahlawan KITLV",
+    "Surabaya Hoofdbureau KITLV",
+    "Surabaya Tropenmuseum 1946"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "tugu-proklamasi",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "Prentbriefkaart Het Proklamasi-monument in Pegangsaan Timur",
+    "Proclamation Monument Jakarta",
+    "incategory:\"Tugu Proklamasi\"",
+    "Tugu Proklamasi",
+    "Tugu Proklamasi Indonesia",
+    "Tugu Proklamasi Jakarta",
+    "Tugu Petir Proklamasi Menteng",
+    "Gedung Proklamasi Pegangsaan Timur",
+    "Tugu Peringatan Proklamasi Jakarta",
+    "Taman Proklamasi Menteng",
+    "Monumen Proklamasi Jakarta patung Soekarno Hatta",
+    "Tugu Proklamasi Jalan Proklamasi Jakarta"
+   ],
+   "minWidth": 1000
+  },
+  {
+   "key": "then",
+   "target": "tugu-proklamasi",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Tugu Proklamasi Tropenmuseum",
+    "Tugu Proklamasi KITLV",
+    "Pegangsaan Oost 56 Batavia",
+    "Proklamasi 17 Agustus 1945 Pegangsaan Timur",
+    "Rumah Soekarno Pegangsaan Timur"
+   ]
+  },
+  {
+   "key": "hero",
+   "target": "monas",
+   "role": "hero",
+   "min": 2,
+   "queries": [
+    "File:Around Monas Jakarta (2025).jpg",
+    "File:Monas (monumen nasional) di Jakarta.jpg",
+    "File:Jakarta - National Monument.jpg",
+    "File:The National Monument (Monas), Jakarta from afar.jpg",
+    "Monas di Sore Hari",
+    "Monas (monumen nasional) di Jakarta",
+    "The National Monument (Monas), Jakarta from afar",
+    "Jakarta - National Monument",
+    "incategory:\"Monumen Nasional\"",
+    "Monumen Nasional",
+    "Monumen Nasional Indonesia",
+    "Monumen Nasional Jakarta",
+    "National Monument Jakarta Monas",
+    "Monas Jakarta tower",
+    "Tugu Monas Medan Merdeka",
+    "Monumen Nasional Jakarta Pusat",
+    "Monas Obelisk Jakarta",
+    "Monas malam hari",
+    "Monas siang hari lidah api"
+   ],
+   "minWidth": 1200,
+   "allowPortrait": true
+  },
+  {
+   "key": "then",
+   "target": "monas",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Monumen Nasional Tropenmuseum",
+    "Monumen Nasional KITLV"
+   ]
+  },
+  {
+   "key": "map-java",
+   "target": "global",
+   "role": "then",
+   "min": 1,
+   "queries": [
+    "Raffles map of Java 1817",
+    "old map of Java 19th century",
+    "Kaart van Java 1817"
+   ]
+  },
+  {
+   "key": "audio-cave",
+   "target": "global",
+   "role": "audio",
+   "min": 1,
+   "queries": [
+    "water drops cave",
+    "cave dripping water",
+    "dripping water ambience"
+   ]
+  },
+  {
+   "key": "audio-ocean",
+   "target": "global",
+   "role": "audio",
+   "min": 1,
+   "queries": [
+    "ocean waves",
+    "sea waves beach sound"
+   ]
+  },
+  {
+   "key": "audio-typewriter",
+   "target": "global",
+   "role": "audio",
+   "min": 1,
+   "queries": [
+    "typewriter typing",
+    "typewriter sound"
+   ]
+  },
+  {
+   "key": "audio-morning",
+   "target": "global",
+   "role": "audio",
+   "min": 1,
+   "queries": [
+    "birds singing morning",
+    "dawn chorus birds"
+   ]
+  }
+ ]
+}

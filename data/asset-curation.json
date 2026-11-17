@@ -1,0 +1,1816 @@
+{
+  "_note": "Dibuat oleh scripts/curation-spec.mjs setelah pemeriksaan visual.",
+  "accepted": [
+    {
+      "cid": "sangiran-hero-3wx1vv",
+      "alt": "Replika tengkorak Sangiran 17 di dalam vitrin museum, dengan papan keterangan di depannya"
+    },
+    {
+      "cid": "sangiran-hero-1fmzen",
+      "alt": "Halaman Museum Sangiran yang teduh oleh pepohonan"
+    },
+    {
+      "cid": "sangiran-hero-3yb9f2",
+      "alt": "Dinding depan Museum Manusia Purba Sangiran Klaster Krikilan dengan siluet manusia purba"
+    },
+    {
+      "cid": "sangiran-hero-1cnmo8",
+      "alt": "Gerbang Museum Purbakala Sangiran berbentuk sepasang gading raksasa"
+    },
+    {
+      "cid": "sangiran-gallery-vfxltj",
+      "alt": "Patung gajah purba di depan gedung Museum Manusia Purba Sangiran"
+    },
+    {
+      "cid": "sangiran-gallery-14hcc2",
+      "alt": "Fosil tempurung kepala Sangiran II dipegang dua tangan di atas meja"
+    },
+    {
+      "cid": "sangiran-gallery-18r7kd",
+      "alt": "Fosil tempurung kepala Sangiran II berwarna cokelat tua dilihat dari samping"
+    },
+    {
+      "cid": "sangiran-gallery-mfuihr",
+      "alt": "Fosil tempurung kepala Sangiran II dilihat dari belakang di dalam vitrin"
+    },
+    {
+      "cid": "karst-maros-pangkep-hero-1j8hrh",
+      "alt": "Bukit karst menjulang di belakang sawah kuning di Rammang-Rammang, Maros"
+    },
+    {
+      "cid": "karst-maros-pangkep-hero-xipa77",
+      "alt": "Sungai tenang dengan bebatuan karst dan perahu kecil di Rammang-Rammang"
+    },
+    {
+      "cid": "karst-maros-pangkep-hero-cq7kd5",
+      "alt": "Tebing karst berhutan lebat di bawah langit biru, Maros"
+    },
+    {
+      "cid": "karst-maros-pangkep-hero-1oju8p",
+      "alt": "Diorama dinding gua dengan lukisan cadas di Museum Karst dan Budaya Maros",
+      "role": "gallery"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-t4obbq",
+      "alt": "Batu-batu karst berdiri di padang rumput Taman Prasejarah Leang-Leang"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-ioybi0",
+      "alt": "Gugusan batu karst runcing di antara pepohonan, Leang-Leang"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-6xb9zo",
+      "alt": "Cap tangan negatif berwarna merah di dinding Gua Pettakere, Maros",
+      "role": "texture"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-mxaipj",
+      "alt": "Beberapa cap tangan merah di dinding batu kapur Gua Pettakere",
+      "role": "texture"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-12yfcw",
+      "alt": "Detail cap tangan negatif merah di Gua Pettakere",
+      "role": "texture"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-192nhf",
+      "alt": "Lukisan cadas merah berbentuk hewan di dinding Gua Pettakere"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-12zo4a",
+      "alt": "Foto arsip KITLV: alat-alat batu dan tulang dari gua Leang Petta, Sulawesi Selatan",
+      "role": "then"
+    },
+    {
+      "cid": "karst-maros-pangkep-gallery-2l9jnr",
+      "alt": "Foto arsip KITLV: mulut gua Leang Petta dengan tebing kapur dan semak",
+      "role": "then"
+    },
+    {
+      "cid": "liyangan-hero-8037gr",
+      "alt": "Situs Liyangan: fondasi batu candi dan talud di area terbuka, dengan atap peneduh"
+    },
+    {
+      "cid": "liyangan-hero-r03gqm",
+      "alt": "Bangunan batu candi Liyangan yang tersingkap di tengah area tambang pasir"
+    },
+    {
+      "cid": "liyangan-hero-rshzus",
+      "alt": "Lingga-yoni batu dari Situs Liyangan",
+      "role": "gallery"
+    },
+    {
+      "cid": "liyangan-gallery-1v2qq0",
+      "alt": "Gunung Sindoro dan Sumbing dengan permukiman di kakinya"
+    },
+    {
+      "cid": "liyangan-gallery-15zm30",
+      "alt": "Puncak Gunung Sindoro menyembul di atas lautan awan"
+    },
+    {
+      "cid": "liyangan-gallery-a1ck0l",
+      "alt": "Gunung Sindoro dengan kebun dan bunga aster di lerengnya"
+    },
+    {
+      "cid": "liyangan-gallery-1nvmpq",
+      "alt": "Kebun tembakau di lereng Gunung Sindoro"
+    },
+    {
+      "cid": "muarajambi-hero-112qs4",
+      "alt": "Bangunan bata candi di Muarajambi di bawah pohon besar"
+    },
+    {
+      "cid": "muarajambi-hero-1fvdw8",
+      "alt": "Halaman luas kompleks candi Muarajambi dengan pepohonan tinggi"
+    },
+    {
+      "cid": "muarajambi-hero-5farkq",
+      "alt": "Gundukan tanah (menapo) di antara pepohonan di kawasan Muarajambi"
+    },
+    {
+      "cid": "muarajambi-hero-17wr4c",
+      "alt": "Struktur bata rendah di tengah rumput, kawasan Muarajambi"
+    },
+    {
+      "cid": "muarajambi-gallery-1m64qd",
+      "alt": "Candi bata bertingkat di Muarajambi di bawah langit berawan"
+    },
+    {
+      "cid": "muarajambi-gallery-a3turv",
+      "alt": "Bangunan terbesar di Candi Kembar Batu, Muarajambi"
+    },
+    {
+      "cid": "muarajambi-gallery-ahlhzc",
+      "alt": "Susunan bata berundak di Candi Kembar Batu"
+    },
+    {
+      "cid": "muarajambi-gallery-1bn8wf",
+      "alt": "Fondasi bata persegi di Candi Kembar Batu"
+    },
+    {
+      "cid": "muarajambi-gallery-ogzu7",
+      "alt": "Dua candi dan tangga di Candi Kembar Batu"
+    },
+    {
+      "cid": "muarajambi-gallery-o8sgox",
+      "alt": "Jalan bata dari gapura di Candi Kembar Batu"
+    },
+    {
+      "cid": "muarajambi-gallery-a8fg1r",
+      "alt": "Bangunan utama dan gapura di Candi Kembar Batu"
+    },
+    {
+      "cid": "borobudur-hero-rpzemj",
+      "alt": "Candi Borobudur dilihat dari barat laut di bawah langit biru"
+    },
+    {
+      "cid": "borobudur-hero-cspea7",
+      "alt": "Siluet stupa Borobudur saat matahari terbit dengan gunung di kejauhan"
+    },
+    {
+      "cid": "borobudur-hero-3suej9",
+      "alt": "Deretan stupa Borobudur berlatar langit fajar jingga"
+    },
+    {
+      "cid": "borobudur-hero-8bk7f7",
+      "alt": "Stupa berterawang di teras atas Borobudur dengan kabut pagi"
+    },
+    {
+      "cid": "borobudur-hero-1wmtdp",
+      "alt": "Stupa Borobudur berlatar pegunungan Menoreh dan kabut"
+    },
+    {
+      "cid": "borobudur-hero-1vto7p",
+      "alt": "Dinding berelief dan relung arca di Candi Borobudur"
+    },
+    {
+      "cid": "borobudur-gallery-q8uvp",
+      "alt": "Stupa-stupa di teras atas Borobudur dengan stupa induk di puncak"
+    },
+    {
+      "cid": "borobudur-gallery-1gzi1h",
+      "alt": "Lorong di antara stupa berterawang di teras Borobudur"
+    },
+    {
+      "cid": "borobudur-gallery-1pqf5c",
+      "alt": "Stupa Borobudur berlatar Gunung Merapi dan Merbabu pagi hari"
+    },
+    {
+      "cid": "borobudur-gallery-qxt5zq",
+      "alt": "Stupa berterawang di teras melingkar Borobudur dengan gunung di belakang"
+    },
+    {
+      "cid": "borobudur-gallery-1njn1s",
+      "alt": "Panel relief batu di dinding lorong Borobudur"
+    },
+    {
+      "cid": "borobudur-gallery-1ga4tv",
+      "alt": "Relief naratif di Borobudur dengan deretan figur"
+    },
+    {
+      "cid": "borobudur-gallery-htz9eu",
+      "alt": "Teras stupa Borobudur saat cahaya pagi"
+    },
+    {
+      "cid": "borobudur-gallery-1p8ssz",
+      "alt": "Arca Buddha di stupa terbuka di teras atas Borobudur"
+    },
+    {
+      "cid": "borobudur-then-12uw9g",
+      "alt": "Foto Kassian Cephas: relief di Borobudur, akhir abad ke-19"
+    },
+    {
+      "cid": "borobudur-then-swwwxq",
+      "alt": "Foto Kassian Cephas: relief kaki tersembunyi Borobudur, 1890 sampai 1891"
+    },
+    {
+      "cid": "borobudur-then-2xhcex",
+      "alt": "Foto Kassian Cephas: lorong di Borobudur sekitar 1888"
+    },
+    {
+      "cid": "borobudur-then-7k2yle",
+      "alt": "Foto Kassian Cephas: panel relief Borobudur, 1890 sampai 1891"
+    },
+    {
+      "cid": "borobudur-then-1dkx70",
+      "alt": "Foto Kassian Cephas: Borobudur dilihat dari halaman, 1872"
+    },
+    {
+      "cid": "borobudur-now-918x3b",
+      "alt": "Candi Borobudur dilihat dari barat laut dengan pohon besar di depan",
+      "role": "now"
+    },
+    {
+      "cid": "borobudur-now-w5d0fz",
+      "alt": "Foto Kassian Cephas: Borobudur dilihat dari barat laut, 1872",
+      "role": "then"
+    },
+    {
+      "cid": "borobudur-now-17q4m8",
+      "alt": "Foto Isidore van Kinsbergen: sisi barat laut Borobudur di balik pepohonan, sekitar 1871",
+      "role": "then"
+    },
+    {
+      "cid": "ev-borobudur-1973-restore-hc1xo8",
+      "alt": "Foto UNESCO 1973: stupa-stupa Borobudur pada masa kerja sama pemugaran"
+    },
+    {
+      "cid": "ev-borobudur-1973-restore-1yc0sy",
+      "alt": "Foto UNESCO 1973: pemandangan Borobudur dari udara pada masa pemugaran"
+    },
+    {
+      "cid": "ev-borobudur-1973-restore-1chras",
+      "alt": "Prasasti batu peresmian dimulainya pemugaran Borobudur 1973"
+    },
+    {
+      "cid": "prambanan-hero-1mvonp",
+      "alt": "Gugusan candi Prambanan dengan candi Siwa di tengah"
+    },
+    {
+      "cid": "prambanan-hero-j79v62",
+      "alt": "Jalan taman menuju candi Prambanan"
+    },
+    {
+      "cid": "prambanan-hero-1s6wxd",
+      "alt": "Gerbang dan tangga menuju candi utama Prambanan"
+    },
+    {
+      "cid": "prambanan-hero-1io3hy",
+      "alt": "Candi-candi Prambanan dengan reruntuhan batu di halaman depan"
+    },
+    {
+      "cid": "prambanan-hero-1qhvtx",
+      "alt": "Kompleks Prambanan dengan tumpukan batu candi perwara"
+    },
+    {
+      "cid": "prambanan-hero-1tlmgo",
+      "alt": "Detail panel hiasan pahatan di dinding candi Prambanan",
+      "role": "gallery"
+    },
+    {
+      "cid": "prambanan-gallery-1e71j5",
+      "alt": "Relief Ramayana di candi Siwa, Prambanan"
+    },
+    {
+      "cid": "prambanan-gallery-1nhqlb",
+      "alt": "Panel relief Ramayana di candi Siwa, Prambanan"
+    },
+    {
+      "cid": "prambanan-gallery-kltzh7",
+      "alt": "Foto 1896: dinding relief Ramayana Prambanan",
+      "role": "then"
+    },
+    {
+      "cid": "prambanan-gallery-10o0sz",
+      "alt": "Foto arsip KITLV: relief Ramayana Prambanan",
+      "role": "then"
+    },
+    {
+      "cid": "prambanan-gallery-q4c6po",
+      "alt": "Foto arsip KITLV: relief Ramayana dengan pasukan kera, Prambanan",
+      "role": "then"
+    },
+    {
+      "cid": "prambanan-gallery-fnum2r",
+      "alt": "Foto arsip KITLV: deretan relief Ramayana Prambanan",
+      "role": "then"
+    },
+    {
+      "cid": "prambanan-gallery-e539ob",
+      "alt": "Relief pasukan kera bersiap menyerang di Prambanan"
+    },
+    {
+      "cid": "prambanan-gallery-128s4v",
+      "alt": "Foto arsip KITLV: adegan Ramayana di Prambanan",
+      "role": "then"
+    },
+    {
+      "cid": "prambanan-now-183jlz",
+      "alt": "Candi Siwa Prambanan menjulang di atas rumput hijau"
+    },
+    {
+      "cid": "ev-prambanan-2006-quake-1uxx4g",
+      "alt": "Kompleks Prambanan pada 2008, tampak perancah di salah satu candi"
+    },
+    {
+      "cid": "ev-prambanan-2006-quake-1m3vkb",
+      "alt": "Candi utama Prambanan pada 2007 dengan pagar pembatas di halaman"
+    },
+    {
+      "cid": "sambisari-hero-1mox4p",
+      "alt": "Kompleks Candi Sambisari di dasar cekungan berpagar talud batu"
+    },
+    {
+      "cid": "sambisari-hero-1hfkga",
+      "alt": "Panorama Candi Sambisari yang lebih rendah dari permukaan tanah sekitar"
+    },
+    {
+      "cid": "sambisari-hero-16uuzb",
+      "alt": "Candi induk dan tiga candi perwara Sambisari dilihat dari atas"
+    },
+    {
+      "cid": "sambisari-gallery-xcmmz7",
+      "alt": "Lingga dan yoni di dalam bilik Candi Sambisari"
+    },
+    {
+      "cid": "sambisari-gallery-6vuvn1",
+      "alt": "Yoni berhias pahatan di Candi Sambisari"
+    },
+    {
+      "cid": "sambisari-gallery-skzue6",
+      "alt": "Yoni batu di halaman Candi Sambisari"
+    },
+    {
+      "cid": "sambisari-gallery-5keu6q",
+      "alt": "Arca dalam relung di dinding Candi Sambisari"
+    },
+    {
+      "cid": "sambisari-gallery-hl7s1n",
+      "alt": "Pintu masuk bilik Candi Sambisari dengan hiasan kala"
+    },
+    {
+      "cid": "sambisari-gallery-3a8hed",
+      "alt": "Candi Sambisari dilihat dari tepi cekungan"
+    },
+    {
+      "cid": "sambisari-gallery-47gyz0",
+      "alt": "Relung berarca di dinding Candi Sambisari"
+    },
+    {
+      "cid": "kimpulan-hero-159bnc",
+      "alt": "Lapik arca di pelataran Candi Kimpulan"
+    },
+    {
+      "cid": "kimpulan-hero-3tqshn",
+      "alt": "Yoni Candi Kimpulan dengan gedung perpustakaan di belakangnya"
+    },
+    {
+      "cid": "kimpulan-hero-1o81x8",
+      "alt": "Candi induk dan perwara Kimpulan di halaman kampus"
+    },
+    {
+      "cid": "kimpulan-hero-1205c1",
+      "alt": "Mangkuk perunggu temuan Candi Kimpulan di vitrin",
+      "role": "gallery"
+    },
+    {
+      "cid": "kimpulan-hero-184bhv",
+      "alt": "Kotak peripih batu temuan Candi Kimpulan",
+      "role": "gallery"
+    },
+    {
+      "cid": "kimpulan-gallery-df253w",
+      "alt": "Lubang ekskavasi Candi Kimpulan pada 2010 dengan gedung kampus di belakang"
+    },
+    {
+      "cid": "trowulan-hero-vea45n",
+      "alt": "Gapura bata Bajang Ratu di Trowulan dengan taman di depannya"
+    },
+    {
+      "cid": "trowulan-hero-1p4td3",
+      "alt": "Detail puncak gapura bata Bajang Ratu"
+    },
+    {
+      "cid": "trowulan-hero-z12tsd",
+      "alt": "Gapura Bajang Ratu menjulang di bawah langit biru"
+    },
+    {
+      "cid": "trowulan-gallery-1oltbt",
+      "alt": "Candi Tikus, petirtaan bata di Trowulan, dilihat dari samping"
+    },
+    {
+      "cid": "trowulan-gallery-wc88lp",
+      "alt": "Kolam petirtaan Candi Tikus dilihat dari atas"
+    },
+    {
+      "cid": "trowulan-gallery-14px45",
+      "alt": "Bangunan tengah Candi Tikus di dalam kolam"
+    },
+    {
+      "cid": "trowulan-gallery-16lh6u",
+      "alt": "Panorama kolam petirtaan bata di Trowulan"
+    },
+    {
+      "cid": "trowulan-gallery-zyl2bp",
+      "alt": "Candi Brahu dari bata merah dilihat dari depan"
+    },
+    {
+      "cid": "trowulan-gallery-12viw1",
+      "alt": "Candi Brahu dilihat dari belakang"
+    },
+    {
+      "cid": "trowulan-then-1n5h50",
+      "alt": "Foto arsip KITLV: gapura Bajang Ratu diselimuti tanaman"
+    },
+    {
+      "cid": "trowulan-then-vc09v",
+      "alt": "Foto arsip KITLV: Bajang Ratu dengan pohon besar tumbuh di strukturnya"
+    },
+    {
+      "cid": "trowulan-then-zi1n11",
+      "alt": "Foto arsip KITLV: gapura Bajang Ratu di tengah pepohonan"
+    },
+    {
+      "cid": "trowulan-then-1x54ih",
+      "alt": "Foto arsip KITLV: gapura Bajang Ratu dengan pohon di sisinya"
+    },
+    {
+      "cid": "somba-opu-hero-z3vo7d",
+      "alt": "Papan informasi di kawasan Benteng Somba Opu"
+    },
+    {
+      "cid": "somba-opu-hero-xcg2je",
+      "alt": "Rumah adat bertangga merah di kawasan Somba Opu"
+    },
+    {
+      "cid": "somba-opu-hero-ktso3h",
+      "alt": "Rumah panggung kayu di kawasan Somba Opu"
+    },
+    {
+      "cid": "somba-opu-hero-3iza6s",
+      "alt": "Rumah adat beratap melengkung di kawasan Somba Opu",
+      "role": "gallery"
+    },
+    {
+      "cid": "somba-opu-gallery-i2ev3t",
+      "alt": "Lukisan Johannes Vingboons: pemandangan kota Somba Opu dari laut dengan kapal-kapal layar, sekitar 1665",
+      "role": "then"
+    },
+    {
+      "cid": "fort-rotterdam-hero-1xy8j4",
+      "alt": "Halaman dalam Fort Rotterdam dengan bangunan beratap merah"
+    },
+    {
+      "cid": "fort-rotterdam-hero-1ytwn3",
+      "alt": "Bangunan bergaya Belanda berdinding kuning di Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-hero-1k9pnl",
+      "alt": "Deretan bangunan putih beratap merah di Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-hero-3loxnu",
+      "alt": "Litografi 1845: Fort Rotterdam di Makassar dilihat dari jalan pantai",
+      "role": "then"
+    },
+    {
+      "cid": "fort-rotterdam-gallery-1y2kue",
+      "alt": "Foto 1972: maket Fort Rotterdam dilihat dari tenggara"
+    },
+    {
+      "cid": "fort-rotterdam-gallery-1ye1wj",
+      "alt": "Foto 1972: maket bangunan di dalam Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-gallery-6q8yr",
+      "alt": "Foto 1972: maket Fort Rotterdam dengan bastion"
+    },
+    {
+      "cid": "fort-rotterdam-gallery-ll6vv5",
+      "alt": "Foto 1972: bangunan yang dipugar dilihat dari bastion Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-gallery-1hodxr",
+      "alt": "Foto 1972: tembok bastion Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-then-1bx3vf",
+      "alt": "Foto arsip KITLV: bangunan panjang di dalam Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-then-z3nlof",
+      "alt": "Foto arsip KITLV: bangunan bertingkat beratap tinggi di Fort Rotterdam"
+    },
+    {
+      "cid": "fort-rotterdam-then-xqnmt7",
+      "alt": "Foto arsip KITLV: jalan dan tembok Fort Rotterdam di kejauhan"
+    },
+    {
+      "cid": "ev-bungaya-1667-map-uya24a",
+      "alt": "Denah Fort Rotterdam abad ke-18 dengan lima bastion",
+      "target": "fort-rotterdam",
+      "role": "then"
+    },
+    {
+      "cid": "ev-bungaya-1667-map-f87t3y",
+      "alt": "Lukisan Johannes Vingboons: kota Somba Opu dari laut, sekitar 1665"
+    },
+    {
+      "cid": "istana-maimun-hero-1xzjet",
+      "alt": "Pintu masuk Istana Maimun berwarna kuning dengan tangga di depan"
+    },
+    {
+      "cid": "istana-maimun-hero-1a23wu",
+      "alt": "Istana Maimun dengan kubah-kubah hitam dilihat dari halaman"
+    },
+    {
+      "cid": "istana-maimun-hero-6ae3o0",
+      "alt": "Fasad Istana Maimun yang memanjang dengan taman di depan"
+    },
+    {
+      "cid": "istana-maimun-hero-rsch87",
+      "alt": "Balairung Istana Maimun dengan singgasana dan hiasan kuning hijau",
+      "role": "gallery"
+    },
+    {
+      "cid": "istana-maimun-then-v5rlhh",
+      "alt": "Foto arsip KITLV: aula di dalam istana Sultan Deli, Medan"
+    },
+    {
+      "cid": "istana-maimun-then-1h4zuo",
+      "alt": "Foto arsip KITLV: istana Sultan Deli di Medan dengan gerbang dan taman"
+    },
+    {
+      "cid": "istana-maimun-then-11bstm",
+      "alt": "Foto arsip KITLV: istana Sultan Deli di Medan dilihat dari lapangan"
+    },
+    {
+      "cid": "istana-maimun-then-e3wqpc",
+      "alt": "Foto arsip KITLV: panorama istana Sultan Deli di Medan"
+    },
+    {
+      "cid": "istana-maimun-gallery-1c0g99",
+      "alt": "Masjid Raya Al Mashun di Medan dengan kubah hitam"
+    },
+    {
+      "cid": "istana-maimun-gallery-mmhmct",
+      "alt": "Masjid Raya Al Mashun di bawah langit biru"
+    },
+    {
+      "cid": "istana-maimun-gallery-1nbetm",
+      "alt": "Gerbang Masjid Raya Al Mashun berhias hijau"
+    },
+    {
+      "cid": "rumah-maeda-hero-1dld6u",
+      "alt": "Museum Perumusan Naskah Proklamasi, bangunan putih bergaya kolonial di Menteng"
+    },
+    {
+      "cid": "global-map-java-4zthc6",
+      "alt": "Peta Jawa 1817 dari survei masa pemerintahan Inggris, dengan lima peta sisipan",
+      "target": "global"
+    },
+    {
+      "cid": "global-map-java-1wghs8",
+      "alt": "Peta Jawa karya J. Walker, 1817",
+      "target": "global"
+    },
+    {
+      "cid": "liang-bua-hero-1gkzet",
+      "alt": "Mulut Gua Liang Bua yang lebar dengan lantai tanah dan dinding batu kapur, Flores"
+    },
+    {
+      "cid": "liang-bua-hero-1fuw6n",
+      "alt": "Jalan tanah menuju Gua Liang Bua melewati kebun dan pepohonan",
+      "role": "gallery"
+    },
+    {
+      "cid": "liang-bua-hero-1n7ojp",
+      "alt": "Ruang dalam Gua Liang Bua yang gelap dengan cahaya masuk dari celah di atas",
+      "role": "gallery"
+    },
+    {
+      "cid": "lubang-jeriji-saleh-hero-1en268",
+      "alt": "Lukisan cadas banteng berwarna merah jingga di dinding Lubang Jeriji Saléh, Kalimantan Timur"
+    },
+    {
+      "cid": "gunung-padang-hero-bosjfc",
+      "alt": "Teras batu Situs Gunung Padang diselimuti rumput hijau, dilihat dari ketinggian"
+    },
+    {
+      "cid": "gunung-padang-hero-r56830",
+      "alt": "Dua menhir tegak di Situs Gunung Padang di bawah langit biru"
+    },
+    {
+      "cid": "gunung-padang-hero-1oddss",
+      "alt": "Hamparan balok batu andesit di puncak Situs Gunung Padang",
+      "role": "gallery"
+    },
+    {
+      "cid": "gunung-padang-hero-hw0tbb",
+      "alt": "Tumpukan balok batu kolom andesit di lereng Situs Gunung Padang",
+      "role": "gallery"
+    },
+    {
+      "cid": "gunung-padang-then-1m79e9",
+      "alt": "Foto arsip Tropenmuseum: reruntuhan teras batu Gunung Padang di dalam hutan dekat perkebunan Goenoeng Manik, Lampegan"
+    },
+    {
+      "cid": "ciaruteun-hero-v81fsd",
+      "alt": "Batu besar Prasasti Ciaruteun di dalam cungkup, dilihat dari samping"
+    },
+    {
+      "cid": "ciaruteun-hero-1pepn2",
+      "alt": "Permukaan Prasasti Ciaruteun dengan telapak kaki dan tulisan Pallawa",
+      "role": "gallery"
+    },
+    {
+      "cid": "ciaruteun-hero-1m6a1u",
+      "alt": "Baris tulisan Pallawa pada Prasasti Ciaruteun",
+      "role": "gallery"
+    },
+    {
+      "cid": "ciaruteun-hero-7i8knu",
+      "alt": "Pahatan telapak kaki dan lingkaran pada Prasasti Ciaruteun",
+      "role": "gallery"
+    },
+    {
+      "cid": "ciaruteun-then-a5gxfm",
+      "alt": "Foto arsip KITLV: batu bertulis Ciaruteun di aliran sungai dekat Buitenzorg, sebelum 1900"
+    },
+    {
+      "cid": "ciaruteun-then-uxjszn",
+      "alt": "Foto arsip Tropenmuseum: batu bertulis Ciaruteun dengan telapak kaki dan tulisan",
+      "role": "gallery"
+    },
+    {
+      "cid": "dieng-hero-rt850n",
+      "alt": "Candi Arjuna di Dataran Tinggi Dieng dengan perbukitan dan langit biru"
+    },
+    {
+      "cid": "dieng-hero-nue01a",
+      "alt": "Candi Arjuna dan candi-candi kecil di sekitarnya di Dataran Tinggi Dieng"
+    },
+    {
+      "cid": "dieng-then-1vzdt3",
+      "alt": "Foto arsip Tropenmuseum: candi-candi Arjuna di Dieng, Jawa, berlatar lereng bukit gundul"
+    },
+    {
+      "cid": "kalasan-hero-aqyfuj",
+      "alt": "Candi Kalasan dilihat dari timur laut dengan pohon di kedua sisinya"
+    },
+    {
+      "cid": "kalasan-hero-11o2kb",
+      "alt": "Candi Kalasan dari samping dengan ukiran pada tubuh candi"
+    },
+    {
+      "cid": "kalasan-hero-1tpl9y",
+      "alt": "Sisi depan Candi Kalasan dengan bilik dan ukiran kala",
+      "role": "gallery"
+    },
+    {
+      "cid": "kalasan-hero-gc4udb",
+      "alt": "Detail relief sulur pada dinding Candi Kalasan",
+      "role": "gallery"
+    },
+    {
+      "cid": "kalasan-hero-lqtz4o",
+      "alt": "Langit-langit bilik Candi Kalasan berbentuk segi delapan dengan cahaya di puncak",
+      "role": "gallery"
+    },
+    {
+      "cid": "kalasan-then-9s9hnu",
+      "alt": "Foto arsip KITLV oleh Kassian Cephas: Candi Kalasan dari depan dengan pintu bilik dan ukiran, sekitar 1900"
+    },
+    {
+      "cid": "kalasan-then-1wt54z",
+      "alt": "Foto arsip KITLV oleh Isidore van Kinsbergen: Candi Kalasan dengan ukiran yang ditumbuhi semak, sebelum 1900"
+    },
+    {
+      "cid": "sewu-hero-1s843h",
+      "alt": "Candi Sewu dengan candi induk dan menara-menara perwara dikelilingi reruntuhan batu"
+    },
+    {
+      "cid": "sewu-hero-epgy70",
+      "alt": "Hamparan reruntuhan batu di depan candi induk dan stupa-stupa kecil Candi Sewu"
+    },
+    {
+      "cid": "sewu-hero-1boxa6",
+      "alt": "Dua candi perwara Candi Sewu berelief di halaman berpaving",
+      "role": "gallery"
+    },
+    {
+      "cid": "sewu-hero-7id44i",
+      "alt": "Candi induk Candi Sewu dilihat dari jalan tanah di antara tumpukan batu",
+      "role": "gallery"
+    },
+    {
+      "cid": "sewu-then-i4m6yf",
+      "alt": "Foto arsip KITLV oleh Isidore van Kinsbergen: dua candi di kompleks Sewu yang rusak, sebelum 1900"
+    },
+    {
+      "cid": "sewu-then-1jivo2",
+      "alt": "Foto arsip KITLV: reruntuhan candi di kompleks Sewu, Jawa Tengah, 1911"
+    },
+    {
+      "cid": "mendut-hero-1xsy52",
+      "alt": "Candi Mendut dilihat dari samping dengan rumput hijau dan pohon besar di sebelahnya"
+    },
+    {
+      "cid": "mendut-hero-14rd3f",
+      "alt": "Candi Mendut berundak dengan pohon kelapa dan langit biru"
+    },
+    {
+      "cid": "mendut-hero-3x6plg",
+      "alt": "Arca Buddha duduk di dalam bilik Candi Mendut yang berdinding bata",
+      "role": "gallery"
+    },
+    {
+      "cid": "mendut-hero-sfatdy",
+      "alt": "Pahatan motif belah ketupat pada kaki Candi Mendut",
+      "role": "gallery"
+    },
+    {
+      "cid": "mendut-then-1f42oq",
+      "alt": "Foto arsip KITLV: Candi Mendut di Magelang, sekitar 1910"
+    },
+    {
+      "cid": "mendut-then-1f805c",
+      "alt": "Foto arsip KITLV: arca-arca Buddha di dalam Candi Mendut, sekitar 1910"
+    },
+    {
+      "cid": "plaosan-hero-1deeg3",
+      "alt": "Candi Plaosan Lor dari depan dengan jalan setapak, semak pangkas, dan candi perwara di kedua sisi"
+    },
+    {
+      "cid": "plaosan-hero-jkxnqn",
+      "alt": "Gerbang jalan menuju candi induk Plaosan Lor dengan tumpukan batu di kiri dan kanan"
+    },
+    {
+      "cid": "plaosan-hero-1f0e2g",
+      "alt": "Candi Plaosan Lor dan reruntuhan batu dilihat dari jalan di sisi selatan",
+      "role": "gallery"
+    },
+    {
+      "cid": "plaosan-then-1reuue",
+      "alt": "Foto arsip Tropenmuseum oleh H. Bongers: sisa dinding batu Candi Plaosan di tengah ladang, 1928"
+    },
+    {
+      "cid": "plaosan-then-15dg7f",
+      "alt": "Foto Tropenmuseum: Candi Plaosan berlatar langit biru, sekitar 1960"
+    },
+    {
+      "cid": "blanjong-hero-dvz2vp",
+      "alt": "Cungkup kayu pelindung Prasasti Blanjong dengan dua arca penjaga di depannya, Sanur"
+    },
+    {
+      "cid": "blanjong-hero-1lpots",
+      "alt": "Bagian dalam bangunan kayu yang menyimpan Prasasti Blanjong",
+      "role": "gallery"
+    },
+    {
+      "cid": "blanjong-hero-190ut3",
+      "alt": "Papan keterangan cagar budaya di depan Prasasti Blanjong",
+      "role": "gallery"
+    },
+    {
+      "cid": "goa-gajah-hero-1wv4mi",
+      "alt": "Kolam pemandian Goa Gajah dengan bangunan beratap sirap di tepinya"
+    },
+    {
+      "cid": "goa-gajah-hero-4xiu9e",
+      "alt": "Tiga arca perempuan yang memancurkan air di kolam pemandian Goa Gajah"
+    },
+    {
+      "cid": "goa-gajah-hero-taaxnx",
+      "alt": "Kolam berundak dan bangunan terbuka di Goa Gajah",
+      "role": "gallery"
+    },
+    {
+      "cid": "goa-gajah-hero-wn01s",
+      "alt": "Taman berlumut dan sungai kecil di sekitar Goa Gajah",
+      "role": "gallery"
+    },
+    {
+      "cid": "goa-gajah-then-johv8c",
+      "alt": "Foto arsip KITLV: pintu gua Goa Gajah berhias pahatan raksasa dengan arca penjaga di depannya"
+    },
+    {
+      "cid": "goa-gajah-then-10uimi",
+      "alt": "Foto arsip KITLV: ambang gua Goa Gajah dengan pahatan wajah raksasa"
+    },
+    {
+      "cid": "singosari-hero-rxcrsc",
+      "alt": "Candi Singosari di tengah halaman berumput dengan pohon kelapa"
+    },
+    {
+      "cid": "singosari-hero-1i6fm4",
+      "alt": "Candi Singosari dari samping dengan pohon kelapa dan langit mendung"
+    },
+    {
+      "cid": "singosari-hero-lozne7",
+      "alt": "Pahatan kala bermata melotot di dinding Candi Singosari",
+      "role": "gallery"
+    },
+    {
+      "cid": "singosari-hero-1tf15o",
+      "alt": "Bagian atas tubuh Candi Singosari dengan relung berhias kala",
+      "role": "gallery"
+    },
+    {
+      "cid": "singosari-then-7m3shf",
+      "alt": "Foto arsip KITLV oleh H. Salzwedel: candi menara Singosari dekat Malang"
+    },
+    {
+      "cid": "singosari-then-22bnu",
+      "alt": "Foto arsip KITLV: Candi Singosari dekat Malang yang ditumbuhi semak"
+    },
+    {
+      "cid": "penataran-hero-hvjdk",
+      "alt": "Candi induk Penataran berdiri di tengah halaman berumput di Blitar"
+    },
+    {
+      "cid": "penataran-hero-zca1dj",
+      "alt": "Candi Penataran terlihat dari balik pintu batu gapura",
+      "role": "gallery"
+    },
+    {
+      "cid": "penataran-hero-19nill",
+      "alt": "Relief pada dinding Candi Penataran",
+      "role": "gallery"
+    },
+    {
+      "cid": "penataran-hero-bzgzfq",
+      "alt": "Panel relief tokoh-tokoh berdiri pada dinding Candi Penataran",
+      "role": "gallery"
+    },
+    {
+      "cid": "penataran-then-dvrr96",
+      "alt": "Lukisan arsip KITLV oleh J.H.W. le Clercq: bangunan candi kecil di tengah hutan bambu di Penataran, 11 Oktober 1845"
+    },
+    {
+      "cid": "sukuh-hero-1bfx7c",
+      "alt": "Candi Sukuh berupa piramida bertingkat dengan tangga sempit di tengahnya"
+    },
+    {
+      "cid": "sukuh-hero-12dtvi",
+      "alt": "Candi Sukuh dilihat dari depan dengan tangga di tengah dan hutan di belakangnya"
+    },
+    {
+      "cid": "sukuh-hero-132hxp",
+      "alt": "Sisi Candi Sukuh yang berkabut dengan arca dan batu bundar di halaman",
+      "role": "gallery"
+    },
+    {
+      "cid": "sukuh-hero-sz0ym5",
+      "alt": "Lubang persembahan di tengah teras batu Candi Sukuh",
+      "role": "gallery"
+    },
+    {
+      "cid": "sukuh-hero-rdq550",
+      "alt": "Arca kura-kura besar dari batu di halaman Candi Sukuh",
+      "role": "gallery"
+    },
+    {
+      "cid": "sukuh-then-qbq0yf",
+      "alt": "Foto arsip KITLV: tangga Candi Sukuh di lereng barat Gunung Lawu dekat Surakarta"
+    },
+    {
+      "cid": "sukuh-then-1bdueh",
+      "alt": "Foto arsip KITLV: teras pertama Candi Sukuh di lereng barat Gunung Lawu"
+    },
+    {
+      "cid": "muara-takus-hero-15n3qi",
+      "alt": "Stupa Mahligai berbata merah di kompleks Candi Muara Takus dengan sawit di kejauhan"
+    },
+    {
+      "cid": "muara-takus-hero-15pkxd",
+      "alt": "Bangunan bata merah Candi Muara Takus di tengah rumput di bawah langit mendung"
+    },
+    {
+      "cid": "muara-takus-hero-hvzqn4",
+      "alt": "Dinding bata merah dan lorong berumput di kompleks Candi Muara Takus",
+      "role": "gallery"
+    },
+    {
+      "cid": "muara-takus-hero-sjty2e",
+      "alt": "Bagian atas candi berundak di kompleks Muara Takus yang berlumut",
+      "role": "gallery"
+    },
+    {
+      "cid": "muara-takus-then-1j67s4",
+      "alt": "Foto arsip Tropenmuseum: stupa Candi Mahligai di kompleks Muara Takus, 1889"
+    },
+    {
+      "cid": "muara-takus-then-17tyeq",
+      "alt": "Foto arsip Tropenmuseum: stupa Mahligai, Candi Bungsu, dan Candi Tua di Muara Takus, 1888"
+    },
+    {
+      "cid": "menara-kudus-hero-u9wxgm",
+      "alt": "Menara Kudus berbata merah dengan atap bertingkat dan kubah masjid di sebelahnya"
+    },
+    {
+      "cid": "menara-kudus-hero-yhm65s",
+      "alt": "Menara Kudus dan kubah Masjid Menara Kudus dilihat dari timur di bawah langit biru",
+      "role": "gallery"
+    },
+    {
+      "cid": "menara-kudus-then-14trl6",
+      "alt": "Foto arsip Tropenmuseum oleh Hendrik Veen: menara Kudus di antara pepohonan, sekitar 1880"
+    },
+    {
+      "cid": "menara-kudus-then-1xbicy",
+      "alt": "Foto arsip Tropenmuseum: menara di samping masjid Kudus, sekitar 1900"
+    },
+    {
+      "cid": "pltd-apung-hero-cj18tc",
+      "alt": "Badan kapal PLTD Apung berwarna putih dengan cerobong di atas daratan, dikelilingi pepohonan"
+    },
+    {
+      "cid": "kota-tua-jakarta-hero-hm04vs",
+      "alt": "Bangunan kolonial dua lantai berdinding kuning dan kayu merah di Kota Tua Jakarta"
+    },
+    {
+      "cid": "kota-tua-jakarta-hero-u9swoa",
+      "alt": "Deretan bangunan kolonial tua yang lapuk di persimpangan jalan Kota Tua Jakarta"
+    },
+    {
+      "cid": "kota-tua-jakarta-hero-p41kih",
+      "alt": "Bangunan kolonial bergiebel dan jalan di Kota Tua Jakarta",
+      "role": "gallery"
+    },
+    {
+      "cid": "kota-tua-jakarta-then-glz612",
+      "alt": "Foto arsip Tropenmuseum: Gerbang Amsterdam (Amsterdamse Poort) di Batavia, 1857"
+    },
+    {
+      "cid": "benteng-victoria-hero-saqh09",
+      "alt": "Gerbang Benteng Nieuw Victoria dengan pilar hitam putih dan pintu kayu merah"
+    },
+    {
+      "cid": "benteng-victoria-hero-11pveg",
+      "alt": "Lambang VOC dan tahun MDCCLXXV di atas gerbang Benteng Nieuw Victoria",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-victoria-hero-14lvw8",
+      "alt": "Tulisan Nieuw Victoria dan lukisan kapal layar pada tympanum gerbang benteng",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-victoria-then-9hbobc",
+      "alt": "Foto arsip Tropenmuseum: gerbang air Benteng Nieuw Victoria di Ambon dengan tembok dan bendera, 1899"
+    },
+    {
+      "cid": "benteng-oranje-hero-1ww9fh",
+      "alt": "Dinding tebal Benteng Oranje, Ternate, dengan dua pintu dan jendela berterali"
+    },
+    {
+      "cid": "benteng-oranje-hero-xvrvhr",
+      "alt": "Halaman berpaving di dalam kompleks Benteng Oranje, Ternate, dengan tembok di belakangnya"
+    },
+    {
+      "cid": "benteng-oranje-hero-bsl0g0",
+      "alt": "Selasar beratap dan lampu taman di dalam kompleks Benteng Oranje, Ternate",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-oranje-then-14kx9q",
+      "alt": "Foto arsip Tropenmuseum: gerbang utama Benteng Oranje di Ternate dengan tangga dan atap ijuk"
+    },
+    {
+      "cid": "banda-neira-hero-14wv76",
+      "alt": "Foto arsip ekspedisi Siboga: perairan Banda dengan gunung di kejauhan, 1899"
+    },
+    {
+      "cid": "banda-neira-then-1x88dy",
+      "alt": "Foto arsip Tropenmuseum: gerbang berlengkung putih pada tembok Benteng Belgica, Banda Neira, sekitar 1930"
+    },
+    {
+      "cid": "banda-neira-then-1l7hh2",
+      "alt": "Foto arsip Tropenmuseum: reruntuhan Benteng Nassau di Banda, sekitar 1930"
+    },
+    {
+      "cid": "taman-sari-hero-njs2rb",
+      "alt": "Kolam pemandian Taman Sari dengan menara bertangga merah di tengahnya"
+    },
+    {
+      "cid": "taman-sari-hero-1mrf0z",
+      "alt": "Menara di tengah kolam pemandian Taman Sari, Yogyakarta, dengan air hijau jernih"
+    },
+    {
+      "cid": "taman-sari-hero-jli0ka",
+      "alt": "Gerbang barat Taman Sari berhias ukiran putih bergelombang",
+      "role": "gallery"
+    },
+    {
+      "cid": "taman-sari-hero-z328ck",
+      "alt": "Gerbang timur Taman Sari dengan lorong berlengkung dan tembok tinggi",
+      "role": "gallery"
+    },
+    {
+      "cid": "taman-sari-then-1271ze",
+      "alt": "Foto arsip KITLV oleh Kassian Cephas: gerbang dan tembok Taman Sari di Yogyakarta, sekitar 1883"
+    },
+    {
+      "cid": "taman-sari-then-1ejtiv",
+      "alt": "Foto arsip Tropenmuseum: gerbang berukir Taman Sari yang ditumbuhi tanaman, sekitar 1920"
+    },
+    {
+      "cid": "kotagede-hero-91tcic",
+      "alt": "Masjid Gedhe Mataram Kotagede dengan atap tajug berundak dan serambi terbuka"
+    },
+    {
+      "cid": "kotagede-hero-1sbzki",
+      "alt": "Pendapa Masjid Gedhe Mataram Kotagede di waktu senja dengan lampu menyala",
+      "role": "gallery"
+    },
+    {
+      "cid": "kotagede-then-1f6e37",
+      "alt": "Foto arsip KITLV: gapura makam raja di Kotagede dekat Yogyakarta"
+    },
+    {
+      "cid": "kotagede-then-1bl6r0",
+      "alt": "Foto arsip KITLV oleh Th. Metz: tempat pemandian masjid Kotagede dengan deretan lengkung"
+    },
+    {
+      "cid": "benteng-marlborough-hero-8axsvc",
+      "alt": "Dua meriam tua di halaman berumput di depan dinding putih Benteng Marlborough, Bengkulu"
+    },
+    {
+      "cid": "benteng-marlborough-hero-idjfqc",
+      "alt": "Papan nama Fort Marlborough di halaman berumput depan benteng",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-marlborough-then-lvdy1z",
+      "alt": "Foto arsip KITLV: Fort Marlborough di Benkoelen dilihat dari kejauhan"
+    },
+    {
+      "cid": "benteng-duurstede-hero-qmwsqy",
+      "alt": "Gerbang berpilar putih bertuliskan Duurstede Park di pintu masuk Benteng Duurstede"
+    },
+    {
+      "cid": "benteng-duurstede-hero-1ijifl",
+      "alt": "Tembok putih Benteng Duurstede dan padang rumput dengan laut di kejauhan"
+    },
+    {
+      "cid": "benteng-duurstede-hero-1faixe",
+      "alt": "Bastion putih berkubah dengan pintu lengkung di Benteng Duurstede",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-duurstede-hero-cm8mj9",
+      "alt": "Dinding putih Benteng Duurstede dengan menara jaga di ujungnya",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-duurstede-then-14gaab",
+      "alt": "Foto arsip Tropenmuseum: tembok dan tangga batu Benteng Duurstede di Saparua, sekitar 1930"
+    },
+    {
+      "cid": "benteng-duurstede-then-1cybbj",
+      "alt": "Foto arsip Tropenmuseum: tembok dengan menara intai Benteng Duurstede menghadap laut, sekitar 1930"
+    },
+    {
+      "cid": "lawang-sewu-hero-q5syh5",
+      "alt": "Gedung utama Lawang Sewu dengan dua menara berkubah merah dan pintu lengkung di depannya"
+    },
+    {
+      "cid": "lawang-sewu-hero-128zka",
+      "alt": "Halaman Lawang Sewu dengan sayap bangunan putih beratap merah di kedua sisinya"
+    },
+    {
+      "cid": "lawang-sewu-hero-w3rvh6",
+      "alt": "Sayap bangunan Lawang Sewu dengan deretan jendela lengkung dan atap genting merah",
+      "role": "gallery"
+    },
+    {
+      "cid": "lawang-sewu-hero-1p5cx4",
+      "alt": "Koridor luar Lawang Sewu dengan deretan jendela tinggi di balik pohon",
+      "role": "gallery"
+    },
+    {
+      "cid": "lawang-sewu-then-apvjes",
+      "alt": "Foto arsip KITLV: kantor Nederlandsch Indische Spoorweg Maatschappij di Semarang, kini Lawang Sewu"
+    },
+    {
+      "cid": "lawang-sewu-then-x2aze5",
+      "alt": "Foto arsip Tropenmuseum: kantor pusat Nederlands-Indische Spoorweg Maatschappij di Semarang, sekitar 1920"
+    },
+    {
+      "cid": "gedung-sate-hero-4byur5",
+      "alt": "Gedung Sate di Bandung dengan air mancur di taman depan dan menara bertingkat di puncaknya"
+    },
+    {
+      "cid": "gedung-sate-hero-1mkpjc",
+      "alt": "Gedung Sate dari seberang lapangan dengan pohon palem dan langit biru"
+    },
+    {
+      "cid": "gedung-sate-hero-165l6c",
+      "alt": "Gedung Sate dilihat dari gerbang pagar besi dengan taman bunga di depannya",
+      "role": "gallery"
+    },
+    {
+      "cid": "gedung-sate-hero-6vdu4u",
+      "alt": "Taman berbunga di depan Gedung Sate di bawah langit biru",
+      "role": "gallery"
+    },
+    {
+      "cid": "gedung-sate-then-29bayw",
+      "alt": "Foto arsip KITLV: gedung utama Departemen Gouvernementsbedrijven di Bandoeng, kini Gedung Sate"
+    },
+    {
+      "cid": "gedung-sate-then-81nllq",
+      "alt": "Foto arsip KITLV: sayap samping gedung utama Gouvernementsbedrijven di Bandoeng dengan menara bertingkat"
+    },
+    {
+      "cid": "jam-gadang-hero-1nv5y4",
+      "alt": "Menara Jam Gadang dengan atap bergonjong dilihat dari lapangan di bawah langit berawan"
+    },
+    {
+      "cid": "jam-gadang-hero-1pdve7",
+      "alt": "Menara Jam Gadang berwarna putih dengan jam di keempat sisinya"
+    },
+    {
+      "cid": "jam-gadang-hero-6j57bk",
+      "alt": "Lapangan di sekitar Jam Gadang dengan tugu beratap gonjong dan pegunungan di kejauhan",
+      "role": "gallery"
+    },
+    {
+      "cid": "jam-gadang-hero-pbcujm",
+      "alt": "Jam Gadang dari seberang lapangan yang lengang",
+      "role": "gallery"
+    },
+    {
+      "cid": "jam-gadang-then-yjibzl",
+      "alt": "Foto arsip Tropenmuseum: pemandangan kota Fort de Kock dengan menara Jam Gadang dan jalan menanjak, 1933"
+    },
+    {
+      "cid": "jam-gadang-then-1nfmll",
+      "alt": "Foto arsip Tropenmuseum: menara jam di Fort de Kock, Sumatera Barat, dengan bangunan dua lantai di sisinya, sekitar 1900"
+    },
+    {
+      "cid": "gedung-sumpah-pemuda-hero-jkb90c",
+      "alt": "Gedung Sumpah Pemuda beratap genting merah dengan hiasan bendera merah putih di serambi"
+    },
+    {
+      "cid": "gedung-sumpah-pemuda-hero-1v0fhi",
+      "alt": "Gedung Sumpah Pemuda dilihat dari pagar dengan papan nama museum di sudut",
+      "role": "gallery"
+    },
+    {
+      "cid": "pengasingan-bung-karno-hero-1c91k5",
+      "alt": "Rumah Pengasingan Bung Karno di Bengkulu dengan taman bunga di depannya"
+    },
+    {
+      "cid": "pengasingan-bung-karno-hero-3s0zbq",
+      "alt": "Rumah Pengasingan Bung Karno dari jalan setapak berpaving di tengah taman"
+    },
+    {
+      "cid": "pengasingan-bung-karno-hero-1q4893",
+      "alt": "Papan nama Rumah Pengasingan Bung Karno di halaman berumput di depan rumah",
+      "role": "gallery"
+    },
+    {
+      "cid": "hotel-majapahit-hero-m8qwzr",
+      "alt": "Hotel Majapahit di Surabaya saat senja dengan pohon palem dan lampu jalan menyala"
+    },
+    {
+      "cid": "hotel-majapahit-hero-1y42xe",
+      "alt": "Halaman dalam Hotel Majapahit dengan taman rumput, air mancur, dan lorong berlengkung"
+    },
+    {
+      "cid": "hotel-majapahit-hero-1kqjzj",
+      "alt": "Sayap bangunan putih berlengkung Hotel Majapahit dilihat dari taman",
+      "role": "gallery"
+    },
+    {
+      "cid": "hotel-majapahit-hero-13jx47",
+      "alt": "Ruang makan Hotel Majapahit dengan meja kursi kayu dan jendela kaca patri",
+      "role": "gallery"
+    },
+    {
+      "cid": "hotel-majapahit-then-1zxfkh",
+      "alt": "Foto arsip KITLV: Oranje Hotel di Soerabaia (kini Hotel Majapahit) dengan pagar besi di depannya"
+    },
+    {
+      "cid": "hotel-majapahit-then-1f1r3k",
+      "alt": "Foto arsip KITLV oleh Kurkdjian: ruang santai Oranje Hotel di Surabaya, sekitar 1920"
+    },
+    {
+      "cid": "monas-then-1k0j8q",
+      "alt": "Foto arsip KITLV oleh Fridus Steijlen: Monas dilihat dari jalan di Medan Merdeka, Jakarta"
+    },
+    {
+      "cid": "monas-then-eil1pi",
+      "alt": "Foto arsip KITLV oleh Fridus Steijlen: tugu Monas dan pelataran cawannya di Medan Merdeka, Jakarta"
+    },
+    {
+      "cid": "ngandong-hero-k171kv",
+      "alt": "Tempurung kepala Homo erectus Ngandong 14 dalam vitrin, dilihat dari depan"
+    },
+    {
+      "cid": "ngandong-hero-bsjxub",
+      "alt": "Tempurung kepala Homo erectus Ngandong 13 dilihat dari belakang",
+      "role": "gallery"
+    },
+    {
+      "cid": "ngandong-hero-1lj6l7",
+      "alt": "Tempurung kepala Homo erectus Ngandong 14 dilihat dari samping",
+      "role": "gallery"
+    },
+    {
+      "cid": "ngandong-then-1pyv6f",
+      "alt": "Foto arsip Tropenmuseum: rakit kayu dan perahu di Bengawan Solo dekat Ngandong, 1917"
+    },
+    {
+      "cid": "ngandong-hero-fm4rwc",
+      "alt": "Foto arsip penggalian di Ngandong dari terbitan Franz Weidenreich, 1951",
+      "role": "then"
+    },
+    {
+      "cid": "yupa-kutai-hero-18w4gt",
+      "alt": "Sekumpulan tugu batu Prasasti Yupa dari Kutai yang dipajang di dalam museum"
+    },
+    {
+      "cid": "yupa-kutai-hero-dtep52",
+      "alt": "Replika Prasasti Yupa berupa tugu batu bertulis dalam vitrin berlatar hijau",
+      "role": "gallery"
+    },
+    {
+      "cid": "batujaya-hero-56sy8a",
+      "alt": "Candi Jiwa di Batujaya berupa struktur bata merah berundak di tengah persawahan"
+    },
+    {
+      "cid": "batujaya-hero-1y4auj",
+      "alt": "Struktur bata merah Candi Blandongan di Batujaya dengan halaman rumput hijau"
+    },
+    {
+      "cid": "batujaya-hero-12bgm2",
+      "alt": "Tangga dan dinding bata Candi Blandongan di Batujaya",
+      "role": "gallery"
+    },
+    {
+      "cid": "batujaya-hero-15d780",
+      "alt": "Candi Jiwa Batujaya di bawah langit senja kemerahan",
+      "role": "gallery"
+    },
+    {
+      "cid": "sriwijaya-palembang-then-3dd1v0",
+      "alt": "Foto arsip KITLV oleh Lambert & Co.: Pasar Ilir di Palembang dengan deretan toko di kedua sisi jalan, sekitar 1900"
+    },
+    {
+      "cid": "ratu-boko-hero-1ksttf",
+      "alt": "Gapura batu Keraton Ratu Boko dengan tiga pintu dan jalan paving di depannya"
+    },
+    {
+      "cid": "ratu-boko-hero-ghwskz",
+      "alt": "Gapura Keraton Ratu Boko dari kejauhan dengan halaman luas dan langit biru"
+    },
+    {
+      "cid": "ratu-boko-hero-eal7zy",
+      "alt": "Jalan paving berpagar semak menuju gapura Keraton Ratu Boko",
+      "role": "gallery"
+    },
+    {
+      "cid": "ratu-boko-hero-1pdtbe",
+      "alt": "Hamparan rumput di depan gapura Keraton Ratu Boko",
+      "role": "gallery"
+    },
+    {
+      "cid": "ratu-boko-then-vxlayu",
+      "alt": "Foto arsip KITLV: reruntuhan kompleks Ratu Boko dekat Yogyakarta dengan susunan batu dan fondasi"
+    },
+    {
+      "cid": "ratu-boko-then-9zw771",
+      "alt": "Foto arsip KITLV: bagian ambang batu berukir di kompleks Ratu Boko"
+    },
+    {
+      "cid": "gunung-kawi-hero-4gegi3",
+      "alt": "Deretan relung candi tebing Gunung Kawi dipahat pada dinding batu di antara pohon kelapa"
+    },
+    {
+      "cid": "gunung-kawi-hero-p05ll9",
+      "alt": "Tiga relung candi tebing Gunung Kawi dengan tangga batu di depannya"
+    },
+    {
+      "cid": "gunung-kawi-hero-bjw4g",
+      "alt": "Papan Cagar Budaya Candi Tebing Gunung Kawi di tepi sawah",
+      "role": "gallery"
+    },
+    {
+      "cid": "gunung-kawi-then-ib7xoz",
+      "alt": "Foto arsip Tropenmuseum: relung-relung candi tebing Gunung Kawi di Tampaksiring, sekitar 1910"
+    },
+    {
+      "cid": "gunung-kawi-then-1xq02x",
+      "alt": "Foto arsip Tropenmuseum: kompleks Gunung Kawi dengan bangunan kecil di tepi tebing, sekitar 1910"
+    },
+    {
+      "cid": "subak-hero-wj7c3o",
+      "alt": "Sawah bertingkat dengan petak berair dan pohon kelapa di Jatiluwih, Tabanan, Bali"
+    },
+    {
+      "cid": "subak-hero-fw8o54",
+      "alt": "Hamparan sawah hijau di Jatiluwih dengan gunung berawan di kejauhan",
+      "role": "gallery"
+    },
+    {
+      "cid": "samudera-pasai-hero-1jjhc1",
+      "alt": "Nisan batu bermahkota pada makam Sultan Malik As-Shalih (Malikussaleh) beralas kerikil putih"
+    },
+    {
+      "cid": "samudera-pasai-hero-1taen0",
+      "alt": "Makam Malikussaleh dengan nisan batu dan batu-batu putih di dalam bangunan pelindung",
+      "role": "gallery"
+    },
+    {
+      "cid": "cetho-hero-mvmugl",
+      "alt": "Teras berundak Candi Cetho dengan tangga batu dan gapura di antara pepohonan lereng Lawu"
+    },
+    {
+      "cid": "cetho-hero-1a973z",
+      "alt": "Jalan setapak dan tangga batu menuju teras Candi Cetho yang berpagar tanaman"
+    },
+    {
+      "cid": "cetho-hero-w4g964",
+      "alt": "Relief di lantai teras Candi Cetho yang berpagar batu, dilihat dari atas",
+      "role": "gallery"
+    },
+    {
+      "cid": "cetho-hero-n52nif",
+      "alt": "Susunan batu berpola matahari di teras Candi Cetho",
+      "role": "gallery"
+    },
+    {
+      "cid": "padang-lawas-hero-1p1vwm",
+      "alt": "Candi Bahal (Portibi) berbata merah berdiri di tengah halaman rumput dan kebun sawit"
+    },
+    {
+      "cid": "padang-lawas-hero-1nf7dv",
+      "alt": "Candi Bahal II dengan arca penjaga batu di sisinya dan rumput hijau di depan"
+    },
+    {
+      "cid": "padang-lawas-hero-11h6kv",
+      "alt": "Candi Bahal berbata merah di bawah langit senja jingga",
+      "role": "gallery"
+    },
+    {
+      "cid": "padang-lawas-hero-1hh0hy",
+      "alt": "Candi Bahal dilihat dari kejauhan di tengah padang rumput",
+      "role": "gallery"
+    },
+    {
+      "cid": "wapauwe-hero-1wvkrm",
+      "alt": "Masjid Tua Wapauwe beratap ijuk bertingkat dengan dinding bawah putih dan lantai bata merah"
+    },
+    {
+      "cid": "wapauwe-hero-1adieb",
+      "alt": "Rangka atap kayu dan ijuk di dalam Masjid Tua Wapauwe dilihat dari bawah"
+    },
+    {
+      "cid": "wapauwe-hero-1kezw8",
+      "alt": "Jendela kayu berdaun ganda bertirai putih pada dinding Masjid Tua Wapauwe",
+      "role": "gallery"
+    },
+    {
+      "cid": "wapauwe-hero-1oodhj",
+      "alt": "Langit-langit kayu Masjid Tua Wapauwe dengan lampu gantung",
+      "role": "gallery"
+    },
+    {
+      "cid": "demak-hero-1niqmg",
+      "alt": "Atap bertingkat Masjid Agung Demak dari sisi utara di halaman berpaving"
+    },
+    {
+      "cid": "demak-hero-1b5ea2",
+      "alt": "Masjid Agung Demak dari depan sisi utara di waktu senja"
+    },
+    {
+      "cid": "demak-hero-9l74im",
+      "alt": "Bedug besar di serambi Masjid Agung Demak",
+      "role": "gallery"
+    },
+    {
+      "cid": "demak-hero-q5r4pd",
+      "alt": "Serambi Masjid Agung Demak dengan deretan tiang kayu dan lampu gantung",
+      "role": "gallery"
+    },
+    {
+      "cid": "demak-then-1hl8uf",
+      "alt": "Foto arsip KITLV: Masjid Demak beratap tumpang dengan pagar dan jalan tanah di depannya"
+    },
+    {
+      "cid": "demak-then-1ar2p5",
+      "alt": "Foto arsip KITLV: serambi Masjid Demak dengan deretan tiang kayu dan lantai luas"
+    },
+    {
+      "cid": "banten-lama-then-1ttugv",
+      "alt": "Foto arsip KITLV oleh Woodbury & Page: masjid dan menara di Bantam dekat Serang"
+    },
+    {
+      "cid": "banten-lama-then-1rrmjt",
+      "alt": "Foto arsip KITLV oleh G.F.J. Bley: menara putih dan masjid di Bantam dekat Serang"
+    },
+    {
+      "cid": "baiturrahman-hero-13b7ik",
+      "alt": "Masjid Raya Baiturrahman dengan tiga kubah hitam dan menara dilihat dari pelataran saat senja"
+    },
+    {
+      "cid": "baiturrahman-hero-2sb5fk",
+      "alt": "Prasasti marmer berbahasa Inggris dan Arab di Masjid Raya Baiturrahman tentang tewasnya Mayor Jenderal Köhler pada serangan 1873",
+      "role": "gallery"
+    },
+    {
+      "cid": "baiturrahman-then-qnjkvi",
+      "alt": "Foto arsip Tropenmuseum: Masjid Baiturrahman di Koetaradja dengan kubah dan serambi berlengkung, sekitar 1880"
+    },
+    {
+      "cid": "baiturrahman-then-7r0j1p",
+      "alt": "Foto arsip Tropenmuseum: Masjid Baiturrahman di Koetaradja dengan pagar rendah di depannya, sekitar 1880"
+    },
+    {
+      "cid": "kasepuhan-hero-19p0gb",
+      "alt": "Keraton Kasepuhan Cirebon dengan tulisan nama di halaman depan dan pendapa kayu beratap sirap"
+    },
+    {
+      "cid": "kasepuhan-hero-1qqbx6",
+      "alt": "Gerbang putih berhias lekuk di Keraton Kasepuhan Cirebon"
+    },
+    {
+      "cid": "kasepuhan-hero-uulm6r",
+      "alt": "Bangunan terbuka beratap tumpang di halaman Keraton Kasepuhan",
+      "role": "gallery"
+    },
+    {
+      "cid": "kasepuhan-hero-1yhp9d",
+      "alt": "Bedug besar berpaku di Keraton Kasepuhan",
+      "role": "gallery"
+    },
+    {
+      "cid": "kasepuhan-then-hlo6la",
+      "alt": "Foto arsip KITLV: bangunan terbuka beratap sirap di Kraton Kesepuhan, Cheribon"
+    },
+    {
+      "cid": "kasepuhan-then-1qfqvp",
+      "alt": "Foto arsip KITLV: relief lembu pada dinding bata di Kraton Kesepuhan, Cheribon"
+    },
+    {
+      "cid": "benteng-buton-hero-19kwwv",
+      "alt": "Tembok batu karang Benteng Keraton Buton yang memanjang di lereng berumput"
+    },
+    {
+      "cid": "benteng-buton-hero-1uynhn",
+      "alt": "Lawana Kampebuni, gerbang tembok Benteng Keraton Buton, dilihat dari luar dengan jalan setapak"
+    },
+    {
+      "cid": "benteng-buton-hero-11msf9",
+      "alt": "Masjid Agung Keraton Buton beratap biru dengan pohon palem di halamannya",
+      "role": "gallery"
+    },
+    {
+      "cid": "benteng-buton-hero-188yis",
+      "alt": "Dinding batu Benteng Keraton Buton dan halaman dalam di atas bukit",
+      "role": "gallery"
+    },
+    {
+      "cid": "katangka-hero-1oqq9c",
+      "alt": "Masjid Tua Al-Hilal Katangka beratap tumpang dengan dinding putih berlis hijau"
+    },
+    {
+      "cid": "katangka-hero-10h08w",
+      "alt": "Mimbar dan mihrab di dalam Masjid Tua Al-Hilal Katangka",
+      "role": "gallery"
+    },
+    {
+      "cid": "katangka-then-te0o4v",
+      "alt": "Foto arsip Tropenmuseum: makam raja-raja Gowa di Katangka dengan nisan dan pagar batu berukir"
+    },
+    {
+      "cid": "katangka-then-7att34",
+      "alt": "Foto arsip Tropenmuseum: pemakaman raja-raja Gowa di Katangka dengan bangunan beratap tinggi di latar"
+    },
+    {
+      "cid": "keraton-surakarta-hero-554utr",
+      "alt": "Bangunan Keraton Surakarta berwarna biru dengan menara kecil menyala saat senja"
+    },
+    {
+      "cid": "keraton-surakarta-hero-c10o0x",
+      "alt": "Pendapa Keraton Surakarta dengan pilar kayu, arca putih, dan atap joglo di bawah pohon rindang"
+    },
+    {
+      "cid": "keraton-surakarta-hero-3l7gbd",
+      "alt": "Deretan bangunan Keraton Surakarta dengan atap biru dan menara di tengahnya",
+      "role": "gallery"
+    },
+    {
+      "cid": "keraton-surakarta-then-rx9p7l",
+      "alt": "Foto arsip KITLV: sebagian kraton Soerakarta dengan bangunan putih di bawah pohon besar"
+    },
+    {
+      "cid": "keraton-yogyakarta-hero-1x6p3u",
+      "alt": "Bangsal berpilar hijau dengan atap merah di halaman Keraton Yogyakarta di bawah pohon besar"
+    },
+    {
+      "cid": "keraton-yogyakarta-hero-1o4f92",
+      "alt": "Gerbang Donopratono putih di Keraton Yogyakarta dengan halaman berpasir di depannya"
+    },
+    {
+      "cid": "keraton-yogyakarta-hero-559fq5",
+      "alt": "Ukiran ular naga dan kepala kala berwarna emas pada bangsal Keraton Yogyakarta",
+      "role": "gallery"
+    },
+    {
+      "cid": "keraton-yogyakarta-hero-jzqm1c",
+      "alt": "Hiasan di atas gerbang Keraton Yogyakarta berwarna hijau dan emas",
+      "role": "gallery"
+    },
+    {
+      "cid": "keraton-yogyakarta-then-ajm9nf",
+      "alt": "Foto arsip KITLV: gerbang putih menuju kraton Djokjakarta dengan lorong berlengkung"
+    },
+    {
+      "cid": "keraton-yogyakarta-then-z6kqnq",
+      "alt": "Foto arsip KITLV oleh J. Demmeni: halaman kraton di Yogyakarta, 1911"
+    },
+    {
+      "cid": "pagaruyung-hero-iwliqe",
+      "alt": "Istano Basa Pagaruyung bergonjong dari depan dengan halaman luas dan langit biru"
+    },
+    {
+      "cid": "pagaruyung-hero-68m4pg",
+      "alt": "Istano Basa Pagaruyung dengan atap gonjong menjulang di antara perbukitan hijau"
+    },
+    {
+      "cid": "pagaruyung-hero-1pk4y2",
+      "alt": "Istano Basa Pagaruyung dengan kerbau di halaman depan dan awan di langit",
+      "role": "gallery"
+    },
+    {
+      "cid": "pagaruyung-hero-yitgy1",
+      "alt": "Rumah gadang Istano Basa Pagaruyung disorot lampu di malam hari",
+      "role": "gallery"
+    },
+    {
+      "cid": "istana-bogor-then-glkf2a",
+      "alt": "Foto arsip KITLV: istana gubernur jenderal di Buitenzorg dengan halaman rumput luas"
+    },
+    {
+      "cid": "istana-bogor-then-g7lbgu",
+      "alt": "Foto arsip KITLV oleh C. Dietrich: istana gubernur jenderal di Buitenzorg dengan serambi berlengkung"
+    },
+    {
+      "cid": "istana-siak-hero-1kd7is",
+      "alt": "Istana Siak Sri Indrapura berwarna krem dengan menara kecil dan taman di depannya"
+    },
+    {
+      "cid": "istana-siak-hero-8qodq7",
+      "alt": "Istana Siak berwarna kuning di bawah langit berawan dengan taman dan jalan setapak di depannya"
+    },
+    {
+      "cid": "istana-siak-hero-m11s6y",
+      "alt": "Fasad Istana Siak dengan jendela lengkung berderet dan menara di atapnya",
+      "role": "gallery"
+    },
+    {
+      "cid": "istana-siak-hero-rojklo",
+      "alt": "Pintu dan jendela lengkung berkaca hijau di dinding putih Istana Siak",
+      "role": "gallery"
+    },
+    {
+      "cid": "istana-siak-then-15ktq7",
+      "alt": "Foto arsip KITLV: ruang singgasana di istana Sultan Siak di Siak Sri Indrapoera"
+    },
+    {
+      "cid": "istana-siak-then-nhpy5j",
+      "alt": "Foto arsip KITLV: ruang biru di istana Sultan Siak dengan kursi dan lampu gantung"
+    },
+    {
+      "cid": "penyengat-hero-1dbxro",
+      "alt": "Masjid Raya Sultan Riau di Pulau Penyengat dengan menara berkuning-hijau di bawah langit biru"
+    },
+    {
+      "cid": "penyengat-hero-14fngj",
+      "alt": "Pelataran Masjid Raya Sultan Riau dari bawah gerbang melengkung dengan matahari di atasnya",
+      "role": "gallery"
+    },
+    {
+      "cid": "ombilin-hero-1skv0q",
+      "alt": "Pintu masuk Lubang Mbah Soero di Sawahlunto dengan patung pekerja tambang dan perbukitan di belakangnya"
+    },
+    {
+      "cid": "ombilin-hero-46ha17",
+      "alt": "Terowongan tambang batu bara berdinding bata dengan lampu di ujungnya, Lubang Mbah Soero"
+    },
+    {
+      "cid": "ombilin-hero-d6i5wy",
+      "alt": "Lorong tambang berlantai batu dengan lampu di kejauhan, Lubang Mbah Soero",
+      "role": "gallery"
+    },
+    {
+      "cid": "ombilin-hero-7q654i",
+      "alt": "Kota Sawahlunto dilihat dari atas dengan lapangan hijau di tengah perbukitan",
+      "role": "gallery"
+    },
+    {
+      "cid": "ombilin-then-2dc7gz",
+      "alt": "Foto arsip Tropenmuseum: kota tambang Sawahloento, pusat tambang batu bara Ombilin, sekitar 1880"
+    },
+    {
+      "cid": "ombilin-then-1vzq5o",
+      "alt": "Foto arsip Tropenmuseum: pembangunan Emmahaven dengan rel dan lori di lereng bukit, 1885"
+    },
+    {
+      "cid": "gedung-merdeka-hero-rjyld8",
+      "alt": "Fasad putih Gedung Merdeka di Bandung dengan pintu masuk berpilar dan jendela berderet"
+    },
+    {
+      "cid": "gedung-merdeka-hero-1b2orf",
+      "alt": "Gedung Merdeka dilihat dari sudut persimpangan jalan di Bandung",
+      "role": "gallery"
+    },
+    {
+      "cid": "gedung-merdeka-then-1rai6q",
+      "alt": "Foto arsip KITLV: Sociëteit Concordia di Bandoeng dengan halaman dan pohon besar, kini Gedung Merdeka"
+    },
+    {
+      "cid": "gedung-merdeka-then-mi2py0",
+      "alt": "Foto arsip KITLV oleh Vorkink: gedung teater dan Sociëteit Concordia di Bandoeng pada malam hari"
+    },
+    {
+      "cid": "tugu-pahlawan-hero-1yj9vc",
+      "alt": "Tugu Pahlawan menjulang di tengah lapangan rumput luas di Surabaya"
+    },
+    {
+      "cid": "tugu-pahlawan-hero-1yuxoz",
+      "alt": "Tugu Pahlawan Surabaya dilihat di antara dua pahatan api berbentuk sayap saat malam",
+      "role": "gallery"
+    },
+    {
+      "cid": "tugu-pahlawan-hero-11qjis",
+      "alt": "Pilar-pilar putih bergaris di sekitar tugu di kompleks Tugu Pahlawan",
+      "role": "gallery"
+    },
+    {
+      "cid": "sriwijaya-palembang-hero-1haca6",
+      "alt": "Prasasti Kedukan Bukit berupa batu lonjong bertulis aksara Pallawa di dalam vitrin museum"
+    },
+    {
+      "cid": "sriwijaya-palembang-hero-vmtcm5",
+      "alt": "Prasasti Kedukan Bukit dilihat dari sisi lain di dalam vitrin berlatar merah",
+      "role": "gallery"
+    },
+    {
+      "cid": "sriwijaya-palembang-hero-1q4f3q",
+      "alt": "Foto Louis Constant Westenenk: lempeng batu Prasasti Talang Tuwo dengan baris tulisan rapat",
+      "role": "gallery"
+    },
+    {
+      "cid": "banten-lama-hero-17m12i",
+      "alt": "Masjid Agung Banten dari depan dengan atap genting merah bertingkat dan serambi terbuka"
+    },
+    {
+      "cid": "banten-lama-hero-29jywx",
+      "alt": "Masjid Agung Banten dari samping dengan bedug di serambi dan pagar putih berhias belah ketupat"
+    },
+    {
+      "cid": "banten-lama-hero-1fdiy5",
+      "alt": "Jembatan Rante berpagar batu menuju kawasan Masjid Agung Banten di bawah pohon rindang",
+      "role": "gallery"
+    },
+    {
+      "cid": "banten-lama-hero-1yb4o5",
+      "alt": "Pelataran Masjid Agung Banten dan menara putih di kejauhan saat senja",
+      "role": "gallery"
+    },
+    {
+      "cid": "banten-lama-hero-1hmgxi",
+      "alt": "Sisi samping Masjid Agung Banten dengan atap tumpang dan bedug",
+      "role": "gallery"
+    },
+    {
+      "cid": "istana-bogor-hero-6m43sv",
+      "alt": "Istana Kepresidenan Bogor berwarna putih dengan kubah emas kecil dan deretan pilar di serambinya"
+    },
+    {
+      "cid": "istana-bogor-hero-1hqya3",
+      "alt": "Istana Kepresidenan Bogor di seberang kolam teratai dengan daun-daun hijau mengambang"
+    },
+    {
+      "cid": "istana-kadriah-hero-m0c04m",
+      "alt": "Istana Kadriyah Pontianak berwarna kuning dengan panggung dan dua tiang bendera di halaman depannya"
+    },
+    {
+      "cid": "istana-kadriah-hero-3rzpxk",
+      "alt": "Keraton Kadriyah Pontianak dari depan dengan tangga dan serambi berpagar kayu kuning"
+    },
+    {
+      "cid": "cangkuang-hero-16jg9b",
+      "alt": "Candi Cangkuang berdiri di halaman berkerikil di bawah pepohonan rindang"
+    },
+    {
+      "cid": "cangkuang-hero-gjz95c",
+      "alt": "Danau Situ Cangkuang di Leles, Garut, dengan rakit bambu dan perbukitan di kejauhan"
+    },
+    {
+      "cid": "cangkuang-hero-1cxd65",
+      "alt": "Tangga batu menanjak di antara pepohonan menuju Candi Cangkuang",
+      "role": "gallery"
+    },
+    {
+      "cid": "cangkuang-hero-13iocv",
+      "alt": "Candi Cangkuang dilihat dari depan dengan tangga dan pintu bilik",
+      "role": "gallery"
+    },
+    {
+      "cid": "monas-hero-1r3ok0",
+      "alt": "Monas menjulang di kejauhan di ujung pelataran batu Medan Merdeka dengan pohon besar di sisinya"
+    },
+    {
+      "cid": "monas-hero-31j3li",
+      "alt": "Tugu Monas dilihat dari jalan lurus menuju Medan Merdeka",
+      "role": "gallery"
+    },
+    {
+      "cid": "monas-hero-jrigh2",
+      "alt": "Tugu Monas berdiri tegak di tengah lapangan dengan latar langit pucat",
+      "role": "gallery"
+    },
+    {
+      "cid": "trinil-hero-1rruil",
+      "alt": "Tempurung kepala fosil Pithecanthropus erectus koleksi Dubois dengan latar putih"
+    },
+    {
+      "cid": "trinil-hero-6rt6rx",
+      "alt": "Patung gajah purba bergading panjang di taman Museum Trinil, Ngawi",
+      "role": "gallery"
+    },
+    {
+      "cid": "tugu-proklamasi-hero-3rxrwm",
+      "alt": "Monumen Proklamasi di Jakarta dengan dua patung tokoh berdiri di depan deretan tiang batu"
+    },
+    {
+      "cid": "tugu-proklamasi-hero-18tkyn",
+      "alt": "Taman di Jalan Proklamasi, Jakarta Pusat, dengan dinding batu bergelombang dan dua patung tokoh",
+      "role": "gallery"
+    },
+    {
+      "cid": "leran-hero-18o6wu",
+      "alt": "Gerbang dan bangunan bata Situs Makam Leran di Gresik dengan papan nama di atas pintunya"
+    },
+    {
+      "cid": "leran-hero-bq0oq7",
+      "alt": "Bangunan bata berlapis dan beratap limas pada Situs Makam Leran, Gresik",
+      "role": "gallery"
+    },
+    {
+      "cid": "global-audio-gamelan-17kmpi",
+      "alt": "Rekaman gamelan dari Kraton Ngayogyakarta"
+    },
+    {
+      "cid": "global-audio-gamelan-btuhdv",
+      "alt": "Rekaman bonang gamelan degung"
+    },
+    {
+      "cid": "global-audio-nature-15k9ox",
+      "alt": "Suara ombak memecah"
+    },
+    {
+      "cid": "global-audio-nature-16h9ov",
+      "alt": "Suara suasana lingkungan"
+    },
+    {
+      "cid": "global-audio-ocean-2xcsfx",
+      "alt": "Suara ombak di tepi danau"
+    },
+    {
+      "cid": "global-audio-cave-i29nia",
+      "alt": "Musik suasana bertema gua"
+    },
+    {
+      "cid": "global-audio-morning-1fqtcy",
+      "alt": "Kicau burung"
+    }
+  ]
+}
