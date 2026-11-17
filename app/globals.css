@@ -1,0 +1,397 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #0d0b09;
+  --color-ink-900: #16130f;
+  --color-ink-800: #221d17;
+  --color-ink-700: #342c23;
+  --color-sand-100: #f5ecdc;
+  --color-sand-300: #d9c7a7;
+  --color-sand-500: #a8916c;
+  --color-gold-400: #e7b75f;
+  --color-gold-600: #b7862f;
+  --color-verified: #6fbf8e;
+  --color-debated: #e7b75f;
+  --color-check: #d9785b;
+
+  --font-display: var(--font-fraunces), "Fraunces", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: dark;
+  --accent: #e7b75f;
+}
+
+html {
+  background-color: #0d0b09;
+  color: #f5ecdc;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #0d0b09;
+  color: #f5ecdc;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: rgba(231, 183, 95, 0.35);
+  color: #f5ecdc;
+}
+
+:focus-visible {
+  outline: 2px solid #e7b75f;
+  outline-offset: 2px;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Teks narasi: 62 karakter per baris, line-height 1.6 */
+.prose-narrative {
+  max-width: 62ch;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #e9dcc3;
+}
+@media (min-width: 768px) {
+  .prose-narrative {
+    font-size: 1.15rem;
+  }
+}
+
+/* Scrim untuk keterbacaan teks di atas foto */
+.scrim-bottom {
+  background: linear-gradient(180deg, rgba(13, 11, 9, 0) 0%, rgba(13, 11, 9, 0.35) 40%, rgba(13, 11, 9, 0.92) 100%);
+}
+.scrim-full {
+  background: linear-gradient(180deg, rgba(13, 11, 9, 0.55) 0%, rgba(13, 11, 9, 0.25) 35%, rgba(13, 11, 9, 0.6) 70%, rgba(13, 11, 9, 0.95) 100%);
+}
+.scrim-left {
+  background: linear-gradient(90deg, rgba(13, 11, 9, 0.92) 0%, rgba(13, 11, 9, 0.6) 45%, rgba(13, 11, 9, 0.1) 100%);
+}
+
+/* Titik hotspot berdenyut (transform + opacity saja) */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  80%,
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+.pulse-ring {
+  animation: pulse-ring 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes scroll-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+.scroll-cue {
+  animation: scroll-cue 1.8s ease-in-out infinite;
+}
+
+/* Mode tanpa animasi: toggle pengguna (data-motion=off) dan preferensi sistem */
+html[data-motion="off"] *,
+html[data-motion="off"] *::before,
+html[data-motion="off"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* MapLibre: selaraskan kontrol dengan palet gelap */
+.maplibregl-ctrl-attrib {
+  background: rgba(13, 11, 9, 0.75) !important;
+  color: #d9c7a7 !important;
+  font-size: 10.5px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #e7b75f !important;
+}
+.maplibregl-ctrl-group {
+  background: #16130f !important;
+  border: 1px solid rgba(168, 145, 108, 0.3);
+}
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: invert(0.9);
+}
+.maplibregl-popup-content {
+  background: #16130f !important;
+  color: #f5ecdc !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.maplibregl-popup-tip {
+  border-top-color: #16130f !important;
+  border-bottom-color: #16130f !important;
+}
+
+/* Cetak: lembar kerja */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .print-sheet {
+    color: #000 !important;
+    background: #fff !important;
+  }
+  .print-sheet * {
+    color: #000 !important;
+    border-color: #999 !important;
+    background: transparent !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0b09;
+}
+::-webkit-scrollbar-thumb {
+  background: #342c23;
+  border-radius: 9999px;
+}
+
+/* ------------------------------------------------------------------ */
+/* v3: guliran waktu                                                   */
+/* Warna teks mengikuti --ink; tahap atmosfer mengubahnya sesuai latar. */
+/* ------------------------------------------------------------------ */
+:root {
+  --ink: #f5ecdc;
+  --ink-soft: rgba(245, 236, 220, 0.72);
+  --surface: rgba(22, 19, 15, 0.92);
+}
+
+.counter-ink,
+.header-ink,
+.ruler-ink,
+.counter-sub {
+  color: var(--ink);
+}
+.counter-sub {
+  color: var(--ink-soft);
+}
+.counter-ink {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+
+.panel-surface {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid color-mix(in oklab, var(--ink) 18%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+/* Garis kecepatan saat menggulir cepat (opacity diatur per frame) */
+.speed-lines {
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0 6px,
+    color-mix(in oklab, var(--ink) 22%, transparent) 6px 7px
+  );
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+
+/* Scrim di belakang penghitung agar objek yang lewat tidak menutupinya */
+.counter-scrim {
+  background: linear-gradient(180deg, var(--bg-top, #0d0b09) 0%, var(--bg-top, #0d0b09) 62%, color-mix(in oklab, var(--bg-top, #0d0b09) 70%, transparent) 80%, transparent 100%);
+}
+
+/* ------------------------------------------------------------------ */
+/* Atmosfer: warna teks mengikuti terang latar (diatur Background.tsx)  */
+/* ------------------------------------------------------------------ */
+@property --ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f5ecdc;
+}
+:root {
+  transition: --ink 0.8s ease;
+}
+:root[data-tone="light"] {
+  --ink: #1d1a16;
+  --ink-soft: rgba(29, 26, 22, 0.74);
+  --surface: rgba(247, 243, 235, 0.94);
+  --accent: #8a5a12;
+  --color-verified: #2b6e45;
+  --color-debated: #85550f;
+  --color-check: #9c3f22;
+  --color-gold-400: #8a5a12;
+}
+html {
+  background-color: #0b0806;
+}
+body {
+  background-color: transparent;
+  color: var(--ink);
+}
+/* Alas keterangan saat latar berada di abu-abu tengah (kedua warna teks kurang kontras) */
+.caption-plate {
+  border-radius: 14px;
+  transition: background-color 0.6s ease, box-shadow 0.6s ease;
+}
+:root[data-plate="on"] .caption-plate {
+  background-color: color-mix(in oklab, var(--surface) 82%, transparent);
+  box-shadow: 0 0 0 10px color-mix(in oklab, var(--surface) 82%, transparent);
+}
+
+/* Gerak lapisan suasana (transform/opacity saja) */
+@keyframes ambient-drift {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  15% { opacity: 1; }
+  50% { transform: translate3d(18px, -26px, 0); }
+  85% { opacity: 1; }
+  100% { transform: translate3d(-10px, -52px, 0); opacity: 0; }
+}
+.ambient-drift { animation: ambient-drift 20s ease-in-out infinite; }
+
+@keyframes ambient-drip {
+  0%, 70% { transform: translate3d(0, -20px, 0); opacity: 0; }
+  72% { opacity: 0.8; }
+  100% { transform: translate3d(0, 105vh, 0); opacity: 0.2; }
+}
+.ambient-drip { animation: ambient-drip 9s cubic-bezier(0.55, 0, 1, 0.45) infinite; }
+
+@keyframes ambient-fall {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  50% { transform: translate3d(40px, 50vh, 0) rotate(160deg); }
+  100% { transform: translate3d(-20px, 110vh, 0) rotate(320deg); }
+}
+.ambient-fall { animation: ambient-fall 26s linear infinite; }
+
+@keyframes ambient-blink {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 1; }
+}
+.ambient-blink { animation: ambient-blink 3.4s ease-in-out infinite; }
+
+@keyframes ambient-mist {
+  0%, 100% { transform: translate3d(-6%, 0, 0); }
+  50% { transform: translate3d(6%, -10px, 0); }
+}
+.ambient-mist { animation: ambient-mist 28s ease-in-out infinite; }
+
+@keyframes ambient-wave {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+.ambient-wave { animation: ambient-wave 18s linear infinite; }
+
+@keyframes ambient-sail {
+  0% { transform: translate3d(-10vw, 0, 0); }
+  100% { transform: translate3d(110vw, 0, 0); }
+}
+.ambient-sail { animation: ambient-sail 60s linear infinite; }
+
+@keyframes ambient-float {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  20%, 80% { opacity: 1; }
+  100% { transform: translate3d(30px, -80px, 0) rotate(120deg); opacity: 0; }
+}
+.ambient-float { animation: ambient-float 24s ease-in-out infinite; }
+
+@keyframes ambient-glow {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+.ambient-glow { animation: ambient-glow 6s ease-in-out infinite; }
+
+@keyframes ambient-cloud {
+  from { transform: translate3d(-30vw, 0, 0); }
+  to { transform: translate3d(110vw, 0, 0); }
+}
+.ambient-cloud { animation: ambient-cloud 90s linear infinite; }
+
+@keyframes ambient-fly {
+  from { transform: translate3d(-8vw, 0, 0); }
+  to { transform: translate3d(108vw, -40px, 0); }
+}
+.ambient-fly { animation: ambient-fly 40s linear infinite; }
+@keyframes ambient-flee {
+  to { transform: translate3d(30vw, -60vh, 0) scale(0.6); opacity: 0; }
+}
+.ambient-flee { animation: ambient-flee 1.2s ease-in forwards !important; }
+
+@keyframes ambient-flap {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
+}
+.ambient-flap { animation: ambient-flap 0.5s ease-in-out infinite; transform-origin: center; }
+
+
+/* ------------------------------------------------------------------ */
+/* v4: latar lima lapis (docs/BACKGROUND.md)                           */
+/* ------------------------------------------------------------------ */
+@keyframes grain-shift {
+  0% { transform: translate3d(0, 0, 0); }
+  17% { transform: translate3d(-6%, 4%, 0); }
+  34% { transform: translate3d(5%, -7%, 0); }
+  51% { transform: translate3d(-4%, -3%, 0); }
+  68% { transform: translate3d(7%, 6%, 0); }
+  85% { transform: translate3d(-8%, 2%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+html[data-tone="light"] {
+  --vig: 0.14;
+}
