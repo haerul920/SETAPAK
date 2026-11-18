@@ -1,6 +1,8 @@
 "use client";
 
-import { AlertTriangle, X } from "lucide-react";
+import { AlertTriangle, MapPin, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getLenis } from "@/components/layout/SmoothScrollProvider";
 import { SourceList } from "@/components/event/SourceList";
@@ -26,6 +28,11 @@ export function DetailDrawer() {
   const { t, lang } = useCopy();
   const openId = useSetapakStore((s) => s.openEventId);
   const openEvent = useSetapakStore((s) => s.openEvent);
+  const pathname = usePathname();
+  // laci milik guliran: tutup saat pindah halaman (mis. lewat "Lihat di Peta Waktu")
+  useEffect(() => {
+    openEvent(null);
+  }, [pathname, openEvent]);
   const [shownId, setShownId] = useState<string | null>(null);
   const [visible, setVisible] = useState(false);
   const panel = useRef<HTMLDivElement>(null);
@@ -169,6 +176,11 @@ export function DetailDrawer() {
               <Hotspots site={site} />
             </section>
           )}
+
+          <Link href={`/peta?ev=${ev.id}`} className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-current/30 px-5 text-sm hover:border-[var(--accent)] hover:text-[var(--accent)]" data-open-in-peta>
+            <MapPin className="h-4 w-4" aria-hidden />
+            {t.detail.inPeta}
+          </Link>
 
           {ev.sourceIds.length > 0 && (
             <section aria-labelledby="d-src" className="space-y-3">

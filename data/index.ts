@@ -6,6 +6,7 @@ import type { Category } from "./nusantara";
 import coordsOverride from "./coords-override.json";
 import coordsManual from "./coords-manual.json";
 export { kingdoms } from "./kingdoms";
+export type { Kingdom } from "./kingdoms";
 export { eras, categoryLabels, eraForYear };
 export type { Category };
 export type { Era, EraId, EventType, Hotspot, Site, Source, SourceKind, SourceStatus, TimelineEvent } from "./timeline";

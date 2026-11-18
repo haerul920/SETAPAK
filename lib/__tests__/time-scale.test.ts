@@ -3,6 +3,7 @@ import { sortedEvents } from "@/data";
 import { buildLayout, clusterAtY } from "@/lib/layout";
 import {
   createTimeScale,
+  DEFAULT_STRETCHES,
   END_YEAR,
   formatYear,
   parseYearInput,
@@ -27,7 +28,8 @@ describe("createTimeScale", () => {
 
     it(`${label}: total sesuai jumlah segmen ditambah perlambatan`, () => {
       const base = SEGMENTS.reduce((a, s) => a + s.px, 0);
-      expect(scale.total).toBeCloseTo((base + 1800) * (mobile ? 0.8 : 1), 6);
+      const stretch = DEFAULT_STRETCHES.reduce((n, st) => n + st.extra, 0);
+      expect(scale.total).toBeCloseTo((base + stretch) * (mobile ? 0.8 : 1), 6);
     });
 
     it(`${label}: yearToY dan yToYear saling invers (< 0,5 px)`, () => {

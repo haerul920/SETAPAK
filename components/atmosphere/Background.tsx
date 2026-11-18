@@ -39,8 +39,8 @@ export function Background({ layout }: { layout: TimelineLayout }) {
         lastPaint = now;
         el.current.style.background = `linear-gradient(180deg, ${a.top} 0%, ${a.bottom} 100%)`;
         atmosphereStore.setState({ top: a.top, bottom: a.bottom });
-        root.style.setProperty("--bg-top", a.top);
-        root.style.setProperty("--bg-bottom", a.bottom);
+        // variabel --bg-* TIDAK ditulis ke elemen akar (memaksa hitung ulang gaya seluruh dokumen);
+        // elemen yang memakainya berlangganan atmosphereStore lewat usePaletteVars
         lastKey = key;
       }
       const nextTone = tone === "dark" ? (a.luminance > LIGHT_THRESHOLD + HYSTERESIS ? "light" : "dark") : a.luminance < LIGHT_THRESHOLD - HYSTERESIS ? "dark" : "light";
@@ -60,10 +60,26 @@ export function Background({ layout }: { layout: TimelineLayout }) {
       unsub();
       delete root.dataset.tone;
       delete root.dataset.plate;
-      root.style.removeProperty("--bg-top");
-      root.style.removeProperty("--bg-bottom");
     };
   }, [at]);
 
   return <div ref={el} className="pointer-events-none fixed inset-0 -z-20" aria-hidden style={{ background: "linear-gradient(180deg, #0b0806, #17110b)" }} />;
+}
+
+/**
+ * Menyalin warna latar saat ini ke variabel --bg-top dan --bg-bottom pada satu elemen saja. Variabel di
+ * elemen akar akan memaksa hitung ulang gaya seluruh dokumen pada tiap perubahan warna.
+ */
+export function usePaletteVars<T extends HTMLElement>(ref: React.RefObject<T | null>): void {
+  useEffect(() => {
+    const write = () => {
+      const el = ref.current;
+      if (!el) return;
+      const { top, bottom } = atmosphereStore.getState();
+      el.style.setProperty("--bg-top", top);
+      el.style.setProperty("--bg-bottom", bottom);
+    };
+    write();
+    return atmosphereStore.subscribe(write);
+  }, [ref]);
 }

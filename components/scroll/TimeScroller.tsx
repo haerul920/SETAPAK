@@ -13,7 +13,8 @@ import { ShaderSky } from "@/components/background/ShaderSky";
 import { DetailDrawer } from "@/components/detail/DetailDrawer";
 import { TraceDrawer } from "@/components/detail/TraceDrawer";
 import { FinalConstellation } from "@/components/moments/FinalConstellation";
-import { CaveTorchLayer, DiscoveryRoute, SiegeShips } from "@/components/moments/PageMoments";
+import { CaveHint, CaveTorchLayer, DiscoveryRoute, SiegeShips } from "@/components/moments/PageMoments";
+import { Sequence1945Map, SpiceRoute, TsunamiWater } from "@/components/moments/V4Moments";
 import { ClusterRow } from "@/components/objects/ClusterRow";
 import { DurationBar } from "@/components/objects/DurationBar";
 import { SiteThreads } from "@/components/objects/SiteThread";
@@ -27,6 +28,9 @@ import { useCopy } from "@/lib/useCopy";
 import { GapNote } from "./GapNote";
 import { ScaleMarks } from "./ScaleMarks";
 import { TraceStones } from "./TraceStones";
+import { ScrollChallenge } from "@/components/quiz/ScrollChallenge";
+import { usePaletteVars } from "@/components/atmosphere/Background";
+import { useQuizStore } from "@/lib/quiz-store";
 import { TimeRuler } from "./TimeRuler";
 import { YearCounter } from "./YearCounter";
 
@@ -82,6 +86,8 @@ function Intro() {
 function Track({ layout }: { layout: TimelineLayout }) {
   const { t } = useCopy();
   const track = useRef<HTMLDivElement>(null);
+  const plateRef = useRef<HTMLDivElement>(null);
+  usePaletteVars(plateRef);
   const [bucket, setBucket] = useState(0);
   const [viewport, setViewport] = useState(900);
   const setActiveCluster = useSetapakStore((s) => s.setActiveCluster);
@@ -131,11 +137,13 @@ function Track({ layout }: { layout: TimelineLayout }) {
     // Deep link: /?tahun=1945 atau /#ev-borobudur-1814 (setelah tinggi lintasan terpasang)
     const params = new URLSearchParams(window.location.search);
     const yearParam = params.get("tahun") ?? params.get("year");
+    const evParam = params.get("ev");
     const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
     const deep = requestAnimationFrame(() => {
       top = el.getBoundingClientRect().top + window.scrollY;
       const year = yearParam ? parseYearInput(yearParam) : null;
       if (year !== null) goToYear(year, { immediate: true });
+      else if (evParam) goToEvent(evParam, { immediate: true });
       else if (hash.startsWith("ev-")) goToEvent(hash, { immediate: true });
     });
 
@@ -164,10 +172,15 @@ function Track({ layout }: { layout: TimelineLayout }) {
       <FilmGrain />
       <QualityGovernor />
       <CaveTorchLayer layout={layout} />
+      <CaveHint layout={layout} />
       <SiegeShips layout={layout} />
       <DiscoveryRoute layout={layout} />
+      <SpiceRoute layout={layout} />
+      <TsunamiWater layout={layout} />
+      <Sequence1945Map layout={layout} />
       <DetailDrawer />
       <TraceDrawer />
+      <ScrollChallenge layout={layout} />
       <YearCounter layout={layout} />
       <TimeRuler layout={layout} />
       <div ref={track} className="pointer-events-none relative" style={{ height: layout.total }} id="lintasan">
@@ -187,11 +200,14 @@ function Track({ layout }: { layout: TimelineLayout }) {
         ))}
       </div>
       <section className="relative flex min-h-[100svh] flex-col items-center justify-center gap-6 px-4 pb-24 pt-[30vh] text-center md:px-24" aria-labelledby="outro-title">
-        <h2 id="outro-title" className="font-display text-4xl font-semibold md:text-6xl">
-          {t.outro.arrived}
-        </h2>
-        <p className="font-mono text-sm opacity-80">{t.outro.distance(t.scroll.meters(pxToMeters(layout.total + viewport)))}</p>
+        <div ref={plateRef} className="outro-plate flex flex-col items-center gap-4 px-6 py-8 md:px-16">
+          <h2 id="outro-title" className="font-display text-4xl font-semibold md:text-6xl">
+            {t.outro.arrived}
+          </h2>
+          <p className="font-mono text-sm opacity-90">{t.outro.distance(t.scroll.meters(pxToMeters(layout.total + viewport)))}</p>
+        </div>
         <FinalConstellation />
+        <OutroJejak />
         <div className="flex flex-wrap justify-center gap-3">
           <button
             type="button"
@@ -201,6 +217,9 @@ function Track({ layout }: { layout: TimelineLayout }) {
             <RotateCcw className="h-4 w-4" aria-hidden />
             {t.outro.back}
           </button>
+          <Link href="/peta" className="inline-flex min-h-[48px] items-center rounded-full border border-current/30 px-6">
+            {t.nav.peta}
+          </Link>
           <Link href="/kredit" className="inline-flex min-h-[48px] items-center rounded-full border border-current/30 px-6">
             {t.outro.credits}
           </Link>
@@ -210,5 +229,19 @@ function Track({ layout }: { layout: TimelineLayout }) {
         </div>
       </section>
     </>
+  );
+}
+
+/** Di akhir guliran: jumlah jejak dari tantangan kilat dan tautan ke kuis penuh. */
+function OutroJejak() {
+  const { t } = useCopy();
+  const jejak = useQuizStore((s) => s.jejak);
+  return (
+    <p className="text-sm opacity-90" data-outro-jejak>
+      {jejak > 0 && <span className="mr-2">{t.quiz.scroll.outro(jejak)}</span>}
+      <Link href="/kuis" className="underline decoration-[var(--accent)] underline-offset-4 hover:text-[var(--accent)]">
+        {t.quiz.scroll.outroLink}
+      </Link>
+    </p>
   );
 }

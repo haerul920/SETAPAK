@@ -7768,25 +7768,6 @@
     "shareAlike": true
   },
   {
-    "id": "tugu-proklamasi-gallery-1",
-    "target": "tugu-proklamasi",
-    "role": "gallery",
-    "kind": "image",
-    "src": "/media/tugu-proklamasi/gallery-1",
-    "width": 1920,
-    "height": 1249,
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAoAA4BaJagCdAEDC3EwsAD+5flCV+aayfGV4EMunQjn2xaGRefBII/xmwy/teVXW7VdVfDGCcbOQLrB9G7wbRPVz6jw0oAAAA==",
-    "alt": "Taman di Jalan Proklamasi, Jakarta Pusat, dengan dinding batu bergelombang dan dua patung tokoh",
-    "title": "File:Children playing in the park at Jalan Proklamasi, Central Jakarta.jpg",
-    "author": "世書 名付",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Children_playing_in_the_park_at_Jalan_Proklamasi,_Central_Jakarta.jpg",
-    "year": "2013",
-    "accessed": "2026-11-17",
-    "shareAlike": false
-  },
-  {
     "id": "leran-hero-1",
     "target": "leran",
     "role": "hero",

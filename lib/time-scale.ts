@@ -47,7 +47,14 @@ export interface Stretch {
   extra: number;
 }
 
-export const DEFAULT_STRETCHES: readonly Stretch[] = [{ from: 1945.6, to: 1945.64, extra: 1_800 }];
+/**
+ * 16 sampai 17 Agustus 1945 diperlambat untuk jam dinding dan narasi bermesin tik; Agustus sampai
+ * Desember 1945 diperlebar agar tujuh peristiwa rangkaian 1945 tampil berurutan (docs/OBJECTS.md, momen 12).
+ */
+export const DEFAULT_STRETCHES: readonly Stretch[] = [
+  { from: 1945.6, to: 1945.64, extra: 1_800 },
+  { from: 1945.64, to: 1946, extra: 2_600 },
+];
 
 /** Tahanan: tambahan px pada satu tahun (tahun tetap selama px itu digulir). */
 export interface Hold {

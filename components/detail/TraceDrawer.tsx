@@ -22,6 +22,8 @@ export function TraceDrawer() {
   const { t, lang } = useCopy();
   const openId = useSetapakStore((s) => s.openTraceId);
   const openTrace = useSetapakStore((s) => s.openTrace);
+  // state laci tidak boleh terbawa ke halaman lain lalu terbuka lagi saat kembali ke guliran
+  useEffect(() => () => openTrace(null), [openTrace]);
   const [shownId, setShownId] = useState<string | null>(null);
   const [full, setFull] = useState<Trace | undefined>(undefined);
   const [visible, setVisible] = useState(false);

@@ -235,6 +235,15 @@ export function AshSweep() {
   );
 }
 
+/** Masjid Raya Baiturrahman 2004: tetap berdiri dengan cahaya lembut (tanpa retakan). */
+export function SoftHalo() {
+  return (
+    <div className="fx-layer z-[1]" aria-hidden>
+      <span className="fx-halo" />
+    </div>
+  );
+}
+
 /** Gunung siluet kecil meletus di tepi visual (lahar Merapi dan Sindoro). */
 export function VolcanoMark() {
   return (

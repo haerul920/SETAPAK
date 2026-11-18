@@ -13,11 +13,12 @@ interface Full {
   year: number;
   yearLabel: string;
   category: string;
+  coords: { lat: number; lng: number };
 }
 
 export function writeTracesLite(root = process.cwd()): number {
   const full = JSON.parse(fs.readFileSync(path.join(root, "data", "wikidata-heritage.json"), "utf8")) as Full[];
-  const lite = full.map((t) => ({ id: t.id, name: t.name, nameEn: t.nameEn, year: t.year, yearLabel: t.yearLabel, category: t.category }));
+  const lite = full.map((t) => ({ id: t.id, name: t.name, nameEn: t.nameEn, year: t.year, yearLabel: t.yearLabel, category: t.category, lat: Math.round(t.coords.lat * 100) / 100, lng: Math.round(t.coords.lng * 100) / 100 }));
   fs.writeFileSync(path.join(root, "data", "wikidata-heritage-lite.json"), JSON.stringify(lite) + "\n");
   return lite.length;
 }

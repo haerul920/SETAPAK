@@ -1,25 +1,41 @@
 "use client";
 
-import { Footprints, Pause, Play, Volume2, VolumeX } from "lucide-react";
+import { Footprints, Pause, Play, Puzzle, Volume2, VolumeX } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { useQuizStore } from "@/lib/quiz-store";
+import { cn } from "@/lib/utils";
 import { audios } from "@/lib/media";
 import { useSetapakStore } from "@/lib/store";
 import { iconButtonClass } from "@/lib/ui";
 import { useCopy } from "@/lib/useCopy";
 
-/** Header minimal: logo kecil, suara, bahasa ID/EN, dan mode tanpa animasi. Tanpa menu besar. */
+const NAV = [
+  { href: "/", key: "scroll" },
+  { href: "/peta", key: "peta" },
+  { href: "/kuis", key: "kuis" },
+] as const;
+
+/** Header minimal: logo kecil, tiga tautan utama, suara, bahasa ID/EN, dan mode tanpa animasi. */
 export function Header() {
   const { t, lang } = useCopy();
   const setLang = useSetapakStore((s) => s.setLang);
   const noMotion = useSetapakStore((s) => s.noMotion);
   const setNoMotion = useSetapakStore((s) => s.setNoMotion);
+  const pathname = usePathname();
+  const challenges = useQuizStore((s) => s.scrollChallenges);
+  const setChallenges = useQuizStore((s) => s.setScrollChallenges);
+  useEffect(() => {
+    void useQuizStore.persist.rehydrate();
+  }, []);
   const sound = useSetapakStore((s) => s.sound);
   const setSound = useSetapakStore((s) => s.setSound);
 
   return (
     <header className="header-ink pointer-events-none fixed inset-x-0 top-0 z-50">
       <a
-        href="#lintasan"
+        href={pathname === "/" ? "#lintasan" : "#main-content"}
         className="pointer-events-auto sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-[60] focus:rounded-full focus:bg-[var(--accent)] focus:px-4 focus:py-2 focus:text-[#0d0b09]"
       >
         {t.skip}
@@ -27,9 +43,37 @@ export function Header() {
       <div className="flex h-14 items-center justify-between px-3 md:px-5">
         <Link href="/" className="pointer-events-auto flex items-center gap-2 rounded-lg py-2 pr-2" aria-label={`${t.brand}, ${t.nav.home}`}>
           <Footprints className="h-5 w-5 text-[var(--accent)]" aria-hidden />
-          <span className="font-display text-base font-semibold tracking-wide">{t.brand}</span>
+          <span className="hidden font-display text-base font-semibold tracking-wide sm:inline">{t.brand}</span>
         </Link>
+        <nav aria-label={t.nav.main} className="pointer-events-auto ml-1 mr-auto flex items-center gap-0.5 md:ml-3">
+          {NAV.map((n) => {
+            const current = n.href === "/" ? pathname === "/" : pathname.startsWith(n.href);
+            return (
+              <Link
+                key={n.href}
+                href={n.href}
+                aria-current={current ? "page" : undefined}
+                className={cn("whitespace-nowrap rounded-full px-2 py-1.5 text-[12px] font-medium transition-colors min-[400px]:px-2.5 min-[400px]:text-[13px] md:px-3.5 md:text-sm", current ? "bg-[var(--accent)]/15 text-[var(--accent)]" : "opacity-80 hover:opacity-100")}
+              >
+                {t.nav[n.key]}
+              </Link>
+            );
+          })}
+        </nav>
         <div className="pointer-events-auto flex items-center gap-0.5">
+          {pathname === "/" && (
+            <button
+              type="button"
+              onClick={() => setChallenges(!challenges)}
+              className={iconButtonClass(challenges ? "text-[var(--accent)]" : undefined)}
+              aria-pressed={challenges}
+              aria-label={t.quiz.scroll.toggle}
+              title={t.quiz.scroll.toggle}
+              data-challenge-toggle
+            >
+              <Puzzle className="h-5 w-5" aria-hidden />
+            </button>
+          )}
           {audios.length > 0 && (
             <button
               type="button"
@@ -46,7 +90,7 @@ export function Header() {
             type="button"
             onClick={() => setLang(lang === "id" ? "en" : "id")}
             className={iconButtonClass("w-auto px-3 font-mono text-xs uppercase")}
-            aria-label={`${t.header.lang}: ${lang === "id" ? "Bahasa Indonesia" : "English"}`}
+            aria-label={`${lang.toUpperCase()}, ${t.header.lang}: ${lang === "id" ? "Bahasa Indonesia" : "English"}`}
           >
             {lang === "id" ? "ID" : "EN"}
           </button>

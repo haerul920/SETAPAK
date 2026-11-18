@@ -50,8 +50,8 @@ export const DurationBar = memo(function DurationBar({ event, bar }: { event: Ti
       <div className="absolute inset-y-0 left-1 w-[3px] rounded-full" style={{ background: color, opacity: lit ? 1 : 0.35 }} />
       <div className="bar-fill absolute inset-y-0 left-1 w-[3px] origin-top rounded-full" style={{ background: color }} />
       <div className="absolute left-1 top-0 h-2.5 w-2.5 -translate-x-[3.5px] rounded-full" style={{ background: color }} />
-      <div className="sticky -mt-6 flex w-max items-center gap-2 pl-0.5" style={{ top: `calc(50% - 24px + ${bar.lane * 56}px)` }}>
-        {thumb && (
+      <div className="sticky flex w-max items-center gap-2 pl-0.5" style={{ top: `calc(50% - 24px + ${bar.lane * 56}px)`, marginTop: bar.lane * 56 - 24 }}>
+        {thumb && bar.y1 - bar.y0 >= 150 + bar.lane * 56 && (
           <span className="bar-thumb relative hidden h-12 w-12 overflow-hidden rounded-lg ring-2 md:block" style={{ ["--tw-ring-color" as string]: color }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={thumb.src} alt="" loading="lazy" className={cn("bar-thumb-img h-full w-full", thumb.cutout ? "object-contain object-bottom" : "object-cover")} />
@@ -59,9 +59,8 @@ export const DurationBar = memo(function DurationBar({ event, bar }: { event: Ti
           </span>
         )}
         <span className="block h-2.5 w-2.5 -translate-x-[3.5px] rounded-full md:hidden" style={{ background: color }} />
-        <span className="hidden max-w-[150px] truncate whitespace-nowrap font-mono text-[10px] opacity-80 xl:inline">{loc.title}</span>
       </div>
-      <div className="absolute bottom-0 left-1 flex -translate-x-[3.5px] translate-y-full items-center gap-1 pt-1">
+      <div className="absolute left-1 flex -translate-x-[3.5px] items-center gap-1 pt-1" style={{ top: `calc(100% + ${bar.lane * 14}px)` }}>
         <span className="h-2.5 w-2.5 rounded-full" style={{ background: color }} />
         <span className="hidden whitespace-nowrap font-mono text-[10px] opacity-75 md:inline">
           {start === end ? loc.dateLabel : `${tickLabel(start, lang)} → ${tickLabel(end, lang)}`}

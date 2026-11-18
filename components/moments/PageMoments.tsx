@@ -15,7 +15,7 @@ import { PAGE_MOMENTS } from "./registry";
  * Lapisan momen di tingkat halaman (fixed, di belakang objek). Hanya dipasang saat garis acuan
  * berada di rentangnya; opacity bersilang-pudar di tepi rentang.
  */
-function useRange(y0: number, y1: number, margin = 1) {
+export function useRange(y0: number, y1: number, margin = 1) {
   const [active, setActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const progress = useRef(0);
@@ -125,8 +125,21 @@ export function CaveTorchLayer({ layout }: { layout: TimelineLayout }) {
         className="absolute left-0 top-0 h-[300vmax] w-[300vmax]"
         style={{ background: "radial-gradient(circle at center, transparent 0, rgba(255,214,150,0.06) 9vmax, rgba(6,4,3,0.95) 17vmax)" }}
       />
-      <p className="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-4 py-1.5 font-mono text-[11px] uppercase tracking-widest text-[#f5ecdc]/85">{t.cave.torch}</p>
     </div>
+  );
+}
+
+/** Petunjuk obor: lapisan sendiri di atas objek supaya tidak tertutup kartu peristiwa yang masuk layar. */
+export function CaveHint({ layout }: { layout: TimelineLayout }) {
+  const { t } = useCopy();
+  const y0 = layout.scale.yearToY(PAGE_MOMENTS.cave.from);
+  const y1 = layout.scale.yearToY(PAGE_MOMENTS.cave.to);
+  const { active, ref } = useRange(y0, y1, 0.8);
+  if (!active) return <div ref={ref} hidden />;
+  return (
+    <p ref={ref as unknown as React.RefObject<HTMLParagraphElement>} className="pointer-events-none fixed bottom-4 left-1/2 z-[33] max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-full bg-black/80 px-4 py-1.5 text-center font-mono text-[10px] uppercase tracking-widest text-[#f5ecdc] md:text-[11px]" style={{ opacity: 0 }}>
+      {t.cave.torch}
+    </p>
   );
 }
 

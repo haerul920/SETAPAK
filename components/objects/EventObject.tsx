@@ -11,6 +11,7 @@ import {
   ProclamationClock,
   RiseSlices,
   ScrollRollers,
+  SoftHalo,
   TypedNarrative,
   VolcanoMark,
 } from "@/components/moments/ObjectMoments";
@@ -113,7 +114,11 @@ export const EventObject = memo(function EventObject({ event, y, priority = fals
         }
       }
       if (th === 0.6 && forward && !isMotionReduced()) {
-        if (event.type === "rusak") {
+        if (special?.kind === "quake") {
+          el.classList.remove("is-quaking");
+          void el.offsetWidth;
+          el.classList.add("is-quaking");
+        } else if (event.type === "rusak" && special?.kind !== "steady") {
           el.classList.remove("is-shaking");
           void el.offsetWidth;
           el.classList.add("is-shaking");
@@ -127,7 +132,7 @@ export const EventObject = memo(function EventObject({ event, y, priority = fals
   useObjectMotion(ref, { y, speed: 0.9 + (seed % 21) / 100, thresholds: [0.5, 0.6], onCross, onProgress });
 
   // Banjir memakai ombak, abu 2010 memakai sapuan abu sendiri, penutup dan sekop tanpa efek tipe.
-  const effectType = special && ["flood", "ashSweep", "closing", "dig"].includes(special.kind) ? null : event.type;
+  const effectType = special && ["flood", "ashSweep", "closing", "dig", "steady"].includes(special.kind) ? null : event.type;
   const isClosing = special?.kind === "closing";
 
   return (
@@ -160,6 +165,7 @@ export const EventObject = memo(function EventObject({ event, y, priority = fals
               {special?.kind === "ashSweep" && <AshSweep />}
               {special?.kind === "volcano" && <VolcanoMark />}
               {special?.kind === "clock" && <ProclamationClock />}
+              {special?.kind === "steady" && <SoftHalo />}
               <button
                 type="button"
                 onClick={() => openEvent(event.id)}

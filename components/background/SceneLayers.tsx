@@ -1,6 +1,7 @@
 "use client";
 
 import { memo, useEffect, useMemo, useRef, useState } from "react";
+import { usePaletteVars } from "@/components/atmosphere/Background";
 import { eraStrength, sceneSpans, type SceneEra } from "@/lib/background";
 import type { TimelineLayout } from "@/lib/layout";
 import { scenePlanes, TILE_H, TILE_W } from "@/lib/scene-shapes";
@@ -38,6 +39,13 @@ const PLANE_FILL = [
   "color-mix(in oklab, var(--bg-bottom, #17110b) 34%, #050403)",
 ] as const;
 const PLANE_OPACITY = [0.62, 0.82, 0.96] as const;
+/** Masa kini berlatar terang: siluet dekat dilembutkan supaya teks kartu tetap terbaca di atasnya. */
+const PLANE_FILL_LIGHT = [
+  "color-mix(in oklab, var(--bg-bottom, #17110b) 66%, #8aa2b8)",
+  "color-mix(in oklab, var(--bg-bottom, #17110b) 62%, #55606a)",
+  "color-mix(in oklab, var(--bg-bottom, #17110b) 50%, #4a4944)",
+] as const;
+const PLANE_OPACITY_LIGHT = [0.5, 0.6, 0.5] as const;
 
 const EraScene = memo(function EraScene({ era }: { era: SceneEra }) {
   const planes = useMemo(() => scenePlanes(era), [era]);
@@ -45,12 +53,12 @@ const EraScene = memo(function EraScene({ era }: { era: SceneEra }) {
   return (
     <>
       {list.map((d, i) => (
-        <div key={i} data-plane={i} className="absolute bottom-0 left-0 h-full will-change-transform" style={{ opacity: PLANE_OPACITY[i] }}>
+        <div key={i} data-plane={i} className="absolute bottom-0 left-0 h-full will-change-transform" style={{ opacity: (era === "kini" ? PLANE_OPACITY_LIGHT : PLANE_OPACITY)[i] }}>
           <svg
             viewBox={`0 0 ${TILE_W * 2} ${TILE_H}`}
             preserveAspectRatio="xMinYMax slice"
             className="h-full w-auto"
-            style={{ aspectRatio: `${TILE_W * 2} / ${TILE_H}`, fill: PLANE_FILL[i] }}
+            style={{ aspectRatio: `${TILE_W * 2} / ${TILE_H}`, fill: (era === "kini" ? PLANE_FILL_LIGHT : PLANE_FILL)[i] }}
             aria-hidden
           >
             <path d={d} />
@@ -66,6 +74,8 @@ export function SceneLayers({ layout }: { layout: TimelineLayout }) {
   const spans = useMemo(() => sceneSpans(layout.scale), [layout]);
   const [active, setActive] = useState<SceneEra[]>(["purba"]);
   const refs = useRef<Partial<Record<SceneEra, HTMLDivElement | null>>>({});
+  const paletteRef = useRef<HTMLDivElement>(null);
+  usePaletteVars(paletteRef);
 
   useEffect(() => {
     let last = "";
@@ -107,7 +117,7 @@ export function SceneLayers({ layout }: { layout: TimelineLayout }) {
   }, [spans]);
 
   return (
-    <div className="pointer-events-none fixed inset-0 -z-[15] overflow-hidden" aria-hidden data-scene-layers>
+    <div ref={paletteRef} className="pointer-events-none fixed inset-0 -z-[15] overflow-hidden" aria-hidden data-scene-layers>
       {active.map((era) => (
         <div
           key={era}

@@ -1,8 +1,9 @@
 "use client";
 
 import { Bone, Building2, Castle, Crown, Flag, Hand, Landmark, MapPin, MoonStar, Mountain, ScrollText, X, type LucideIcon } from "lucide-react";
-import { memo, useEffect, useRef } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import type { TimelineLayout } from "@/lib/layout";
+import { imagesFor, srcFor } from "@/lib/media";
 import { scrollStore, useSetapakStore } from "@/lib/store";
 import { BUBBLE_SIZE, shortName, TRACE_DIMS, TRACE_LABEL, type BubblePlacement, type StonePlacement, type TraceCategory } from "@/lib/traces";
 import { tickLabel } from "@/lib/time-scale";
@@ -90,9 +91,14 @@ function Stone({ stone, mobile, refCb }: { stone: StonePlacement; mobile: boolea
   const Icon = TRACE_ICON[trace.category];
   const name = lang === "en" && trace.nameEn ? trace.nameEn : trace.name;
   const inward = stone.side === "left" ? "left-full ml-2" : "right-full mr-2";
+  // foto mini hanya dimuat saat kursor atau fokus ada di batu
+  const [hot, setHot] = useState(false);
+  const photo = hot ? imagesFor(trace.id)[0] : undefined;
   return (
     <button
       ref={refCb}
+      onPointerEnter={() => setHot(true)}
+      onFocus={() => setHot(true)}
       type="button"
       onClick={() => openTrace(trace.id)}
       aria-label={t.trace.stone(name, trace.yearLabel)}
@@ -115,12 +121,16 @@ function Stone({ stone, mobile, refCb }: { stone: StonePlacement; mobile: boolea
       {!mobile && (
         <span
           className={cn(
-            "trace-label caption-plate pointer-events-none absolute top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-2.5 py-1 text-left opacity-0 transition-opacity duration-200",
+            "trace-label caption-plate pointer-events-none absolute top-1/2 -translate-y-1/2 whitespace-nowrap rounded-2xl px-2.5 py-1 text-left opacity-0 transition-opacity duration-200",
             "group-hover:opacity-100 group-focus-visible:opacity-100 group-data-[near=1]:opacity-90",
             inward
           )}
           aria-hidden
         >
+          {photo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={srcFor(photo, 640)} alt="" width={96} height={64} loading="lazy" draggable={false} className="mb-1 h-16 w-24 rounded-md object-cover" />
+          )}
           <span className="block font-mono text-[10px] uppercase tracking-wider opacity-75">{trace.yearLabel}</span>
           <span className="block text-xs leading-tight">{shortName(name)}</span>
         </span>

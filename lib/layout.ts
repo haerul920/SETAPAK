@@ -63,9 +63,31 @@ export interface Tick {
   major: boolean;
 }
 
+/** Tinggi keterangan pada garis batas segmen (cukup untuk satu baris huruf kecil). */
+const LABEL_CLEARANCE = 22;
+
+/**
+ * Posisi label di sekitar y yang tidak menimpa klaster mana pun: bila y jatuh di dalam sebuah klaster,
+ * label digeser tepat di atas atau di bawahnya (yang terdekat dan bebas dari klaster lain).
+ */
+export function clearLabelY(y: number, clusters: readonly { y: number; height: number }[]): number {
+  const hit = (v: number) => clusters.find((c) => v + LABEL_CLEARANCE > c.y && v - LABEL_CLEARANCE < c.y + c.height);
+  if (!hit(y)) return y;
+  const cands: number[] = [];
+  for (const c of clusters) {
+    if (!(y + LABEL_CLEARANCE > c.y && y - LABEL_CLEARANCE < c.y + c.height)) continue;
+    cands.push(c.y - LABEL_CLEARANCE - 4, c.y + c.height + LABEL_CLEARANCE + 4);
+  }
+  const free = cands.filter((v) => !hit(v)).sort((a, b) => Math.abs(a - y) - Math.abs(b - y));
+  return free[0] ?? y;
+}
+
 export interface SegmentMark {
   segment: Segment;
+  /** posisi garis batas segmen */
   y: number;
+  /** posisi label: sama dengan y kecuali bila y jatuh di dalam sebuah klaster */
+  labelY: number;
 }
 
 export interface TimelineLayout {
@@ -253,7 +275,10 @@ export function buildLayout(events: readonly TimelineEvent[], opts: LayoutOption
     }
   }
 
-  const segmentMarks: SegmentMark[] = SEGMENTS.slice(1).map((segment) => ({ segment, y: scale.yearToY(segment.from) }));
+  const segmentMarks: SegmentMark[] = SEGMENTS.slice(1).map((segment) => {
+    const y = scale.yearToY(segment.from);
+    return { segment, y, labelY: clearLabelY(y, clusters) };
+  });
 
   // 7. Jejak tingkat 3 dan histogram kepadatan.
   const traceLayout = layoutTraces(traces, (yr) => scale.yearToY(yr), mobile);

@@ -33,10 +33,13 @@ export interface TraceLite {
   year: number;
   yearLabel: string;
   category: TraceCategory;
+  /** koordinat dibulatkan 2 desimal (peta mini 1945) */
+  lat: number;
+  lng: number;
 }
 
 /** Data lengkap (data/wikidata-heritage.json), dimuat saat laci detail dibuka. */
-export interface Trace extends TraceLite {
+export interface Trace extends Omit<TraceLite, "lat" | "lng"> {
   yearPrecision: string;
   kind: string;
   coords: { lat: number; lng: number };

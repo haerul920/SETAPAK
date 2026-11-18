@@ -25,10 +25,11 @@ export const ScaleMarks = memo(function ScaleMarks({ layout, viewport }: { layou
         const k = yearsPerScreen(layout.scale, m.segment.from + 1e-6, viewport);
         const label = k >= 10 ? groupDigits(k, lang) : String(k).replace(".", lang === "id" ? "," : ".");
         return (
-          <div key={m.segment.id} className="pointer-events-none absolute inset-x-0 flex items-center gap-3 px-4 md:px-20" style={{ top: m.y }}>
-            <span className="h-px flex-1 bg-current opacity-20" />
-            <span className="caption-plate whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.18em] opacity-75 md:text-[11px]">{t.scroll.slower(label)}</span>
-            <span className="h-px flex-1 bg-current opacity-20" />
+          <div key={m.segment.id} className="pointer-events-none absolute inset-x-0 px-4 md:px-20" style={{ top: m.y }}>
+            <span className="block h-px bg-current opacity-20" />
+            <span className="caption-plate absolute left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.18em] opacity-75 md:text-[11px]" style={{ top: m.labelY - m.y }}>
+              {t.scroll.slower(label)}
+            </span>
           </div>
         );
       })}

@@ -558,6 +558,8 @@ html[data-motion="off"] .obj-move {
 }
 .bar-thumb {
   background: color-mix(in oklab, currentColor 10%, transparent);
+  /* memudar mendekati ujung batang: batang yang berakhir di tempat yang sama tidak menumpuk thumbnail */
+  opacity: clamp(0, calc((1 - var(--p)) * 14), 1);
 }
 .bar[data-type="dibangun"] .bar-thumb-img {
   clip-path: inset(calc((1 - var(--p)) * 100%) 0 0 0);
@@ -579,4 +581,199 @@ html[data-motion="off"] .obj-move {
 }
 .bar[data-type="peristiwa"] .bar-thumb-img {
   opacity: calc(0.4 + var(--p) * 0.6);
+}
+
+
+/* ------------------------------------------------------------------ */
+/* v4: momen halaman dan objek (gempa, tsunami, jalur pala, 1945)       */
+/* ------------------------------------------------------------------ */
+
+/* Gempa Yogyakarta 1867 dan 2006: guncangan halus, lebih lama dan lebih lembut dari retakan biasa (maks 2,5 px) */
+@keyframes fx-quake {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  10% { transform: translate3d(-2.5px, 1px, 0); }
+  22% { transform: translate3d(2.2px, -1px, 0); }
+  36% { transform: translate3d(-1.8px, 0.8px, 0); }
+  52% { transform: translate3d(1.4px, -0.6px, 0); }
+  70% { transform: translate3d(-0.9px, 0.4px, 0); }
+  85% { transform: translate3d(0.5px, -0.2px, 0); }
+}
+.obj.is-quaking .obj-box {
+  animation: fx-quake 1.8s ease-out 1;
+}
+
+/* Masjid Raya Baiturrahman 2004: tetap berdiri, cahaya lembut berdenyut pelan */
+.fx-halo {
+  position: absolute;
+  inset: -8%;
+  border-radius: 24px;
+  background: radial-gradient(closest-side, rgba(255, 228, 170, 0.55), rgba(255, 228, 170, 0) 72%);
+  opacity: 0.55;
+  animation: fx-halo-pulse 5.5s ease-in-out infinite;
+}
+@keyframes fx-halo-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.98); }
+  50% { opacity: 0.8; transform: scale(1.03); }
+}
+
+/* Kapal PLTD Apung: bergeser dari arah laut ke daratan mengikuti progres masuk (--p), lalu diam */
+.obj[data-special="drift"] .obj-visual {
+  transform: translate3d(calc((1 - var(--p, 1)) * -54px), 0, 0) rotate(calc((1 - var(--p, 1)) * -2.5deg));
+}
+
+/* Air tsunami: bergerak dari kiri ke kanan mengikuti --rp, lalu surut (opacity diatur lapisan) */
+.tsunami-water {
+  transform: translate3d(calc(-100% + var(--rp, 0) * 215%), 0, 0);
+  will-change: transform;
+}
+.tsunami-water-2 {
+  transform: translate3d(calc(-100% + var(--rp, 0) * 190% - 8%), 0, 0);
+}
+.tsunami-foam {
+  animation: tsunami-shimmer 2.4s ease-in-out infinite;
+}
+@keyframes tsunami-shimmer {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.8; }
+}
+html[data-motion="off"] .tsunami-water,
+html[data-motion="off"] .tsunami-water-2 {
+  transform: translate3d(-18%, 0, 0);
+}
+
+/* Jalur pala: benteng muncul di tahunnya, kapal meredup dan berhenti setelah Banda 1621 */
+.spice-fort {
+  opacity: 0.25;
+  transition: opacity 0.5s ease;
+}
+.spice-fort[data-on="1"] {
+  opacity: 1;
+}
+.spice-fort .spice-fort-label {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.spice-fort[data-on="1"] .spice-fort-label {
+  opacity: 0.9;
+}
+.spice-ship {
+  transition: opacity 0.9s ease;
+}
+.spice-box[data-hush="1"] .spice-ship {
+  opacity: 0.12;
+}
+.spice-hush {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.spice-box[data-hush="1"] .spice-hush {
+  opacity: 0.85;
+}
+
+/* Mini-peta 1945: lokasi menyala satu per satu */
+.map1945-stop .map1945-dot,
+.map1945-stop .map1945-ring {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.map1945-stop[data-state="past"] .map1945-dot {
+  opacity: 0.55;
+}
+.map1945-stop[data-state="now"] .map1945-dot {
+  opacity: 1;
+}
+.map1945-stop[data-state="now"] .map1945-ring {
+  opacity: 0.9;
+  animation: map1945-pulse 1.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes map1945-pulse {
+  0%, 100% { transform: scale(0.8); opacity: 0.9; }
+  50% { transform: scale(1.35); opacity: 0.35; }
+}
+
+/* Batu jejak tingkat 3: muncul dengan pop kecil */
+@keyframes trace-pop {
+  0% { transform: scale(0.55); opacity: 0; }
+  70% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.trace-stone .trace-stone-dot {
+  animation: trace-pop 0.35s ease-out 1 backwards;
+}
+
+/* ------------------------------------------------------------------ */
+/* v4: halaman Peta Waktu                                              */
+/* ------------------------------------------------------------------ */
+@keyframes peta-pin-pulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(231, 183, 95, 0)); }
+  35% { transform: scale(1.5); filter: drop-shadow(0 0 10px rgba(231, 183, 95, 0.95)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(231, 183, 95, 0)); }
+}
+.peta-pin-pulse {
+  animation: peta-pin-pulse 1.6s ease-out 1;
+}
+.maplibregl-ctrl-attrib {
+  background: rgba(20, 16, 12, 0.78) !important;
+  color: #d9c7a7 !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #e7b75f !important;
+}
+.maplibregl-ctrl-group {
+  background: rgba(24, 20, 16, 0.92) !important;
+}
+.maplibregl-ctrl-group button + button {
+  border-top-color: rgba(245, 236, 220, 0.15) !important;
+}
+.maplibregl-ctrl-icon {
+  filter: invert(0.9);
+}
+@media print {
+  .peta-noprint,
+  header {
+    display: none !important;
+  }
+  .peta-root {
+    position: static !important;
+    inset: auto !important;
+    height: 100vh !important;
+  }
+  .peta-print-note {
+    display: block !important;
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+    z-index: 5;
+    color: #f5ecdc;
+    font: 11px sans-serif;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* v4: kuis                                                            */
+/* ------------------------------------------------------------------ */
+@keyframes quiz-pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.quiz-verdict-icon {
+  animation: quiz-pop 0.45s ease-out 1;
+}
+@keyframes quiz-streak-glow {
+  0%, 100% { text-shadow: 0 0 0 rgba(231, 183, 95, 0); }
+  50% { text-shadow: 0 0 12px rgba(231, 183, 95, 0.9); }
+}
+.quiz-streak {
+  animation: quiz-streak-glow 1.4s ease-in-out infinite;
+}
+.quiz-answer-pin {
+  animation: quiz-pop 0.5s ease-out 1;
+}
+
+/* Pelat lembut di balik judul penutup: teks tetap terbaca di atas siluet latar */
+.outro-plate {
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--bg-bottom, #17110b) 88%, transparent) 55%, transparent 100%);
 }
