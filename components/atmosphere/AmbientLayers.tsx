@@ -237,8 +237,8 @@ function Firefly({ i }: { i: number }) {
 function Forest() {
   return (
     <>
-      <div className="ambient-mist absolute -left-1/4 bottom-[18%] h-40 w-[150%] rounded-full bg-[#cfd8c4]/[0.05] blur-3xl" />
-      <div className="ambient-mist absolute -left-1/4 bottom-[45%] h-28 w-[150%] rounded-full bg-[#cfd8c4]/[0.04] blur-3xl" style={{ animationDelay: "-14s" }} />
+      <div className="ambient-mist absolute -left-1/4 bottom-[18%] h-40 w-[150%]" style={{ background: "radial-gradient(closest-side, rgba(207,216,196,0.06), transparent)" }} />
+      <div className="ambient-mist absolute -left-1/4 bottom-[45%] h-28 w-[150%]" style={{ animationDelay: "-14s", background: "radial-gradient(closest-side, rgba(207,216,196,0.05), transparent)" }} />
       {Array.from({ length: 6 }, (_, i) => (
         <Leaf key={i} i={i} />
       ))}

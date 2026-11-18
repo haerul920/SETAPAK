@@ -126,9 +126,9 @@ describe("partikel depan", () => {
 });
 
 describe("penjaga kualitas", () => {
-  it("turun satu tingkat setelah 2 detik di bawah 45 FPS", () => {
+  it("turun satu tingkat setelah 1 detik di bawah 45 FPS", () => {
     let st = initialGovernor(2);
-    for (let i = 0; i < 3; i++) st = stepGovernor(st, 30, 500);
+    st = stepGovernor(st, 30, 500);
     expect(st.level).toBe(2);
     st = stepGovernor(st, 30, 500);
     expect(st.level).toBe(1);
@@ -137,13 +137,14 @@ describe("penjaga kualitas", () => {
 
   it("FPS yang pulih mereset hitungan, dan jeda mencegah jatuh berturut-turut", () => {
     let st = initialGovernor(2);
-    for (let i = 0; i < 3; i++) st = stepGovernor(st, 30, 500);
+    st = stepGovernor(st, 30, 500);
     st = stepGovernor(st, 58, 500);
     expect(st.lowMs).toBe(0);
-    for (let i = 0; i < 4; i++) st = stepGovernor(st, 30, 500);
+    for (let i = 0; i < 2; i++) st = stepGovernor(st, 30, 500);
     expect(st.level).toBe(1);
     // masa jeda: FPS rendah tidak langsung menurunkan lagi
-    for (let i = 0; i < 4; i++) st = stepGovernor(st, 20, 500);
+    st = stepGovernor(st, 20, 500);
+    st = stepGovernor(st, 20, 500);
     expect(st.level).toBe(1);
   });
 
@@ -195,5 +196,27 @@ describe("siluet pemandangan", () => {
       expect(v).toBeLessThan(1);
     }
     expect(TILE_H).toBe(900);
+  });
+});
+
+describe("kualitas tersimpan", () => {
+  it("menyimpan dan membaca tingkat, mengabaikan yang kedaluwarsa atau rusak, dan tahan penyimpanan yang diblokir", async () => {
+    const { readSavedQuality, saveQuality } = await import("@/components/background/backgroundStore");
+    const mem = new Map<string, string>();
+    const g = globalThis as unknown as { window?: unknown };
+    g.window = { localStorage: { getItem: (k: string) => mem.get(k) ?? null, setItem: (k: string, v: string) => void mem.set(k, v) } };
+    expect(readSavedQuality()).toBeNull();
+    saveQuality("1");
+    expect(readSavedQuality()).toBe("1");
+    saveQuality("off");
+    expect(readSavedQuality()).toBe("off");
+    mem.set("setapak-kualitas", `0|${Date.now() - 4 * 24 * 3600 * 1000}`);
+    expect(readSavedQuality()).toBeNull();
+    mem.set("setapak-kualitas", "rusak");
+    expect(readSavedQuality()).toBeNull();
+    g.window = { localStorage: { getItem: () => { throw new Error("diblokir"); }, setItem: () => { throw new Error("diblokir"); } } };
+    expect(readSavedQuality()).toBeNull();
+    expect(() => saveQuality("2")).not.toThrow();
+    delete g.window;
   });
 });

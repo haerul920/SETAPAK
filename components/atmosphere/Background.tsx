@@ -70,16 +70,30 @@ export function Background({ layout }: { layout: TimelineLayout }) {
  * Menyalin warna latar saat ini ke variabel --bg-top dan --bg-bottom pada satu elemen saja. Variabel di
  * elemen akar akan memaksa hitung ulang gaya seluruh dokumen pada tiap perubahan warna.
  */
-export function usePaletteVars<T extends HTMLElement>(ref: React.RefObject<T | null>): void {
+export function usePaletteVars<T extends HTMLElement>(ref: React.RefObject<T | null>, minIntervalMs = 0): void {
   useEffect(() => {
+    let lastWrite = 0;
+    let timer = 0;
     const write = () => {
+      timer = 0;
       const el = ref.current;
       if (!el) return;
+      lastWrite = performance.now();
       const { top, bottom } = atmosphereStore.getState();
       el.style.setProperty("--bg-top", top);
       el.style.setProperty("--bg-bottom", bottom);
     };
+    // minIntervalMs > 0: perubahan warna menulis ulang (re-raster) lapisan besar, jadi dibatasi dan
+    // nilai terakhir selalu ditulis (trailing)
+    const onChange = () => {
+      if (minIntervalMs <= 0 || performance.now() - lastWrite >= minIntervalMs) write();
+      else if (!timer) timer = window.setTimeout(write, minIntervalMs);
+    };
     write();
-    return atmosphereStore.subscribe(write);
-  }, [ref]);
+    const unsub = atmosphereStore.subscribe(onChange);
+    return () => {
+      unsub();
+      if (timer) window.clearTimeout(timer);
+    };
+  }, [ref, minIntervalMs]);
 }

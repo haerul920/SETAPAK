@@ -53,6 +53,9 @@ interface UiState {
   hoverSite: string | null;
   /** klaster tempat garis acuan berada */
   activeClusterId: string | null;
+  /** gulir otomatis (tidak disimpan: halaman tidak boleh mulai menggulir sendiri saat dimuat) */
+  autoPlay: boolean;
+  autoSpeed: 1 | 2 | 4;
 }
 
 interface Actions {
@@ -65,6 +68,8 @@ interface Actions {
   openBubble: (id: string | null) => void;
   setHoverSite: (slug: string | null) => void;
   setActiveCluster: (id: string | null) => void;
+  setAutoPlay: (v: boolean) => void;
+  setAutoSpeed: (s: 1 | 2 | 4) => void;
 }
 
 export type SetapakState = Settings & UiState & Actions;
@@ -81,6 +86,8 @@ export const useSetapakStore = create<SetapakState>()(
       openBubbleId: null,
       hoverSite: null,
       activeClusterId: null,
+      autoPlay: false,
+      autoSpeed: 1,
       setLang: (lang) => {
         set({ lang });
         if (typeof document !== "undefined") document.documentElement.lang = lang;
@@ -93,6 +100,8 @@ export const useSetapakStore = create<SetapakState>()(
       openBubble: (openBubbleId) => set({ openBubbleId }),
       setHoverSite: (hoverSite) => set({ hoverSite }),
       setActiveCluster: (activeClusterId) => set((s) => (s.activeClusterId === activeClusterId ? s : { activeClusterId })),
+      setAutoPlay: (autoPlay) => set((s) => (s.autoPlay === autoPlay ? s : { autoPlay })),
+      setAutoSpeed: (autoSpeed) => set({ autoSpeed }),
     }),
     {
       name: "setapak-v3",

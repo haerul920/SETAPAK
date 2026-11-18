@@ -554,7 +554,8 @@ html[data-motion="off"] .obj-move {
   --p: 0;
 }
 .bar-fill {
-  transform: scaleY(var(--p));
+  /* progres dihitung dari rentang penuh batang, tetapi elemen hanya setinggi jendela yang terlihat */
+  transform: scaleY(clamp(0, calc((var(--p) * var(--H) - var(--off)) / var(--bh)), 1));
 }
 .bar-thumb {
   background: color-mix(in oklab, currentColor 10%, transparent);
@@ -776,4 +777,20 @@ html[data-motion="off"] .tsunami-water-2 {
 /* Pelat lembut di balik judul penutup: teks tetap terbaca di atas siluet latar */
 .outro-plate {
   background: radial-gradient(closest-side, color-mix(in srgb, var(--bg-bottom, #17110b) 88%, transparent) 55%, transparent 100%);
+}
+
+/* Kualitas hemat (QualityGovernor): hiasan yang terus bergerak dimatikan supaya guliran tetap mulus */
+html[data-quality="0"] [class*="ambient-"],
+html[data-quality="0"] .obj-float,
+html[data-quality="0"] .fx-glow,
+html[data-quality="0"] .fx-smoke,
+html[data-quality="0"] .fx-walk,
+html[data-quality="0"] .fx-ash,
+html[data-quality="0"] .fx-sparkle,
+html[data-quality="0"] .fx-puff,
+html[data-quality="0"] .fx-halo {
+  animation: none !important;
+}
+html[data-quality="0"] .obj-cutout {
+  filter: none !important;
 }

@@ -137,7 +137,7 @@ export function CaveHint({ layout }: { layout: TimelineLayout }) {
   const { active, ref } = useRange(y0, y1, 0.8);
   if (!active) return <div ref={ref} hidden />;
   return (
-    <p ref={ref as unknown as React.RefObject<HTMLParagraphElement>} className="pointer-events-none fixed bottom-4 left-1/2 z-[33] max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-full bg-black/80 px-4 py-1.5 text-center font-mono text-[10px] uppercase tracking-widest text-[#f5ecdc] md:text-[11px]" style={{ opacity: 0 }}>
+    <p ref={ref as unknown as React.RefObject<HTMLParagraphElement>} className="pointer-events-none fixed bottom-16 left-1/2 z-[33] max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-full bg-black/80 px-4 py-1.5 text-center font-mono text-[10px] uppercase tracking-widest text-[#f5ecdc] md:text-[11px]" style={{ opacity: 0 }}>
       {t.cave.torch}
     </p>
   );

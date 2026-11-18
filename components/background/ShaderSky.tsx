@@ -35,6 +35,8 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
     let disposed = false;
     let raf = 0;
     let cleanup: (() => void) | null = null;
+    // perangkat yang ditandai terlalu lemah untuk WebGL: pakai gradien statis tanpa memuat shader
+    if (backgroundStore.getState().sky === "fallback") return;
 
     (async () => {
       let ogl: typeof import("ogl");
@@ -45,6 +47,8 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
         return;
       }
       if (disposed) return;
+      // penjaga kualitas bisa menandai perangkat terlalu lemah selagi modul dimuat
+      if (backgroundStore.getState().sky === "fallback") return;
       let renderer: InstanceType<typeof ogl.Renderer>;
       try {
         renderer = new ogl.Renderer({ canvas: el, dpr: 1, alpha: false, antialias: false, depth: false, powerPreference: "low-power" });
@@ -95,6 +99,7 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
 
       const mouse = { tx: 0.5, ty: 0.5, x: 0.5, y: 0.5 };
       const onPointer = (e: PointerEvent) => {
+        lastPointer = performance.now();
         mouse.tx = e.clientX / window.innerWidth;
         mouse.ty = 1 - e.clientY / window.innerHeight;
       };
@@ -113,6 +118,8 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
       let mid: [number, number, number] = [0, 0, 0];
       let bottom: [number, number, number] = [0, 0, 0];
       let lastFrame = 0;
+      let lastPointer = 0;
+      let prevTick = 0;
       let lastFx = 0;
       let emaMs = 0;
       const t0 = performance.now();
@@ -120,11 +127,23 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
       const tick = (now: number) => {
         raf = requestAnimationFrame(tick);
         if (document.hidden) return;
+        if (backgroundStore.getState().sky === "fallback") {
+          // dimatikan penjaga kualitas: sembunyikan kanvas dan berhenti merender
+          if (el.style.visibility !== "hidden") el.style.visibility = "hidden";
+          return;
+        }
         const quality = backgroundStore.getState().quality;
-        // pada kualitas hemat, render 30 kali per detik
-        if (quality < 2 && now - lastFrame < 30) return;
-        lastFrame = now;
+        // langit bergerak lambat: render paling banyak 30 kali per detik (dan 15 saat guliran diam),
+        // separuh beban GPU dibanding setiap frame tanpa selisih yang terlihat
         const { y, velocity } = scrollStore.getState();
+        // saat guliran cepat langit tidak diperhatikan: 15 fps; saat frame halaman tertinggal (> 40 ms)
+        // shader melewatkan satu frame supaya GPU sempat mengejar, bukan menumpuk antrean perintah
+        const fast = Math.abs(velocity) > 1500;
+        const gap = fast || (Math.abs(velocity) < 5 && now - lastPointer > 1500) ? 62 : 31;
+        const late = now - prevTick > 40;
+        prevTick = now;
+        if ((late && now - lastFrame < 200) || now - lastFrame < gap) return;
+        lastFrame = now;
         const atm = atmosphereStore.getState();
         const hex = atm.top + atm.bottom;
         if (hex !== lastHex) {
@@ -182,7 +201,7 @@ export function ShaderSky({ layout }: { layout: TimelineLayout }) {
   return (
     <>
       {!reduced && <canvas ref={canvas} className="pointer-events-none fixed inset-0 -z-[19] h-full w-full" aria-hidden data-sky-canvas />}
-      {(reduced || status === "fallback") && <div className="pointer-events-none fixed inset-0 -z-[19] opacity-[0.07] mix-blend-overlay" style={{ backgroundImage: NOISE_URI }} aria-hidden data-sky-fallback />}
+      {(reduced || status === "fallback") && <div className="pointer-events-none fixed inset-0 -z-[19] opacity-[0.07] " style={{ backgroundImage: NOISE_URI }} aria-hidden data-sky-fallback />}
     </>
   );
 }

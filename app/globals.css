@@ -239,7 +239,6 @@ html[data-motion="off"] *::after {
   background: var(--surface);
   color: var(--ink);
   border: 1px solid color-mix(in oklab, var(--ink) 18%, transparent);
-  backdrop-filter: blur(10px);
 }
 
 /* Garis kecepatan saat menggulir cepat (opacity diatur per frame) */

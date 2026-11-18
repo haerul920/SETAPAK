@@ -35,7 +35,7 @@ export function FilmGrain() {
     setUri(c.toDataURL("image/png"));
   }, []);
 
-  const animated = !reduced && quality >= 1;
+  const animated = !reduced && quality >= 2;
   return (
     <>
       <div
@@ -47,7 +47,7 @@ export function FilmGrain() {
       {uri && (
         <div className="pointer-events-none fixed inset-0 z-[25] overflow-hidden" aria-hidden data-grain>
           <div
-            className="absolute -inset-[10%] opacity-[0.05] mix-blend-overlay"
+            className="absolute -inset-[10%] opacity-[0.045]"
             style={{ backgroundImage: `url(${uri})`, backgroundSize: "192px 192px", animation: animated ? "grain-shift 0.9s steps(6) infinite" : "none" }}
           />
         </div>

@@ -20,19 +20,7 @@ export const PLANE_FACTORS = [0.2, 0.45, 0.75] as const;
 /** Laju geser dasar: px geser horizontal per px guliran pada faktor 1. */
 const PAN = 0.32;
 
-/** Koreksi warna per masa (filter matriks warna statis, murah): hangat di klasik, kehijauan di kolonial, netral di masa kini. */
-const GRADE: Record<SceneEra, string> = {
-  purba: "sepia(0.18) saturate(0.95)",
-  "seni-cadas": "sepia(0.25) saturate(1.05)",
-  senyap: "saturate(0.95)",
-  klasik: "sepia(0.14) saturate(1.1)",
-  majapahit: "sepia(0.2) saturate(1.1)",
-  maritim: "hue-rotate(-6deg) saturate(1.05)",
-  kolonial: "hue-rotate(14deg) saturate(0.88)",
-  kemerdekaan: "sepia(0.12) saturate(1.08)",
-  kini: "none",
-};
-
+/** Warna tiap bidang diturunkan dari warna latar saat ini (tanpa filter layar penuh, yang mahal di GPU lemah). */
 const PLANE_FILL = [
   "color-mix(in oklab, var(--bg-bottom, #17110b) 66%, #8aa2b8)",
   "color-mix(in oklab, var(--bg-bottom, #17110b) 70%, #1c2329)",
@@ -75,7 +63,7 @@ export function SceneLayers({ layout }: { layout: TimelineLayout }) {
   const [active, setActive] = useState<SceneEra[]>(["purba"]);
   const refs = useRef<Partial<Record<SceneEra, HTMLDivElement | null>>>({});
   const paletteRef = useRef<HTMLDivElement>(null);
-  usePaletteVars(paletteRef);
+  usePaletteVars(paletteRef, 320);
 
   useEffect(() => {
     let last = "";
@@ -126,7 +114,7 @@ export function SceneLayers({ layout }: { layout: TimelineLayout }) {
           }}
           data-era={era}
           className="absolute inset-0"
-          style={{ opacity: 0, filter: GRADE[era] }}
+          style={{ opacity: 0 }}
         >
           <EraScene era={era} />
         </div>

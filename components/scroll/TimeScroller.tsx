@@ -2,7 +2,7 @@
 
 import { ChevronDown, RotateCcw, Volume2, VolumeX } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { startTransition, useEffect, useMemo, useRef, useState } from "react";
 import { AmbientLayers } from "@/components/atmosphere/AmbientLayers";
 import { Background } from "@/components/atmosphere/Background";
 import { FilmGrain } from "@/components/background/FilmGrain";
@@ -29,6 +29,7 @@ import { GapNote } from "./GapNote";
 import { ScaleMarks } from "./ScaleMarks";
 import { TraceStones } from "./TraceStones";
 import { ScrollChallenge } from "@/components/quiz/ScrollChallenge";
+import { AutoScroll } from "./AutoScroll";
 import { usePaletteVars } from "@/components/atmosphere/Background";
 import { useQuizStore } from "@/lib/quiz-store";
 import { TimeRuler } from "./TimeRuler";
@@ -36,6 +37,8 @@ import { YearCounter } from "./YearCounter";
 
 /** Radius virtualisasi: hanya yang berada dalam ±RADIUS layar dari garis acuan yang dirender. */
 const RADIUS = 2.5;
+/** Batu jejak berupa ratusan simpul DOM kecil dan tanpa foto: cukup dirender dalam radius yang lebih sempit. */
+const TRACE_RADIUS = 1.5;
 
 /**
  * Guliran waktu utama (docs/SCROLL_ENGINE.md): layar pembuka, lintasan setinggi skala waktu,
@@ -127,7 +130,8 @@ function Track({ layout }: { layout: TimelineLayout }) {
         const b = Math.floor(y / vh);
         if (b !== lastBucket) {
           lastBucket = b;
-          setBucket(b);
+          // render objek baru berprioritas rendah: tidak memblokir frame gulir yang sedang berjalan
+          startTransition(() => setBucket(b));
         }
       }
       raf = requestAnimationFrame(tick);
@@ -181,13 +185,14 @@ function Track({ layout }: { layout: TimelineLayout }) {
       <DetailDrawer />
       <TraceDrawer />
       <ScrollChallenge layout={layout} />
+      <AutoScroll layout={layout} />
       <YearCounter layout={layout} />
       <TimeRuler layout={layout} />
       <div ref={track} className="pointer-events-none relative" style={{ height: layout.total }} id="lintasan">
         <ScaleMarks layout={layout} viewport={viewport} />
-        <TraceStones layout={layout} lo={Math.max(0, lo)} hi={Math.min(layout.total, hi)} />
+        <TraceStones layout={layout} lo={Math.max(0, center - viewport * TRACE_RADIUS)} hi={Math.min(layout.total, center + viewport * TRACE_RADIUS)} />
         {visibleBars.map(({ event, bar }) => (
-          <DurationBar key={event.id} event={event} bar={bar} />
+          <DurationBar key={event.id} event={event} bar={bar} lo={Math.max(0, lo)} hi={Math.min(layout.total, hi)} />
         ))}
         <div className="absolute inset-y-0 left-10 right-16 md:left-24 md:right-40">
           <SiteThreads layout={layout} lo={Math.max(0, lo)} hi={Math.min(layout.total, hi)} />

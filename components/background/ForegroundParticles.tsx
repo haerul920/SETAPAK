@@ -145,7 +145,8 @@ export function ForegroundParticles() {
         return;
       }
       const quality = backgroundStore.getState().quality;
-      if (quality < 2 && now - lastDraw < 30) return;
+      // partikel besar bergerak lambat: 30 gambar per detik cukup di semua kualitas
+      if (now - lastDraw < (quality < 1 ? 45 : 31)) return;
       lastDraw = now;
       const dt = Math.min(0.1, (now - last) / 1000);
       last = now;

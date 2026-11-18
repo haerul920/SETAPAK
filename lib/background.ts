@@ -189,9 +189,9 @@ export function particleCount(quality: Quality, mobile: boolean): number {
 export type Quality = 0 | 1 | 2;
 
 export const FPS_FLOOR = 45;
-export const FPS_WINDOW_MS = 2000;
+export const FPS_WINDOW_MS = 1000;
 /** Jeda setelah penurunan sebelum penilaian berikutnya, supaya kualitas tidak jatuh berturut-turut. */
-export const FPS_COOLDOWN_MS = 2500;
+export const FPS_COOLDOWN_MS = 1200;
 
 export interface GovernorState {
   level: Quality;
