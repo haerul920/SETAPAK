@@ -257,7 +257,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.04;
     renderer.setPixelRatio(isSoftwareGl ? 1 : Math.min(window.devicePixelRatio, 2));
-    renderer.setSize(width, height);
+    renderer.setSize(width, height, false);
     renderer.shadowMap.enabled = !isSoftwareGl;
     renderer.shadowMap.type = THREE.PCFShadowMap;
     renderer.localClippingEnabled = true;
@@ -858,15 +858,37 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     renderer.domElement.addEventListener("pointerup", onPointerUp);
     renderer.domElement.addEventListener("pointermove", onPointerMove);
 
+    let resizeTimer: number | null = null;
+    let resizeRaf = 0;
+
     const onResize = () => {
       if (!container) return;
-      const w = container.clientWidth || window.innerWidth;
-      const h = container.clientHeight || window.innerHeight;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      if (w <= 0 || h <= 0) return;
+
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
-      renderer.setSize(w, h);
+      // Gunakan false agar Three.js tidak menimpa style.width/height = "100%"
+      renderer.setSize(w, h, false);
+      // Render seketika agar buffer baru langsung terisi visual tanpa frame hitam
+      renderer.render(scene, camera);
     };
-    window.addEventListener("resize", onResize);
+
+    const handleResizeThrottled = () => {
+      cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(() => {
+        onResize();
+      });
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        onResize();
+      }, 320);
+    };
+
+    window.addEventListener("resize", handleResizeThrottled);
+    const resizeObserver = new ResizeObserver(() => handleResizeThrottled());
+    resizeObserver.observe(container);
 
     // Siapkan Controller Kompatibilitas untuk PetaClient.tsx (saveImage, project, getCanvas)
     const mapCompat = {
@@ -1113,7 +1135,10 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       canvas.removeEventListener("pointerdown", onPointerDown);
       canvas.removeEventListener("pointerup", onPointerUp);
       canvas.removeEventListener("pointermove", onPointerMove);
-      window.removeEventListener("resize", onResize);
+      window.removeEventListener("resize", handleResizeThrottled);
+      cancelAnimationFrame(resizeRaf);
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeObserver.disconnect();
       controls.dispose();
       renderer.dispose();
     };

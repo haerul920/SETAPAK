@@ -1,6 +1,6 @@
 "use client";
 
-import { Info, MapPin, Volume2, VolumeX } from "lucide-react";
+import { Info, MapPin, PanelRightClose, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { siteBySlug, type TimelineEvent } from "@/data";
 import { localizeEvent, localizeSite } from "@/lib/i18n";
@@ -20,7 +20,7 @@ const PAGE = 60;
  * Daftar kronologis peristiwa di rentang aktif (docs/PETA_WAKTU.md bagian 4). Hover baris
  * menyorot pin, klik baris otomatis memilih situs dan mengarahkan peta ke lokasi peristiwa.
  */
-export function RangeEventList({ events }: { events: TimelineEvent[] }) {
+export function RangeEventList({ events, onClose }: { events: TimelineEvent[]; onClose?: () => void }) {
   const { t, lang } = useCopy();
   const openEvent = useSetapakStore((s) => s.openEvent);
   const setHoverSite = usePetaStore((s) => s.setHoverSite);
@@ -68,11 +68,24 @@ export function RangeEventList({ events }: { events: TimelineEvent[] }) {
 
   return (
     <section className="flex h-full min-h-0 flex-col" aria-label={t.peta.list}>
-      <header className="shrink-0 border-b border-current/10 px-3 py-2.5">
-        <h2 className="font-display text-base font-semibold">{t.peta.list}</h2>
-        <p className="font-mono text-[11px] opacity-75" aria-live="polite" data-peta-count>
-          {t.peta.count(events.length, sitesCount)}
-        </p>
+      <header className="flex shrink-0 items-center justify-between border-b border-current/10 px-3 py-2.5">
+        <div>
+          <h2 className="font-display text-base font-semibold">{t.peta.list}</h2>
+          <p className="font-mono text-[11px] opacity-75" aria-live="polite" data-peta-count>
+            {t.peta.count(events.length, sitesCount)}
+          </p>
+        </div>
+        {onClose && (
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t.close}
+            title={t.close}
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-current/20 hover:border-[var(--accent)] hover:bg-current/10 transition-colors"
+          >
+            <PanelRightClose className="h-4 w-4" aria-hidden />
+          </button>
+        )}
       </header>
       <div ref={box} className="min-h-0 flex-1 overflow-y-auto overscroll-contain" data-lenis-prevent onScroll={(e) => {
         const el = e.currentTarget;

@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, ChevronUp, Pause, Play, RotateCcw } from "lucide-react";
+import { ChevronDown, Pause, Play, RotateCcw } from "lucide-react";
 import { useMemo, useRef } from "react";
 import { EMPTY_FILTERS, histogram, type Filters } from "@/lib/peta-data";
 import { usePetaStore } from "@/lib/peta-store";
@@ -151,7 +151,7 @@ export function TimeAxis({ filters = EMPTY_FILTERS }: { filters?: Filters }) {
   const handleClass = "absolute top-1/2 z-10 h-7 w-3.5 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize touch-none rounded-md border-2 border-[#0d0b09] bg-[var(--accent)] shadow-md outline-none focus-visible:ring-2 focus-visible:ring-white";
 
   return (
-    <section className="space-y-1.5" aria-label={t.peta.axis}>
+    <section aria-label={t.peta.axis}>
       <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-2.5 md:gap-x-3 gap-y-2">
         <button
           type="button"
@@ -223,102 +223,165 @@ export function TimeAxis({ filters = EMPTY_FILTERS }: { filters?: Filters }) {
             title={timeAxisCollapsed ? (lang === "en" ? "Buka slider waktu" : "Buka slider waktu") : (lang === "en" ? "Sembunyikan slider waktu" : "Sembunyikan slider waktu")}
             className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-current/25 hover:border-[var(--accent)] hover:bg-current/10 transition-colors"
           >
-            {timeAxisCollapsed ? (
-              <ChevronUp className="h-4 w-4 text-[var(--accent)]" aria-hidden />
-            ) : (
-              <ChevronDown className="h-4 w-4 opacity-75" aria-hidden />
-            )}
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 transition-transform duration-300 ease-in-out",
+                timeAxisCollapsed ? "rotate-180 text-[var(--accent)]" : "rotate-0 opacity-75"
+              )}
+              aria-hidden
+            />
           </button>
         </div>
       </div>
 
-      {timeAxisCollapsed && (
-        <div
-          role="progressbar"
-          aria-valuenow={Math.round((range.from + range.to) / 2)}
-          aria-valuemin={-1_647_974}
-          aria-valuemax={END_YEAR}
-          onClick={() => setTimeAxisCollapsed(false)}
-          title={lang === "en" ? "Click to open full slider" : "Klik untuk membuka slider lengkap"}
-          className="group relative mt-0.5 h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 hover:bg-white/15 transition-colors"
-        >
-          <div
-            className="absolute h-full rounded-full bg-[var(--accent)] transition-all duration-100 group-hover:brightness-110"
-            style={{
-              left: `${pFrom * 100}%`,
-              width: `${Math.max(1, (pTo - pFrom) * 100)}%`,
-            }}
-          />
-        </div>
-      )}
-
-      {!timeAxisCollapsed && (
-        <>
-          <div className="flex flex-wrap items-center gap-1.5" aria-label={t.peta.presets} role="group">
-            {ERA_PRESETS.map((p) => (
-              <button
-                key={p.id}
-                type="button"
-                onClick={() => {
-                  setPoint(false);
-                  setRange(normalizeRange({ from: p.from, to: p.to }));
-                }}
-                className="rounded-full border border-current/25 px-2.5 py-1 text-xs hover:border-[var(--accent)]"
-              >
-                {lang === "en" ? p.en : p.id_}
-              </button>
-            ))}
-          </div>
-
-          <div ref={track} className="relative h-16 select-none" onPointerDown={trackDown} data-peta-axis>
-            <svg className="pointer-events-none absolute inset-x-0 top-0 h-10 w-full" viewBox={`0 0 ${BINS} 40`} preserveAspectRatio="none" aria-hidden>
-              {bins.map((v, i) => (v > 0 ? <rect key={i} x={i + 0.1} width={0.8} y={40 - Math.max(2, (v / maxBin) * 38)} height={Math.max(2, (v / maxBin) * 38)} fill="currentColor" opacity={0.45} /> : null))}
-            </svg>
-            <div className="absolute inset-x-0 top-10 h-0.5 -translate-y-1/2 bg-current opacity-30" aria-hidden />
-            {/* area terpilih: seret untuk menggeser rentang */}
-            {!point && (
+      {/* Mini Progress Bar saat slider disembunyikan */}
+      <div
+        className={cn(
+          "grid transition-[grid-template-rows,opacity] duration-300 ease-in-out",
+          timeAxisCollapsed
+            ? "grid-rows-[1fr] opacity-100"
+            : "grid-rows-[0fr] opacity-0 pointer-events-none"
+        )}
+        style={{
+          gridTemplateRows: timeAxisCollapsed ? "1fr" : "0fr",
+        }}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <div className="pt-2 pb-0.5">
+            <div
+              role="progressbar"
+              aria-valuenow={Math.round((range.from + range.to) / 2)}
+              aria-valuemin={-1_647_974}
+              aria-valuemax={END_YEAR}
+              onClick={() => setTimeAxisCollapsed(false)}
+              title={lang === "en" ? "Click to open full slider" : "Klik untuk membuka slider lengkap"}
+              className="group relative h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 hover:bg-white/15 transition-colors"
+            >
               <div
-                className="absolute top-10 h-5 -translate-y-1/2 cursor-grab rounded-md bg-[var(--accent)]/30 ring-1 ring-[var(--accent)]/70 active:cursor-grabbing"
-                style={{ left: `${pFrom * 100}%`, width: `${Math.max(0.4, (pTo - pFrom) * 100)}%` }}
-                onPointerDown={begin("mid")}
-                onPointerMove={move}
-                onPointerUp={end}
-                aria-hidden
+                className="absolute h-full rounded-full bg-[var(--accent)] transition-all duration-100 group-hover:brightness-110"
+                style={{
+                  left: `${pFrom * 100}%`,
+                  width: `${Math.max(1, (pTo - pFrom) * 100)}%`,
+                }}
               />
-            )}
-            {point ? (
-              <button
-                type="button"
-                role="slider"
-                aria-label={t.peta.handlePoint}
-                aria-valuemin={-1_647_974}
-                aria-valuemax={END_YEAR}
-                aria-valuenow={Math.round((range.from + range.to) / 2)}
-                aria-valuetext={formatYear((range.from + range.to) / 2, lang)}
-                className={handleClass}
-                style={{ left: `${pMid * 100}%`, top: "2.5rem" }}
-                onPointerDown={begin("point")}
-                onPointerMove={move}
-                onPointerUp={end}
-                onKeyDown={nudge("point")}
-              />
-            ) : (
-              <>
-                <button type="button" role="slider" aria-label={t.peta.handleFrom} aria-valuemin={-1_647_974} aria-valuemax={END_YEAR} aria-valuenow={Math.round(range.from)} aria-valuetext={formatYear(range.from, lang)} className={handleClass} style={{ left: `${pFrom * 100}%`, top: "2.5rem" }} onPointerDown={begin("from")} onPointerMove={move} onPointerUp={end} onKeyDown={nudge("from")} />
-                <button type="button" role="slider" aria-label={t.peta.handleTo} aria-valuemin={-1_647_974} aria-valuemax={END_YEAR} aria-valuenow={Math.round(range.to)} aria-valuetext={formatYear(range.to, lang)} className={handleClass} style={{ left: `${pTo * 100}%`, top: "2.5rem" }} onPointerDown={begin("to")} onPointerMove={move} onPointerUp={end} onKeyDown={nudge("to")} />
-              </>
-            )}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-4" aria-hidden>
-              {ticks.map(({ p, year }) => (
-                <span key={p} className={cn("absolute -translate-x-1/2 whitespace-nowrap font-mono text-[10px] opacity-70", (p === 0.2 || p === 0.6) && "max-sm:hidden")} style={{ left: `${p * 100}%`, transform: p === 0 ? "none" : p === 1 ? "translateX(-100%)" : "translateX(-50%)" }}>
-                  {compactTick(year, lang)}
-                </span>
-              ))}
             </div>
           </div>
-          <p className="sr-only">{t.peta.axisHint}</p>
-        </>
-      )}
+        </div>
+      </div>
+
+      {/* Area Slider Lengkap (Preset Era + Histogram & Penggeser Waktu) */}
+      <div
+        className={cn(
+          "grid transition-[grid-template-rows,opacity] duration-300 ease-in-out",
+          timeAxisCollapsed
+            ? "grid-rows-[0fr] opacity-0 pointer-events-none"
+            : "grid-rows-[1fr] opacity-100"
+        )}
+        style={{
+          gridTemplateRows: timeAxisCollapsed ? "0fr" : "1fr",
+        }}
+        aria-hidden={timeAxisCollapsed}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <div className="space-y-2 pt-2">
+            <div className="flex flex-wrap items-center gap-1.5" aria-label={t.peta.presets} role="group">
+              {ERA_PRESETS.map((p) => (
+                <button
+                  key={p.id}
+                  type="button"
+                  tabIndex={timeAxisCollapsed ? -1 : 0}
+                  onClick={() => {
+                    setPoint(false);
+                    setRange(normalizeRange({ from: p.from, to: p.to }));
+                  }}
+                  className="rounded-full border border-current/25 px-2.5 py-1 text-xs hover:border-[var(--accent)]"
+                >
+                  {lang === "en" ? p.en : p.id_}
+                </button>
+              ))}
+            </div>
+
+            <div ref={track} className="relative h-16 select-none" onPointerDown={trackDown} data-peta-axis>
+              <svg className="pointer-events-none absolute inset-x-0 top-0 h-10 w-full" viewBox={`0 0 ${BINS} 40`} preserveAspectRatio="none" aria-hidden>
+                {bins.map((v, i) => (v > 0 ? <rect key={i} x={i + 0.1} width={0.8} y={40 - Math.max(2, (v / maxBin) * 38)} height={Math.max(2, (v / maxBin) * 38)} fill="currentColor" opacity={0.45} /> : null))}
+              </svg>
+              <div className="absolute inset-x-0 top-10 h-0.5 -translate-y-1/2 bg-current opacity-30" aria-hidden />
+              {/* area terpilih: seret untuk menggeser rentang */}
+              {!point && (
+                <div
+                  className="absolute top-10 h-5 -translate-y-1/2 cursor-grab rounded-md bg-[var(--accent)]/30 ring-1 ring-[var(--accent)]/70 active:cursor-grabbing"
+                  style={{ left: `${pFrom * 100}%`, width: `${Math.max(0.4, (pTo - pFrom) * 100)}%` }}
+                  onPointerDown={begin("mid")}
+                  onPointerMove={move}
+                  onPointerUp={end}
+                  aria-hidden
+                />
+              )}
+              {point ? (
+                <button
+                  type="button"
+                  role="slider"
+                  tabIndex={timeAxisCollapsed ? -1 : 0}
+                  aria-label={t.peta.handlePoint}
+                  aria-valuemin={-1_647_974}
+                  aria-valuemax={END_YEAR}
+                  aria-valuenow={Math.round((range.from + range.to) / 2)}
+                  aria-valuetext={formatYear((range.from + range.to) / 2, lang)}
+                  className={handleClass}
+                  style={{ left: `${pMid * 100}%`, top: "2.5rem" }}
+                  onPointerDown={begin("point")}
+                  onPointerMove={move}
+                  onPointerUp={end}
+                  onKeyDown={nudge("point")}
+                />
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    role="slider"
+                    tabIndex={timeAxisCollapsed ? -1 : 0}
+                    aria-label={t.peta.handleFrom}
+                    aria-valuemin={-1_647_974}
+                    aria-valuemax={END_YEAR}
+                    aria-valuenow={Math.round(range.from)}
+                    aria-valuetext={formatYear(range.from, lang)}
+                    className={handleClass}
+                    style={{ left: `${pFrom * 100}%`, top: "2.5rem" }}
+                    onPointerDown={begin("from")}
+                    onPointerMove={move}
+                    onPointerUp={end}
+                    onKeyDown={nudge("from")}
+                  />
+                  <button
+                    type="button"
+                    role="slider"
+                    tabIndex={timeAxisCollapsed ? -1 : 0}
+                    aria-label={t.peta.handleTo}
+                    aria-valuemin={-1_647_974}
+                    aria-valuemax={END_YEAR}
+                    aria-valuenow={Math.round(range.to)}
+                    aria-valuetext={formatYear(range.to, lang)}
+                    className={handleClass}
+                    style={{ left: `${pTo * 100}%`, top: "2.5rem" }}
+                    onPointerDown={begin("to")}
+                    onPointerMove={move}
+                    onPointerUp={end}
+                    onKeyDown={nudge("to")}
+                  />
+                </>
+              )}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-4" aria-hidden>
+                {ticks.map(({ p, year }) => (
+                  <span key={p} className={cn("absolute -translate-x-1/2 whitespace-nowrap font-mono text-[10px] opacity-70", (p === 0.2 || p === 0.6) && "max-sm:hidden")} style={{ left: `${p * 100}%`, transform: p === 0 ? "none" : p === 1 ? "translateX(-100%)" : "translateX(-50%)" }}>
+                    {compactTick(year, lang)}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <p className="sr-only">{t.peta.axisHint}</p>
+          </div>
+        </div>
+      </div>
 
       {/* <div>
         <p className="mb-1 font-mono text-[10px] uppercase tracking-widest opacity-70">

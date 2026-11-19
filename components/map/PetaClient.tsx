@@ -47,6 +47,24 @@ export function PetaClient() {
   const textSize = usePetaPrefs((s) => s.textSize);
   const cvd = usePetaPrefs((s) => s.colorblind);
   const [pulse, setPulse] = useState<ReadonlySet<string>>(new Set());
+  const [showFiltersAside, setShowFiltersAside] = useState(true);
+  const [showEventsAside, setShowEventsAside] = useState(true);
+
+  const toggleFilters = () => {
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
+      setSheet(sheet === "filters" ? "none" : "filters");
+    } else {
+      setShowFiltersAside((v) => !v);
+    }
+  };
+
+  const toggleEvents = () => {
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      setSheet(sheet === "list" ? "none" : "list");
+    } else {
+      setShowEventsAside((v) => !v);
+    }
+  };
 
   // status awal dari query string, lalu opsi tersimpan
   useEffect(() => {
@@ -217,28 +235,44 @@ export function PetaClient() {
       style={{ ["--ink" as string]: "#f5ecdc", ["--surface" as string]: "rgba(24,20,16,0.95)" }}
       data-peta
     >
-      <aside className="peta-noprint hidden w-64 shrink-0 overflow-y-auto border-r border-current/10 bg-[var(--surface)] md:block" aria-label={t.peta.filters} data-lenis-prevent>
-        <MapFilters />
-        <details className="border-t border-current/10 px-3 py-2">
-          <summary className="cursor-pointer select-none font-mono text-[11px] uppercase tracking-widest opacity-80">{t.peta.siteList}</summary>
-          <ul className="mt-2 max-h-64 space-y-0.5 overflow-y-auto">
-            {pins.map((p) => (
-              <li key={p.site.slug}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    usePetaStore.getState().select(p.site.slug);
-                    usePetaStore.getState().flyTo(p.site.coords.lat, p.site.coords.lng, 8);
-                  }}
-                  className="w-full rounded px-1.5 py-1 text-left text-xs hover:bg-current/10"
-                >
-                  {localizeSite(p.site, lang).name}
-                  <span className="opacity-60"> · {p.count}</span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </details>
+      <aside
+        className={cn(
+          "peta-noprint hidden shrink-0 flex-col overflow-hidden bg-[var(--surface)] transition-[width,opacity] duration-300 ease-in-out md:flex",
+          showFiltersAside
+            ? "w-64 opacity-100 border-r border-current/10"
+            : "w-0 opacity-0 border-r-0 pointer-events-none"
+        )}
+        aria-label={t.peta.filters}
+        data-lenis-prevent
+      >
+        <div
+          className={cn(
+            "w-64 flex flex-col h-full shrink-0 overflow-y-auto transition-[transform,opacity] duration-300 ease-in-out",
+            showFiltersAside ? "translate-x-0 opacity-100" : "-translate-x-6 opacity-0"
+          )}
+        >
+          <MapFilters onClose={() => setShowFiltersAside(false)} />
+          <details className="mt-auto border-t border-current/10 px-3 py-2">
+            <summary className="cursor-pointer select-none font-mono text-[11px] uppercase tracking-widest opacity-80">{t.peta.siteList}</summary>
+            <ul className="mt-2 max-h-64 space-y-0.5 overflow-y-auto">
+              {pins.map((p) => (
+                <li key={p.site.slug}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      usePetaStore.getState().select(p.site.slug);
+                      usePetaStore.getState().flyTo(p.site.coords.lat, p.site.coords.lng, 8);
+                    }}
+                    className="w-full rounded px-1.5 py-1 text-left text-xs hover:bg-current/10"
+                  >
+                    {localizeSite(p.site, lang).name}
+                    <span className="opacity-60"> · {p.count}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </div>
       </aside>
 
       <main className="flex min-w-0 flex-1 flex-col">
@@ -249,13 +283,32 @@ export function PetaClient() {
               <SearchBox />
             </div>
             <div className="pointer-events-auto flex flex-wrap gap-1.5">
-              <button type="button" className={cn(btn, "md:hidden")} onClick={() => setSheet(sheet === "filters" ? "none" : "filters")} aria-label={t.peta.openPanel}>
+              <button
+                type="button"
+                className={cn(
+                  btn,
+                  (showFiltersAside || sheet === "filters") && "border-[var(--accent)] text-[var(--accent)] font-medium"
+                )}
+                onClick={toggleFilters}
+                aria-label={t.peta.filters}
+                title={showFiltersAside ? "Sembunyikan panel filter" : "Buka panel filter"}
+              >
                 <Filter className="h-4 w-4" aria-hidden />
-                {t.peta.filters}
+                <span>{t.peta.filters}</span>
               </button>
-              <button type="button" className={cn(btn, "lg:hidden")} onClick={() => setSheet(sheet === "list" ? "none" : "list")} aria-label={`${events.length} ${t.peta.openList}`}>
+              <button
+                type="button"
+                className={cn(
+                  btn,
+                  (showEventsAside || sheet === "list") && "border-[var(--accent)] text-[var(--accent)] font-medium"
+                )}
+                onClick={toggleEvents}
+                aria-label={`${events.length} ${t.peta.openList}`}
+                title={showEventsAside ? "Sembunyikan daftar peristiwa" : "Buka daftar peristiwa"}
+              >
                 <ListOrdered className="h-4 w-4" aria-hidden />
-                {events.length}
+                <span>{events.length}</span>
+                <span className="hidden sm:inline">{t.peta.openList}</span>
               </button>
               <button type="button" className={btn} onClick={share} title={t.peta.share}>
                 <Link2 className="h-4 w-4" aria-hidden />
@@ -282,16 +335,43 @@ export function PetaClient() {
           )}
           <p className="peta-print-note hidden">{t.peta.printNote}</p>
         </div>
-        <div className={cn("peta-noprint shrink-0 overflow-y-auto border-t border-current/10 bg-[var(--surface)] px-3 py-2.5 md:px-4", timeAxisCollapsed ? "max-h-[22vh]" : "max-h-[48vh]")} data-lenis-prevent>
+        <div className="peta-noprint shrink-0 max-h-[48vh] overflow-x-hidden overflow-y-auto border-t border-current/10 bg-[var(--surface)] px-3 py-2.5 md:px-4" data-lenis-prevent>
           <TimeAxis filters={filters} />
-          {!timeAxisCollapsed && (
-            <p className="mt-2 text-[10px] opacity-60">{t.peta.attribution}</p>
-          )}
+          <div
+            className={cn(
+              "grid transition-[grid-template-rows,opacity] duration-300 ease-in-out",
+              timeAxisCollapsed
+                ? "grid-rows-[0fr] opacity-0 pointer-events-none"
+                : "grid-rows-[1fr] opacity-60"
+            )}
+            style={{
+              gridTemplateRows: timeAxisCollapsed ? "0fr" : "1fr",
+            }}
+          >
+            <div className="min-h-0 overflow-hidden">
+              <p className="pt-2 text-[10px]">{t.peta.attribution}</p>
+            </div>
+          </div>
         </div>
       </main>
 
-      <aside className="peta-noprint hidden w-[340px] shrink-0 border-l border-current/10 bg-[var(--surface)] lg:block" aria-label={t.peta.list}>
-        <RangeEventList events={events} />
+      <aside
+        className={cn(
+          "peta-noprint hidden shrink-0 flex-col overflow-hidden bg-[var(--surface)] transition-[width,opacity] duration-300 ease-in-out lg:flex",
+          showEventsAside
+            ? "w-[340px] opacity-100 border-l border-current/10"
+            : "w-0 opacity-0 border-l-0 pointer-events-none"
+        )}
+        aria-label={t.peta.list}
+      >
+        <div
+          className={cn(
+            "w-[340px] flex flex-col h-full shrink-0 transition-[transform,opacity] duration-300 ease-in-out",
+            showEventsAside ? "translate-x-0 opacity-100" : "translate-x-6 opacity-0"
+          )}
+        >
+          <RangeEventList events={events} onClose={() => setShowEventsAside(false)} />
+        </div>
       </aside>
 
       {/* lembar bawah di layar kecil */}

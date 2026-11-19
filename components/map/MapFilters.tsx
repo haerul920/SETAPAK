@@ -1,5 +1,6 @@
 "use client";
 
+import { PanelLeftClose } from "lucide-react";
 import { categoryLabels, type Category, type EventType, type SourceStatus } from "@/data";
 import { EVENT_TYPES, ISLANDS, STATUSES, type Island } from "@/lib/peta-data";
 import { usePetaPrefs, usePetaStore, type TextSize } from "@/lib/peta-store";
@@ -34,7 +35,7 @@ function Check({ checked, onChange, children }: { checked: boolean; onChange: (v
  * Panel kiri: filter kategori, tipe peristiwa, pulau, status sumber, dan Warisan Dunia UNESCO,
  * lapisan peta, serta opsi aksesibilitas (bantuan warna dan ukuran teks).
  */
-export function MapFilters() {
+export function MapFilters({ onClose }: { onClose?: () => void } = {}) {
   const { t, lang } = useCopy();
   const filters = usePetaStore((s) => s.filters);
   const setFilters = usePetaStore((s) => s.setFilters);
@@ -53,9 +54,22 @@ export function MapFilters() {
     <div className="space-y-1 px-3 pb-6 pt-2" data-peta-filters>
       <div className="flex items-center justify-between gap-2 pb-1">
         <h2 className="font-display text-base font-semibold">{t.peta.filters}</h2>
-        <button type="button" onClick={resetFilters} className="rounded-full border border-current/25 px-2.5 py-1 text-xs hover:border-[var(--accent)]">
-          {t.peta.resetFilters}
-        </button>
+        <div className="flex items-center gap-1.5">
+          <button type="button" onClick={resetFilters} className="rounded-full border border-current/25 px-2.5 py-1 text-xs hover:border-[var(--accent)]">
+            {t.peta.resetFilters}
+          </button>
+          {onClose && (
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label={t.close}
+              title={t.close}
+              className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-current/20 hover:border-[var(--accent)] hover:bg-current/10 transition-colors"
+            >
+              <PanelLeftClose className="h-4 w-4" aria-hidden />
+            </button>
+          )}
+        </div>
       </div>
       <p className="text-[11px] opacity-70">{t.peta.filtersHint}</p>
 
