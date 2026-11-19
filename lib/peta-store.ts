@@ -69,6 +69,8 @@ interface PetaUi {
   fly: FlyTarget | null;
   /** lembar bawah di layar kecil */
   sheet: "none" | "filters" | "list";
+  /** status sembunyikan slider pada sumbu waktu */
+  timeAxisCollapsed: boolean;
 }
 
 interface PetaActions {
@@ -89,6 +91,7 @@ interface PetaActions {
   setHoverSite: (slug: string | null) => void;
   flyTo: (lat: number, lng: number, zoom: number) => void;
   setSheet: (s: PetaUi["sheet"]) => void;
+  setTimeAxisCollapsed: (v: boolean) => void;
   resetAll: () => void;
 }
 
@@ -110,6 +113,7 @@ export const usePetaStore = create<PetaUi & PetaActions>()((set) => ({
   hoverSite: null,
   fly: null,
   sheet: "none",
+  timeAxisCollapsed: false,
   hydrate: (s) => set({ range: s.range, mode: s.mode, filters: s.filters, showAll: s.showAll, layers: s.layers, view: s.view, ev: s.ev, site: s.site }),
   setRange: (r) => set({ range: normalizeRange(r) }),
   setMode: (mode) => set({ mode }),
@@ -133,5 +137,6 @@ export const usePetaStore = create<PetaUi & PetaActions>()((set) => ({
   setHoverSite: (hoverSite) => set({ hoverSite }),
   flyTo: (lat, lng, zoom) => set({ fly: { lat, lng, zoom, nonce: ++nonce } }),
   setSheet: (sheet) => set({ sheet }),
+  setTimeAxisCollapsed: (timeAxisCollapsed) => set({ timeAxisCollapsed }),
   resetAll: () => set({ range: FULL_RANGE, mode: "log", point: false, filters: EMPTY_FILTERS, showAll: false, layers: DEFAULT_LAYERS, ev: null, site: null, playing: false, view: null, fly: { lat: -2.5, lng: 118, zoom: 3.6, nonce: ++nonce } }),
 }));

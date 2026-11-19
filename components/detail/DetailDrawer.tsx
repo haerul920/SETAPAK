@@ -4,6 +4,7 @@ import { AlertTriangle, MapPin, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { getLenis } from "@/components/layout/SmoothScrollProvider";
 import { SourceList } from "@/components/event/SourceList";
 import { StatusBadge } from "@/components/event/StatusBadge";
@@ -33,6 +34,10 @@ export function DetailDrawer() {
   useEffect(() => {
     openEvent(null);
   }, [pathname, openEvent]);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const [shownId, setShownId] = useState<string | null>(null);
   const [visible, setVisible] = useState(false);
   const panel = useRef<HTMLDivElement>(null);
@@ -75,7 +80,7 @@ export function DetailDrawer() {
   useFocusTrap(panel, Boolean(openId), close);
 
   const ev = shownId ? sortedEvents.find((e) => e.id === shownId) : undefined;
-  if (!ev) return null;
+  if (!mounted || !ev) return null;
   const loc = localizeEvent(ev, lang);
   const site = siteBySlug(ev.siteSlug);
   const color = siteColor(ev.siteSlug);
@@ -83,8 +88,8 @@ export function DetailDrawer() {
   const pair = site ? thenNowPair(site.slug) : null;
   const siblings = site ? sortedEvents.filter((e) => e.siteSlug === site.slug) : [];
 
-  return (
-    <div className="fixed inset-0 z-[60]" role="presentation">
+  return createPortal(
+    <div className="fixed inset-0 z-[70]" role="presentation">
       <button
         type="button"
         aria-label={t.close}
@@ -217,6 +222,7 @@ export function DetailDrawer() {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

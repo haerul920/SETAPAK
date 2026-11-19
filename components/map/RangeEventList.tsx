@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Volume2, VolumeX } from "lucide-react";
+import { Info, MapPin, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { siteBySlug, type TimelineEvent } from "@/data";
 import { localizeEvent, localizeSite } from "@/lib/i18n";
@@ -18,8 +18,7 @@ const PAGE = 60;
 
 /**
  * Daftar kronologis peristiwa di rentang aktif (docs/PETA_WAKTU.md bagian 4). Hover baris
- * menyorot pin, klik membuka laci detail yang sama dengan halaman guliran. Semua dapat dijangkau
- * dengan keyboard, sehingga daftar juga menjadi alternatif peta.
+ * menyorot pin, klik baris otomatis memilih situs dan mengarahkan peta ke lokasi peristiwa.
  */
 export function RangeEventList({ events }: { events: TimelineEvent[] }) {
   const { t, lang } = useCopy();
@@ -27,6 +26,7 @@ export function RangeEventList({ events }: { events: TimelineEvent[] }) {
   const setHoverSite = usePetaStore((s) => s.setHoverSite);
   const select = usePetaStore((s) => s.select);
   const flyTo = usePetaStore((s) => s.flyTo);
+  const setSheet = usePetaStore((s) => s.setSheet);
   const selectedEv = usePetaStore((s) => s.ev);
   const [shown, setShown] = useState(PAGE);
   const [reading, setReading] = useState<string | null>(null);
@@ -34,6 +34,20 @@ export function RangeEventList({ events }: { events: TimelineEvent[] }) {
   useEffect(() => setCanSpeak(speechSupported()), []);
   const box = useRef<HTMLDivElement>(null);
   const sitesCount = useMemo(() => new Set(events.map((e) => e.siteSlug)).size, [events]);
+
+  const handleSelectEvent = (e: TimelineEvent) => {
+    const site = e.siteSlug ? siteBySlug[e.siteSlug] : undefined;
+    if (site) {
+      select(site.slug, e.id);
+      flyTo(site.coords.lat, site.coords.lng, 8);
+      // Jika di layar sempit / sheet sedang terbuka, tutup sheet agar peta langsung terlihat
+      if (usePetaStore.getState().sheet === "list") {
+        setSheet("none");
+      }
+    } else {
+      openEvent(e.id);
+    }
+  };
 
   useEffect(() => {
     setShown(PAGE);
@@ -77,7 +91,7 @@ export function RangeEventList({ events }: { events: TimelineEvent[] }) {
                 <li key={e.id} className={cn("group relative", selectedEv === e.id && "bg-[var(--accent)]/15")}>
                   <button
                     type="button"
-                    onClick={() => openEvent(e.id)}
+                    onClick={() => handleSelectEvent(e)}
                     onPointerEnter={() => setHoverSite(e.siteSlug)}
                     onPointerLeave={() => setHoverSite(null)}
                     onFocus={() => setHoverSite(e.siteSlug)}
@@ -105,20 +119,18 @@ export function RangeEventList({ events }: { events: TimelineEvent[] }) {
                       )}
                     </span>
                   </button>
-                  {site && (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        select(site.slug, e.id);
-                        flyTo(site.coords.lat, site.coords.lng, 7);
-                      }}
-                      className="absolute right-1.5 top-2 rounded-full p-1.5 opacity-70 hover:bg-current/10 hover:opacity-100 focus-visible:opacity-100"
-                      aria-label={`${t.peta.showOnMap}: ${localizeSite(site, lang).name}`}
-                      title={t.peta.showOnMap}
-                    >
-                      <MapPin className="h-4 w-4" aria-hidden />
-                    </button>
-                  )}
+                  <button
+                    type="button"
+                    onClick={(ev) => {
+                      ev.stopPropagation();
+                      openEvent(e.id);
+                    }}
+                    className="absolute right-1.5 top-2 rounded-full p-1.5 opacity-60 hover:bg-current/10 hover:opacity-100 focus-visible:opacity-100"
+                    aria-label={`${t.peta.detail}: ${loc.title}`}
+                    title={t.peta.detail}
+                  >
+                    <Info className="h-4 w-4" aria-hidden />
+                  </button>
                 </li>
               );
             })}

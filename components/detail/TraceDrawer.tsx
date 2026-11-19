@@ -2,6 +2,7 @@
 
 import { AlertTriangle, ExternalLink, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { getLenis } from "@/components/layout/SmoothScrollProvider";
 import { StatusBadge } from "@/components/event/StatusBadge";
 import { TRACE_ICON } from "@/components/scroll/TraceStones";
@@ -24,6 +25,10 @@ export function TraceDrawer() {
   const openTrace = useSetapakStore((s) => s.openTrace);
   // state laci tidak boleh terbawa ke halaman lain lalu terbuka lagi saat kembali ke guliran
   useEffect(() => () => openTrace(null), [openTrace]);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const [shownId, setShownId] = useState<string | null>(null);
   const [full, setFull] = useState<Trace | undefined>(undefined);
   const [visible, setVisible] = useState(false);
@@ -77,14 +82,14 @@ export function TraceDrawer() {
   useFocusTrap(panel, Boolean(openId), close);
 
   const lite = shownId ? traceLiteById.get(shownId) : undefined;
-  if (!lite) return null;
+  if (!mounted || !lite) return null;
   const Icon = TRACE_ICON[lite.category];
   const name = lang === "en" && lite.nameEn ? lite.nameEn : lite.name;
   const photos = imagesFor(lite.id);
   const summarySource = full?.summarySource === "wikipedia-id" ? "Wikipedia" : "Wikidata";
 
-  return (
-    <div className="fixed inset-0 z-[60]" role="presentation">
+  return createPortal(
+    <div className="fixed inset-0 z-[70]" role="presentation">
       <button
         type="button"
         aria-label={t.close}
@@ -174,6 +179,7 @@ export function TraceDrawer() {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

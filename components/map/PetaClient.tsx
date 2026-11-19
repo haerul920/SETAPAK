@@ -43,6 +43,7 @@ export function PetaClient() {
   const hoverKingdom = usePetaStore((s) => s.hoverKingdom);
   const sheet = usePetaStore((s) => s.sheet);
   const setSheet = usePetaStore((s) => s.setSheet);
+  const timeAxisCollapsed = usePetaStore((s) => s.timeAxisCollapsed);
   const textSize = usePetaPrefs((s) => s.textSize);
   const cvd = usePetaPrefs((s) => s.colorblind);
   const [pulse, setPulse] = useState<ReadonlySet<string>>(new Set());
@@ -269,9 +270,6 @@ export function PetaClient() {
               <button type="button" className={btn} onClick={resetView} title={t.peta.resetView} aria-label={t.peta.resetView}>
                 <RotateCcw className="h-4 w-4" aria-hidden />
               </button>
-              <Link href="/" className={btn}>
-                {t.peta.toScroll}
-              </Link>
             </div>
           </div>
           <div className="pointer-events-none absolute inset-y-0 left-3 z-10 flex flex-col justify-end pb-3 pt-[7.5rem] md:pt-16">
@@ -284,9 +282,11 @@ export function PetaClient() {
           )}
           <p className="peta-print-note hidden">{t.peta.printNote}</p>
         </div>
-        <div className="peta-noprint max-h-[48vh] shrink-0 overflow-y-auto border-t border-current/10 bg-[var(--surface)] px-3 py-2.5 md:px-4" data-lenis-prevent>
+        <div className={cn("peta-noprint shrink-0 overflow-y-auto border-t border-current/10 bg-[var(--surface)] px-3 py-2.5 md:px-4", timeAxisCollapsed ? "max-h-[22vh]" : "max-h-[48vh]")} data-lenis-prevent>
           <TimeAxis filters={filters} />
-          <p className="mt-2 text-[10px] opacity-60">{t.peta.attribution}</p>
+          {!timeAxisCollapsed && (
+            <p className="mt-2 text-[10px] opacity-60">{t.peta.attribution}</p>
+          )}
         </div>
       </main>
 
