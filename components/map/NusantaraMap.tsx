@@ -51,13 +51,31 @@ import {
 export { NUSANTARA_BOUNDS };
 
 interface MapProps {
-  pins: PinState[];
-  toYear: number;
+  pins?: PinState[];
+  toYear?: number;
   /** situs yang peristiwanya baru saja terjadi (denyut sekali) */
-  pulse: ReadonlySet<string>;
-  glow: { lat: number; lng: number; name: string } | null;
-  onReady: (map: MlMap) => void;
+  pulse?: ReadonlySet<string>;
+  glow?: { lat: number; lng: number; name: string } | null;
+  onReady?: (map: MlMap) => void;
+  quiz?: QuizMapOptions;
 }
+
+export interface QuizMapPoint {
+  lat: number;
+  lng: number;
+}
+
+export interface QuizMapOptions {
+  label: string;
+  guess: QuizMapPoint | null;
+  answer: QuizMapPoint | null;
+  locked: boolean;
+  onGuess: (point: QuizMapPoint) => void;
+}
+
+const EMPTY_PINS: PinState[] = [];
+const EMPTY_PULSE: ReadonlySet<string> = new Set();
+const noopMapReady = () => {};
 
 interface NodeVisualBundle {
   node: CulturalNode;
@@ -95,7 +113,141 @@ const _scratchVec3A = new THREE.Vector3();
 const _raycaster = new THREE.Raycaster();
 const _pointerNdc = new THREE.Vector2();
 
-export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
+function createQuizPinTexture(type: "guess" | "answer"): THREE.CanvasTexture {
+  const canvas = document.createElement("canvas");
+  canvas.width = 128;
+  canvas.height = 192;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return new THREE.CanvasTexture(canvas);
+
+  ctx.clearRect(0, 0, 128, 192);
+
+  const cx = 64;
+  const headCenterY = 52;
+  const headRadius = 38;
+  const tipY = 184;
+
+  const dy = tipY - headCenterY;
+  const alpha = Math.asin(Math.min(1, headRadius / dy));
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(cx, headCenterY, headRadius, Math.PI * 0.5 + alpha, Math.PI * 0.5 - alpha, false);
+  ctx.lineTo(cx, tipY);
+  ctx.closePath();
+
+  const grad = ctx.createLinearGradient(0, headCenterY - headRadius, 0, tipY);
+  if (type === "guess") {
+    grad.addColorStop(0, "#fbbf24");
+    grad.addColorStop(0.55, "#d97706");
+    grad.addColorStop(1, "#92400e");
+  } else {
+    grad.addColorStop(0, "#34d399");
+    grad.addColorStop(0.55, "#059669");
+    grad.addColorStop(1, "#064e3b");
+  }
+
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = type === "guess" ? "#26190a" : "#062618";
+  ctx.stroke();
+
+  // Lingkaran lencana putih di dalam pin
+  const badgeRadius = 18;
+  ctx.beginPath();
+  ctx.arc(cx, headCenterY, badgeRadius, 0, Math.PI * 2);
+  ctx.fillStyle = "#ffffff";
+  ctx.fill();
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = type === "guess" ? "rgba(38,25,10,0.3)" : "rgba(6,38,24,0.3)";
+  ctx.stroke();
+
+  // Ikon inti tengah
+  ctx.beginPath();
+  ctx.arc(cx, headCenterY, 8, 0, Math.PI * 2);
+  ctx.fillStyle = type === "guess" ? "#d97706" : "#059669";
+  ctx.fill();
+
+  if (type === "answer") {
+    ctx.beginPath();
+    ctx.arc(cx, headCenterY, 3, 0, Math.PI * 2);
+    ctx.fillStyle = "#ffffff";
+    ctx.fill();
+  }
+
+  ctx.restore();
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
+}
+
+function createQuizShadowTexture(): THREE.CanvasTexture {
+  const canvas = document.createElement("canvas");
+  canvas.width = 128;
+  canvas.height = 128;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return new THREE.CanvasTexture(canvas);
+
+  const cx = 64;
+  const cy = 64;
+  const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, 58);
+  grad.addColorStop(0, "rgba(12, 10, 8, 0.58)");
+  grad.addColorStop(0.4, "rgba(12, 10, 8, 0.35)");
+  grad.addColorStop(0.75, "rgba(12, 10, 8, 0.1)");
+  grad.addColorStop(1, "rgba(12, 10, 8, 0)");
+
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.arc(cx, cy, 58, 0, Math.PI * 2);
+  ctx.fill();
+
+  return new THREE.CanvasTexture(canvas);
+}
+
+function createQuizDashedTexture(): THREE.CanvasTexture {
+  const canvas = document.createElement("canvas");
+  canvas.width = 256;
+  canvas.height = 32;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return new THREE.CanvasTexture(canvas);
+
+  ctx.clearRect(0, 0, 256, 32);
+
+  // Dash berbentuk pil bulat halus
+  const x = 24;
+  const y = 5;
+  const w = 128;
+  const h = 22;
+  const r = 10;
+
+  ctx.beginPath();
+  ctx.roundRect(x, y, w, h, r);
+  ctx.fillStyle = "#120e0b";
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.roundRect(x + 2, y + 2, w - 4, h - 4, r - 2);
+  ctx.fillStyle = "#fffaf0";
+  ctx.fill();
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.wrapS = THREE.RepeatWrapping;
+  texture.wrapT = THREE.ClampToEdgeWrapping;
+  return texture;
+}
+
+export function NusantaraMap({
+  pins = EMPTY_PINS,
+  toYear = 0,
+  pulse = EMPTY_PULSE,
+  glow = null,
+  onReady = noopMapReady,
+  quiz,
+}: MapProps) {
+  const isQuizMap = quiz !== undefined;
   const { t, lang } = useCopy();
   const mountRef = useRef<HTMLDivElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
@@ -117,6 +269,53 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
   const layers = usePetaStore((s) => s.layers);
 
   const lastFly = useRef<FlyTarget | null>(null);
+  const quizRef = useRef(quiz);
+  quizRef.current = quiz;
+  const syncQuizFeedbackRef = useRef<
+    ((guess: QuizMapPoint | null, answer: QuizMapPoint | null) => void) | null
+  >(null);
+
+  useEffect(() => {
+    syncQuizFeedbackRef.current?.(quiz?.guess ?? null, quiz?.answer ?? null);
+    if (!isQuizMap || !quiz?.guess || !quiz.answer) return;
+
+    const { camera, controls } = liveCameraRef.current;
+    if (!camera || !controls) return;
+
+    const guessWorld = latLonToWorld(quiz.guess.lat, quiz.guess.lng);
+    const answerWorld = latLonToWorld(quiz.answer.lat, quiz.answer.lng);
+    const centerX = (guessWorld.x + answerWorld.x) / 2;
+    const centerZ = (guessWorld.z + answerWorld.z) / 2;
+    const halfVerticalFov = THREE.MathUtils.degToRad(camera.fov / 2);
+    const halfHorizontalFov = Math.atan(Math.tan(halfVerticalFov) * camera.aspect);
+    const horizontalDistance =
+      Math.abs(guessWorld.x - answerWorld.x) / (2 * Math.tan(halfHorizontalFov));
+    const verticalDistance =
+      (Math.abs(guessWorld.z - answerWorld.z) * 0.8) / (2 * Math.tan(halfVerticalFov));
+    const distance = THREE.MathUtils.clamp(
+      Math.max(horizontalDistance, verticalDistance) * 1.25 + 8,
+      18,
+      210
+    );
+    const endTarget = new THREE.Vector3(centerX, 0, centerZ);
+    const endCamera = new THREE.Vector3(centerX, distance * 0.78, centerZ + distance * 0.62);
+
+    if (isMotionReduced()) {
+      controls.target.copy(endTarget);
+      camera.position.copy(endCamera);
+      controls.update();
+    } else {
+      flightTargetRef.current = {
+        active: true,
+        startTimeMs: performance.now(),
+        durationMs: 850,
+        startTargetPos: controls.target.clone(),
+        startCameraPos: camera.position.clone(),
+        endTargetPos: endTarget,
+        endCameraPos: endCamera,
+      };
+    }
+  }, [quiz?.guess, quiz?.answer, isQuizMap]);
 
   // Ref reaktif untuk loop animasi Three.js tanpa re-mount
   const stateRef = useRef({
@@ -166,6 +365,10 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     endTargetPos: new THREE.Vector3(0, 0, 0),
     endCameraPos: new THREE.Vector3(0, 44, 34),
   });
+  const initialMapViewRef = useRef({
+    target: new THREE.Vector3(0, 0, 0),
+    camera: new THREE.Vector3(0, 44, 34),
+  });
 
   const liveCameraRef = useRef<{
     camera: THREE.PerspectiveCamera | null;
@@ -181,7 +384,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
 
   // Bereaksi terhadap panggilan fly dari store (pencarian, daftar situs, resetAll)
   useEffect(() => {
-    if (!fly || lastFly.current?.nonce === fly.nonce) return;
+    if (isQuizMap || !fly || lastFly.current?.nonce === fly.nonce) return;
     lastFly.current = fly;
 
     const cam = liveCameraRef.current.camera;
@@ -191,22 +394,14 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     const worldPt = latLonToWorld(fly.lat, fly.lng);
     // Konversi zoom peta ke jarak kamera Three.js
     const targetZoom = Math.min(18, Math.max(2.5, fly.zoom));
-    const dist = THREE.MathUtils.clamp(
-      50 * Math.pow(0.72, targetZoom - 3.5),
-      0.16,
-      52
-    );
+    const dist = THREE.MathUtils.clamp(50 * Math.pow(0.72, targetZoom - 3.5), 0.16, 52);
 
     const isStreet = dist <= 1.5;
     const yRatio = isStreet ? 0.78 : 0.68;
     const zRatio = isStreet ? 0.42 : 0.62;
 
     const endTarget = new THREE.Vector3(worldPt.x, 0, worldPt.z);
-    const endCamera = new THREE.Vector3(
-      worldPt.x,
-      dist * yRatio,
-      worldPt.z + dist * zRatio
-    );
+    const endCamera = new THREE.Vector3(worldPt.x, dist * yRatio, worldPt.z + dist * zRatio);
 
     if (isMotionReduced()) {
       ctrl.target.copy(endTarget);
@@ -223,7 +418,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         endCameraPos: endCamera,
       };
     }
-  }, [fly]);
+  }, [fly, isQuizMap]);
 
   // Inisialisasi Peta 3D Berbingkai Three.js
   useEffect(() => {
@@ -294,7 +489,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     controls.zoomSpeed = 1.35;
     // minDistance sangat kecil (0.06) memungkinkan zoom hingga nama jalan terlihat!
     controls.minDistance = 0.06;
-    controls.maxDistance = 85;
+    controls.maxDistance = isQuizMap ? 210 : 85;
     controls.maxPolarAngle = Math.PI / 2.15;
     controls.minPolarAngle = 0.15;
     controls.target.set(0, 0, 0);
@@ -340,6 +535,24 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     const maxMapX = Math.max(nwCorner.x, seCorner.x);
     const minMapZ = Math.min(nwCorner.z, seCorner.z);
     const maxMapZ = Math.max(nwCorner.z, seCorner.z);
+    if (isQuizMap) {
+      const halfVerticalFov = THREE.MathUtils.degToRad(camera.fov / 2);
+      const halfHorizontalFov = Math.atan(Math.tan(halfVerticalFov) * camera.aspect);
+      const horizontalDistance = mapWidth / (2 * Math.tan(halfHorizontalFov));
+      const verticalDistance = (mapDepth * 0.8) / (2 * Math.tan(halfVerticalFov));
+      const distance = Math.max(horizontalDistance, verticalDistance) * 1.15;
+      const initialTarget = new THREE.Vector3(mapCenterX, 0, mapCenterZ);
+      const initialCamera = new THREE.Vector3(
+        mapCenterX,
+        distance * 0.78,
+        mapCenterZ + distance * 0.62
+      );
+      controls.target.copy(initialTarget);
+      camera.position.copy(initialCamera);
+      controls.update();
+      initialMapViewRef.current = { target: initialTarget, camera: initialCamera };
+      controls.maxDistance = Math.max(controls.maxDistance, distance * 1.1);
+    }
     // Margin halus 0.3 agar batas ubin masuk pas di bawah lis bezel penggaris kartografi
     const clipMargin = 0.3;
     const mapClipPlanes = [
@@ -429,10 +642,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
           polygonOffsetUnits: -1,
         });
 
-        const tileMesh = new THREE.Mesh(
-          new THREE.PlaneGeometry(bounds.width, bounds.depth),
-          mat
-        );
+        const tileMesh = new THREE.Mesh(new THREE.PlaneGeometry(bounds.width, bounds.depth), mat);
         tileMesh.rotation.x = -Math.PI / 2;
         tileMesh.position.set(bounds.centerX, 0.001, bounds.centerZ);
         tileMesh.renderOrder = z;
@@ -509,204 +719,374 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     const nodeBundles: NodeVisualBundle[] = [];
     const clusterRingMeshes: THREE.Mesh[] = [];
 
-    const pulseCoreGeo = new THREE.SphereGeometry(0.15, 16, 14);
-    const pulseWaveGeo = new THREE.RingGeometry(0.17, 0.29, 24);
-    pulseWaveGeo.rotateX(-Math.PI / 2);
-    const haloDiscGeo = new THREE.CircleGeometry(0.34, 24);
-    haloDiscGeo.rotateX(-Math.PI / 2);
-    const hitProxyGeo = new THREE.CylinderGeometry(0.42, 0.42, 0.7, 12);
-    hitProxyGeo.translate(0, 0.35, 0);
+    if (!isQuizMap) {
+      const pulseCoreGeo = new THREE.SphereGeometry(0.15, 16, 14);
+      const pulseWaveGeo = new THREE.RingGeometry(0.17, 0.29, 24);
+      pulseWaveGeo.rotateX(-Math.PI / 2);
+      const haloDiscGeo = new THREE.CircleGeometry(0.34, 24);
+      haloDiscGeo.rotateX(-Math.PI / 2);
+      const hitProxyGeo = new THREE.CylinderGeometry(0.42, 0.42, 0.7, 12);
+      hitProxyGeo.translate(0, 0.35, 0);
 
-    const drawnClusterRings = new Set<string>();
-    for (const node of CULTURAL_NODES) {
-      const dec = declutteredMap[node.id];
-      if (dec && dec.clusterSize > 1 && !drawnClusterRings.has(dec.clusterGroup)) {
-        drawnClusterRings.add(dec.clusterGroup);
-        const ringRadius = Math.hypot(dec.displayX - dec.centerX, dec.displayZ - dec.centerZ);
-        const clusterRingMesh = new THREE.Mesh(
-          new THREE.RingGeometry(Math.max(0.01, ringRadius - 0.01), ringRadius + 0.01, 48),
-          new THREE.MeshBasicMaterial({
-            color: 0x334155,
-            transparent: true,
-            opacity: 0.35,
-            side: THREE.DoubleSide,
-            depthWrite: false,
-          })
-        );
-        clusterRingMesh.rotation.x = -Math.PI / 2;
-        clusterRingMesh.position.set(dec.centerX, 0.0, dec.centerZ);
-        clusterRingMesh.renderOrder = 19;
-        culturalRootGroup.add(clusterRingMesh);
-        clusterRingMeshes.push(clusterRingMesh);
+      const drawnClusterRings = new Set<string>();
+      for (const node of CULTURAL_NODES) {
+        const dec = declutteredMap[node.id];
+        if (dec && dec.clusterSize > 1 && !drawnClusterRings.has(dec.clusterGroup)) {
+          drawnClusterRings.add(dec.clusterGroup);
+          const ringRadius = Math.hypot(dec.displayX - dec.centerX, dec.displayZ - dec.centerZ);
+          const clusterRingMesh = new THREE.Mesh(
+            new THREE.RingGeometry(Math.max(0.01, ringRadius - 0.01), ringRadius + 0.01, 48),
+            new THREE.MeshBasicMaterial({
+              color: 0x334155,
+              transparent: true,
+              opacity: 0.35,
+              side: THREE.DoubleSide,
+              depthWrite: false,
+            })
+          );
+          clusterRingMesh.rotation.x = -Math.PI / 2;
+          clusterRingMesh.position.set(dec.centerX, 0.0, dec.centerZ);
+          clusterRingMesh.renderOrder = 19;
+          culturalRootGroup.add(clusterRingMesh);
+          clusterRingMeshes.push(clusterRingMesh);
+        }
       }
-    }
 
-    for (const node of CULTURAL_NODES) {
-      const dec = declutteredMap[node.id];
-      if (!dec) continue;
+      for (const node of CULTURAL_NODES) {
+        const dec = declutteredMap[node.id];
+        if (!dec) continue;
 
-      const rootGroup = new THREE.Group();
-      rootGroup.position.set(dec.displayX, 0.0, dec.displayZ);
-      culturalRootGroup.add(rootGroup);
+        const rootGroup = new THREE.Group();
+        rootGroup.position.set(dec.displayX, 0.0, dec.displayZ);
+        culturalRootGroup.add(rootGroup);
 
-      const eraColor = new THREE.Color(node.accentColor);
+        const eraColor = new THREE.Color(node.accentColor);
 
-      const contrastShadowDisc = new THREE.Mesh(
-        haloDiscGeo,
-        new THREE.MeshBasicMaterial({
-          color: 0x0f172a,
-          transparent: true,
-          opacity: 0.45,
-          depthWrite: false,
-        })
-      );
-      contrastShadowDisc.position.y = 0.0;
-      contrastShadowDisc.renderOrder = 20;
-      rootGroup.add(contrastShadowDisc);
-
-      const phaseHaloDisc = new THREE.Mesh(
-        haloDiscGeo,
-        new THREE.MeshBasicMaterial({
-          color: eraColor,
-          transparent: true,
-          opacity: 0.34,
-          depthWrite: false,
-        })
-      );
-      phaseHaloDisc.position.y = 0.0;
-      phaseHaloDisc.renderOrder = 21;
-      rootGroup.add(phaseHaloDisc);
-
-      const pulseWaveRing = new THREE.Mesh(
-        pulseWaveGeo,
-        new THREE.MeshBasicMaterial({
-          color: eraColor,
-          transparent: true,
-          opacity: 0.78,
-          depthWrite: false,
-        })
-      );
-      pulseWaveRing.position.y = 0.0;
-      pulseWaveRing.renderOrder = 22;
-      rootGroup.add(pulseWaveRing);
-
-      const pulseCore = new THREE.Mesh(
-        pulseCoreGeo,
-        new THREE.MeshStandardMaterial({
-          color: eraColor,
-          emissive: eraColor,
-          emissiveIntensity: 0.55,
-          roughness: 0.25,
-          metalness: 0.35,
-        })
-      );
-      pulseCore.position.y = 0.1;
-      pulseCore.renderOrder = 24;
-      rootGroup.add(pulseCore);
-
-      const modelGroup = buildCulturalArchetypeMesh(node.archetype, node.accentColor);
-      modelGroup.position.y = 0.0;
-      modelGroup.scale.setScalar(0.001);
-      modelGroup.visible = false;
-      modelGroup.renderOrder = 25;
-      rootGroup.add(modelGroup);
-
-      const hitProxy = new THREE.Mesh(
-        hitProxyGeo,
-        new THREE.MeshBasicMaterial({
-          transparent: true,
-          opacity: 0,
-          depthWrite: false,
-        })
-      );
-      hitProxy.position.y = 0.0;
-      rootGroup.add(hitProxy);
-
-      // Tag semua mesh anak agar raycast selalu menemukan node ini
-      rootGroup.userData.culturalNode = node;
-      rootGroup.traverse((child) => {
-        child.userData.culturalNode = node;
-      });
-
-      let tetherLine: THREE.Line | null = null;
-      if (dec.isDisplaced) {
-        const tetherGeo = new THREE.BufferGeometry().setFromPoints([
-          new THREE.Vector3(dec.trueX, 0.0, dec.trueZ),
-          new THREE.Vector3(dec.displayX, 0.0, dec.displayZ),
-        ]);
-        tetherLine = new THREE.Line(
-          tetherGeo,
-          new THREE.LineBasicMaterial({
-            color: 0x475569,
+        const contrastShadowDisc = new THREE.Mesh(
+          haloDiscGeo,
+          new THREE.MeshBasicMaterial({
+            color: 0x0f172a,
             transparent: true,
             opacity: 0.45,
             depthWrite: false,
           })
         );
-        tetherLine.renderOrder = 19;
-        culturalRootGroup.add(tetherLine);
-      }
+        contrastShadowDisc.position.y = 0.0;
+        contrastShadowDisc.renderOrder = 20;
+        rootGroup.add(contrastShadowDisc);
 
-      nodeBundles.push({
-        node,
-        declutter: dec,
-        rootGroup,
-        pulseCore,
-        pulseWaveRing,
-        phaseHaloDisc,
-        contrastShadowDisc,
-        hitProxy,
-        modelGroup,
-        tetherLine,
-        currentModelScale: 0.001,
-        currentPulseScale: 1,
-      });
+        const phaseHaloDisc = new THREE.Mesh(
+          haloDiscGeo,
+          new THREE.MeshBasicMaterial({
+            color: eraColor,
+            transparent: true,
+            opacity: 0.34,
+            depthWrite: false,
+          })
+        );
+        phaseHaloDisc.position.y = 0.0;
+        phaseHaloDisc.renderOrder = 21;
+        rootGroup.add(phaseHaloDisc);
+
+        const pulseWaveRing = new THREE.Mesh(
+          pulseWaveGeo,
+          new THREE.MeshBasicMaterial({
+            color: eraColor,
+            transparent: true,
+            opacity: 0.78,
+            depthWrite: false,
+          })
+        );
+        pulseWaveRing.position.y = 0.0;
+        pulseWaveRing.renderOrder = 22;
+        rootGroup.add(pulseWaveRing);
+
+        const pulseCore = new THREE.Mesh(
+          pulseCoreGeo,
+          new THREE.MeshStandardMaterial({
+            color: eraColor,
+            emissive: eraColor,
+            emissiveIntensity: 0.55,
+            roughness: 0.25,
+            metalness: 0.35,
+          })
+        );
+        pulseCore.position.y = 0.1;
+        pulseCore.renderOrder = 24;
+        rootGroup.add(pulseCore);
+
+        const modelGroup = buildCulturalArchetypeMesh(node.archetype, node.accentColor);
+        modelGroup.position.y = 0.0;
+        modelGroup.scale.setScalar(0.001);
+        modelGroup.visible = false;
+        modelGroup.renderOrder = 25;
+        rootGroup.add(modelGroup);
+
+        const hitProxy = new THREE.Mesh(
+          hitProxyGeo,
+          new THREE.MeshBasicMaterial({
+            transparent: true,
+            opacity: 0,
+            depthWrite: false,
+          })
+        );
+        hitProxy.position.y = 0.0;
+        rootGroup.add(hitProxy);
+
+        // Tag semua mesh anak agar raycast selalu menemukan node ini
+        rootGroup.userData.culturalNode = node;
+        rootGroup.traverse((child) => {
+          child.userData.culturalNode = node;
+        });
+
+        let tetherLine: THREE.Line | null = null;
+        if (dec.isDisplaced) {
+          const tetherGeo = new THREE.BufferGeometry().setFromPoints([
+            new THREE.Vector3(dec.trueX, 0.0, dec.trueZ),
+            new THREE.Vector3(dec.displayX, 0.0, dec.displayZ),
+          ]);
+          tetherLine = new THREE.Line(
+            tetherGeo,
+            new THREE.LineBasicMaterial({
+              color: 0x475569,
+              transparent: true,
+              opacity: 0.45,
+              depthWrite: false,
+            })
+          );
+          tetherLine.renderOrder = 19;
+          culturalRootGroup.add(tetherLine);
+        }
+
+        nodeBundles.push({
+          node,
+          declutter: dec,
+          rootGroup,
+          pulseCore,
+          pulseWaveRing,
+          phaseHaloDisc,
+          contrastShadowDisc,
+          hitProxy,
+          modelGroup,
+          tetherLine,
+          currentModelScale: 0.001,
+          currentPulseScale: 1,
+        });
+      }
     }
 
     // Bangun Rute Budaya & Maritim 3D
     const routesRootGroup = new THREE.Group();
     scene.add(routesRootGroup);
     const routeBundles: RouteVisualBundle[] = [];
-    const particleGeo = new THREE.SphereGeometry(0.14, 10, 10);
+    if (!isQuizMap) {
+      const particleGeo = new THREE.SphereGeometry(0.14, 10, 10);
 
-    for (const route of MIGRATION_ROUTES) {
-      const curvePts = route.waypoints.map((wp, idx) => {
-        const pt = latLonToWorld(wp.lat, wp.lon);
-        const archHeight = 0.35 + Math.sin((idx / (route.waypoints.length - 1)) * Math.PI) * 1.1;
-        return new THREE.Vector3(pt.x, archHeight, pt.z);
-      });
+      for (const route of MIGRATION_ROUTES) {
+        const curvePts = route.waypoints.map((wp, idx) => {
+          const pt = latLonToWorld(wp.lat, wp.lon);
+          const archHeight = 0.35 + Math.sin((idx / (route.waypoints.length - 1)) * Math.PI) * 1.1;
+          return new THREE.Vector3(pt.x, archHeight, pt.z);
+        });
 
-      const curve = new THREE.CatmullRomCurve3(curvePts);
-      const tubeGeo = new THREE.TubeGeometry(curve, 64, 0.055, 8, false);
-      const routeColor = new THREE.Color(route.colorHex);
-      const tubeMat = new THREE.MeshStandardMaterial({
-        color: routeColor,
-        emissive: routeColor,
-        emissiveIntensity: 0.5,
-        roughness: 0.3,
-        metalness: 0.5,
-        transparent: true,
-        opacity: 0.82,
-      });
-      const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
-      routesRootGroup.add(tubeMesh);
+        const curve = new THREE.CatmullRomCurve3(curvePts);
+        const tubeGeo = new THREE.TubeGeometry(curve, 64, 0.055, 8, false);
+        const routeColor = new THREE.Color(route.colorHex);
+        const tubeMat = new THREE.MeshStandardMaterial({
+          color: routeColor,
+          emissive: routeColor,
+          emissiveIntensity: 0.5,
+          roughness: 0.3,
+          metalness: 0.5,
+          transparent: true,
+          opacity: 0.82,
+        });
+        const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+        routesRootGroup.add(tubeMesh);
 
-      const particles: THREE.Mesh[] = [];
-      const pMat = new THREE.MeshBasicMaterial({ color: 0xfef08a });
-      for (let p = 0; p < 5; p++) {
-        const pMesh = new THREE.Mesh(particleGeo, pMat);
-        routesRootGroup.add(pMesh);
-        particles.push(pMesh);
+        const particles: THREE.Mesh[] = [];
+        const pMat = new THREE.MeshBasicMaterial({ color: 0xfef08a });
+        for (let p = 0; p < 5; p++) {
+          const pMesh = new THREE.Mesh(particleGeo, pMat);
+          routesRootGroup.add(pMesh);
+          particles.push(pMesh);
+        }
+
+        routeBundles.push({
+          id: route.id,
+          yearStart: route.yearStart,
+          curve,
+          tubeMesh,
+          particles,
+        });
       }
-
-      routeBundles.push({
-        id: route.id,
-        yearStart: route.yearStart,
-        curve,
-        tubeMesh,
-        particles,
-      });
     }
+
+    const quizFeedbackGroup = new THREE.Group();
+    scene.add(quizFeedbackGroup);
+
+    const guessPinTexture = createQuizPinTexture("guess");
+    const answerPinTexture = createQuizPinTexture("answer");
+    const shadowTexture = createQuizShadowTexture();
+    const dashedLineTexture = createQuizDashedTexture();
+
+    interface QuizMarkerPair {
+      sprite: THREE.Sprite;
+      shadow: THREE.Mesh;
+    }
+    let activeGuessMarker: QuizMarkerPair | null = null;
+    let activeAnswerMarker: QuizMarkerPair | null = null;
+    let activeQuizArc: {
+      geo: THREE.BufferGeometry;
+      mat: THREE.MeshBasicMaterial;
+      outlineGeo: THREE.BufferGeometry;
+      outlineMat: THREE.MeshBasicMaterial;
+      totalIndices: number;
+      startTime: number;
+    } | null = null;
+
+    function clearQuizFeedback() {
+      activeGuessMarker = null;
+      activeAnswerMarker = null;
+      if (activeQuizArc) {
+        activeQuizArc.geo.dispose();
+        activeQuizArc.mat.dispose();
+        activeQuizArc.outlineGeo.dispose();
+        activeQuizArc.outlineMat.dispose();
+        activeQuizArc = null;
+      }
+      for (const child of [...quizFeedbackGroup.children]) {
+        quizFeedbackGroup.remove(child);
+        if ("geometry" in child && child.geometry) {
+          (child.geometry as THREE.BufferGeometry).dispose();
+        }
+        if ("material" in child && child.material) {
+          const materials = Array.isArray(child.material)
+            ? child.material
+            : [child.material];
+          for (const material of materials) material.dispose();
+        }
+      }
+    }
+
+    function createMarkerPair(point: QuizMapPoint, type: "guess" | "answer"): QuizMarkerPair {
+      const world = latLonToWorld(point.lat, point.lng);
+
+      // Bayangan jatuh lembut di atas tanah
+      const shadowGeo = new THREE.PlaneGeometry(1, 1);
+      const shadowMat = new THREE.MeshBasicMaterial({
+        map: shadowTexture,
+        transparent: true,
+        depthWrite: false,
+      });
+      const shadow = new THREE.Mesh(shadowGeo, shadowMat);
+      shadow.rotation.x = -Math.PI / 2;
+      shadow.position.set(world.x, 0.02, world.z);
+      shadow.renderOrder = 25;
+      quizFeedbackGroup.add(shadow);
+
+      // Pin Sprite yang selalu menghadap kamera (billboard)
+      const spriteMat = new THREE.SpriteMaterial({
+        map: type === "guess" ? guessPinTexture : answerPinTexture,
+        transparent: true,
+        depthWrite: false,
+      });
+      const sprite = new THREE.Sprite(spriteMat);
+      // Anchor jarum lancip di (0.5, ~0.04) agar menancap presisi di koordinat
+      sprite.center.set(0.5, 0.0417);
+      sprite.position.set(world.x, 0.04, world.z);
+      sprite.renderOrder = 35;
+      quizFeedbackGroup.add(sprite);
+
+      // Skala awal responsif
+      const camDist = camera.position.distanceTo(controls.target);
+      const pinBaseScale = THREE.MathUtils.clamp(camDist * 0.046, 0.16, 2.2);
+      const pinWidth = pinBaseScale * (128 / 192);
+      sprite.scale.set(pinWidth, pinBaseScale, 1);
+      shadow.scale.set(pinWidth * 0.65, pinWidth * 0.32, 1);
+
+      return { sprite, shadow };
+    }
+
+    function syncQuizFeedback(guess: QuizMapPoint | null, answer: QuizMapPoint | null) {
+      clearQuizFeedback();
+      if (!isQuizMap || !guess) return;
+
+      const guessWorld = latLonToWorld(guess.lat, guess.lng);
+      activeGuessMarker = createMarkerPair(guess, "guess");
+
+      if (!answer) return;
+
+      const answerWorld = latLonToWorld(answer.lat, answer.lng);
+      activeAnswerMarker = createMarkerPair(answer, "answer");
+
+      const groundDist = Math.hypot(answerWorld.x - guessWorld.x, answerWorld.z - guessWorld.z);
+      if (groundDist > 0.02) {
+        // Busur 3D halus melengkung ke atas (parabola halus bergaya GeoGuessr)
+        const arcHeight = THREE.MathUtils.clamp(groundDist * 0.11, 0.14, 1.55);
+        const midX = (guessWorld.x + answerWorld.x) * 0.5;
+        const midZ = (guessWorld.z + answerWorld.z) * 0.5;
+        const midY = 0.06 + arcHeight * 1.8;
+
+        const curve = new THREE.QuadraticBezierCurve3(
+          new THREE.Vector3(guessWorld.x, 0.06, guessWorld.z),
+          new THREE.Vector3(midX, midY, midZ),
+          new THREE.Vector3(answerWorld.x, 0.06, answerWorld.z)
+        );
+
+        const tubeSegments = Math.max(28, Math.round(groundDist * 22));
+        const dashCount = Math.max(4, Math.round(groundDist * 4.2));
+
+        // Tube outline casing gelap untuk kontras maksimum
+        const outlineGeo = new THREE.TubeGeometry(curve, tubeSegments, 0.038, 8, false);
+        const outlineMat = new THREE.MeshBasicMaterial({
+          color: 0x0c0906,
+          transparent: true,
+          opacity: 0.65,
+          depthWrite: false,
+        });
+        const outlineMesh = new THREE.Mesh(outlineGeo, outlineMat);
+        outlineMesh.renderOrder = 27;
+        quizFeedbackGroup.add(outlineMesh);
+
+        // Tube garis putus-putus (dashed) GeoGuessr
+        const tubeGeo = new THREE.TubeGeometry(curve, tubeSegments, 0.025, 8, false);
+        const tubeMat = new THREE.MeshBasicMaterial({
+          map: dashedLineTexture,
+          transparent: true,
+          depthWrite: false,
+          side: THREE.DoubleSide,
+        });
+        tubeMat.map!.wrapS = THREE.RepeatWrapping;
+        tubeMat.map!.wrapT = THREE.ClampToEdgeWrapping;
+        tubeMat.map!.repeat.set(dashCount, 1);
+
+        const tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+        tubeMesh.renderOrder = 28;
+        quizFeedbackGroup.add(tubeMesh);
+
+        const totalIndices = tubeGeo.index ? tubeGeo.index.count : tubeSegments * 8 * 6;
+        activeQuizArc = {
+          geo: tubeGeo,
+          mat: tubeMat,
+          outlineGeo,
+          outlineMat,
+          totalIndices,
+          startTime: performance.now(),
+        };
+
+        if (isMotionReduced()) {
+          tubeGeo.setDrawRange(0, Infinity);
+          outlineGeo.setDrawRange(0, Infinity);
+        } else {
+          tubeGeo.setDrawRange(0, 0);
+          outlineGeo.setDrawRange(0, 0);
+        }
+      }
+    }
+
+    syncQuizFeedbackRef.current = syncQuizFeedback;
+    syncQuizFeedback(quizRef.current?.guess ?? null, quizRef.current?.answer ?? null);
 
     if (!isSoftwareGl) {
       renderer.compile(scene, camera);
@@ -744,8 +1124,8 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         _scratchVec3A.project(camera);
         if (_scratchVec3A.z < -1 || _scratchVec3A.z > 1) continue;
 
-        const screenX = ((_scratchVec3A.x + 1) * 0.5) * rect.width;
-        const screenY = ((-_scratchVec3A.y + 1) * 0.5) * rect.height;
+        const screenX = (_scratchVec3A.x + 1) * 0.5 * rect.width;
+        const screenY = (-_scratchVec3A.y + 1) * 0.5 * rect.height;
         const pixelDist = Math.hypot(clickLocalX - screenX, clickLocalY - screenY);
         if (pixelDist < minPixelDist) {
           minPixelDist = pixelDist;
@@ -754,6 +1134,26 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       }
 
       return closestNode;
+    }
+
+    const quizGroundPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+
+    function pickQuizPointAtClientXY(clientX: number, clientY: number): QuizMapPoint | null {
+      const rect = renderer.domElement.getBoundingClientRect();
+      _pointerNdc.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+      _pointerNdc.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+      _raycaster.setFromCamera(_pointerNdc, camera);
+      if (!_raycaster.ray.intersectPlane(quizGroundPlane, _scratchVec3A)) return null;
+      if (
+        _scratchVec3A.x < minMapX ||
+        _scratchVec3A.x > maxMapX ||
+        _scratchVec3A.z < minMapZ ||
+        _scratchVec3A.z > maxMapZ
+      ) {
+        return null;
+      }
+      const { lat, lon } = worldToLatLon(_scratchVec3A.x, _scratchVec3A.z);
+      return { lat, lng: lon };
     }
 
     // Hitung posisi koordinat layar (relatif terhadap container peta) tepat di atas puncak objek 3D
@@ -772,8 +1172,8 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       _scratchVec3A.project(camera);
       if (_scratchVec3A.z < -1 || _scratchVec3A.z > 1) return null;
       return {
-        x: ((_scratchVec3A.x + 1) * 0.5) * rect.width,
-        y: ((-_scratchVec3A.y + 1) * 0.5) * rect.height,
+        x: (_scratchVec3A.x + 1) * 0.5 * rect.width,
+        y: (-_scratchVec3A.y + 1) * 0.5 * rect.height,
       };
     }
 
@@ -790,6 +1190,14 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     const onPointerUp = (e: PointerEvent) => {
       const moveDist = Math.hypot(e.clientX - pointerDownPos.x, e.clientY - pointerDownPos.y);
       if (moveDist > 7) return;
+
+      if (isQuizMap) {
+        const currentQuiz = quizRef.current;
+        if (!currentQuiz || currentQuiz.locked) return;
+        const point = pickQuizPointAtClientXY(e.clientX, e.clientY);
+        if (point) currentQuiz.onGuess(point);
+        return;
+      }
 
       const pickedNode = pickCulturalNodeAtClientXY(e.clientX, e.clientY);
       if (pickedNode) {
@@ -811,6 +1219,12 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
 
     let lastHoverTime = 0;
     const onPointerMove = (e: PointerEvent) => {
+      if (isQuizMap) {
+        if (e.buttons === 0)
+          renderer.domElement.style.cursor = quizRef.current?.locked ? "grab" : "crosshair";
+        return;
+      }
+
       // Sembunyikan hover tooltip saat user sedang drag/pan/orbit peta
       if (e.buttons > 0) {
         if (hoveredNodeRef.current) {
@@ -901,8 +1315,8 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         const w = renderer.domElement.clientWidth;
         const h = renderer.domElement.clientHeight;
         return {
-          x: ((_scratchVec3A.x + 1) * 0.5) * w,
-          y: ((-_scratchVec3A.y + 1) * 0.5) * h,
+          x: (_scratchVec3A.x + 1) * 0.5 * w,
+          y: (-_scratchVec3A.y + 1) * 0.5 * h,
         };
       },
       triggerRepaint: () => {
@@ -977,7 +1391,14 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       }
 
       const currentLod = computeZoomLod(camDist);
-      setLodState(currentLod);
+      setLodState((previous) =>
+        previous?.lodMode === currentLod.lodMode &&
+        previous.osmTileZoom === currentLod.osmTileZoom &&
+        previous.lodLabel === currentLod.lodLabel &&
+        previous.isStreetLevel === currentLod.isStreetLevel
+          ? previous
+          : currentLod
+      );
 
       updateHierarchicalOsmTiles(controls.target.x, controls.target.z, currentLod.osmTileZoom);
 
@@ -1046,7 +1467,9 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         b.modelGroup.visible = b.currentModelScale > 0.003;
         if (b.modelGroup.visible) {
           b.modelGroup.scale.setScalar(b.currentModelScale);
-          b.modelGroup.rotation.y = isSelected ? elapsed * 0.65 : Math.sin(elapsed * 0.4 + i) * 0.15;
+          b.modelGroup.rotation.y = isSelected
+            ? elapsed * 0.65
+            : Math.sin(elapsed * 0.4 + i) * 0.15;
         }
 
         b.pulseCore.visible = b.currentPulseScale > 0.04;
@@ -1062,10 +1485,13 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         const shadowMat = b.contrastShadowDisc.material as THREE.MeshBasicMaterial;
         shadowMat.opacity = currentLod.isStreetLevel ? 0.26 : 0.45;
 
-        b.hitProxy.scale.setScalar(shouldShow3DModel ? Math.max(0.035, b.currentModelScale * 1.45) : 1.0);
+        b.hitProxy.scale.setScalar(
+          shouldShow3DModel ? Math.max(0.035, b.currentModelScale * 1.45) : 1.0
+        );
 
         const waveCycle = (elapsed * 0.85 + i * 0.27) % 1;
-        const waveScale = footprintScale * (0.92 + waveCycle * (isSelected || isPulsing ? 1.5 : 1.28));
+        const waveScale =
+          footprintScale * (0.92 + waveCycle * (isSelected || isPulsing ? 1.5 : 1.28));
         b.pulseWaveRing.scale.setScalar(waveScale);
         const waveMat = b.pulseWaveRing.material as THREE.MeshBasicMaterial;
         waveMat.opacity =
@@ -1111,6 +1537,34 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
         }
       }
 
+      if (isQuizMap) {
+        // Skala responsif penanda pin kuis agar tidak membesar saat di-zoom masuk
+        const pinBaseScale = THREE.MathUtils.clamp(camDist * 0.046, 0.16, 2.2);
+        const pinWidth = pinBaseScale * (128 / 192);
+
+        if (activeGuessMarker) {
+          activeGuessMarker.sprite.scale.set(pinWidth, pinBaseScale, 1);
+          activeGuessMarker.shadow.scale.set(pinWidth * 0.65, pinWidth * 0.32, 1);
+        }
+        if (activeAnswerMarker) {
+          activeAnswerMarker.sprite.scale.set(pinWidth, pinBaseScale, 1);
+          activeAnswerMarker.shadow.scale.set(pinWidth * 0.65, pinWidth * 0.32, 1);
+        }
+
+        if (activeQuizArc) {
+          const elapsedArc = (nowMs - activeQuizArc.startTime) / 1000;
+          const progress = isMotionReduced() ? 1 : Math.min(1, elapsedArc / 0.65);
+          const easeProgress = 1 - Math.pow(1 - progress, 3);
+          const count = Math.floor(easeProgress * activeQuizArc.totalIndices);
+          activeQuizArc.geo.setDrawRange(0, progress >= 1 ? Infinity : count);
+          activeQuizArc.outlineGeo.setDrawRange(0, progress >= 1 ? Infinity : count);
+
+          if (!isMotionReduced() && activeQuizArc.mat.map) {
+            activeQuizArc.mat.map.offset.x = -elapsedArc * 0.22;
+          }
+        }
+      }
+
       renderer.render(scene, camera);
       frameId = requestAnimationFrame(tick);
     }
@@ -1129,6 +1583,12 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     return () => {
       disposed = true;
       cancelAnimationFrame(frameId);
+      syncQuizFeedbackRef.current = null;
+      clearQuizFeedback();
+      guessPinTexture.dispose();
+      answerPinTexture.dispose();
+      shadowTexture.dispose();
+      dashedLineTexture.dispose();
       window.clearTimeout(hintTimer);
       document.removeEventListener("fullscreenchange", onFullscreenChange);
       controls.removeEventListener("start", onControlStart);
@@ -1142,7 +1602,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       controls.dispose();
       renderer.dispose();
     };
-  }, [onReady]);
+  }, [isQuizMap, onReady]);
 
   // Aksi Navigasi Cepat Kamera 3D
   const handleResetView = useCallback(() => {
@@ -1156,8 +1616,8 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       durationMs: 700,
       startTargetPos: ctrl.target.clone(),
       startCameraPos: cam.position.clone(),
-      endTargetPos: new THREE.Vector3(0, 0, 0),
-      endCameraPos: new THREE.Vector3(0, 44, 34),
+      endTargetPos: initialMapViewRef.current.target.clone(),
+      endCameraPos: initialMapViewRef.current.camera.clone(),
     };
   }, []);
 
@@ -1198,18 +1658,15 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
     "inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/20 bg-[rgba(20,16,12,0.88)] text-[#f5ecdc] shadow-lg backdrop-blur-md transition-all hover:border-[var(--accent)] hover:bg-[rgba(32,24,18,0.95)] hover:scale-105 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--accent)]";
 
   return (
-    <div
-      ref={boxRef}
-      className="relative h-full w-full select-none overflow-hidden"
-      data-peta-map
-    >
+    <div ref={boxRef} className="relative h-full w-full select-none overflow-hidden" data-peta-map>
       {/* Wadah Canvas Three.js */}
       <div
         ref={mountRef}
         className="absolute inset-0 h-full w-full"
         role="application"
-        aria-label={t.peta.mapLabel}
+        aria-label={quiz?.label ?? t.peta.mapLabel}
         tabIndex={0}
+        data-quiz-map={isQuizMap ? "" : undefined}
       />
 
       {/* Kontrol HUD 3D di Pojok Kanan Atas */}
@@ -1273,14 +1730,16 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       </div>
 
       {/* Petunjuk Kontrol Gestur 3D */}
-      {showControlsHint && (
+      {!isQuizMap && showControlsHint && (
         <div
           className="pointer-events-none absolute bottom-3 right-3 z-10 hidden sm:flex items-center gap-2 rounded-xl border border-white/10 bg-[rgba(16,12,9,0.85)] px-3 py-1.5 text-[11px] text-[#f5ecdc]/85 shadow-xl backdrop-blur-md animate-fade-in transition-opacity duration-500"
           role="note"
         >
           <Box className="h-3.5 w-3.5 text-[var(--accent)] shrink-0" />
           <span>
-            <strong className="text-[#f5ecdc]">Rotasi 3D:</strong> Klik kiri & seret · <strong className="text-[#f5ecdc]">Geser:</strong> Klik kanan / Shift · <strong className="text-[#f5ecdc]">Zoom:</strong> Gulir roda mouse
+            <strong className="text-[#f5ecdc]">Rotasi 3D:</strong> Klik kiri & seret ·{" "}
+            <strong className="text-[#f5ecdc]">Geser:</strong> Klik kanan / Shift ·{" "}
+            <strong className="text-[#f5ecdc]">Zoom:</strong> Gulir roda mouse
           </span>
           <button
             type="button"
@@ -1294,7 +1753,7 @@ export function NusantaraMap({ pins, toYear, pulse, glow, onReady }: MapProps) {
       )}
 
       {/* Floating Hover Tooltip untuk Situs 3D */}
-      {hoverInfo && (
+      {!isQuizMap && hoverInfo && (
         <div
           ref={tooltipRef}
           className="pointer-events-none absolute z-30 -translate-x-1/2 -translate-y-[calc(100%+14px)] transition-opacity duration-150"
