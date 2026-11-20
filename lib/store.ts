@@ -36,7 +36,7 @@ const safeStorage: StateStorage = {
 /* ------------------------------------------------------------------ */
 
 interface Settings {
-  lang: Language;
+  lang: "id";
   noMotion: boolean;
   sound: boolean;
   volume: number;
@@ -88,9 +88,9 @@ export const useSetapakStore = create<SetapakState>()(
       activeClusterId: null,
       autoPlay: false,
       autoSpeed: 1,
-      setLang: (lang) => {
-        set({ lang });
-        if (typeof document !== "undefined") document.documentElement.lang = lang;
+      setLang: () => {
+        // Mode satu bahasa (Bahasa Indonesia)
+        if (typeof document !== "undefined") document.documentElement.lang = "id";
       },
       setNoMotion: (noMotion) => set({ noMotion }),
       setSound: (sound) => set({ sound }),
@@ -108,7 +108,7 @@ export const useSetapakStore = create<SetapakState>()(
       version: 1,
       storage: createJSONStorage(() => safeStorage),
       skipHydration: true,
-      partialize: (s): Settings => ({ lang: s.lang, noMotion: s.noMotion, sound: s.sound, volume: s.volume }),
+      partialize: (s): Settings => ({ lang: "id", noMotion: s.noMotion, sound: s.sound, volume: s.volume }),
     }
   )
 );

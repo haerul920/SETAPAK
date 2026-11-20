@@ -90,18 +90,17 @@ describe("createTimeScale", () => {
 describe("format tahun", () => {
   it("tidak pernah NaN", () => {
     for (const yr of [...sampleYears, NaN, Infinity, -Infinity, 0, 1, 999, 1000]) {
-      for (const lang of ["id", "en"] as const) expect(formatYear(yr, lang)).not.toMatch(/NaN|Infinity/);
+      expect(formatYear(yr)).not.toMatch(/NaN|Infinity/);
     }
   });
   it("aturan format", () => {
-    expect(formatYear(START_YEAR, "id")).toBe("1.650.000 TAHUN LALU");
-    expect(formatYear(2026 - 51200, "id")).toBe("51.200 TAHUN LALU");
-    expect(formatYear(-3199, "id")).toBe("3.200 SM");
-    expect(formatYear(850.5, "id")).toBe("TAHUN 850 M");
-    expect(formatYear(850.5, "en")).toBe("850 CE");
-    expect(formatYear(1945.62, "id")).toBe("1945");
-    expect(yearParts(-20000, "en").suffix).toBe(" YEARS AGO");
-    expect(tickLabel(1500, "id")).toBe("1500");
+    expect(formatYear(START_YEAR)).toBe("1.650.000 TAHUN LALU");
+    expect(formatYear(2026 - 51200)).toBe("51.200 TAHUN LALU");
+    expect(formatYear(-3199)).toBe("3.200 SM");
+    expect(formatYear(850.5)).toBe("TAHUN 850 M");
+    expect(formatYear(1945.62)).toBe("1945");
+    expect(yearParts(-20000).suffix).toBe(" TAHUN LALU");
+    expect(tickLabel(1500)).toBe("1500");
   });
   it("parseYearInput menerima berbagai bentuk", () => {
     expect(parseYearInput("1669.45")).toBeCloseTo(1669.45, 6);

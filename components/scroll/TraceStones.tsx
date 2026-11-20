@@ -89,7 +89,7 @@ function Stone({ stone, mobile, refCb }: { stone: StonePlacement; mobile: boolea
   const { trace } = stone;
   const dims = mobile ? TRACE_DIMS.mobile : TRACE_DIMS.desktop;
   const Icon = TRACE_ICON[trace.category];
-  const name = lang === "en" && trace.nameEn ? trace.nameEn : trace.name;
+  const name = trace.name;
   const inward = stone.side === "left" ? "left-full ml-2" : "right-full mr-2";
   // foto mini hanya dimuat saat kursor atau fokus ada di batu
   const [hot, setHot] = useState(false);
@@ -200,7 +200,7 @@ function Bubble({ bubble, mobile }: { bubble: BubblePlacement; mobile: boolean }
           <ul className="max-h-[48svh] space-y-0.5 overflow-y-auto pr-1">
             {bubble.traces.map((tr) => {
               const Icon = TRACE_ICON[tr.category];
-              const name = lang === "en" && tr.nameEn ? tr.nameEn : tr.name;
+              const name = tr.name;
               return (
                 <li key={tr.id}>
                   <button

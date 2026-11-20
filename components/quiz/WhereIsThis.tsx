@@ -44,11 +44,9 @@ export function WhereIsThis({
   const site = q.siteSlug ? quizSite(q.siteSlug) : undefined;
   const trace = q.traceId ? traces.find((x) => x.id === q.traceId) : undefined;
   const name = site
-    ? localizeSite(site, lang).name
+    ? localizeSite(site).name
     : trace
-      ? lang === "en" && trace.nameEn
-        ? trace.nameEn
-        : trace.name
+      ? trace.name
       : "";
 
   return (

@@ -98,7 +98,7 @@ export function QuizHub() {
                 <fieldset>
                   <legend className="font-mono text-[11px] uppercase tracking-widest opacity-75">{t.quiz.range}</legend>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    {[{ id: "semua", label: t.quiz.rangeAll }, ...ERA_PRESETS.map((p) => ({ id: p.id, label: lang === "en" ? p.en : p.id_ }))].map((r) => (
+                    {[{ id: "semua", label: t.quiz.rangeAll }, ...ERA_PRESETS.map((p) => ({ id: p.id, label: p.id_ }))].map((r) => (
                       <button key={r.id} type="button" aria-pressed={rangeId === r.id} onClick={() => setRangeId(r.id)} className={cn("rounded-full border px-3.5 py-2 text-sm", rangeId === r.id ? "border-[var(--accent)] bg-[var(--accent)] text-[#0d0b09]" : "border-current/25 hover:border-[var(--accent)]")}>
                         {r.label}
                       </button>

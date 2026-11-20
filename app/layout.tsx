@@ -83,7 +83,7 @@ export default function RootLayout({
     url: siteUrl,
     description:
       "Guliran waktu interaktif cagar budaya Indonesia dari 1,65 juta tahun lalu hingga 2026.",
-    inLanguage: ["id-ID", "en-US"],
+    inLanguage: ["id-ID"],
     author: {
       "@type": "Organization",
       name: "Tim Institut Teknologi Bontomarannu (Universitas Hasanuddin)",

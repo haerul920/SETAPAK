@@ -219,8 +219,8 @@ export function TimeAxis({ filters = EMPTY_FILTERS }: { filters?: Filters }) {
             type="button"
             onClick={() => setTimeAxisCollapsed(!timeAxisCollapsed)}
             aria-expanded={!timeAxisCollapsed}
-            aria-label={timeAxisCollapsed ? (lang === "en" ? "Show time slider" : "Tampilkan slider waktu") : (lang === "en" ? "Hide time slider" : "Sembunyikan slider waktu")}
-            title={timeAxisCollapsed ? (lang === "en" ? "Buka slider waktu" : "Buka slider waktu") : (lang === "en" ? "Sembunyikan slider waktu" : "Sembunyikan slider waktu")}
+            aria-label={timeAxisCollapsed ? "Tampilkan slider waktu" : "Sembunyikan slider waktu"}
+            title={timeAxisCollapsed ? "Buka slider waktu" : "Sembunyikan slider waktu"}
             className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-current/25 hover:border-[var(--accent)] hover:bg-current/10 transition-colors"
           >
             <ChevronDown
@@ -254,7 +254,7 @@ export function TimeAxis({ filters = EMPTY_FILTERS }: { filters?: Filters }) {
               aria-valuemin={-1_647_974}
               aria-valuemax={END_YEAR}
               onClick={() => setTimeAxisCollapsed(false)}
-              title={lang === "en" ? "Click to open full slider" : "Klik untuk membuka slider lengkap"}
+              title="Klik untuk membuka slider lengkap"
               className="group relative h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/10 hover:bg-white/15 transition-colors"
             >
               <div
@@ -296,7 +296,7 @@ export function TimeAxis({ filters = EMPTY_FILTERS }: { filters?: Filters }) {
                   }}
                   className="rounded-full border border-current/25 px-2.5 py-1 text-xs hover:border-[var(--accent)]"
                 >
-                  {lang === "en" ? p.en : p.id_}
+                  {p.id_}
                 </button>
               ))}
             </div>

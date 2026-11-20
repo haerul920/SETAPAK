@@ -45,41 +45,41 @@ export interface Played {
 }
 
 /** Ringkasan jawaban benar satu soal, untuk daftar "yang masih perlu diingat". */
-export function describeAnswer(q: Question, lang: "id" | "en"): string {
+export function describeAnswer(q: Question, _lang?: "id" | "en"): string {
   switch (q.mode) {
     case "tebak-tahun": {
       const ev = quizEvent(q.eventId)!;
-      return `${localizeEvent(ev, lang).title}: ${localizeEvent(ev, lang).dateLabel}`;
+      return `${localizeEvent(ev).title}: ${localizeEvent(ev).dateLabel}`;
     }
     case "urutkan":
-      return q.answer.map((id) => `${localizeEvent(quizEvent(id)!, lang).dateLabel} ${localizeEvent(quizEvent(id)!, lang).title}`).join(" → ");
+      return q.answer.map((id) => `${localizeEvent(quizEvent(id)!).dateLabel} ${localizeEvent(quizEvent(id)!).title}`).join(" → ");
     case "di-mana": {
       const s = q.siteSlug ? quizSite(q.siteSlug) : undefined;
       const tr = q.traceId ? traces.find((x) => x.id === q.traceId) : undefined;
-      return s ? localizeSite(s, lang).name : tr ? tr.name : "";
+      return s ? localizeSite(s).name : tr ? tr.name : "";
     }
     case "situs-mana": {
       const s = quizSite(q.answer);
-      return s ? localizeSite(s, lang).name : q.answer;
+      return s ? localizeSite(s).name : q.answer;
     }
     case "fakta": {
       const ev = quizEvent(q.eventId)!;
-      return `${localizeEvent(ev, lang).title}: ${q.answer === "disepakati" ? "disepakati" : "diperdebatkan"}`;
+      return `${localizeEvent(ev).title}: ${q.answer === "disepakati" ? "disepakati" : "diperdebatkan"}`;
     }
   }
 }
 
-export function describeGiven(q: Question, a: Answer, lang: "id" | "en"): string {
+export function describeGiven(q: Question, a: Answer, _lang?: "id" | "en"): string {
   switch (q.mode) {
     case "tebak-tahun":
-      return formatYear(a as number, lang);
+      return formatYear(a as number);
     case "urutkan":
-      return (a as string[]).map((id) => localizeEvent(quizEvent(id)!, lang).title).join(" → ");
+      return (a as string[]).map((id) => localizeEvent(quizEvent(id)!).title).join(" → ");
     case "di-mana":
       return `${(a as { lat: number; lng: number }).lat.toFixed(2)}, ${(a as { lat: number; lng: number }).lng.toFixed(2)}`;
     case "situs-mana": {
       const s = quizSite(a as string);
-      return s ? localizeSite(s, lang).name : String(a);
+      return s ? localizeSite(s).name : String(a);
     }
     case "fakta":
       return String(a);

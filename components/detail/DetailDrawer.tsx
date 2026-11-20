@@ -139,7 +139,6 @@ export function DetailDrawer() {
                 {t.event.checkNote}
               </p>
             )}
-            {loc.isFallbackId && lang === "en" && <p className="text-xs opacity-70">{t.detail.fallback}</p>}
           </header>
 
           {gallery.length > 0 && <Gallery items={gallery} />}

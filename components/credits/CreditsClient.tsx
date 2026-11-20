@@ -68,10 +68,10 @@ export function CreditsClient() {
   for (const m of [...images, ...audios]) groups.set(m.target, [...(groups.get(m.target) ?? []), m]);
   const label = (target: string) => {
     const s = sites.find((x) => x.slug === target);
-    if (s) return localizeSite(s, lang).name;
+    if (s) return localizeSite(s).name;
     const e = sortedEvents.find((x) => x.id === target);
-    if (e) return localizeEvent(e, lang).title;
-    return lang === "en" ? "General" : "Umum";
+    if (e) return localizeEvent(e).title;
+    return "Umum";
   };
   const traceName = new Map(traces.map((x) => [x.id, x.name]));
   // foto jejak tingkat 3 (id "wd-Q...") dikumpulkan dalam satu bagian lipat supaya halaman tetap ringan
@@ -108,13 +108,11 @@ export function CreditsClient() {
       {traceKeys.length > 0 && (
         <details className="mt-12 rounded-2xl border border-sand-500/20 bg-ink-900/60 p-4">
           <summary className="cursor-pointer font-display text-2xl text-sand-100">
-            {lang === "en" ? "Heritage traces (Wikidata)" : "Jejak cagar budaya (Wikidata)"}{" "}
+            Jejak cagar budaya (Wikidata){" "}
             <span className="font-mono text-sm text-sand-500">({traceTotal})</span>
           </summary>
           <p className="mt-3 max-w-3xl text-sm text-sand-300">
-            {lang === "en"
-              ? "Main photos of tier-3 traces, taken from the image property of each Wikidata item on Wikimedia Commons. Each file is listed with its author and license."
-              : "Foto utama jejak tingkat 3, diambil dari properti gambar tiap butir Wikidata di Wikimedia Commons. Setiap berkas dicantumkan dengan pembuat dan lisensinya."}
+            Foto utama jejak tingkat 3, diambil dari properti gambar tiap butir Wikidata di Wikimedia Commons. Setiap berkas dicantumkan dengan pembuat dan lisensinya.
           </p>
           <ul className="mt-4 grid gap-3 md:grid-cols-2">
             {traceKeys.flatMap((k) =>

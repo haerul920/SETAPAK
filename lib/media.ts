@@ -100,8 +100,8 @@ export function srcSetFor(m: MediaEntry, ext: "webp" | "avif"): string {
     .join(", ");
 }
 
-export function altFor(m: MediaEntry, lang: Language): string {
-  return lang === "en" ? m.altEn || m.alt : m.alt;
+export function altFor(m: MediaEntry, _lang?: Language): string {
+  return m.alt;
 }
 
 export function shortCredit(m: MediaEntry): string {

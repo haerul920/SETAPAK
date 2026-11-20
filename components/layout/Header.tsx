@@ -17,10 +17,9 @@ const NAV = [
   { href: "/kuis", key: "kuis" },
 ] as const;
 
-/** Header minimal: logo kecil, tiga tautan utama, suara, bahasa ID/EN, dan mode tanpa animasi. */
+/** Header minimal: logo kecil, tiga tautan utama, suara, dan mode tanpa animasi. */
 export function Header() {
-  const { t, lang } = useCopy();
-  const setLang = useSetapakStore((s) => s.setLang);
+  const { t } = useCopy();
   const noMotion = useSetapakStore((s) => s.noMotion);
   const setNoMotion = useSetapakStore((s) => s.setNoMotion);
   const pathname = usePathname();
@@ -111,14 +110,6 @@ export function Header() {
               {sound ? <Volume2 className="h-5 w-5" aria-hidden /> : <VolumeX className="h-5 w-5" aria-hidden />}
             </button>
           )}
-          <button
-            type="button"
-            onClick={() => setLang(lang === "id" ? "en" : "id")}
-            className={iconButtonClass("w-auto px-3 font-mono text-xs uppercase")}
-            aria-label={`${lang.toUpperCase()}, ${t.header.lang}: ${lang === "id" ? "Bahasa Indonesia" : "English"}`}
-          >
-            {lang === "id" ? "ID" : "EN"}
-          </button>
           <button
             type="button"
             onClick={() => setNoMotion(!noMotion)}

@@ -209,10 +209,9 @@ export function createTimeScale(opts: ScaleOptions = {}): TimeScale {
 const MONTHS_ID = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
 const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-export function groupDigits(n: number, lang: Lang): string {
+export function groupDigits(n: number, _lang?: Lang): string {
   const s = Math.abs(Math.trunc(n)).toString();
-  const sep = lang === "id" ? "." : ",";
-  return s.replace(/\B(?=(\d{3})+(?!\d))/g, sep);
+  return s.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
 export type YearKind = "ago" | "bce" | "ce" | "year";
@@ -226,43 +225,43 @@ export interface YearParts {
 }
 
 /** Komponen format tahun, dipakai penghitung odometer (angka dan teks terpisah). */
-export function yearParts(year: number, lang: Lang): YearParts {
+export function yearParts(year: number, _lang?: Lang): YearParts {
   const y = Number.isFinite(year) ? year : START_YEAR;
   if (y < -10_000) {
     const ago = Math.max(0, Math.round(END_YEAR - y));
-    return { kind: "ago", value: ago, prefix: "", suffix: lang === "id" ? " TAHUN LALU" : " YEARS AGO" };
+    return { kind: "ago", value: ago, prefix: "", suffix: " TAHUN LALU" };
   }
   if (y < 1) {
     // tahun astronomis 0 = 1 SM
     const bce = Math.max(1, Math.round(1 - y));
-    return { kind: "bce", value: bce, prefix: "", suffix: lang === "id" ? " SM" : " BCE" };
+    return { kind: "bce", value: bce, prefix: "", suffix: " SM" };
   }
   if (y < 1000) {
     const ce = Math.max(1, Math.floor(y));
-    return lang === "id" ? { kind: "ce", value: ce, prefix: "TAHUN ", suffix: " M" } : { kind: "ce", value: ce, prefix: "", suffix: " CE" };
+    return { kind: "ce", value: ce, prefix: "TAHUN ", suffix: " M" };
   }
   return { kind: "year", value: Math.min(END_YEAR, Math.floor(y)), prefix: "", suffix: "" };
 }
 
 /** Format tahun untuk penghitung (docs/SCROLL_ENGINE.md bagian 1). Tidak pernah NaN. */
-export function formatYear(year: number, lang: Lang): string {
-  const p = yearParts(year, lang);
-  const num = p.kind === "year" ? String(p.value) : groupDigits(p.value, lang);
+export function formatYear(year: number, _lang?: Lang): string {
+  const p = yearParts(year);
+  const num = p.kind === "year" ? String(p.value) : groupDigits(p.value);
   return `${p.prefix}${num}${p.suffix}`;
 }
 
 /** Nama bulan untuk segmen F saat guliran lambat (pecahan tahun ke bulan). */
-export function monthOf(year: number, lang: Lang): string {
+export function monthOf(year: number, _lang?: Lang): string {
   const frac = year - Math.floor(year);
   const idx = clamp(Math.floor(frac * 12), 0, 11);
-  return (lang === "id" ? MONTHS_ID : MONTHS_EN)[idx];
+  return MONTHS_ID[idx];
 }
 
 /** Label batas segmen yang dibulatkan agar enak dibaca (62.000 th lalu, 5.000 SM). */
-export function boundaryLabel(year: number, lang: Lang): string {
-  if (year < -10_000) return tickLabel(END_YEAR - Math.round((END_YEAR - year) / 1000) * 1000, lang);
-  if (year < 1) return tickLabel(1 - Math.round((1 - year) / 100) * 100, lang);
-  return tickLabel(year, lang);
+export function boundaryLabel(year: number, _lang?: Lang): string {
+  if (year < -10_000) return tickLabel(END_YEAR - Math.round((END_YEAR - year) / 1000) * 1000);
+  if (year < 1) return tickLabel(1 - Math.round((1 - year) / 100) * 100);
+  return tickLabel(year);
 }
 
 /**
@@ -285,10 +284,10 @@ export function tickYears(seg: Segment): number[] {
 }
 
 /** Label tahun bulat untuk garis skala lokal dan penggaris. */
-export function tickLabel(year: number, lang: Lang): string {
-  if (year < -10_000) return `${groupDigits(END_YEAR - year, lang)}${lang === "id" ? " th lalu" : " yrs ago"}`;
-  if (year < 1) return `${groupDigits(1 - year, lang)} ${lang === "id" ? "SM" : "BCE"}`;
-  if (year < 1000) return `${year} ${lang === "id" ? "M" : "CE"}`;
+export function tickLabel(year: number, _lang?: Lang): string {
+  if (year < -10_000) return `${groupDigits(END_YEAR - year)} th lalu`;
+  if (year < 1) return `${groupDigits(1 - year)} SM`;
+  if (year < 1000) return `${year} M`;
   return String(year);
 }
 

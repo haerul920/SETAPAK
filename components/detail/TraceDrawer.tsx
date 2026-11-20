@@ -84,7 +84,7 @@ export function TraceDrawer() {
   const lite = shownId ? traceLiteById.get(shownId) : undefined;
   if (!mounted || !lite) return null;
   const Icon = TRACE_ICON[lite.category];
-  const name = lang === "en" && lite.nameEn ? lite.nameEn : lite.name;
+  const name = lite.name;
   const photos = imagesFor(lite.id);
   const summarySource = full?.summarySource === "wikipedia-id" ? "Wikipedia" : "Wikidata";
 

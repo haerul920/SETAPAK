@@ -8,11 +8,11 @@ export function stopSpeaking(): void {
   if (speechSupported()) window.speechSynthesis.cancel();
 }
 
-export function speak(text: string, lang: "id" | "en", onEnd?: () => void): boolean {
+export function speak(text: string, _lang?: "id" | "en", onEnd?: () => void): boolean {
   if (!speechSupported()) return false;
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = lang === "id" ? "id-ID" : "en-US";
+  u.lang = "id-ID";
   u.rate = 0.95;
   u.onend = () => onEnd?.();
   u.onerror = () => onEnd?.();
